@@ -47,7 +47,8 @@
 		"items": [
 			"Dan",
 			"TiledBackground",
-			"ronPrueba"
+			"ronPrueba",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -59,13 +60,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"DanLayout"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"DanEvents"
 		],
 		"subfolders": []
 	},
