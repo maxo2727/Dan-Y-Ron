@@ -8,8 +8,29 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -22,8 +43,43 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -45,27 +101,90 @@
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
-			"Dan",
-			"TiledBackground",
-			"ronPrueba"
+			"MonitorFrame",
+			"MonitorScreen",
+			"SpriteFont"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"TdBackground",
+					"TdPlanet",
+					"BouncerDown",
+					"BouncerLeft",
+					"BouncerRight",
+					"BouncerUp",
+					"DefensesBigBox",
+					"ronShip",
+					"DefensesSmallBox",
+					"Orbit",
+					"Hunter",
+					"EnemyPath",
+					"DogShipIcon",
+					"DogShip",
+					"Range50",
+					"DogPrice",
+					"DogProyectile",
+					"WaveTimer"
+				],
+				"subfolders": [],
+				"name": "TD"
+			},
+			{
+				"items": [
+					"Mouse",
+					"Keyboard"
+				],
+				"subfolders": [],
+				"name": "Input"
+			},
+			{
+				"items": [
+					"DanCollisionBox",
+					"Enemigo1",
+					"Nave",
+					"Dan"
+				],
+				"subfolders": [],
+				"name": "danmovement"
+			},
+			{
+				"items": [
+					"TiledBackground"
+				],
+				"subfolders": [],
+				"name": "Tiles"
+			},
+			{
+				"items": [
+					"StarIcon",
+					"EnergyCounter"
+				],
+				"subfolders": [],
+				"name": "HUD"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Defenses",
+			"DefensesIcons"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"GameLayout"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"RonEvents",
+			"DanEvents"
 		],
 		"subfolders": []
 	},

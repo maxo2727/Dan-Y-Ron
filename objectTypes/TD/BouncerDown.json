@@ -1,7 +1,7 @@
 {
-	"name": "ronPrueba",
+	"name": "BouncerDown",
 	"plugin-id": "Sprite",
-	"sid": 706041492119380,
+	"sid": 181234417350864,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7790778,
+						"imageSpriteId": 1366361,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 678359669629490,
+				"sid": 708754476139198,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,0 +1,1027 @@
+{
+	"name": "RonEvents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Wave",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 791203469456623
+		},
+		{
+			"eventType": "variable",
+			"name": "Hunters",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 168081589728641
+		},
+		{
+			"eventType": "variable",
+			"name": "IsWaveStarted",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 137245913705705
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxHunters",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 994233079733759
+		},
+		{
+			"eventType": "variable",
+			"name": "HuntersToSpawn",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 646391653318167
+		},
+		{
+			"eventType": "variable",
+			"name": "HuntersKilled",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 436189009743389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 260939184176716,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [],
+			"sid": 611582063782803,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 918289695759082,
+							"parameters": {
+								"layer": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 806350541714788,
+							"parameters": {
+								"layer": "\"TD\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 186788458145143,
+							"parameters": {
+								"layer": "\"DanHUD\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 522987698093521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 429554681426350
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 165414642590542,
+							"parameters": {
+								"layer": "\"TD\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 643816155664245,
+							"parameters": {
+								"layer": "\"DanHUD\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 792396136008905
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 907655102297728,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 642549464229024,
+					"parameters": {
+						"object-to-create": "Hunter",
+						"layer": "4",
+						"x": "285",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Hunter",
+					"sid": 280867656549710,
+					"behaviorType": "Custom",
+					"parameters": {
+						"which": "vertical",
+						"speed": "Self.speed"
+					}
+				}
+			],
+			"sid": 529928491412891
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Bouncers",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 978381314544435,
+							"parameters": {
+								"object": "BouncerRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 119551425045370,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 827455603790220,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "Self.speed"
+							}
+						}
+					],
+					"sid": 225278671527827
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 843546775612736,
+							"parameters": {
+								"object": "BouncerDown"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 672320117526923,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "Self.speed"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 920179285144293,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 563862432694188
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 660588488852879,
+							"parameters": {
+								"object": "BouncerLeft"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 441520730465278,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 439462005946246,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "-Self.speed"
+							}
+						}
+					],
+					"sid": 462348268089230
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 593531333332101,
+							"parameters": {
+								"object": "BouncerUp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 465711467071205,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "-Self.speed"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 406403563449937,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 593119054628639
+				}
+			],
+			"sid": 661787356603188
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DefensesSetup",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "DogShipIcon",
+							"sid": 396204375633381,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [],
+					"sid": 701038604755450,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "DogShipIcon",
+									"sid": 713630540583789,
+									"parameters": {
+										"object": "Orbit"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "DogShipIcon",
+									"sid": 319564391994956,
+									"parameters": {
+										"object": "EnemyPath"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 913339788581561,
+									"parameters": {
+										"first-value": "Energy",
+										"comparison": 5,
+										"second-value": "DogShipIcon.Price"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "DogShipIcon",
+									"sid": 910193403257208,
+									"parameters": {
+										"object": "DogShip",
+										"layer": "\"TdObjects\"",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "DogShip",
+									"sid": 795537217974782,
+									"parameters": {
+										"degrees": "90"
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 170680927496625,
+									"parameters": {
+										"variable": "Energy",
+										"value": "DogShipIcon.Price"
+									}
+								}
+							],
+							"sid": 804819463773987
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "DogShipIcon",
+									"sid": 929303688942302,
+									"parameters": {
+										"x": "104",
+										"y": "89"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "DogShipIcon",
+									"sid": 469675682574944,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Range50",
+									"sid": 649478478114660
+								}
+							],
+							"sid": 345120352167438
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drag-start",
+							"objectClass": "DogShipIcon",
+							"sid": 418526487464246,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "DogShipIcon",
+							"sid": 945952657225207,
+							"parameters": {
+								"object": "Range50",
+								"layer": "\"TdObjects\"",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "add-child",
+							"objectClass": "DogShipIcon",
+							"sid": 427773522125778,
+							"parameters": {
+								"child": "Range50",
+								"transform-x": true,
+								"transform-y": true,
+								"transform-w": true,
+								"transform-h": true,
+								"transform-a": true,
+								"transform-o": false,
+								"transform-z-elevation": true,
+								"transform-visibility": false,
+								"destroy-with-parent": false
+							}
+						}
+					],
+					"sid": 770524591435494
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 491737352144509
+						}
+					],
+					"actions": [],
+					"sid": 209280268494288,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-dragging",
+									"objectClass": "DogShipIcon",
+									"sid": 821262768292583,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [],
+							"sid": 394709770716527,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DogShipIcon",
+											"sid": 841782364866818,
+											"parameters": {
+												"object": "EnemyPath"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DogShipIcon",
+											"sid": 506184638303541,
+											"parameters": {
+												"object": "Orbit"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-opacity",
+											"objectClass": "DogShipIcon",
+											"sid": 694131270252956,
+											"parameters": {
+												"opacity": "100"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "Range50",
+											"sid": 717030384703281,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 916262624301384
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 656144463613247
+										}
+									],
+									"actions": [
+										{
+											"id": "set-opacity",
+											"objectClass": "DogShipIcon",
+											"sid": 133705970923153,
+											"parameters": {
+												"opacity": "50"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "Range50",
+											"sid": 724437609404152,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 150378932154657
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 822023981445486
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DefensesBehaviour",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 831452841994994
+						}
+					],
+					"actions": [
+						{
+							"id": "add-object-to-target",
+							"objectClass": "DogShip",
+							"sid": 488745250035308,
+							"behaviorType": "Turret",
+							"parameters": {
+								"target": "Hunter"
+							}
+						}
+					],
+					"sid": 781008918634086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-shoot",
+							"objectClass": "DogShip",
+							"sid": 269886766046624,
+							"behaviorType": "Turret"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "DogShip",
+							"sid": 600885141164220,
+							"parameters": {
+								"object": "DogProyectile",
+								"layer": "\"TdObjects\"",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 731405244610683
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DogProyectile",
+							"sid": 781221643424660,
+							"parameters": {
+								"object": "Hunter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Hunter",
+							"sid": 234763217936934,
+							"parameters": {
+								"instance-variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DogProyectile",
+							"sid": 889388377555288
+						}
+					],
+					"sid": 942524624168554
+				}
+			],
+			"sid": 874136641180173
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hunters",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 457050739339106
+						}
+					],
+					"actions": [],
+					"sid": 122278205261760,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Hunter",
+									"sid": 562142946670782,
+									"parameters": {
+										"instance-variable": "HP",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Hunter",
+									"sid": 337781779968222
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 103808928189357,
+									"parameters": {
+										"variable": "HuntersKilled",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 680125485123982
+						}
+					]
+				}
+			],
+			"sid": 616637456377516
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Waves",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 576740123133875
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "WaveTimer",
+							"sid": 756443566735420,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "30",
+								"type": "once",
+								"tag": "\"wave\""
+							}
+						}
+					],
+					"sid": 596212147494180
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 570903515219037,
+							"parameters": {
+								"tag": "\"StartWave\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 758934361252142,
+							"parameters": {
+								"object-to-create": "Hunter",
+								"layer": "0",
+								"x": "400",
+								"y": "400",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 199132858919878
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "WaveTimer",
+							"sid": 825047902209453,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"wave\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MonitorScreen",
+							"sid": 335985961242655,
+							"parameters": {
+								"animation": "\"Incoming Wave\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 575580841035397,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "MonitorScreen",
+							"sid": 680370717636853,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 836120198646135,
+							"parameters": {
+								"variable": "IsWaveStarted",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 626506836077002,
+							"parameters": {
+								"variable": "HuntersToSpawn",
+								"value": "MaxHunters"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 488080847108170,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 154140618665856
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 849087323081975,
+							"parameters": {
+								"variable": "IsWaveStarted"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 107345722166772,
+							"parameters": {
+								"interval-seconds": "random(1, 3)"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 663407632511008,
+							"parameters": {
+								"variable": "HuntersToSpawn",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 282268343186745,
+							"parameters": {
+								"object-to-create": "Hunter",
+								"layer": "4",
+								"x": "285",
+								"y": "45",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 355996803600064,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "Self.speed"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 471502214803022,
+							"parameters": {
+								"variable": "HuntersToSpawn",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 161138668661680
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 834035735381102,
+							"parameters": {
+								"variable": "HuntersKilled",
+								"comparison": 0,
+								"value": "MaxHunters"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 699338376217403,
+							"parameters": {
+								"variable": "IsWaveStarted",
+								"value": "false"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "WaveTimer",
+							"sid": 758301658245672,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "30",
+								"type": "once",
+								"tag": "\"wave\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 937322042938613,
+							"parameters": {
+								"variable": "MaxHunters",
+								"value": "2"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 964094493886808,
+							"parameters": {
+								"variable": "HuntersKilled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 279350053680067,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 827957034180288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 290498077520504
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 967348764641830,
+							"parameters": {
+								"text": "MaxHunters-HuntersKilled"
+							}
+						}
+					],
+					"sid": 311065928635058
+				}
+			],
+			"sid": 834273955480494
+		}
+	],
+	"sid": 785157429702876
+}

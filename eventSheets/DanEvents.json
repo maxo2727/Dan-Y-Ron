@@ -1,0 +1,225 @@
+{
+	"name": "DanEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 881428990098427,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Dan",
+					"sid": 472649634974615,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 764031946288791
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 238474845401888,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Dan",
+					"sid": 750116381034949,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Dan",
+					"sid": 574243807409873,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 624489403424031
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 504118304544201,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Dan",
+					"sid": 562090330596662,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Dan",
+					"sid": 930580697864373,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 381423428111459
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 113520259324963,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dan",
+					"sid": 656913885913028,
+					"parameters": {
+						"animation": "\"Melee\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Dan",
+					"sid": 751535695297998,
+					"parameters": {
+						"object": "DanCollisionBox",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 818534013201263,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Dan",
+					"sid": 777873492252571,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DanCollisionBox",
+					"sid": 116284507537352
+				}
+			],
+			"sid": 244299324265587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemigo1",
+					"sid": 474789588004891,
+					"parameters": {
+						"object": "DanCollisionBox"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 544078599105329,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Dan",
+							"sid": 433074709128953,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "Enemigo1.X"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Enemigo1",
+							"sid": 458590637756070,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "Self.X + 100"
+							}
+						}
+					],
+					"sid": 263596628309767
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Dan",
+							"sid": 788755830970881,
+							"parameters": {
+								"comparison": 5,
+								"x-co-ordinate": "Enemigo1.X"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Enemigo1",
+							"sid": 878376882287705,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "Self.X - 1000"
+							}
+						}
+					],
+					"sid": 516865369660701
+				}
+			]
+		}
+	],
+	"sid": 555647105562140
+}

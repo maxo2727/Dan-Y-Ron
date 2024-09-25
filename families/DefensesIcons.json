@@ -1,0 +1,17 @@
+{
+	"name": "DefensesIcons",
+	"plugin-id": "Sprite",
+	"sid": 151896072265588,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 218333804941174
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"DogShipIcon"
+	]
+}

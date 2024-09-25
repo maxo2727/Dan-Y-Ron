@@ -1,0 +1,11 @@
+{
+	"name": "Defenses",
+	"plugin-id": "Sprite",
+	"sid": 883787802994223,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"DogShip"
+	]
+}

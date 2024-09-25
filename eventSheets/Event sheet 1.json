@@ -1,5 +1,45 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Energy",
+			"type": "number",
+			"initialValue": "500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 654070598340486
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "RonEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 814491342864967
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "EnergyCounter",
+					"sid": 336576488058432,
+					"parameters": {
+						"text": "Energy"
+					}
+				}
+			],
+			"sid": 365170618043738
+		}
+	],
 	"sid": 489255412336291
 }

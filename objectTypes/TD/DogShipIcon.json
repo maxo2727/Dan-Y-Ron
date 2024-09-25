@@ -1,0 +1,59 @@
+{
+	"name": "DogShipIcon",
+	"plugin-id": "Sprite",
+	"sid": 839257945244368,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Price",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 788249090717723
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1920,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1828568,
+						"collisionPoly": {
+							"points": [
+								0.7840136210123699,
+								0.3034095764160159,
+								0.7901278177897136,
+								0.7916604359944663,
+								0.21491343180338543,
+								0.793018213907877,
+								0.21720911661783845,
+								0.31599477132161485
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 411229188517606,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

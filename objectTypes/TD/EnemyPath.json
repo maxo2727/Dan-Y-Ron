@@ -1,0 +1,51 @@
+{
+	"name": "EnemyPath",
+	"plugin-id": "Sprite",
+	"sid": 963599642050795,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8773493,
+						"collisionPoly": {
+							"points": [
+								0.10211962890625004,
+								0.10231872558593749,
+								0.8982260742187506,
+								0.0997236328125,
+								0.8996171875000002,
+								0.903881103515625,
+								0.10339990234375006,
+								0.9063903808593751
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 169099175802940,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

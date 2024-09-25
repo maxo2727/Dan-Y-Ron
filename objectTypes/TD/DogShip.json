@@ -1,0 +1,76 @@
+{
+	"name": "DogShip",
+	"plugin-id": "Sprite",
+	"sid": 613874061240756,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 392675181869660
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1920,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2993241,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.86875,
+								0,
+								0.13124999999999998,
+								0.052604166666666674,
+								0.0786458333333333,
+								0.5260416666666666,
+								0.02604166666666663,
+								0.8947916666666667,
+								0.02604166666666663,
+								1,
+								0.13124999999999998,
+								1,
+								0.86875,
+								0.8947916666666667,
+								0.9739583333333334,
+								0.5260416666666666,
+								0.9739583333333334,
+								0.052604166666666674,
+								0.9213541666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.9635416666666666,
+								"y": 0.4984375
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 246251860146111,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
