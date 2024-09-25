@@ -182,7 +182,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
+			"MacroEvents",
 			"RonEvents",
 			"DanEvents"
 		],
