@@ -7,7 +7,57 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TiledBackground",
+					"type": "Enemigo1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"sid": 142166924339655,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 142166924339655,
+						"expanded": true
+					},
+					"world": {
+						"x": 597.707723473576,
+						"y": 271.29227652642396,
+						"width": 44.74649852197692,
+						"height": 45.249268168291266,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Fondo",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -44,7 +94,7 @@
 					"world": {
 						"x": -1.9790041584614357,
 						"y": 309.86151485358783,
-						"width": 855.8555019203338,
+						"width": 1213.8555019203338,
 						"height": 185.17981225247797,
 						"originX": 0,
 						"originY": 0,
@@ -59,7 +109,7 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "Nave",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -104,7 +154,7 @@
 					"type": "Dan",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -143,6 +193,41 @@
 						"y": 261.81233653811313,
 						"width": 33.815952816632546,
 						"height": 35.788550064269444,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DanCollisionBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"sid": 303031926568155,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 303031926568155,
+						"expanded": true
+					},
+					"world": {
+						"x": 486.3632867967133,
+						"y": -21.28576010841303,
+						"width": 11.459601818307252,
+						"height": 11.459601818307252,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
