@@ -1,0 +1,65 @@
+{
+	"name": "Hunter",
+	"plugin-id": "Sprite",
+	"sid": 108487572691226,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "Custom",
+			"sid": 278110439406635
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 360,
+						"height": 360,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2728471,
+						"collisionPoly": {
+							"points": [
+								0.2388888888888889,
+								0.19166666666666668,
+								0.7722222222222223,
+								0.2,
+								0.9111111111111111,
+								0.5138888888888888,
+								0.9,
+								0.7388888888888889,
+								0.6944444444444444,
+								0.8083333333333333,
+								0.3055555555555556,
+								0.8083333333333333,
+								0.08888888888888889,
+								0.7277777777777777,
+								0.08888888888888889,
+								0.5111111111111111
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 231090840447332,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

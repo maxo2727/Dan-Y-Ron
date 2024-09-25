@@ -1,0 +1,263 @@
+{
+	"name": "TD Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 775298461324442,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [],
+			"sid": 611582063782803,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 918289695759082,
+							"parameters": {
+								"layer": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 806350541714788,
+							"parameters": {
+								"layer": "\"TD\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 522987698093521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 429554681426350
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 165414642590542,
+							"parameters": {
+								"layer": "\"TD\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 792396136008905
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 968578343054567,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 642549464229024,
+					"parameters": {
+						"object-to-create": "Hunter",
+						"layer": "4",
+						"x": "285",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Hunter",
+					"sid": 327539627903771,
+					"behaviorType": "Custom",
+					"parameters": {
+						"which": "vertical",
+						"speed": "100"
+					}
+				}
+			],
+			"sid": 529928491412891
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Bouncers",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 978381314544435,
+							"parameters": {
+								"object": "BouncerRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 119551425045370,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 557207123141989,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "100"
+							}
+						}
+					],
+					"sid": 225278671527827
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 843546775612736,
+							"parameters": {
+								"object": "BouncerDown"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 227211763778384,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "100"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 920179285144293,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 563862432694188
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 660588488852879,
+							"parameters": {
+								"object": "BouncerLeft"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 441520730465278,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 119515513596378,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "-100"
+							}
+						}
+					],
+					"sid": 462348268089230
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 593531333332101,
+							"parameters": {
+								"object": "BouncerUp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 367524358781387,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "-100"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 908343881565178,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "horizontal",
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 593119054628639
+				}
+			],
+			"sid": 661787356603188
+		}
+	],
+	"sid": 785157429702876
+}

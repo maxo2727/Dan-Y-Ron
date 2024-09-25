@@ -1,5 +1,10 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "TD Events"
+		}
+	],
 	"sid": 489255412336291
 }
