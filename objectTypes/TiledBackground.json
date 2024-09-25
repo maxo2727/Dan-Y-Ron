@@ -1,5 +1,5 @@
 {
-	"name": "Fondo",
+	"name": "TiledBackground",
 	"plugin-id": "TiledBg",
 	"sid": 349013835349851,
 	"isGlobal": false,
@@ -13,15 +13,15 @@
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 100,
-		"height": 100,
+		"width": 200,
+		"height": 200,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 4663309,
+		"imageSpriteId": 6036097,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
