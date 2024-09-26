@@ -1,0 +1,48 @@
+{
+	"name": "HomeEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btn_play",
+					"sid": 843354372806955
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 600470807549475,
+					"parameters": {
+						"layout": "GameLayout"
+					}
+				}
+			],
+			"sid": 882206670443556
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btn_instructions",
+					"sid": 497259620526121
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 866129587163390,
+					"parameters": {
+						"layout": "InstructionScreen"
+					}
+				}
+			],
+			"sid": 103750335470574
+		}
+	],
+	"sid": 158297663341479
+}

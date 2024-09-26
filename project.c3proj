@@ -8,8 +8,15 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -30,70 +37,77 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Sprite font",
+			"name": "Fuente Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bullet",
+			"name": "Bala",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Timer",
-			"name": "Timer",
+			"name": "Temporizador",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Turret",
-			"name": "Turret",
+			"name": "Torreta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Custom",
+			"name": "Personalizado",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Desplazar hasta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -103,7 +117,18 @@
 		"items": [
 			"MonitorFrame",
 			"MonitorScreen",
-			"SpriteFont"
+			"SpriteFont",
+			"btn_back",
+			"btn_play",
+			"btn_instructions",
+			"txt_how_to_play",
+			"Text2",
+			"TiledBackground6",
+			"danyron",
+			"danyronInverted",
+			"RatonMejorfotorbgremover",
+			"ConceptArtPatoCopiafotorbgremover3",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -176,7 +201,9 @@
 	},
 	"layouts": {
 		"items": [
-			"GameLayout"
+			"GameLayout",
+			"InstructionScreen",
+			"HomeScreen"
 		],
 		"subfolders": []
 	},
@@ -184,7 +211,9 @@
 		"items": [
 			"MacroEvents",
 			"RonEvents",
-			"DanEvents"
+			"DanEvents",
+			"HelpEvents",
+			"HomeEvents"
 		],
 		"subfolders": []
 	},
@@ -345,5 +374,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "HomeScreen"
 }

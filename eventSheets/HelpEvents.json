@@ -1,0 +1,27 @@
+{
+	"name": "HelpEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btn_back",
+					"sid": 465899946750288
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 744355322272556,
+					"parameters": {
+						"layout": "HomeScreen"
+					}
+				}
+			],
+			"sid": 489033410458885
+		}
+	],
+	"sid": 601233238933576
+}

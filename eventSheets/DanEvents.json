@@ -209,7 +209,7 @@
 						{
 							"id": "set-vector-x",
 							"objectClass": "Enemigo1",
-							"sid": 861588583295944,
+							"sid": 682979146254963,
 							"behaviorType": "Platform",
 							"parameters": {
 								"vector-x": "-(Self.X + 100)"

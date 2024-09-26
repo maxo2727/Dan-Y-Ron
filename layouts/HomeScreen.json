@@ -1,0 +1,275 @@
+{
+	"name": "HomeScreen",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 57,
+					"sid": 727444282057014,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 434,
+						"y": 239,
+						"width": 904.1542961277092,
+						"height": 508.58679157183644,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "danyron",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"sid": 951792706643631,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 419.3272765220075,
+						"y": 119.30129488686721,
+						"width": 729.560606063762,
+						"height": 273.3257575757576,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.000029340218918370506,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "danyronInverted",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"sid": 428179577608188,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 420.7970505154753,
+						"y": 116.78558414881658,
+						"width": 668.6964222083003,
+						"height": 165.15755550741537,
+						"originX": 0.4859154929577465,
+						"originY": 0.4973958333333333,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RatonMejorfotorbgremover",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"sid": 494489998314700,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 671,
+						"y": 310,
+						"width": 178.55954682402867,
+						"height": 179.99954316938374,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.262552101919161,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ConceptArtPatoCopiafotorbgremover3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"sid": 597456900691068,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 170,
+						"y": 310,
+						"width": 158.82823181733806,
+						"height": 164.75957657400215,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "btn_play",
+					"properties": {
+						"type": "button",
+						"text": "Play!",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 62,
+					"sid": 799614711415011,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 333,
+						"y": 269,
+						"width": 162.56966455441005,
+						"height": 54.18988818480335,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "btn_instructions",
+					"properties": {
+						"type": "button",
+						"text": "Instructions",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 63,
+					"sid": 191640942138016,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 334,
+						"y": 320,
+						"width": 160,
+						"height": 55,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 869708298294083,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 961911909065467,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 854,
+	"height": 480,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "HomeEvents"
+}
