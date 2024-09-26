@@ -649,6 +649,33 @@
 						}
 					],
 					"sid": 652016743181046
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dan",
+							"sid": 584535696650148,
+							"parameters": {
+								"instance-variable": "o2",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 444106989445898,
+							"parameters": {
+								"variable": "GameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 995060608844976
 				}
 			],
 			"sid": 331103236209554
@@ -722,6 +749,40 @@
 				}
 			],
 			"sid": 696171376673455
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GameLogic",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 647961384553082,
+							"parameters": {
+								"variable": "GameOver"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 717989875626314,
+							"parameters": {
+								"layout": "EndRunScreen"
+							}
+						}
+					],
+					"sid": 353898803917965
+				}
+			],
+			"sid": 768822687025217
 		}
 	],
 	"sid": 555647105562140

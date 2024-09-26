@@ -206,6 +206,14 @@
 				],
 				"subfolders": [],
 				"name": "HomeScreen"
+			},
+			{
+				"items": [
+					"EndScreenText",
+					"Txt_EndScreen"
+				],
+				"subfolders": [],
+				"name": "EndScreen"
 			}
 		]
 	},

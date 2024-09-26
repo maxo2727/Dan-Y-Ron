@@ -2,10 +2,107 @@
 	"name": "EndRunScreen",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "BaseLayer",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "EndScreenText",
+					"properties": {
+						"text": "Run has Ended!",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 185,
+					"sid": 542666096495998,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 542666096495998,
+						"expanded": true
+					},
+					"world": {
+						"x": 304,
+						"y": 33,
+						"width": 244.15329976073815,
+						"height": 40.40230381854671,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_EndScreen",
+					"properties": {
+						"text": "Run has ended!",
+						"enable-bbcode": true,
+						"font": "Corbel",
+						"size": 30,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 186,
+					"sid": 405929511626616,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 405929511626616,
+						"expanded": true
+					},
+					"world": {
+						"x": 270,
+						"y": 86,
+						"width": 297,
+						"height": 43,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 827479201932247,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -18,9 +115,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.11372549019607843,
+				0,
+				0.4196078431372549,
 				1
 			],
 			"isTransparent": false,
@@ -43,8 +140,8 @@
 	"sid": 561866951734287,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 854,
+	"height": 480,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
