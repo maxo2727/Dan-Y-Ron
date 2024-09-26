@@ -1,0 +1,27 @@
+{
+	"name": "EndRunEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "HubBtn",
+					"sid": 119628646103547
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 309772995150651,
+					"parameters": {
+						"layout": "HubLayout"
+					}
+				}
+			],
+			"sid": 100142282148831
+		}
+	],
+	"sid": 292518316600395
+}

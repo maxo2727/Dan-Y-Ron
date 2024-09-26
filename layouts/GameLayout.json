@@ -5830,14 +5830,7 @@
 							"sid": 898861830497449,
 							"tags": "",
 							"instanceVariables": {},
-							"behaviors": {
-								"Solid": {
-									"properties": {
-										"enabled": true,
-										"tags": ""
-									}
-								}
-							},
+							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 898861830497449,
 								"expanded": true

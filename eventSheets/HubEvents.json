@@ -13,16 +13,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Plata",
-			"type": "number",
-			"initialValue": "500",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 774752506336514
-		},
-		{
-			"eventType": "variable",
 			"name": "Tienda",
 			"type": "boolean",
 			"initialValue": "false",
@@ -185,9 +175,9 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 408740332356885,
+					"sid": 569485542584956,
 					"parameters": {
-						"first-value": "Plata",
+						"first-value": "Money",
 						"comparison": 5,
 						"second-value": "PrecioBotas"
 					}
@@ -195,21 +185,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-double-jump",
-					"objectClass": "Dan",
-					"sid": 788989153167976,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 728154252745903,
+					"sid": 582462949536209,
 					"parameters": {
-						"variable": "Plata",
-						"value": "Plata - PrecioBotas"
+						"variable": "Money",
+						"value": "Money - PrecioBotas"
 					}
 				},
 				{
@@ -223,6 +204,15 @@
 					"sid": 501569856313625,
 					"parameters": {
 						"text": "\"Comprado\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 629240772697860,
+					"parameters": {
+						"variable": "DobleJumpEnabled",
+						"value": "true"
 					}
 				}
 			],
@@ -299,7 +289,33 @@
 					}
 				}
 			],
-			"sid": 982956229788443
+			"sid": 982956229788443,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 306733795890699,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 791908650196773,
+							"parameters": {
+								"layout": "GameLayout"
+							}
+						}
+					],
+					"sid": 885874624799369
+				}
+			]
 		},
 		{
 			"eventType": "block",

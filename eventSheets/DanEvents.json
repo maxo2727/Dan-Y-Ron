@@ -13,16 +13,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Money",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 608672430125838
-		},
-		{
-			"eventType": "variable",
 			"name": "DoorOpened",
 			"type": "boolean",
 			"initialValue": "false",
@@ -950,7 +940,34 @@
 							}
 						}
 					],
-					"sid": 228570996758193
+					"sid": 228570996758193,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 980719754613765,
+									"parameters": {
+										"variable": "DobleJumpEnabled"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-double-jump",
+									"objectClass": "Dan",
+									"sid": 337530664909268,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 243386113125722
+						}
+					]
 				}
 			],
 			"sid": 696171376673455

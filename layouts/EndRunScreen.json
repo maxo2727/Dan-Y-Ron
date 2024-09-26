@@ -35,8 +35,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 304,
-						"y": 33,
+						"x": 324,
+						"y": 31,
 						"width": 244.15329976073815,
 						"height": 40.40230381854671,
 						"originX": 0,
@@ -86,8 +86,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 270,
-						"y": 86,
+						"x": 292,
+						"y": 82,
 						"width": 297,
 						"height": 43,
 						"originX": 0,
@@ -100,6 +100,43 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "HubBtn",
+					"properties": {
+						"type": "button",
+						"text": "Go Back to Hub",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 331,
+					"sid": 724147960582876,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 724147960582876,
+						"expanded": true
+					},
+					"world": {
+						"x": 368,
+						"y": 303,
+						"width": 143,
+						"height": 53,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],
@@ -146,5 +183,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "EndRunEvents"
 }
