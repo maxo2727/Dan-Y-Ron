@@ -2,154 +2,287 @@
 	"name": "DanEvents",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 881428990098427,
-					"parameters": {
-						"key": 87
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Dan",
-					"sid": 270690074458316,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "jump"
-					}
-				}
-			],
-			"sid": 764031946288791
+			"eventType": "variable",
+			"name": "GameOver",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 775626901833590
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 238474845401888,
-					"parameters": {
-						"key": 68
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Dan",
-					"sid": 531020819501357,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "right"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 594690286837126,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Dan",
+							"sid": 561624580118885,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 610705029500369
 				},
 				{
-					"id": "set-mirrored",
-					"objectClass": "Dan",
-					"sid": 532621611801980,
-					"parameters": {
-						"state": "not-mirrored"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 206516373955565,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Dan",
+							"sid": 141659672710578,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Dan",
+							"sid": 768966521878155,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 841147063170598
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 363638308179253,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Dan",
+							"sid": 266269721383901,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Dan",
+							"sid": 971816390914494,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 761304660508667
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 552235127883124,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 693485685666962,
+							"parameters": {
+								"animation": "\"Melee\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Dan",
+							"sid": 904554276834615,
+							"parameters": {
+								"object": "DanCollisionBox",
+								"layer": "\"DanPlayer\"",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 393820239876527,
+							"parameters": {
+								"seconds": "0.15"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 373120150264952,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DanCollisionBox",
+							"sid": 468268283477238
+						}
+					],
+					"sid": 590766841840696
 				}
 			],
-			"sid": 624489403424031
+			"sid": 935126549259418
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Animations",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 504118304544201,
-					"parameters": {
-						"key": 65
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Dan",
+							"sid": 667336129613611,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "Dan",
+							"sid": 155426537043965,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 710332843579268,
+							"parameters": {
+								"key": 32
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 615842341812660,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 303117899265186
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Dan",
+							"sid": 909501684464477,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 890151914578971,
+							"parameters": {
+								"key": 32
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 506406455204229,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 445218407362497
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "Dan",
+							"sid": 599391358208189,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 305028524700379,
+							"parameters": {
+								"key": 32
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 390380906185287,
+							"parameters": {
+								"animation": "\"Jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 748860667305464
 				}
 			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Dan",
-					"sid": 651509995343129,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "left"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "Dan",
-					"sid": 452458260286936,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 381423428111459
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 113520259324963,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Dan",
-					"sid": 339336536263576,
-					"parameters": {
-						"animation": "\"Melee\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Dan",
-					"sid": 479664755655882,
-					"parameters": {
-						"object": "DanCollisionBox",
-						"layer": "\"DanPlayer\"",
-						"image-point": "1",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 697077699348097,
-					"parameters": {
-						"seconds": "0.15"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Dan",
-					"sid": 690649933267476,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "DanCollisionBox",
-					"sid": 116284507537352
-				}
-			],
-			"sid": 244299324265587
+			"sid": 418688911798290
 		},
 		{
 			"eventType": "block",
@@ -161,6 +294,15 @@
 					"parameters": {
 						"object": "DanCollisionBox"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Enemigo1",
+					"sid": 874099601788763,
+					"parameters": {
+						"instance-variable": "TakingDamage"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
@@ -181,12 +323,54 @@
 					],
 					"actions": [
 						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemigo1",
+							"sid": 539185806816854,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Enemigo1",
+							"sid": 297793458263695,
+							"parameters": {
+								"opacity": "20"
+							}
+						},
+						{
 							"id": "set-vector-x",
 							"objectClass": "Enemigo1",
-							"sid": 458590637756070,
+							"sid": 686364252512396,
 							"behaviorType": "Platform",
 							"parameters": {
-								"vector-x": "Self.X + 100"
+								"vector-x": "Self.X + 300"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 402057477087582,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Enemigo1",
+							"sid": 389012385371549,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemigo1",
+							"sid": 808234625165036,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "false"
 							}
 						}
 					],
@@ -224,104 +408,165 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-moving",
-					"objectClass": "Dan",
-					"sid": 183785251984791,
-					"behaviorType": "Platform"
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "Dan",
-					"sid": 833074538385421,
-					"behaviorType": "Platform"
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 885582023173912,
-					"parameters": {
-						"key": 32
-					},
-					"isInverted": true
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 482189888721445
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-instvar-value",
 					"objectClass": "Dan",
-					"sid": 403131733140544,
+					"sid": 106915225542567,
 					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
+						"instance-variable": "o2",
+						"value": "Self.o2 - 0.05"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "o2",
+					"sid": 284993443519782,
+					"parameters": {
+						"value": "Dan.o2"
 					}
 				}
 			],
-			"sid": 679692360506750
+			"sid": 497529105701988
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-moving",
-					"objectClass": "Dan",
-					"sid": 276947656251133,
-					"behaviorType": "Platform",
-					"isInverted": true
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 516932010116576,
-					"parameters": {
-						"key": 32
-					},
-					"isInverted": true
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 608500748636058
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-instvar-value",
 					"objectClass": "Dan",
-					"sid": 613698078767690,
+					"sid": 469032292903786,
 					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
+						"instance-variable": "o2",
+						"value": "100"
 					}
 				}
 			],
-			"sid": 500905370067317
+			"sid": 949322706140895
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-jumping",
+					"id": "is-overlapping-another-object",
 					"objectClass": "Dan",
-					"sid": 323282771679164,
-					"behaviorType": "Platform"
+					"sid": 245591365605360,
+					"parameters": {
+						"object": "Enemigo1"
+					}
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 274852419299683,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Dan",
+					"sid": 630233178301630,
 					"parameters": {
-						"key": 32
+						"instance-variable": "TakingDamage"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Enemigo1",
+					"sid": 654998547242336,
+					"parameters": {
+						"instance-variable": "TakingDamage"
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-boolean-instvar",
 					"objectClass": "Dan",
-					"sid": 360930733178276,
+					"sid": 277396289696310,
 					"parameters": {
-						"animation": "\"Jump\"",
-						"from": "beginning"
+						"instance-variable": "TakingDamage",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dan",
+					"sid": 984932566151832,
+					"parameters": {
+						"instance-variable": "o2",
+						"value": "Self.o2 - 20"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dan",
+					"sid": 603837205893367,
+					"parameters": {
+						"opacity": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 378070207134540,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dan",
+					"sid": 589017198766237,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Dan",
+					"sid": 856532382278156,
+					"parameters": {
+						"instance-variable": "TakingDamage",
+						"value": "false"
 					}
 				}
 			],
-			"sid": 860332446145765
+			"sid": 209465860875528
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dan",
+					"sid": 238312896822636,
+					"parameters": {
+						"instance-variable": "o2",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 397509966157708,
+					"parameters": {
+						"variable": "GameOver",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 439511754335039
 		}
 	],
 	"sid": 555647105562140

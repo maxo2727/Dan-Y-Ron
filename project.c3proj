@@ -56,6 +56,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -154,7 +161,8 @@
 					"Enemigo1",
 					"Nave",
 					"Sprite2",
-					"Dan"
+					"Dan",
+					"o2"
 				],
 				"subfolders": [],
 				"name": "DanFiles"

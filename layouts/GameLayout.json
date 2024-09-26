@@ -5594,7 +5594,9 @@
 							"uid": 79,
 							"sid": 785607280591109,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"TakingDamage": false
+							},
 							"behaviors": {
 								"Platform": {
 									"properties": {
@@ -5644,7 +5646,10 @@
 							"uid": 180,
 							"sid": 468187880098332,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"o2": 0,
+								"TakingDamage": false
+							},
 							"behaviors": {
 								"Platform": {
 									"properties": {
@@ -5706,9 +5711,9 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 379.47290823452596,
+								"x": 389.043708207055,
 								"y": -45.534810466379,
-								"width": 12.955182127708365,
+								"width": 32.0967820727664,
 								"height": 69.96148375469807,
 								"originX": 0.5,
 								"originY": 0.5,
@@ -7581,6 +7586,40 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "o2",
+					"properties": {
+						"value": 0,
+						"maximum": 100,
+						"tooltip": "",
+						"initially-visible": true,
+						"id": "",
+						"class": ""
+					},
+					"uid": 38,
+					"sid": 192060540737177,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 192060540737177,
+						"expanded": true
+					},
+					"world": {
+						"x": 637,
+						"y": 441.29203807430787,
+						"width": 200,
+						"height": 25,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],
