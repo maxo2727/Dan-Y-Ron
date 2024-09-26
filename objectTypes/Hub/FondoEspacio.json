@@ -1,0 +1,22 @@
+{
+	"name": "FondoEspacio",
+	"plugin-id": "TiledBg",
+	"sid": 132117971201216,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1000,
+		"height": 750,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 3754084,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

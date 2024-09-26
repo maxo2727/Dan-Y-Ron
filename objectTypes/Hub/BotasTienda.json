@@ -1,0 +1,63 @@
+{
+	"name": "BotasTienda",
+	"plugin-id": "Sprite",
+	"sid": 530455095010961,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1216,
+						"height": 1216,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1463080,
+						"collisionPoly": {
+							"points": [
+								0.875,
+								0.15625,
+								0.9375,
+								0.15625,
+								0.96875,
+								0.1875,
+								0.96875,
+								0.625,
+								0.84375,
+								0.875,
+								0.8125,
+								0.90625,
+								0.15625,
+								0.90625,
+								0.125,
+								0.875,
+								0.125,
+								0.6875,
+								0.40625,
+								0.21875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 614751381799389,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

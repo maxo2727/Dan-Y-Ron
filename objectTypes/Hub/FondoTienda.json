@@ -1,0 +1,22 @@
+{
+	"name": "FondoTienda",
+	"plugin-id": "TiledBg",
+	"sid": 279175980811430,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 7557370,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

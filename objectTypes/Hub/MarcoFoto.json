@@ -1,0 +1,53 @@
+{
+	"name": "MarcoFoto",
+	"plugin-id": "Sprite",
+	"sid": 261985041017372,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 410,
+						"height": 544,
+						"originX": 0.5182926829268293,
+						"originY": 0.5064338235294118,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8724451,
+						"collisionPoly": {
+							"points": [
+								0.05853658536585366,
+								0.001838235294117647,
+								0.9902439024390244,
+								0.03860294117647059,
+								0.9292682926829269,
+								0.9963235294117647,
+								0.08780487804878048,
+								0.9981617647058824,
+								0.02195121951219512,
+								0.9650735294117647
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 173474508459198,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

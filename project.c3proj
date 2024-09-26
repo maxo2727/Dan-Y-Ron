@@ -9,14 +9,14 @@
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Button",
+			"name": "Botón",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -37,84 +37,84 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Sprite font",
+			"name": "Fuente Sprite",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "progressbar",
-			"name": "Progress bar",
+			"name": "Barra de progreso",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bullet",
+			"name": "Bala",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Timer",
-			"name": "Timer",
+			"name": "Temporizador",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Turret",
-			"name": "Turret",
+			"name": "Torreta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Custom",
+			"name": "Personalizado",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Desplazar hasta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -218,6 +218,40 @@
 				],
 				"subfolders": [],
 				"name": "EndScreen"
+			},
+			{
+				"items": [
+					"FondoEspacio",
+					"DanHub",
+					"MetalSolido",
+					"Marco",
+					"BotasTienda",
+					"MonoHub",
+					"TextoTienda",
+					"FondoTienda",
+					"BotónBotas",
+					"FondoObjetoTienda",
+					"FondoNave",
+					"Puerta",
+					"PrecioBotas",
+					"BotonSalir",
+					"ParedCapsula",
+					"FondoCapsula",
+					"RonHub",
+					"BotonCapsula",
+					"GloboTexto",
+					"DialogoMono",
+					"Pensamiento",
+					"InstruccionesCapsula",
+					"Waren",
+					"BotónSalirWaren",
+					"MarcoFoto",
+					"PlacaFoto",
+					"TextoPapa",
+					"InstruccionesFoto"
+				],
+				"subfolders": [],
+				"name": "Hub"
 			}
 		]
 	},
@@ -235,7 +269,8 @@
 			"GameLayout",
 			"InstructionScreen",
 			"HomeScreen",
-			"EndRunScreen"
+			"EndRunScreen",
+			"HubScreen"
 		],
 		"subfolders": []
 	},
@@ -246,7 +281,8 @@
 			"DanEvents",
 			"HelpEvents",
 			"HomeEvents",
-			"Event sheet 1"
+			"Event sheet 1",
+			"HubEvents"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,57 @@
+{
+	"name": "RonHub",
+	"plugin-id": "Sprite",
+	"sid": 360376814072267,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 401,
+						"height": 345,
+						"originX": 0.49875311720698257,
+						"originY": 0.4971014492753623,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 980651,
+						"collisionPoly": {
+							"points": [
+								0.004987531172069825,
+								0.005797101449275362,
+								0.9027431421446384,
+								0.005797101449275362,
+								0.9950124688279302,
+								0.08115942028985507,
+								0.9950124688279302,
+								0.3101449275362319,
+								0.773067331670823,
+								0.991304347826087,
+								0.07481296758104738,
+								0.991304347826087,
+								0.004987531172069825,
+								0.5333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 913331325009438,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
