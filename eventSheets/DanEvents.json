@@ -349,6 +349,24 @@
 							}
 						},
 						{
+							"id": "set-vector-x",
+							"objectClass": "Dan",
+							"sid": 404815657526937,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-(Self.X + 1000)"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Dan",
+							"sid": 589162782574875,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "Self.Y - 1000"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 985008287579069,

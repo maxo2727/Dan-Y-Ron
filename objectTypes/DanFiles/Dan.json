@@ -17,6 +17,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 411664633207182
+		},
+		{
+			"name": "knockbackJumpStrength",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 402909623788446
+		},
+		{
+			"name": "normalJumpStrength",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 495814715312596
 		}
 	],
 	"behaviorTypes": [

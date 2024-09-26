@@ -2129,7 +2129,7 @@
 								"x": -5.034356518349497,
 								"y": 566.623306252869,
 								"width": 416.08813221324243,
-								"height": 1925.4991238638459,
+								"height": 2023.4991238638459,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -5925,7 +5925,9 @@
 							"tags": "",
 							"instanceVariables": {
 								"o2": 0,
-								"TakingDamage": false
+								"TakingDamage": false,
+								"knockbackJumpStrength": 300,
+								"normalJumpStrength": 650
 							},
 							"behaviors": {
 								"Platform": {
