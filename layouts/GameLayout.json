@@ -11,41 +11,6 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "DanCollisionBox",
-							"properties": {
-								"initially-visible": false,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 38,
-							"sid": 117385046690549,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 117385046690549,
-								"expanded": true
-							},
-							"world": {
-								"x": 384,
-								"y": -23,
-								"width": 25,
-								"height": 24,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "TiledBackground",
 							"properties": {
 								"initially-visible": true,
@@ -919,41 +884,6 @@
 								"height": 470.6446280991735,
 								"originX": 0,
 								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "DanCollisionBox",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 77,
-							"sid": 695597640607230,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 695597640607230,
-								"expanded": true
-							},
-							"world": {
-								"x": 384.29344511638055,
-								"y": -24.37669374713093,
-								"width": 25,
-								"height": 24,
-								"originX": 0.5,
-								"originY": 0.5,
 								"color": [
 									1,
 									1,
@@ -5747,6 +5677,41 @@
 								"height": 56.8402516147427,
 								"originX": 0.5,
 								"originY": 1,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "DanCollisionBox",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 77,
+							"sid": 695597640607230,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 695597640607230,
+								"expanded": true
+							},
+							"world": {
+								"x": 379.47290823452596,
+								"y": -45.534810466379,
+								"width": 12.955182127708365,
+								"height": 69.96148375469807,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,

@@ -135,6 +135,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Collision Box Point",
+								"x": 1.0775444264943457,
+								"y": 0.5342679127725857
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -214,6 +221,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Collision Box Point",
+								"x": 0.8985313751668892,
+								"y": 0.5113636363636364
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
