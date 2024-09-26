@@ -171,6 +171,19 @@
 					}
 				},
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 690462999587721,
+					"parameters": {
+						"object-to-create": "Hunter",
+						"layer": "\"TdEnemyPath\"",
+						"x": "285",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
 					"id": "set-speed",
 					"objectClass": "Hunter",
 					"sid": 280867656549710,

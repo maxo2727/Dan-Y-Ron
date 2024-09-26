@@ -162,7 +162,9 @@
 					"Nave",
 					"Sprite2",
 					"Dan",
-					"o2"
+					"Coin",
+					"O2Tank",
+					"spikes"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
@@ -177,7 +179,10 @@
 			{
 				"items": [
 					"StarIcon",
-					"EnergyCounter"
+					"EnergyCounter",
+					"CoinHUD",
+					"o2",
+					"MoneyCounter"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -217,7 +222,8 @@
 		"items": [
 			"GameLayout",
 			"InstructionScreen",
-			"HomeScreen"
+			"HomeScreen",
+			"EndRunScreen"
 		],
 		"subfolders": []
 	},
@@ -227,7 +233,8 @@
 			"RonEvents",
 			"DanEvents",
 			"HelpEvents",
-			"HomeEvents"
+			"HomeEvents",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},

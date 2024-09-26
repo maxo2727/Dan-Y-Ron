@@ -5726,6 +5726,41 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "Coin",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Idle",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 78,
+							"sid": 342370258045439,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 342370258045439,
+								"expanded": true
+							},
+							"world": {
+								"x": 2521.810638181449,
+								"y": 558.1847260306915,
+								"width": 23.677666194816016,
+								"height": 23.677666194816016,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 693512148246055,
@@ -5758,7 +5793,85 @@
 					"global": false
 				}
 			],
-			"instances": [],
+			"instances": [
+				{
+					"type": "O2Tank",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 183,
+					"sid": 786016807478994,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 786016807478994,
+						"expanded": true
+					},
+					"world": {
+						"x": 2811.527491187956,
+						"y": 630.1686297996391,
+						"width": 26,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 184,
+					"sid": 605776044015182,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 605776044015182,
+						"expanded": true
+					},
+					"world": {
+						"x": 3264.3250682736575,
+						"y": 707.0397819438829,
+						"width": 69.83190255934589,
+						"height": 36.076300113740636,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 354819378763105,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -7620,6 +7733,86 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "CoinHUD",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 181,
+					"sid": 229180541087113,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 229180541087113,
+						"expanded": true
+					},
+					"world": {
+						"x": 735.2277848036157,
+						"y": 25.529327585316636,
+						"width": 33.623395933088695,
+						"height": 30.699622373689678,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MoneyCounter",
+					"properties": {
+						"text": "100",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 182,
+					"sid": 960913929463653,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 960913929463653,
+						"expanded": true
+					},
+					"world": {
+						"x": 760.9860759196176,
+						"y": 14.708301676907126,
+						"width": 54.611224344894936,
+						"height": 20.9602833789572,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

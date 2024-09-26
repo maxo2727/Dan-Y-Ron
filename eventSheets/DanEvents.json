@@ -12,6 +12,16 @@
 			"sid": 775626901833590
 		},
 		{
+			"eventType": "variable",
+			"name": "Money",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 608672430125838
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Movement",
@@ -285,288 +295,433 @@
 			"sid": 418688911798290
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Enemigo1",
-					"sid": 474789588004891,
-					"parameters": {
-						"object": "DanCollisionBox"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "Enemigo1",
-					"sid": 874099601788763,
-					"parameters": {
-						"instance-variable": "TakingDamage"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [],
-			"sid": 544078599105329,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-x",
-							"objectClass": "Dan",
-							"sid": 332903813489085,
-							"parameters": {
-								"comparison": 2,
-								"x-co-ordinate": "Enemigo1.X"
-							}
-						}
-					],
+					"functionName": "TakeDamage",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "Enemigo1",
-							"sid": 539185806816854,
+							"objectClass": "Dan",
+							"sid": 908573448789761,
 							"parameters": {
 								"instance-variable": "TakingDamage",
 								"value": "true"
 							}
 						},
 						{
+							"id": "set-instvar-value",
+							"objectClass": "Dan",
+							"sid": 358462229091730,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "Self.o2 - 20"
+							}
+						},
+						{
 							"id": "set-opacity",
-							"objectClass": "Enemigo1",
-							"sid": 297793458263695,
+							"objectClass": "Dan",
+							"sid": 916530128122830,
 							"parameters": {
 								"opacity": "20"
 							}
 						},
 						{
-							"id": "set-vector-x",
-							"objectClass": "Enemigo1",
-							"sid": 686364252512396,
-							"behaviorType": "Platform",
-							"parameters": {
-								"vector-x": "Self.X + 300"
-							}
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 402057477087582,
+							"sid": 985008287579069,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "1"
 							}
 						},
 						{
 							"id": "set-opacity",
-							"objectClass": "Enemigo1",
-							"sid": 389012385371549,
+							"objectClass": "Dan",
+							"sid": 231928240041814,
 							"parameters": {
 								"opacity": "100"
 							}
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "Enemigo1",
-							"sid": 808234625165036,
+							"objectClass": "Dan",
+							"sid": 218846552304011,
 							"parameters": {
 								"instance-variable": "TakingDamage",
 								"value": "false"
 							}
 						}
 					],
-					"sid": 263596628309767
+					"sid": 859248447006573
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-x",
-							"objectClass": "Dan",
-							"sid": 418503244694969,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemigo1",
+							"sid": 248180710910682,
 							"parameters": {
-								"comparison": 5,
-								"x-co-ordinate": "Enemigo1.X"
+								"object": "DanCollisionBox"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemigo1",
+							"sid": 995709947226795,
+							"parameters": {
+								"instance-variable": "TakingDamage"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 362304156199860,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Dan",
+									"sid": 783783275405396,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "Enemigo1.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemigo1",
+									"sid": 973305580060592,
+									"parameters": {
+										"instance-variable": "TakingDamage",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Enemigo1",
+									"sid": 989139152157808,
+									"parameters": {
+										"opacity": "20"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Enemigo1",
+									"sid": 675091685294625,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X + 300"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 726749883756308,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Enemigo1",
+									"sid": 636316023689143,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemigo1",
+									"sid": 140742188540560,
+									"parameters": {
+										"instance-variable": "TakingDamage",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 148150456441833
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Dan",
+									"sid": 849753184545189,
+									"parameters": {
+										"comparison": 5,
+										"x-co-ordinate": "Enemigo1.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "Enemigo1",
+									"sid": 269003132543972,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "-(Self.X + 100)"
+									}
+								}
+							],
+							"sid": 511214231195199
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 837519583738519,
+							"parameters": {
+								"object": "Enemigo1"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Dan",
+							"sid": 669562997747182,
+							"parameters": {
+								"instance-variable": "TakingDamage"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemigo1",
+							"sid": 335186690048070,
+							"parameters": {
+								"instance-variable": "TakingDamage"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TakeDamage",
+							"sid": 772799299897514
+						}
+					],
+					"sid": 341777136434003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 199951627641337,
+							"parameters": {
+								"object": "spikes"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Dan",
+							"sid": 393417038227139,
+							"parameters": {
+								"instance-variable": "TakingDamage"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TakeDamage",
+							"sid": 268053789279544
+						}
+					],
+					"sid": 345791075732179
+				}
+			],
+			"sid": 629849374308181
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DanActions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 711406846181274,
+							"parameters": {
+								"object": "Coin"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-vector-x",
-							"objectClass": "Enemigo1",
-							"sid": 682979146254963,
-							"behaviorType": "Platform",
+							"id": "destroy",
+							"objectClass": "Coin",
+							"sid": 164504343312862
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 323222364008499,
 							"parameters": {
-								"vector-x": "-(Self.X + 100)"
+								"variable": "Money",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 516865369660701
+					"sid": 155170470280633
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dan",
+							"sid": 639212327156026,
+							"parameters": {
+								"instance-variable": "o2",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 600048322505402,
+							"parameters": {
+								"variable": "GameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 887225285392209
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 381034703136406,
+							"parameters": {
+								"object": "O2Tank"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "O2Tank",
+							"sid": 854416384287307
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Dan",
+							"sid": 304268082057993,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "20"
+							}
+						}
+					],
+					"sid": 652016743181046
 				}
-			]
+			],
+			"sid": 331103236209554
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "System",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 482189888721445
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Dan",
-					"sid": 106915225542567,
-					"parameters": {
-						"instance-variable": "o2",
-						"value": "Self.o2 - 0.05"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 541038775785426
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dan",
+							"sid": 144324375589073,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "Self.o2 - 0.05"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "o2",
+							"sid": 453544535468951,
+							"parameters": {
+								"value": "Dan.o2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "MoneyCounter",
+							"sid": 873080283061409,
+							"parameters": {
+								"text": "Money"
+							}
+						}
+					],
+					"sid": 842102103241848
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "o2",
-					"sid": 284993443519782,
-					"parameters": {
-						"value": "Dan.o2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 952064169794238
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dan",
+							"sid": 773651278450689,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 228570996758193
 				}
 			],
-			"sid": 497529105701988
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 608500748636058
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Dan",
-					"sid": 469032292903786,
-					"parameters": {
-						"instance-variable": "o2",
-						"value": "100"
-					}
-				}
-			],
-			"sid": 949322706140895
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 245591365605360,
-					"parameters": {
-						"object": "Enemigo1"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "Dan",
-					"sid": 630233178301630,
-					"parameters": {
-						"instance-variable": "TakingDamage"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "Enemigo1",
-					"sid": 654998547242336,
-					"parameters": {
-						"instance-variable": "TakingDamage"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "Dan",
-					"sid": 277396289696310,
-					"parameters": {
-						"instance-variable": "TakingDamage",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Dan",
-					"sid": 984932566151832,
-					"parameters": {
-						"instance-variable": "o2",
-						"value": "Self.o2 - 20"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Dan",
-					"sid": 603837205893367,
-					"parameters": {
-						"opacity": "20"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 378070207134540,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Dan",
-					"sid": 589017198766237,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "Dan",
-					"sid": 856532382278156,
-					"parameters": {
-						"instance-variable": "TakingDamage",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 209465860875528
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Dan",
-					"sid": 238312896822636,
-					"parameters": {
-						"instance-variable": "o2",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 397509966157708,
-					"parameters": {
-						"variable": "GameOver",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 439511754335039
+			"sid": 696171376673455
 		}
 	],
 	"sid": 555647105562140
