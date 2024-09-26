@@ -17,7 +17,7 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Dan",
-					"sid": 472649634974615,
+					"sid": 270690074458316,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "jump"
@@ -42,7 +42,7 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Dan",
-					"sid": 750116381034949,
+					"sid": 531020819501357,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "right"
@@ -51,7 +51,7 @@
 				{
 					"id": "set-mirrored",
 					"objectClass": "Dan",
-					"sid": 574243807409873,
+					"sid": 532621611801980,
 					"parameters": {
 						"state": "not-mirrored"
 					}
@@ -75,7 +75,7 @@
 				{
 					"id": "simulate-control",
 					"objectClass": "Dan",
-					"sid": 562090330596662,
+					"sid": 651509995343129,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "left"
@@ -84,7 +84,7 @@
 				{
 					"id": "set-mirrored",
 					"objectClass": "Dan",
-					"sid": 930580697864373,
+					"sid": 452458260286936,
 					"parameters": {
 						"state": "mirrored"
 					}
@@ -108,7 +108,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Dan",
-					"sid": 656913885913028,
+					"sid": 339336536263576,
 					"parameters": {
 						"animation": "\"Melee\"",
 						"from": "beginning"
@@ -117,10 +117,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Dan",
-					"sid": 751535695297998,
+					"sid": 479664755655882,
 					"parameters": {
 						"object": "DanCollisionBox",
-						"layer": "0",
+						"layer": "\"DanPlayer\"",
 						"image-point": "1",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -129,15 +129,15 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 818534013201263,
+					"sid": 697077699348097,
 					"parameters": {
-						"seconds": "0.1"
+						"seconds": "0.15"
 					}
 				},
 				{
 					"id": "set-animation",
 					"objectClass": "Dan",
-					"sid": 777873492252571,
+					"sid": 690649933267476,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
@@ -172,7 +172,7 @@
 						{
 							"id": "compare-x",
 							"objectClass": "Dan",
-							"sid": 433074709128953,
+							"sid": 332903813489085,
 							"parameters": {
 								"comparison": 2,
 								"x-co-ordinate": "Enemigo1.X"
@@ -198,7 +198,7 @@
 						{
 							"id": "compare-x",
 							"objectClass": "Dan",
-							"sid": 788755830970881,
+							"sid": 418503244694969,
 							"parameters": {
 								"comparison": 5,
 								"x-co-ordinate": "Enemigo1.X"
@@ -219,6 +219,109 @@
 					"sid": 516865369660701
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Dan",
+					"sid": 183785251984791,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Dan",
+					"sid": 833074538385421,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 885582023173912,
+					"parameters": {
+						"key": 32
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dan",
+					"sid": 403131733140544,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 679692360506750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Dan",
+					"sid": 276947656251133,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 516932010116576,
+					"parameters": {
+						"key": 32
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dan",
+					"sid": 613698078767690,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 500905370067317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Dan",
+					"sid": 323282771679164,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 274852419299683,
+					"parameters": {
+						"key": 32
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dan",
+					"sid": 360930733178276,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 860332446145765
 		}
 	],
 	"sid": 555647105562140
