@@ -22,6 +22,16 @@
 			"sid": 608672430125838
 		},
 		{
+			"eventType": "variable",
+			"name": "DoorOpened",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 372087832610442
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Movement",
@@ -405,6 +415,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Enemigo1",
+									"sid": 587284731298402,
+									"parameters": {
+										"animation": "\"Dead\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemigo1",
 									"sid": 973305580060592,
@@ -416,44 +435,41 @@
 								{
 									"id": "set-opacity",
 									"objectClass": "Enemigo1",
-									"sid": 989139152157808,
+									"sid": 888173693517435,
 									"parameters": {
-										"opacity": "20"
+										"opacity": "50"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Enemigo1",
-									"sid": 675091685294625,
+									"sid": 916544478720018,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.X + 300"
+										"vector-x": "Self.X + 100"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Enemigo1",
+									"sid": 444307789016815,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
 									}
 								},
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 726749883756308,
+									"sid": 538235270697266,
 									"parameters": {
-										"seconds": "2"
+										"seconds": "1"
 									}
 								},
 								{
-									"id": "set-opacity",
+									"id": "destroy",
 									"objectClass": "Enemigo1",
-									"sid": 636316023689143,
-									"parameters": {
-										"opacity": "100"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Enemigo1",
-									"sid": 140742188540560,
-									"parameters": {
-										"instance-variable": "TakingDamage",
-										"value": "false"
-									}
+									"sid": 119221332832340
 								}
 							],
 							"sid": 148150456441833
@@ -473,6 +489,32 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Enemigo1",
+									"sid": 552632879401996,
+									"parameters": {
+										"animation": "\"Dead\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemigo1",
+									"sid": 956185512207754,
+									"parameters": {
+										"instance-variable": "TakingDamage",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Enemigo1",
+									"sid": 406903345238248,
+									"parameters": {
+										"opacity": "50"
+									}
+								},
+								{
 									"id": "set-vector-x",
 									"objectClass": "Enemigo1",
 									"sid": 269003132543972,
@@ -480,6 +522,28 @@
 									"parameters": {
 										"vector-x": "-(Self.X + 100)"
 									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Enemigo1",
+									"sid": 958089475166412,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 798462579713693,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Enemigo1",
+									"sid": 501046568723238
 								}
 							],
 							"sid": 511214231195199
@@ -639,12 +703,12 @@
 							"sid": 854416384287307
 						},
 						{
-							"id": "add-to-instvar",
+							"id": "set-instvar-value",
 							"objectClass": "Dan",
-							"sid": 304268082057993,
+							"sid": 406903950334253,
 							"parameters": {
 								"instance-variable": "o2",
-								"value": "20"
+								"value": "min(Dan.o2+15, 100)"
 							}
 						}
 					],
@@ -676,6 +740,129 @@
 						}
 					],
 					"sid": 995060608844976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 191299578865395,
+							"parameters": {
+								"object": "Button"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 534157427482806,
+							"parameters": {
+								"variable": "DoorOpened"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Txt_button",
+							"sid": 763127788007920,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 582931343387795,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 229365969410390,
+									"parameters": {
+										"key": 69
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 837988636880692,
+									"parameters": {
+										"variable": "DoorOpened",
+										"value": "true"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Door",
+									"sid": 892972989729050
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Txt_button",
+									"sid": 938092900759423,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 790362769800184
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 470936224946631,
+							"parameters": {
+								"object": "Button"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Txt_button",
+							"sid": 371890364479435,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 130176344967729
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 721737920614876,
+							"parameters": {
+								"object": "Lava"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dan",
+							"sid": 433948821324370,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 292352517953184
 				}
 			],
 			"sid": 331103236209554
@@ -700,10 +887,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Dan",
-							"sid": 144324375589073,
+							"sid": 863937099983168,
 							"parameters": {
 								"instance-variable": "o2",
-								"value": "Self.o2 - 0.05"
+								"value": "Self.o2 - 0.01"
 							}
 						},
 						{

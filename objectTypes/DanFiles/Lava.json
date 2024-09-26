@@ -1,0 +1,22 @@
+{
+	"name": "Lava",
+	"plugin-id": "TiledBg",
+	"sid": 779762020244476,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 400,
+		"height": 84,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 542808,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

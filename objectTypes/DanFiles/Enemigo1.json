@@ -212,6 +212,47 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 89,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3253675,
+						"collisionPoly": {
+							"points": [
+								0.5262172284644195,
+								0.0018518518518518651,
+								0.9756554307116104,
+								0.2240740740740742,
+								0.9634831460674156,
+								0.7240740740740741,
+								0.5374531835205992,
+								0.996296296296296,
+								0.033707865168539325,
+								0.775925925925926,
+								0.0337078651685393,
+								0.28518518518518515
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 806140128215169,
+				"name": "Dead",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

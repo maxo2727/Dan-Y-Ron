@@ -164,7 +164,11 @@
 					"Dan",
 					"Coin",
 					"O2Tank",
-					"spikes"
+					"spikes",
+					"Door",
+					"Button",
+					"Txt_button",
+					"Lava"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
