@@ -7,54 +7,9 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "EndScreenText",
-					"properties": {
-						"text": "Run has Ended!",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 185,
-					"sid": 542666096495998,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 542666096495998,
-						"expanded": true
-					},
-					"world": {
-						"x": 324,
-						"y": 31,
-						"width": 244.15329976073815,
-						"height": 40.40230381854671,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Txt_EndScreen",
 					"properties": {
-						"text": "Run has ended!",
+						"text": "¡Exploración terminada!",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 30,
@@ -86,9 +41,9 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 292,
-						"y": 82,
-						"width": 297,
+						"x": 182,
+						"y": 26,
+						"width": 488,
 						"height": 43,
 						"originX": 0,
 						"originY": 0,
@@ -106,7 +61,7 @@
 					"type": "HubBtn",
 					"properties": {
 						"type": "button",
-						"text": "Go Back to Hub",
+						"text": "Volver a la nave",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -125,8 +80,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 368,
-						"y": 303,
+						"x": 366,
+						"y": 391,
 						"width": 143,
 						"height": 53,
 						"originX": 0,
@@ -137,6 +92,247 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "GameOverText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 181,
+					"sid": 936684574445994,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 936684574445994,
+						"expanded": true
+					},
+					"world": {
+						"x": 244,
+						"y": 179,
+						"width": 371,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Treasure",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 291,
+					"sid": 226540755700640,
+					"tags": "",
+					"instanceVariables": {
+						"IsAvailable": true
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 226540755700640,
+						"expanded": true
+					},
+					"world": {
+						"x": 327,
+						"y": 169,
+						"width": 76,
+						"height": 67,
+						"originX": 1.1607669616519174,
+						"originY": 0.3838951310861423,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextTreasureCount",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 292,
+					"sid": 124478607361679,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 124478607361679,
+						"expanded": true
+					},
+					"world": {
+						"x": 340,
+						"y": 160,
+						"width": 414,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MoneyCountText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 293,
+					"sid": 782677830252835,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 782677830252835,
+						"expanded": true
+					},
+					"world": {
+						"x": 310,
+						"y": 239,
+						"width": 241,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TotalMoneyText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 294,
+					"sid": 678382515710213,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 678382515710213,
+						"expanded": true
+					},
+					"world": {
+						"x": 282,
+						"y": 292,
+						"width": 314,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

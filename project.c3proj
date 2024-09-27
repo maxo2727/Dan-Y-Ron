@@ -113,6 +113,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -129,7 +136,14 @@
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
-			"Sprite4"
+			"Sprite4",
+			"GameOverText",
+			"EndRunText",
+			"MoneyText",
+			"Treasure",
+			"TextTreasureCount",
+			"MoneyCountText",
+			"TotalMoneyText"
 		],
 		"subfolders": [
 			{
@@ -171,7 +185,7 @@
 					"Nave",
 					"Sprite2",
 					"Dan",
-					"Coin",
+					"Energy",
 					"O2Tank",
 					"spikes",
 					"Door",

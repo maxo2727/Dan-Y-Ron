@@ -2,6 +2,10 @@
 	"name": "HubEvents",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "DanEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",
@@ -25,9 +29,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 997917002843852
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 262397588199822,
+					"parameters": {
+						"text": "Money"
+					}
+				}
+			],
+			"sid": 106934137666014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 121165189021829,
+					"objectClass": "Dan",
+					"sid": 581280107837183,
 					"parameters": {
 						"object": "MonoHub"
 					}
@@ -106,9 +131,9 @@
 			"actions": [
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "DanHub",
-					"sid": 631220393435049,
-					"behaviorType": "Plataforma",
+					"objectClass": "Dan",
+					"sid": 540642333782210,
+					"behaviorType": "Platform",
 					"parameters": {
 						"input": "start-ignoring"
 					}
@@ -137,9 +162,9 @@
 				},
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "DanHub",
-					"sid": 277229511503274,
-					"behaviorType": "Plataforma",
+					"objectClass": "Dan",
+					"sid": 647305078435464,
+					"behaviorType": "Platform",
 					"parameters": {
 						"input": "stop-ignoring"
 					}
@@ -233,8 +258,8 @@
 			"actions": [
 				{
 					"id": "set-mirrored",
-					"objectClass": "DanHub",
-					"sid": 875811707080038,
+					"objectClass": "Dan",
+					"sid": 739774334873996,
 					"parameters": {
 						"state": "mirrored"
 					}
@@ -257,8 +282,8 @@
 			"actions": [
 				{
 					"id": "set-mirrored",
-					"objectClass": "DanHub",
-					"sid": 381388103188926,
+					"objectClass": "Dan",
+					"sid": 708310495562946,
 					"parameters": {
 						"state": "not-mirrored"
 					}
@@ -271,8 +296,8 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 231082680152048,
+					"objectClass": "Dan",
+					"sid": 492780286494532,
 					"parameters": {
 						"object": "BotonCapsula"
 					}
@@ -322,8 +347,8 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 895433608405304,
+					"objectClass": "Dan",
+					"sid": 511833439834502,
 					"parameters": {
 						"object": "MonoHub"
 					},
@@ -348,8 +373,8 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 856677749714294,
+					"objectClass": "Dan",
+					"sid": 538099124322984,
 					"parameters": {
 						"object": "BotonCapsula"
 					},
@@ -374,8 +399,8 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 117528501427796,
+					"objectClass": "Dan",
+					"sid": 475536233547031,
 					"parameters": {
 						"object": "Marco"
 					}
@@ -418,9 +443,9 @@
 						},
 						{
 							"id": "set-ignoring-input",
-							"objectClass": "DanHub",
-							"sid": 763505003416645,
-							"behaviorType": "Plataforma",
+							"objectClass": "Dan",
+							"sid": 767817857817918,
+							"behaviorType": "Platform",
 							"parameters": {
 								"input": "start-ignoring"
 							}
@@ -451,9 +476,9 @@
 				},
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "DanHub",
-					"sid": 958375808111118,
-					"behaviorType": "Plataforma",
+					"objectClass": "Dan",
+					"sid": 991431037284262,
+					"behaviorType": "Platform",
 					"parameters": {
 						"input": "stop-ignoring"
 					}
@@ -466,8 +491,8 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "DanHub",
-					"sid": 342609798494099,
+					"objectClass": "Dan",
+					"sid": 814425117790707,
 					"parameters": {
 						"object": "Marco"
 					},

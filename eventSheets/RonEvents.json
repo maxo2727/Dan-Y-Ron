@@ -973,10 +973,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 937322042938613,
+							"sid": 564079544606461,
 							"parameters": {
 								"variable": "MaxHunters",
-								"value": "2"
+								"value": "5"
 							}
 						},
 						{

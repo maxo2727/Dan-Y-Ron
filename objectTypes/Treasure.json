@@ -1,0 +1,47 @@
+{
+	"name": "Treasure",
+	"plugin-id": "Sprite",
+	"sid": 173635964412062,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvailable",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 597699071941522
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 678,
+						"height": 534,
+						"originX": 1.1607669616519174,
+						"originY": 0.3838951310861423,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9110878,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 706682790524886,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

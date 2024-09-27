@@ -18,9 +18,90 @@
 					"parameters": {
 						"layout": "HubLayout"
 					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 283254219035367,
+					"parameters": {
+						"variable": "GameOver"
+					}
 				}
 			],
 			"sid": 100142282148831
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 977860394474814,
+					"parameters": {
+						"variable": "GameOver"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "GameOverText",
+					"sid": 453114751905969,
+					"parameters": {
+						"text": "\"Fuiste derrotado, pierdes los tesoros encontrados\""
+					}
+				}
+			],
+			"sid": 582746708398382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 729076338589587,
+					"parameters": {
+						"variable": "GameOver"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TextTreasureCount",
+					"sid": 392688357984659,
+					"parameters": {
+						"text": "\"Tesoros conseguidos: \" & RunTreasure"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyCountText",
+					"sid": 882965688130310,
+					"parameters": {
+						"text": "\"Has recaudado $\" & RunMoney"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TotalMoneyText",
+					"sid": 882208151798159,
+					"parameters": {
+						"text": "\"Tu dinero total es $\" & Money"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Treasure",
+					"sid": 514086118724383,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 437520888887705
 		}
 	],
 	"sid": 292518316600395

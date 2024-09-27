@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "Energy",
 			"type": "number",
-			"initialValue": "500",
+			"initialValue": "100",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Money",
 			"type": "number",
-			"initialValue": "500",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -40,6 +40,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 469452511037405
+		},
+		{
+			"eventType": "variable",
+			"name": "RunMoney",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 725532300258709
+		},
+		{
+			"eventType": "variable",
+			"name": "RunTreasure",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 926544288130723
 		},
 		{
 			"eventType": "include",
@@ -127,6 +147,30 @@
 					"parameters": {
 						"variable": "MaxHunters"
 					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 192737819509239,
+					"parameters": {
+						"variable": "Energy"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 156774550751858,
+					"parameters": {
+						"variable": "RunMoney"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 428753086724325,
+					"parameters": {
+						"variable": "RunTreasure"
+					}
 				}
 			],
 			"sid": 511196145469810
@@ -148,14 +192,6 @@
 					"parameters": {
 						"instance-variable": "o2",
 						"value": "MaxO2"
-					}
-				},
-				{
-					"id": "reset-eventvar",
-					"objectClass": "System",
-					"sid": 743890641127538,
-					"parameters": {
-						"variable": "GameOver"
 					}
 				}
 			],

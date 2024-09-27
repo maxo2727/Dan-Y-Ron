@@ -475,6 +475,18 @@
 									}
 								},
 								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemigo1",
+									"sid": 169996038616685,
+									"parameters": {
+										"object": "Energy",
+										"layer": "\"DanPlayer\"",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
 									"id": "destroy",
 									"objectClass": "Enemigo1",
 									"sid": 119221332832340
@@ -546,6 +558,18 @@
 									"sid": 798462579713693,
 									"parameters": {
 										"seconds": "1"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemigo1",
+									"sid": 406025690888303,
+									"parameters": {
+										"object": "Energy",
+										"layer": "\"DanPlayer\"",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
 									}
 								},
 								{
@@ -643,23 +667,23 @@
 							"objectClass": "Dan",
 							"sid": 711406846181274,
 							"parameters": {
-								"object": "Coin"
+								"object": "Energy"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Coin",
+							"objectClass": "Energy",
 							"sid": 164504343312862
 						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 323222364008499,
+							"sid": 913642068612199,
 							"parameters": {
-								"variable": "Money",
-								"value": "1"
+								"variable": "Energy",
+								"value": "10"
 							}
 						}
 					],
@@ -871,6 +895,45 @@
 						}
 					],
 					"sid": 292352517953184
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 468686473645706,
+							"parameters": {
+								"object": "Treasure"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Treasure",
+							"sid": 911850539028180
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 144414831957315,
+							"parameters": {
+								"variable": "RunMoney",
+								"value": "100"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 374533223576659,
+							"parameters": {
+								"variable": "RunTreasure",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 776066886643465
 				}
 			],
 			"sid": 331103236209554
@@ -1002,6 +1065,90 @@
 						}
 					],
 					"sid": 353898803917965
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 527301028762449,
+							"parameters": {
+								"object": "Nave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "EndRunText",
+							"sid": 615555464933086,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 869382620473484,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 194033218505257,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 839760451552297,
+									"parameters": {
+										"layout": "EndRunScreen"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 142765310893467,
+									"parameters": {
+										"variable": "Money",
+										"value": "RunMoney"
+									}
+								}
+							],
+							"sid": 292159311853322
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 834650016705071,
+							"parameters": {
+								"object": "Nave"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "EndRunText",
+							"sid": 520461623976100,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 111027406138160
 				}
 			],
 			"sid": 768822687025217
