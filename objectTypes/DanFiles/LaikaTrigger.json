@@ -1,7 +1,7 @@
 {
-	"name": "Button",
+	"name": "LaikaTrigger",
 	"plugin-id": "Sprite",
-	"sid": 214174296447937,
+	"sid": 528933228813752,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4019062,
+						"imageSpriteId": 2244660,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 404275057307129,
+				"sid": 316906403819861,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

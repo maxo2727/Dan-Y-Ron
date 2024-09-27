@@ -1,0 +1,27 @@
+{
+	"name": "VictoryEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 137199636629008
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 674787181459080,
+					"parameters": {
+						"layout": "HomeScreen"
+					}
+				}
+			],
+			"sid": 374928878921043
+		}
+	],
+	"sid": 160650093479227
+}

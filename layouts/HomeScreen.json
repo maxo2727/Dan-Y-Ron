@@ -131,37 +131,6 @@
 					}
 				},
 				{
-					"type": "ConceptArtPatoCopiafotorbgremover3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 61,
-					"sid": 597456900691068,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 170,
-						"y": 310,
-						"width": 158.82823181733806,
-						"height": 164.75957657400215,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "btn_play",
 					"properties": {
 						"type": "button",
@@ -225,6 +194,41 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Sprite3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"sid": 944864725577098,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 944864725577098,
+						"expanded": true
+					},
+					"world": {
+						"x": 178.17432710062303,
+						"y": 312.4147309875616,
+						"width": 186.99764578706345,
+						"height": 196.7204840498932,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

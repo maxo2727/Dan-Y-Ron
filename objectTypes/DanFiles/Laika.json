@@ -1,0 +1,73 @@
+{
+	"name": "Laika",
+	"plugin-id": "Sprite",
+	"sid": 864097075159100,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1464670,
+						"collisionPoly": {
+							"points": [
+								0.304,
+								0.066,
+								0.6,
+								0.066,
+								0.65,
+								0.09,
+								0.748,
+								0.188,
+								0.87,
+								0.558,
+								0.87,
+								0.754,
+								0.82,
+								0.804,
+								0.648,
+								0.902,
+								0.428,
+								0.926,
+								0.306,
+								0.926,
+								0.232,
+								0.828,
+								0.132,
+								0.458,
+								0.132,
+								0.262,
+								0.158,
+								0.188,
+								0.256,
+								0.09
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 169933157932904,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

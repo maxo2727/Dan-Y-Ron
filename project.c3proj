@@ -143,7 +143,8 @@
 			"Treasure",
 			"TextTreasureCount",
 			"MoneyCountText",
-			"TotalMoneyText"
+			"TotalMoneyText",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -189,10 +190,13 @@
 					"O2Tank",
 					"spikes",
 					"Door",
-					"Button",
-					"Txt_button",
+					"DoorTrigger",
+					"TxtButton",
 					"Lava",
-					"DanHunter"
+					"DanHunter",
+					"Laika",
+					"LaikaTrigger",
+					"TxtLaika"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
@@ -217,7 +221,6 @@
 			},
 			{
 				"items": [
-					"ConceptArtPatoCopiafotorbgremover3",
 					"danyron",
 					"RatonMejorfotorbgremover",
 					"Sprite",
@@ -230,7 +233,8 @@
 					"SpriteFont",
 					"Text2",
 					"TiledBackground6",
-					"txt_how_to_play"
+					"txt_how_to_play",
+					"Sprite3"
 				],
 				"subfolders": [],
 				"name": "HomeScreen"
@@ -277,6 +281,13 @@
 				],
 				"subfolders": [],
 				"name": "HubScreen"
+			},
+			{
+				"items": [
+					"Button"
+				],
+				"subfolders": [],
+				"name": "VictoryScreen"
 			}
 		]
 	},
@@ -295,7 +306,8 @@
 			"InstructionScreen",
 			"HomeScreen",
 			"EndRunScreen",
-			"HubLayout"
+			"HubLayout",
+			"VictoryLayout"
 		],
 		"subfolders": []
 	},
@@ -307,7 +319,8 @@
 			"HelpEvents",
 			"HomeEvents",
 			"EndRunEvents",
-			"HubEvents"
+			"HubEvents",
+			"VictoryEvents"
 		],
 		"subfolders": []
 	},

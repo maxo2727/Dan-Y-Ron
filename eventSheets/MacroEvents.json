@@ -62,6 +62,16 @@
 			"sid": 926544288130723
 		},
 		{
+			"eventType": "variable",
+			"name": "DoorOpened",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 677031912358166
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "RonEvents"
 		},

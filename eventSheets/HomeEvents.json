@@ -14,9 +14,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 600470807549475,
+					"sid": 799866685850473,
 					"parameters": {
-						"layout": "GameLayout"
+						"layout": "HubLayout"
 					}
 				}
 			],

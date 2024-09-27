@@ -1,7 +1,7 @@
 {
-	"name": "ConceptArtPatoCopiafotorbgremover3",
+	"name": "DoorTrigger",
 	"plugin-id": "Sprite",
-	"sid": 147249151220782,
+	"sid": 214174296447937,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,22 +11,22 @@
 			{
 				"frames": [
 					{
-						"width": 482,
-						"height": 500,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5626442,
+						"imageSpriteId": 4019062,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 811840538912458,
-				"name": "Default",
+				"sid": 404275057307129,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
