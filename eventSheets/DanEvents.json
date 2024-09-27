@@ -713,10 +713,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Dan",
-							"sid": 406903950334253,
+							"sid": 507230162621643,
 							"parameters": {
 								"instance-variable": "o2",
-								"value": "min(Dan.o2+15, 100)"
+								"value": "min(Dan.o2+15, MaxO2)"
 							}
 						}
 					],
@@ -933,10 +933,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Dan",
-							"sid": 773651278450689,
+							"sid": 478677795732014,
 							"parameters": {
 								"instance-variable": "o2",
-								"value": "100"
+								"value": "MaxO2"
 							}
 						}
 					],

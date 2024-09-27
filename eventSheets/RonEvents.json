@@ -1021,6 +1021,333 @@
 				}
 			],
 			"sid": 834273955480494
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "LandHunters",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hunter",
+							"sid": 295886129466495,
+							"parameters": {
+								"object": "Sprite4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hunter",
+							"sid": 611260689207144
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 847314033806860,
+							"parameters": {
+								"variable": "HuntersKilled",
+								"value": "1"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 954478572947221,
+							"parameters": {
+								"object-to-create": "DanHunter",
+								"layer": "\"DanLayout\"",
+								"x": "Dan.X - random(-500,500)",
+								"y": "Dan.Y - 500",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DanHunter",
+							"sid": 159098657788903,
+							"parameters": {
+								"width": "55",
+								"height": "55"
+							}
+						},
+						{
+							"id": "set-movement",
+							"objectClass": "DanHunter",
+							"sid": 178578680177304,
+							"behaviorType": "Sine",
+							"parameters": {
+								"movement": "vertical"
+							}
+						},
+						{
+							"id": "set-wave",
+							"objectClass": "DanHunter",
+							"sid": 434840215310946,
+							"behaviorType": "Sine",
+							"parameters": {
+								"wave": "sine"
+							}
+						},
+						{
+							"id": "set-period",
+							"objectClass": "DanHunter",
+							"sid": 477317147539882,
+							"behaviorType": "Sine",
+							"parameters": {
+								"period": "random(2, 5)"
+							}
+						},
+						{
+							"id": "set-magnitude",
+							"objectClass": "DanHunter",
+							"sid": 860415247604883,
+							"behaviorType": "Sine",
+							"parameters": {
+								"magnitude": "random(150, 250)"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 755946038183152,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						}
+					],
+					"sid": 671531629107288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 242263091874697
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "DanHunter",
+							"sid": 954261560557600,
+							"parameters": {
+								"x": "Dan.X",
+								"y": "Dan.Y"
+							}
+						},
+						{
+							"id": "move-forward",
+							"objectClass": "DanHunter",
+							"sid": 654346103701478,
+							"parameters": {
+								"distance": "2.5"
+							}
+						}
+					],
+					"sid": 832741800936829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanHunter",
+							"sid": 518941022364679,
+							"parameters": {
+								"object": "DanCollisionBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 144504410319627,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 903787749316272,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "DanHunter",
+							"sid": 585034994875326,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "-600"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "DanHunter",
+							"sid": 589928745430747,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"acceleration": "200"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 420064048676121,
+							"parameters": {
+								"seconds": "0.6"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 977904229558343,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 166190307219665,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "DanHunter",
+							"sid": 851435913062440,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "Self.Angle"
+							}
+						}
+					],
+					"sid": 434016092815487
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanHunter",
+							"sid": 276058926814251,
+							"parameters": {
+								"object": "Dan"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TakeHunterDamage",
+							"sid": 316859817717626
+						}
+					],
+					"sid": 343276375284161
+				},
+				{
+					"functionName": "TakeHunterDamage",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Dan",
+							"sid": 773632142617028,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dan",
+							"sid": 496029340404170,
+							"parameters": {
+								"instance-variable": "o2",
+								"value": "Self.o2 - 5"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Dan",
+							"sid": 598936493931367,
+							"parameters": {
+								"opacity": "20"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Dan",
+							"sid": 374588639156147,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-(Self.X + 1000)"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Dan",
+							"sid": 888702583988442,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "Self.Y - 1000"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 228789898471964,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Dan",
+							"sid": 543153539050110,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Dan",
+							"sid": 972657394535736,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 185638537093415
+				}
+			],
+			"sid": 269215642203938
 		}
 	],
 	"sid": 785157429702876

@@ -32,6 +32,16 @@
 			"sid": 157281448070894
 		},
 		{
+			"eventType": "variable",
+			"name": "MaxO2",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 469452511037405
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "RonEvents"
 		},
@@ -59,6 +69,97 @@
 				}
 			],
 			"sid": 365170618043738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 720763141594585
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 153844772077988,
+					"parameters": {
+						"variable": "IsWaveStarted"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 859612632080591,
+					"parameters": {
+						"variable": "Wave"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 625398129369969,
+					"parameters": {
+						"variable": "Hunters"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 549886686642396,
+					"parameters": {
+						"variable": "HuntersKilled"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 965775360248220,
+					"parameters": {
+						"variable": "HuntersToSpawn"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 232210588893926,
+					"parameters": {
+						"variable": "MaxHunters"
+					}
+				}
+			],
+			"sid": 511196145469810
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 851692384067464
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dan",
+					"sid": 994376507885360,
+					"parameters": {
+						"instance-variable": "o2",
+						"value": "MaxO2"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 743890641127538,
+					"parameters": {
+						"variable": "GameOver"
+					}
+				}
+			],
+			"sid": 606366051692625
 		}
 	],
 	"sid": 489255412336291

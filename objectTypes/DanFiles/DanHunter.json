@@ -1,0 +1,62 @@
+{
+	"name": "DanHunter",
+	"plugin-id": "Sprite",
+	"sid": 295208612688873,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 339083679126391
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 379689613891280
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 773607,
+						"collisionPoly": {
+							"points": [
+								0.10082177734374999,
+								0.10799023437500001,
+								0.8842827148437501,
+								0.1270654296875,
+								0.8765483398437501,
+								0.90897265625,
+								0.10075195312500002,
+								0.8866384277343751
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 984832838984652,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

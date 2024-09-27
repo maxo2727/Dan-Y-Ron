@@ -85,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Timer",
 			"name": "Timer",
 			"author": "Scirra",
@@ -121,7 +128,9 @@
 	],
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Sprite4"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -168,7 +177,8 @@
 					"Door",
 					"Button",
 					"Txt_button",
-					"Lava"
+					"Lava",
+					"DanHunter"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
