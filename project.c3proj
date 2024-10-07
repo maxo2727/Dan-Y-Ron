@@ -144,7 +144,8 @@
 			"TextTreasureCount",
 			"MoneyCountText",
 			"TotalMoneyText",
-			"Text"
+			"Text",
+			"camera"
 		],
 		"subfolders": [
 			{

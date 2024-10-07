@@ -5967,7 +5967,7 @@
 								},
 								"ScrollTo": {
 									"properties": {
-										"enabled": true
+										"enabled": false
 									}
 								}
 							},
@@ -7842,6 +7842,47 @@
 								"y": 1656,
 								"width": 23.677666194816016,
 								"height": 24.151219518712338,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "camera",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 352,
+							"sid": 789281627072760,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"ScrollTo": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 789281627072760,
+								"expanded": true
+							},
+							"world": {
+								"x": 2331,
+								"y": 518,
+								"width": 20,
+								"height": 20,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [

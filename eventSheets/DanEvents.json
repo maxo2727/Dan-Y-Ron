@@ -167,6 +167,28 @@
 						}
 					],
 					"sid": 590766841840696
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 275504751803621
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 533983473336385,
+							"parameters": {
+								"x": "(lerp(Self.X,Dan.X, 0.05))",
+								"y": "max((lerp(Self.Y,Dan.Y-50, 0.02)), Dan.Y-200)"
+							}
+						}
+					],
+					"sid": 963404175298543
 				}
 			],
 			"sid": 935126549259418
