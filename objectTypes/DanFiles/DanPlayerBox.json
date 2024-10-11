@@ -1,14 +1,14 @@
 {
-	"name": "DanCollisionBox",
+	"name": "DanPlayerBox",
 	"plugin-id": "Sprite",
-	"sid": 842475168478444,
+	"sid": 852029519103018,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 557728591862869
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 934003726164244
 		}
 	],
 	"effectTypes": [],
@@ -17,33 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 500,
+						"width": 15,
+						"height": 60,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5509191,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.25,
-								1,
-								0.25,
-								1,
-								0.75,
-								0,
-								0.75
-							]
-						},
+						"imageSpriteId": 3760861,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 645177780220205,
+				"sid": 753481212342520,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

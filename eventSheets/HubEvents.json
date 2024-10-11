@@ -42,6 +42,21 @@
 					"parameters": {
 						"text": "Money"
 					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Dan",
+					"sid": 372266504911067,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "DanPlayerBox",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
 				}
 			],
 			"sid": 106934137666014
@@ -131,7 +146,7 @@
 			"actions": [
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "Dan",
+					"objectClass": "DanPlayerBox",
 					"sid": 540642333782210,
 					"behaviorType": "Platform",
 					"parameters": {
@@ -162,7 +177,7 @@
 				},
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "Dan",
+					"objectClass": "DanPlayerBox",
 					"sid": 647305078435464,
 					"behaviorType": "Platform",
 					"parameters": {
@@ -443,7 +458,7 @@
 						},
 						{
 							"id": "set-ignoring-input",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 767817857817918,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -476,7 +491,7 @@
 				},
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "Dan",
+					"objectClass": "DanPlayerBox",
 					"sid": 991431037284262,
 					"behaviorType": "Platform",
 					"parameters": {

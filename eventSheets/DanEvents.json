@@ -33,7 +33,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 561624580118885,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -58,7 +58,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 141659672710578,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -91,7 +91,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 266269721383901,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -141,6 +141,21 @@
 								"image-point": "1",
 								"create-hierarchy": false,
 								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "DanCollisionBox",
+							"sid": 537499787422063,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "DanPlayerBox",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
 							}
 						},
 						{
@@ -205,13 +220,13 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 667336129613611,
 							"behaviorType": "Platform"
 						},
 						{
 							"id": "is-on-floor",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 155426537043965,
 							"behaviorType": "Platform"
 						},
@@ -243,7 +258,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 909501684464477,
 							"behaviorType": "Platform",
 							"isInverted": true
@@ -276,7 +291,7 @@
 					"conditions": [
 						{
 							"id": "is-jumping",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 599391358208189,
 							"behaviorType": "Platform"
 						},
@@ -352,7 +367,7 @@
 						},
 						{
 							"id": "set-vector-x",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 404815657526937,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -361,7 +376,7 @@
 						},
 						{
 							"id": "set-vector-y",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 589162782574875,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1013,6 +1028,21 @@
 								"instance-variable": "o2",
 								"value": "MaxO2"
 							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Dan",
+							"sid": 346335204883508,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "DanPlayerBox",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
 						}
 					],
 					"sid": 228570996758193,
@@ -1032,7 +1062,7 @@
 							"actions": [
 								{
 									"id": "set-double-jump",
-									"objectClass": "Dan",
+									"objectClass": "DanPlayerBox",
 									"sid": 337530664909268,
 									"behaviorType": "Platform",
 									"parameters": {

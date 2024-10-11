@@ -54,6 +54,58 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "TiledBackground",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 354,
+							"sid": 326841360714629,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 326841360714629,
+								"expanded": true
+							},
+							"world": {
+								"x": 2429.1609248246127,
+								"y": 558.3456555092844,
+								"width": 33.13513423192876,
+								"height": 81.79604923771888,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 727725929691671,
@@ -5811,6 +5863,56 @@
 					"subLayers": [],
 					"instances": [
 						{
+							"type": "DanPlayerBox",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 353,
+							"sid": 929244396756360,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Platform": {
+									"properties": {
+										"max-speed": 330,
+										"acceleration": 1500,
+										"deceleration": 1500,
+										"jump-strength": 650,
+										"gravity": 1500,
+										"max-fall-speed": 1000,
+										"double-jump": false,
+										"jump-sustain": 0,
+										"default-controls": false,
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 929244396756360,
+								"expanded": true
+							},
+							"world": {
+								"x": 2327.1699624999605,
+								"y": 625.0734761870373,
+								"width": 13.391098623879234,
+								"height": 53.564394495516936,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
 							"type": "LaikaTrigger",
 							"properties": {
 								"initially-visible": false,
@@ -5951,23 +6053,9 @@
 								"normalJumpStrength": 650
 							},
 							"behaviors": {
-								"Platform": {
+								"Pin": {
 									"properties": {
-										"max-speed": 330,
-										"acceleration": 1500,
-										"deceleration": 1500,
-										"jump-strength": 650,
-										"gravity": 1500,
-										"max-fall-speed": 1000,
-										"double-jump": false,
-										"jump-sustain": 0,
-										"default-controls": true,
-										"enabled": true
-									}
-								},
-								"ScrollTo": {
-									"properties": {
-										"enabled": false
+										"destroy": false
 									}
 								}
 							},
@@ -5976,12 +6064,12 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 2327,
-								"y": 652,
+								"x": 2326.787722157665,
+								"y": 652.5754443153294,
 								"width": 53.32245102620813,
 								"height": 56.8402516147427,
-								"originX": 0.5,
-								"originY": 1,
+								"originX": 0.4670138888888889,
+								"originY": 1.001628664495114,
 								"color": [
 									1,
 									1,
@@ -6005,7 +6093,13 @@
 							"sid": 695597640607230,
 							"tags": "",
 							"instanceVariables": {},
-							"behaviors": {},
+							"behaviors": {
+								"Pin": {
+									"properties": {
+										"destroy": false
+									}
+								}
+							},
 							"instanceFolderItem": {
 								"sid": 695597640607230,
 								"expanded": true
@@ -7857,7 +7951,7 @@
 						{
 							"type": "camera",
 							"properties": {
-								"initially-visible": true,
+								"initially-visible": false,
 								"initial-animation": "Animation 1",
 								"initial-frame": 0,
 								"enable-collisions": true,

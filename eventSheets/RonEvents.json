@@ -1302,7 +1302,7 @@
 						},
 						{
 							"id": "set-vector-x",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 374588639156147,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1311,7 +1311,7 @@
 						},
 						{
 							"id": "set-vector-y",
-							"objectClass": "Dan",
+							"objectClass": "DanPlayerBox",
 							"sid": 888702583988442,
 							"behaviorType": "Platform",
 							"parameters": {

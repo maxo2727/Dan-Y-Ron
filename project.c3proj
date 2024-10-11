@@ -78,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -197,7 +204,8 @@
 					"DanHunter",
 					"Laika",
 					"LaikaTrigger",
-					"TxtLaika"
+					"TxtLaika",
+					"DanPlayerBox"
 				],
 				"subfolders": [],
 				"name": "DanFiles"

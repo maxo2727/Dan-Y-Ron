@@ -35,14 +35,9 @@
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 117432931610618
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 907960302680468
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 947967654634120
 		}
 	],
 	"effectTypes": [],
@@ -53,8 +48,8 @@
 					{
 						"width": 576,
 						"height": 614,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -87,8 +82,8 @@
 					{
 						"width": 578,
 						"height": 600,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -132,8 +127,8 @@
 					{
 						"width": 619,
 						"height": 642,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.43618739903069464,
+						"originY": 1.0015576323987538,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -175,8 +170,8 @@
 					{
 						"width": 749,
 						"height": 616,
-						"originX": 0.4152202937249666,
-						"originY": 1,
+						"originX": 0.3604806408544726,
+						"originY": 1.0016233766233766,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -218,8 +213,8 @@
 					{
 						"width": 578,
 						"height": 616,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -272,8 +267,8 @@
 					{
 						"width": 570,
 						"height": 579,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -306,8 +301,8 @@
 					{
 						"width": 574,
 						"height": 603,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -340,8 +335,8 @@
 					{
 						"width": 568,
 						"height": 571,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -374,8 +369,8 @@
 					{
 						"width": 574,
 						"height": 603,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -419,8 +414,8 @@
 					{
 						"width": 605,
 						"height": 641,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -466,8 +461,8 @@
 					{
 						"width": 576,
 						"height": 614,
-						"originX": 0.5,
-						"originY": 1,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -500,8 +495,8 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.4670138888888889,
+						"originY": 1.001628664495114,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
