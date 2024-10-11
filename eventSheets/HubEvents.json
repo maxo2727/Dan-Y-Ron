@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "DanEvents"
+			"includeSheet": "DanMovementEvents"
 		},
 		{
 			"eventType": "variable",
@@ -26,506 +26,498 @@
 			"sid": 816284826058562
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 997917002843852
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "MoneyText",
-					"sid": 262397588199822,
-					"parameters": {
-						"text": "Money"
-					}
-				},
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "Dan",
-					"sid": 372266504911067,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "DanPlayerBox",
-						"x": true,
-						"y": true,
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 106934137666014
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 581280107837183,
-					"parameters": {
-						"object": "MonoHub"
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 917045164295531,
-					"parameters": {
-						"variable": "Tienda"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 267159395407077,
-					"parameters": {
-						"layer": "\"InstruccionesTienda\"",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 462184654282446,
+			"eventType": "group",
+			"disabled": false,
+			"title": "HubSystem",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 576059443475173,
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 637873909892877
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "MoneyText",
+							"sid": 556042590792816,
 							"parameters": {
-								"key": 70
+								"text": "Money"
 							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Dan",
+							"sid": 367159301304886,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "DanPlayerBox",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 811515516752437
+				}
+			],
+			"sid": 610415257280407
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Tienda",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 508588083909682,
+							"parameters": {
+								"object": "MonoHub"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 981629103841840,
+							"parameters": {
+								"variable": "Tienda"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 721225697772145,
+							"sid": 789440267957616,
 							"parameters": {
-								"layer": "\"Tienda\"",
+								"layer": "\"InstruccionesTienda\"",
 								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 624363866790794,
-							"parameters": {
-								"variable": "Tienda",
-								"value": "true"
 							}
 						}
 					],
-					"sid": 543799108154933
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 702375274019351,
-					"parameters": {
-						"layer": "\"Tienda\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 540642333782210,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				}
-			],
-			"sid": 714316328696646
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "BotonSalir",
-					"sid": 582930393073053
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 943315953589529,
-					"parameters": {
-						"layer": "\"Tienda\"",
-						"visibility": "invisible"
-					}
+					"sid": 799574160693979,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 404283439056909,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 214729733862966,
+									"parameters": {
+										"layer": "\"Tienda\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 672733804590855,
+									"parameters": {
+										"variable": "Tienda",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 531081912271867
+						}
+					]
 				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 647305078435464,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "stop-ignoring"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 761164904189127,
-					"parameters": {
-						"variable": "Tienda",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 118811017894479,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 770247156624648
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "BotónBotas",
-					"sid": 280523274804322
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 569485542584956,
-					"parameters": {
-						"first-value": "Money",
-						"comparison": 5,
-						"second-value": "PrecioBotas"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 582462949536209,
-					"parameters": {
-						"variable": "Money",
-						"value": "Money - PrecioBotas"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "BotónBotas",
-					"sid": 179785952336237
-				},
-				{
-					"id": "set-text",
-					"objectClass": "PrecioBotas",
-					"sid": 501569856313625,
-					"parameters": {
-						"text": "\"Comprado\""
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 629240772697860,
-					"parameters": {
-						"variable": "DobleJumpEnabled",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 229798366608003
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 240224735253216,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "Dan",
-					"sid": 739774334873996,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 213862784569810
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 612765534088343,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "Dan",
-					"sid": 708310495562946,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 682245383357281
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 492780286494532,
-					"parameters": {
-						"object": "BotonCapsula"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 865499402382397,
-					"parameters": {
-						"layer": "\"InstruccionesCapsula\"",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 982956229788443,
-			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 306733795890699,
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 308969564715465,
 							"parameters": {
-								"key": 70
+								"layer": "\"Tienda\""
 							}
 						}
 					],
 					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 791908650196773,
-							"parameters": {
-								"layout": "GameLayout"
-							}
-						}
-					],
-					"sid": 885874624799369
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 511833439834502,
-					"parameters": {
-						"object": "MonoHub"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 914069568792026,
-					"parameters": {
-						"layer": "\"InstruccionesTienda\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 289089618207398
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 538099124322984,
-					"parameters": {
-						"object": "BotonCapsula"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 923742223003011,
-					"parameters": {
-						"layer": "\"InstruccionesCapsula\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 966025313098105
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 475536233547031,
-					"parameters": {
-						"object": "Marco"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 555323439048959,
-					"parameters": {
-						"layer": "\"InstruccionesWaren\"",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 429180867295731,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 414950022132983,
-							"parameters": {
-								"key": 70
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 285472305067785,
-							"parameters": {
-								"layer": "\"Waren\"",
-								"visibility": "visible"
-							}
-						},
 						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
-							"sid": 767817857817918,
+							"sid": 532228612781759,
 							"behaviorType": "Platform",
 							"parameters": {
 								"input": "start-ignoring"
 							}
 						}
 					],
-					"sid": 118747600470543
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "BotónSalirWaren",
-					"sid": 325151207337092
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 876818388499984,
-					"parameters": {
-						"layer": "\"Waren\"",
-						"visibility": "invisible"
-					}
+					"sid": 691453113574363
 				},
 				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 991431037284262,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "stop-ignoring"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BotonSalir",
+							"sid": 651897671020882
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 296326499118313,
+							"parameters": {
+								"layer": "\"Tienda\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 213668796465420,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 335540343730590,
+							"parameters": {
+								"variable": "Tienda",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 792346334561058,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 787321441800304
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 306504750757788,
+							"parameters": {
+								"object": "MonoHub"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 766632810894856,
+							"parameters": {
+								"layer": "\"InstruccionesTienda\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 351754554909637
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BotónBotas",
+							"sid": 302485042832796
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 756537614809428,
+							"parameters": {
+								"first-value": "Money",
+								"comparison": 5,
+								"second-value": "PrecioBotas"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 653802949047805,
+							"parameters": {
+								"variable": "Money",
+								"value": "Money - PrecioBotas"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BotónBotas",
+							"sid": 336122622282957
+						},
+						{
+							"id": "set-text",
+							"objectClass": "PrecioBotas",
+							"sid": 121109725200311,
+							"parameters": {
+								"text": "\"Comprado\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 396154552145089,
+							"parameters": {
+								"variable": "DobleJumpEnabled",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 529553300590769
 				}
 			],
-			"sid": 222546809658421
+			"sid": 590548583846525
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Waren",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Dan",
-					"sid": 814425117790707,
-					"parameters": {
-						"object": "Marco"
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 862803923751157,
+							"parameters": {
+								"object": "Marco"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 472215393833330,
+							"parameters": {
+								"layer": "\"InstruccionesWaren\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 471359530749723,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 563945532729624,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 553765667353948,
+									"parameters": {
+										"layer": "\"Waren\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "DanPlayerBox",
+									"sid": 852390639993767,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								}
+							],
+							"sid": 495490913154677
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "BotónSalirWaren",
+							"sid": 984084534300013
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 433208067669671,
+							"parameters": {
+								"layer": "\"Waren\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 326493516977732,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 122826331067759
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 882797917891714,
+							"parameters": {
+								"object": "Marco"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 396680497697826,
+							"parameters": {
+								"layer": "\"InstruccionesWaren\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 667668234475283
 				}
 			],
-			"actions": [
+			"sid": 450092007256760
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Capsula",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 568987519262296,
-					"parameters": {
-						"layer": "\"InstruccionesWaren\"",
-						"visibility": "invisible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 854929080469288,
+							"parameters": {
+								"object": "BotonCapsula"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 852898501454866,
+							"parameters": {
+								"layer": "\"InstruccionesCapsula\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 419271141695404,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 674863302615430,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 788305598196870,
+									"parameters": {
+										"layout": "GameLayout"
+									}
+								}
+							],
+							"sid": 842187425414113
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 603236564196245,
+							"parameters": {
+								"object": "BotonCapsula"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 253541720473342,
+							"parameters": {
+								"layer": "\"InstruccionesCapsula\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 161445669777865
 				}
 			],
-			"sid": 389472840560047
+			"sid": 769680586889341
 		}
 	],
 	"sid": 864640157782060

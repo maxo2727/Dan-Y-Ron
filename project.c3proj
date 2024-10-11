@@ -143,15 +143,6 @@
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
-			"Sprite4",
-			"GameOverText",
-			"EndRunText",
-			"MoneyText",
-			"Treasure",
-			"TextTreasureCount",
-			"MoneyCountText",
-			"TotalMoneyText",
-			"Text",
 			"camera"
 		],
 		"subfolders": [
@@ -174,7 +165,8 @@
 					"Range50",
 					"DogPrice",
 					"DogProyectile",
-					"WaveTimer"
+					"WaveTimer",
+					"Sprite4"
 				],
 				"subfolders": [],
 				"name": "TD"
@@ -190,21 +182,7 @@
 			{
 				"items": [
 					"DanCollisionBox",
-					"Enemigo1",
-					"Nave",
-					"Sprite2",
 					"Dan",
-					"Energy",
-					"O2Tank",
-					"spikes",
-					"Door",
-					"DoorTrigger",
-					"TxtButton",
-					"Lava",
-					"DanHunter",
-					"Laika",
-					"LaikaTrigger",
-					"TxtLaika",
 					"DanPlayerBox"
 				],
 				"subfolders": [],
@@ -252,7 +230,11 @@
 				"items": [
 					"EndScreenText",
 					"Txt_EndScreen",
-					"HubBtn"
+					"HubBtn",
+					"GameOverText",
+					"MoneyCountText",
+					"TextTreasureCount",
+					"TotalMoneyText"
 				],
 				"subfolders": [],
 				"name": "EndScreen"
@@ -286,7 +268,8 @@
 					"MarcoFoto",
 					"PlacaFoto",
 					"TextoPapa",
-					"InstruccionesFoto"
+					"InstruccionesFoto",
+					"MoneyText"
 				],
 				"subfolders": [],
 				"name": "HubScreen"
@@ -297,6 +280,28 @@
 				],
 				"subfolders": [],
 				"name": "VictoryScreen"
+			},
+			{
+				"items": [
+					"DanHunter",
+					"Door",
+					"DoorTrigger",
+					"Enemigo1",
+					"Laika",
+					"LaikaTrigger",
+					"Lava",
+					"Nave",
+					"O2Tank",
+					"spikes",
+					"Sprite2",
+					"TxtButton",
+					"TxtLaika",
+					"Energy",
+					"EndRunText",
+					"Treasure"
+				],
+				"subfolders": [],
+				"name": "WorldFiles"
 			}
 		]
 	},
@@ -324,12 +329,13 @@
 		"items": [
 			"MacroEvents",
 			"RonEvents",
-			"DanEvents",
+			"DanWorldEvents",
 			"HelpEvents",
 			"HomeEvents",
 			"EndRunEvents",
 			"HubEvents",
-			"VictoryEvents"
+			"VictoryEvents",
+			"DanMovementEvents"
 		],
 		"subfolders": []
 	},
