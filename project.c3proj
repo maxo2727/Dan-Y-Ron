@@ -302,6 +302,20 @@
 				],
 				"subfolders": [],
 				"name": "WorldFiles"
+			},
+			{
+				"items": [
+					"FromSuperficieToLunarBaseBox"
+				],
+				"subfolders": [],
+				"name": "SuperficieSprites"
+			},
+			{
+				"items": [
+					"Antena"
+				],
+				"subfolders": [],
+				"name": "LunarBaseSprites"
 			}
 		]
 	},
@@ -321,7 +335,9 @@
 			"HomeScreen",
 			"EndRunScreen",
 			"HubLayout",
-			"VictoryLayout"
+			"VictoryLayout",
+			"SuperficieLayout",
+			"LunarBaseLayout"
 		],
 		"subfolders": []
 	},
@@ -335,7 +351,8 @@
 			"EndRunEvents",
 			"HubEvents",
 			"VictoryEvents",
-			"DanMovementEvents"
+			"DanMovementEvents",
+			"SuperficieEvents"
 		],
 		"subfolders": []
 	},
