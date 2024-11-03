@@ -1,5 +1,5 @@
 {
-	"name": "GameLayout",
+	"name": "TestLevelLayout",
 	"layers": [
 		{
 			"name": "DanLayout",
@@ -43,58 +43,6 @@
 								"y": -7,
 								"width": 10084,
 								"height": 5080,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "TiledBackground",
-							"properties": {
-								"initially-visible": true,
-								"origin": "top-left",
-								"wrap-horizontal": "repeat",
-								"wrap-vertical": "repeat",
-								"image-offset-x": 0,
-								"image-offset-y": 0,
-								"image-scale-x": 1,
-								"image-scale-y": 1,
-								"image-angle": 0,
-								"enable-tile-randomization": false,
-								"x-random": 1,
-								"y-random": 1,
-								"angle-random": 1,
-								"blend-margin-x": 0.1,
-								"blend-margin-y": 0.1
-							},
-							"uid": 354,
-							"sid": 326841360714629,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {
-								"Solid": {
-									"properties": {
-										"enabled": true,
-										"tags": ""
-									}
-								}
-							},
-							"instanceFolderItem": {
-								"sid": 326841360714629,
-								"expanded": true
-							},
-							"world": {
-								"x": 2429.1609248246127,
-								"y": 558.3456555092844,
-								"width": 33.13513423192876,
-								"height": 81.79604923771888,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -6047,7 +5995,6 @@
 							"sid": 468187880098332,
 							"tags": "",
 							"instanceVariables": {
-								"o2": 0,
 								"TakingDamage": false,
 								"knockbackJumpStrength": 300,
 								"normalJumpStrength": 650
@@ -6269,146 +6216,6 @@
 								"height": 51.98851021929326,
 								"originX": 0,
 								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "O2Tank",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 309,
-							"sid": 492677336180600,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 492677336180600,
-								"expanded": true
-							},
-							"world": {
-								"x": 3602,
-								"y": 2064,
-								"width": 26,
-								"height": 52,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "O2Tank",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 310,
-							"sid": 121492844450111,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 121492844450111,
-								"expanded": true
-							},
-							"world": {
-								"x": 1301,
-								"y": 1266,
-								"width": 26,
-								"height": 52,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "O2Tank",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 311,
-							"sid": 714737930327500,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 714737930327500,
-								"expanded": true
-							},
-							"world": {
-								"x": 1623,
-								"y": 2626,
-								"width": 26,
-								"height": 52,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "O2Tank",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 312,
-							"sid": 125499995752011,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 125499995752011,
-								"expanded": true
-							},
-							"world": {
-								"x": 4488,
-								"y": 1763,
-								"width": 26,
-								"height": 52,
-								"originX": 0.5,
-								"originY": 0.5,
 								"color": [
 									1,
 									1,
@@ -8021,41 +7828,6 @@
 				}
 			],
 			"instances": [
-				{
-					"type": "O2Tank",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 183,
-					"sid": 786016807478994,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 786016807478994,
-						"expanded": true
-					},
-					"world": {
-						"x": 5158,
-						"y": 2649,
-						"width": 26,
-						"height": 52,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "spikes",
 					"properties": {
@@ -12372,40 +12144,6 @@
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "o2",
-					"properties": {
-						"value": 0,
-						"maximum": 100,
-						"tooltip": "",
-						"initially-visible": true,
-						"id": "",
-						"class": ""
-					},
-					"uid": 38,
-					"sid": 192060540737177,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 192060540737177,
-						"expanded": true
-					},
-					"world": {
-						"x": 637,
-						"y": 441.29203807430787,
-						"width": 200,
-						"height": 25,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				}
 			],

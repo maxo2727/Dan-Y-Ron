@@ -56,13 +56,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -200,7 +193,6 @@
 					"StarIcon",
 					"EnergyCounter",
 					"CoinHUD",
-					"o2",
 					"MoneyCounter"
 				],
 				"subfolders": [],
@@ -330,7 +322,7 @@
 	},
 	"layouts": {
 		"items": [
-			"GameLayout",
+			"TestLevelLayout",
 			"InstructionScreen",
 			"HomeScreen",
 			"EndRunScreen",
@@ -344,7 +336,7 @@
 	"eventSheets": {
 		"items": [
 			"MacroEvents",
-			"RonEvents",
+			"TDEvents",
 			"DanWorldEvents",
 			"HelpEvents",
 			"HomeEvents",
@@ -352,7 +344,11 @@
 			"HubEvents",
 			"VictoryEvents",
 			"DanMovementEvents",
-			"SuperficieEvents"
+			"SuperficieEvents",
+			"EnergyEvents",
+			"HUDEvents",
+			"GameGlobalVariables",
+			"RunVariables"
 		],
 		"subfolders": []
 	},

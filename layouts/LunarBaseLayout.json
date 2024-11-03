@@ -242,7 +242,6 @@
 					"sid": 163868942989215,
 					"tags": "",
 					"instanceVariables": {
-						"o2": 0,
 						"TakingDamage": false,
 						"knockbackJumpStrength": 300,
 						"normalJumpStrength": 650

@@ -482,7 +482,7 @@
 									"objectClass": "System",
 									"sid": 788305598196870,
 									"parameters": {
-										"layout": "GameLayout"
+										"layout": "TestLevelLayout"
 									}
 								}
 							],

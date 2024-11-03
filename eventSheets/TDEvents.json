@@ -1,5 +1,5 @@
 {
-	"name": "RonEvents",
+	"name": "TDEvents",
 	"events": [
 		{
 			"eventType": "variable",
@@ -62,125 +62,220 @@
 			"sid": 436189009743389
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 260939184176716,
-					"parameters": {
-						"key": 16
-					}
-				}
-			],
-			"actions": [],
-			"sid": 611582063782803,
+			"eventType": "group",
+			"disabled": false,
+			"title": "System",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "layer-is-visible",
+							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 309860484286613,
-							"parameters": {
-								"layer": "\"TD\""
-							}
+							"sid": 127032148388092
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
+							"id": "reset-eventvar",
 							"objectClass": "System",
-							"sid": 806350541714788,
+							"sid": 765334805915591,
 							"parameters": {
-								"layer": "\"TD\"",
-								"visibility": "invisible"
+								"variable": "IsWaveStarted"
 							}
 						},
 						{
-							"id": "set-layer-visible",
+							"id": "reset-eventvar",
 							"objectClass": "System",
-							"sid": 186788458145143,
+							"sid": 258135666479000,
 							"parameters": {
-								"layer": "\"DanHUD\"",
-								"visibility": "visible"
+								"variable": "Wave"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 613735702728128,
+							"parameters": {
+								"variable": "Hunters"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 753910194225761,
+							"parameters": {
+								"variable": "HuntersKilled"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 925925575876867,
+							"parameters": {
+								"variable": "HuntersToSpawn"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 792877945031061,
+							"parameters": {
+								"variable": "MaxHunters"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 734634089770861,
+							"parameters": {
+								"variable": "Energy"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 777130557751898,
+							"parameters": {
+								"variable": "RunMoney"
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 239502336331267,
+							"parameters": {
+								"variable": "RunTreasure"
 							}
 						}
 					],
-					"sid": 522987698093521
+					"sid": 944906082998999
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 429554681426350
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 961250643083456,
+							"parameters": {
+								"key": 49
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
+							"id": "create-object",
 							"objectClass": "System",
-							"sid": 165414642590542,
+							"sid": 995103607135431,
 							"parameters": {
-								"layer": "\"TD\"",
-								"visibility": "visible"
+								"object-to-create": "Hunter",
+								"layer": "\"TdEnemyPath\"",
+								"x": "285",
+								"y": "45",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 643816155664245,
+							"id": "set-speed",
+							"objectClass": "Hunter",
+							"sid": 907388502580083,
+							"behaviorType": "Custom",
 							"parameters": {
-								"layer": "\"DanHUD\"",
-								"visibility": "invisible"
+								"which": "vertical",
+								"speed": "Self.speed"
 							}
 						}
 					],
-					"sid": 792396136008905
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 907655102297728,
-					"parameters": {
-						"key": 49
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 690462999587721,
-					"parameters": {
-						"object-to-create": "Hunter",
-						"layer": "\"TdEnemyPath\"",
-						"x": "285",
-						"y": "45",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
+					"sid": 756769639555789
 				},
 				{
-					"id": "set-speed",
-					"objectClass": "Hunter",
-					"sid": 280867656549710,
-					"behaviorType": "Custom",
-					"parameters": {
-						"which": "vertical",
-						"speed": "Self.speed"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 467659552271594,
+							"parameters": {
+								"key": 16
+							}
+						}
+					],
+					"actions": [],
+					"sid": 734522558636888,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 264376330546577,
+									"parameters": {
+										"layer": "\"TD\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 770263445479788,
+									"parameters": {
+										"layer": "\"TD\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 301380847439072,
+									"parameters": {
+										"layer": "\"DanHUD\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 953854818683055
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 418516497727343
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 528390468510333,
+									"parameters": {
+										"layer": "\"TD\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 234667808872594,
+									"parameters": {
+										"layer": "\"DanHUD\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 494083045734771
+						}
+					]
 				}
 			],
-			"sid": 529928491412891
+			"sid": 673412113132918
 		},
 		{
 			"eventType": "group",
@@ -1281,15 +1376,6 @@
 							"parameters": {
 								"instance-variable": "TakingDamage",
 								"value": "true"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 496029340404170,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "Self.o2 - 5"
 							}
 						},
 						{

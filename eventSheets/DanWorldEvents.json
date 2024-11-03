@@ -43,15 +43,6 @@
 							}
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 358462229091730,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "Self.o2 - 20"
-							}
-						},
-						{
 							"id": "set-opacity",
 							"objectClass": "Dan",
 							"sid": 916530128122830,
@@ -414,90 +405,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "Dan",
-							"sid": 639212327156026,
-							"parameters": {
-								"instance-variable": "o2",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 600048322505402,
-							"parameters": {
-								"variable": "GameOver",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 887225285392209
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Dan",
-							"sid": 381034703136406,
-							"parameters": {
-								"object": "O2Tank"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "O2Tank",
-							"sid": 854416384287307
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 507230162621643,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "min(Dan.o2+15, MaxO2)"
-							}
-						}
-					],
-					"sid": 652016743181046
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Dan",
-							"sid": 584535696650148,
-							"parameters": {
-								"instance-variable": "o2",
-								"comparison": 3,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 444106989445898,
-							"parameters": {
-								"variable": "GameOver",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 995060608844976
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Dan",
 							"sid": 191299578865395,
@@ -604,17 +511,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 433948821324370,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "0"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 292352517953184
 				},
 				{
@@ -677,23 +574,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 863937099983168,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "Self.o2 - 0.01"
-							}
-						},
-						{
-							"id": "set-progress",
-							"objectClass": "o2",
-							"sid": 453544535468951,
-							"parameters": {
-								"value": "Dan.o2"
-							}
-						},
-						{
 							"id": "set-text",
 							"objectClass": "MoneyCounter",
 							"sid": 873080283061409,
@@ -714,15 +594,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Dan",
-							"sid": 478677795732014,
-							"parameters": {
-								"instance-variable": "o2",
-								"value": "MaxO2"
-							}
-						},
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "Dan",

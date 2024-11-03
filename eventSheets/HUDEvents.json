@@ -1,0 +1,27 @@
+{
+	"name": "HUDEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 714544455287373
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "EnergyCounter",
+					"sid": 842571084495680,
+					"parameters": {
+						"text": "Energy"
+					}
+				}
+			],
+			"sid": 433197074480012
+		}
+	],
+	"sid": 817721388332534
+}

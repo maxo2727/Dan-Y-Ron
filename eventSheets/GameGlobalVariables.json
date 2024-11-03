@@ -1,0 +1,66 @@
+{
+	"name": "GameGlobalVariables",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Energy",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 628226065838995
+		},
+		{
+			"eventType": "variable",
+			"name": "Money",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 630060154416377
+		},
+		{
+			"eventType": "variable",
+			"name": "DobleJumpEnabled",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 709802856538626
+		},
+		{
+			"eventType": "variable",
+			"name": "RunMoney",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 221275442710178
+		},
+		{
+			"eventType": "variable",
+			"name": "RunTreasure",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 216495214463855
+		},
+		{
+			"eventType": "variable",
+			"name": "DoorOpened",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 232549172424757
+		}
+	],
+	"sid": 676121169398477
+}

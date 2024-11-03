@@ -4,7 +4,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Movement2",
+			"title": "Movement",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -201,7 +201,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Animations2",
+			"title": "Animations",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
