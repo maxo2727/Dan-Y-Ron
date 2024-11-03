@@ -11835,7 +11835,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		},
 		{
 			"name": "SharedHUD",
@@ -11989,7 +11989,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		},
 		{
 			"name": "DanHUD",
@@ -12174,7 +12174,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		}
 	],
 	"scene-graphs-folder-root": {

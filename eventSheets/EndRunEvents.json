@@ -26,6 +26,15 @@
 					"parameters": {
 						"variable": "GameOver"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 287174744559098,
+					"parameters": {
+						"variable": "TransitionVariable",
+						"value": "\"FromGameToHub\""
+					}
 				}
 			],
 			"sid": 100142282148831

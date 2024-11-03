@@ -443,14 +443,14 @@
 						{
 							"type": "DanPlayerBox",
 							"properties": {
-								"initially-visible": true,
+								"initially-visible": false,
 								"initial-animation": "Animation 1",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 355,
-							"sid": 758341464142265,
+							"uid": 185,
+							"sid": 300528215484907,
 							"tags": "",
 							"instanceVariables": {},
 							"behaviors": {
@@ -470,12 +470,12 @@
 								}
 							},
 							"instanceFolderItem": {
-								"sid": 758341464142265,
+								"sid": 300528215484907,
 								"expanded": true
 							},
 							"world": {
-								"x": 684.1707572570714,
-								"y": 362.94794656538613,
+								"x": 720,
+								"y": 358,
 								"width": 13.391098623879234,
 								"height": 53.564394495516936,
 								"originX": 0.5,
@@ -499,8 +499,8 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 185,
-							"sid": 549748790696236,
+							"uid": 310,
+							"sid": 858411528394506,
 							"tags": "",
 							"instanceVariables": {
 								"TakingDamage": false,
@@ -515,12 +515,12 @@
 								}
 							},
 							"instanceFolderItem": {
-								"sid": 549748790696236,
+								"sid": 858411528394506,
 								"expanded": true
 							},
 							"world": {
-								"x": 683.6043106621997,
-								"y": 390.3741360268016,
+								"x": 719.4322742248523,
+								"y": 384.4780750453239,
 								"width": 53.32245102620813,
 								"height": 56.8402516147427,
 								"originX": 0.4670138888888889,
@@ -544,8 +544,8 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 356,
-							"sid": 388825853511588,
+							"uid": 311,
+							"sid": 985595375267496,
 							"tags": "",
 							"instanceVariables": {},
 							"behaviors": {
@@ -556,12 +556,12 @@
 								}
 							},
 							"instanceFolderItem": {
-								"sid": 388825853511588,
+								"sid": 985595375267496,
 								"expanded": true
 							},
 							"world": {
-								"x": 687.6447393005378,
-								"y": 299.8710521398924,
+								"x": 722.8274635130796,
+								"y": 282.41434845852564,
 								"width": 20,
 								"height": 20,
 								"originX": 0.5,
