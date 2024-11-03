@@ -306,11 +306,19 @@
 				"items": [
 					"Antena",
 					"FromLunarBaseToSuperficieBox",
-					"Sprite5",
+					"Bunker",
 					"FromLunarBaseToBunker"
 				],
 				"subfolders": [],
 				"name": "LunarBaseSprites"
+			},
+			{
+				"items": [
+					"TiledBackground2",
+					"TiledBackground3"
+				],
+				"subfolders": [],
+				"name": "Bunker"
 			}
 		]
 	},
