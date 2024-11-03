@@ -184,7 +184,7 @@
 							}
 						},
 						{
-							"type": "Sprite5",
+							"type": "Bunker",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
