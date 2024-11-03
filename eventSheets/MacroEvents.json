@@ -16,6 +16,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "GameGlobalVariables"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
 		}
 	],
 	"sid": 489255412336291

@@ -2,10 +2,6 @@
 	"name": "DanWorldEvents",
 	"events": [
 		{
-			"eventType": "include",
-			"includeSheet": "DanMovementEvents"
-		},
-		{
 			"eventType": "variable",
 			"name": "GameOver",
 			"type": "boolean",
