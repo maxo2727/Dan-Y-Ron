@@ -6,6 +6,10 @@
 			"includeSheet": "DanMovementEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LevelTransitions"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",

@@ -1,7 +1,7 @@
 {
-	"name": "FromSuperficieToLunarBaseBox",
+	"name": "FromLunarBaseToBunker",
 	"plugin-id": "Sprite",
-	"sid": 345513060895880,
+	"sid": 695654880951361,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5463162,
+						"imageSpriteId": 2746208,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 202529253359719,
+				"sid": 831382914817451,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

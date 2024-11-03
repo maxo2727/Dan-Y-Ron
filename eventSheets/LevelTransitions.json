@@ -1,0 +1,290 @@
+{
+	"name": "LevelTransitions",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "TransitionVariable",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 385161523495508
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 469841187658214,
+					"parameters": {
+						"object": "FromSuperficieToLunarBaseBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 687599845199989,
+					"parameters": {
+						"layout": "LunarBaseLayout"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 863324991233828,
+					"parameters": {
+						"variable": "TransitionVariable",
+						"value": "\"FromSuperficieToLunarBase\""
+					}
+				}
+			],
+			"sid": 833208527433380
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 847272800501381,
+					"parameters": {
+						"object": "FromLunarBaseToSuperficieBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 535026786391620,
+					"parameters": {
+						"layout": "SuperficieLayout"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 647744654123935,
+					"parameters": {
+						"variable": "TransitionVariable",
+						"value": "\"FromLunarBaseToSuperficie\""
+					}
+				}
+			],
+			"sid": 650079071034481
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 199660414503751,
+					"parameters": {
+						"object": "FromLunarBaseToBunker"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 325233040452318,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 553906189244062,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 703623537259599,
+							"parameters": {
+								"layout": "BunkerLayout"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 892060813105845,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"value": "\"FromLunarBaseToBunker\""
+							}
+						}
+					],
+					"sid": 268795971589675
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 481915243040139
+				}
+			],
+			"actions": [],
+			"sid": 890271478573294,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 925374046321492,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromSuperficieToLunarBase\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 121426359254323,
+							"parameters": {
+								"x": "10",
+								"y": "850"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 440097204978153,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 446222833385769
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 714944341658299,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromLunarBaseToSuperficie\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 852084262543423,
+							"parameters": {
+								"x": "10380",
+								"y": "779"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 256166431452012,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 148050221046939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 255237800380525,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromGameToHub\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 542020382497499,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 952441364205923,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 554804246282386
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 646580026976192,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromLunarBaseToBunker\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 531413145495255,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 437249149070349,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 399981589271732
+				}
+			]
+		}
+	],
+	"sid": 522073099835471
+}

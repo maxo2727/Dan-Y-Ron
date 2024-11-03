@@ -1,7 +1,7 @@
 {
-	"name": "FromSuperficieToLunarBaseBox",
+	"name": "Sprite5",
 	"plugin-id": "Sprite",
-	"sid": 345513060895880,
+	"sid": 371607501553298,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5463162,
+						"imageSpriteId": 7289963,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 202529253359719,
+				"sid": 561798356700647,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

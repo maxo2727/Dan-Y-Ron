@@ -191,6 +191,15 @@
 								"x": "(lerp(Self.X,Dan.X, 0.05))",
 								"y": "max((lerp(Self.Y,Dan.Y-50, 0.02)), Dan.Y-200)"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Dan",
+							"sid": 989001985399824,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
 						}
 					],
 					"sid": 432362243179352

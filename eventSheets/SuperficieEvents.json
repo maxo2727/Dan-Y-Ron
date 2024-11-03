@@ -1,30 +1,5 @@
 {
 	"name": "SuperficieEvents",
-	"events": [
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "DanPlayerBox",
-					"sid": 865442430573751,
-					"parameters": {
-						"object": "FromSuperficieToLunarBaseBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 144212719522357,
-					"parameters": {
-						"layout": "LunarBaseLayout"
-					}
-				}
-			],
-			"sid": 702689378319947
-		}
-	],
+	"events": [],
 	"sid": 151494497408070
 }

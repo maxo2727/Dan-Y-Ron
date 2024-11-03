@@ -20,6 +20,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "LevelTransitions"
 		}
 	],
 	"sid": 489255412336291
