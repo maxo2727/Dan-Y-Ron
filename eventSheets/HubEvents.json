@@ -459,7 +459,7 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 852898501454866,
+							"sid": 849257268078183,
 							"parameters": {
 								"layer": "\"InstruccionesCapsula\"",
 								"visibility": "visible"
@@ -522,6 +522,165 @@
 				}
 			],
 			"sid": 769680586889341
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Escalera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 278216929895000,
+							"parameters": {
+								"key": 83
+							}
+						},
+						{
+							"id": "collisions-enabled",
+							"objectClass": "Dan",
+							"sid": 851508637140157
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Escalera",
+							"sid": 139775527328653,
+							"behaviorType": "SaltoATravés",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 683551389996519
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-enabled",
+							"objectClass": "Escalera",
+							"sid": 363268044310255,
+							"behaviorType": "SaltoATravés",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 334094057610665,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Escalera",
+							"sid": 968994564060296,
+							"behaviorType": "SaltoATravés",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 305541670751988
+				}
+			],
+			"sid": 273016033234046
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Museo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 326645932993832,
+							"parameters": {
+								"object": "PCMuseo"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 862741893300952,
+							"parameters": {
+								"layer": "\"InstruccionesMuseo\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 824511538253507,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 602770846474734,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 325495601608246,
+									"parameters": {
+										"layout": "TestLevelLayout"
+									}
+								}
+							],
+							"sid": 310897907511268
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 970118476409071,
+							"parameters": {
+								"object": "PCMuseo"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 921416625099219,
+							"parameters": {
+								"layer": "\"InstruccionesMuseo\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 401971255285096
+				}
+			],
+			"sid": 128553751619914
 		}
 	],
 	"sid": 864640157782060
