@@ -2,14 +2,6 @@
 	"name": "HubEvents",
 	"events": [
 		{
-			"eventType": "include",
-			"includeSheet": "DanMovementEvents"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "LevelTransitions"
-		},
-		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",
@@ -52,21 +44,6 @@
 							"sid": 556042590792816,
 							"parameters": {
 								"text": "Money"
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 367159301304886,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
 							}
 						}
 					],
@@ -466,33 +443,7 @@
 							}
 						}
 					],
-					"sid": 419271141695404,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 674863302615430,
-									"parameters": {
-										"key": 70
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 788305598196870,
-									"parameters": {
-										"layout": "TestLevelLayout"
-									}
-								}
-							],
-							"sid": 842187425414113
-						}
-					]
+					"sid": 419271141695404
 				},
 				{
 					"eventType": "block",

@@ -24,6 +24,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "LevelTransitions"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "HubEvents"
 		}
 	],
 	"sid": 489255412336291
