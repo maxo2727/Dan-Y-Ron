@@ -131,6 +131,56 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 352259619479307,
+					"parameters": {
+						"object": "BotonCapsula"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 825710231883914,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 491906195658019,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 681545421417990,
+							"parameters": {
+								"layout": "SuperficieLayout"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 797444504031220,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"value": "\"FromHubToSuperficie\""
+							}
+						}
+					],
+					"sid": 820167781278509
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 481915243040139
@@ -139,6 +189,78 @@
 			"actions": [],
 			"sid": 890271478573294,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550273912200651,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromHubToSuperficie\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 727410008841472,
+							"parameters": {
+								"x": "2200",
+								"y": "845"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 516775380438268,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 371102605701819
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 913565788385314,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromGameToHub\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 683428105997720,
+							"parameters": {
+								"x": "750",
+								"y": "621"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 185275936524700,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 288386458891498
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -210,42 +332,6 @@
 						}
 					],
 					"sid": 148050221046939
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 255237800380525,
-							"parameters": {
-								"variable": "TransitionVariable",
-								"comparison": 0,
-								"value": "\"FromGameToHub\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "DanPlayerBox",
-							"sid": 542020382497499,
-							"parameters": {
-								"x": "0",
-								"y": "0"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "camera",
-							"sid": 952441364205923,
-							"parameters": {
-								"x": "DanPlayerBox.X",
-								"y": "DanPlayerBox.Y"
-							}
-						}
-					],
-					"sid": 554804246282386
 				},
 				{
 					"eventType": "block",

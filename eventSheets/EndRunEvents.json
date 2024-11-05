@@ -12,6 +12,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 939681792561241,
+					"parameters": {
+						"variable": "TransitionVariable",
+						"value": "\"FromGameToHub\""
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 309772995150651,
@@ -25,15 +34,6 @@
 					"sid": 283254219035367,
 					"parameters": {
 						"variable": "GameOver"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 287174744559098,
-					"parameters": {
-						"variable": "TransitionVariable",
-						"value": "\"FromGameToHub\""
 					}
 				}
 			],
