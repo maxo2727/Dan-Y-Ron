@@ -104,13 +104,12 @@
 							}
 						},
 						{
-							"id": "is-boolean-instance-variable-set",
+							"id": "is-overlapping-another-object",
 							"objectClass": "Enemigo1",
-							"sid": 995709947226795,
+							"sid": 847742138147787,
 							"parameters": {
-								"instance-variable": "TakingDamage"
-							},
-							"isInverted": true
+								"object": "Bullet"
+							}
 						}
 					],
 					"actions": [],
@@ -288,7 +287,8 @@
 							],
 							"sid": 511214231195199
 						}
-					]
+					],
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",

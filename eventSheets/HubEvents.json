@@ -48,6 +48,18 @@
 						}
 					],
 					"sid": 811515516752437
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 237302962275903
+						}
+					],
+					"actions": [],
+					"sid": 964925454186853
 				}
 			],
 			"sid": 610415257280407
