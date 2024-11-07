@@ -71,6 +71,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Mover a",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Físicas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pegado",
 			"author": "Scirra",
@@ -176,7 +190,9 @@
 				"items": [
 					"DanCollisionBox",
 					"Dan",
-					"DanPlayerBox"
+					"DanPlayerBox",
+					"GunPH",
+					"HookPH"
 				],
 				"subfolders": [],
 				"name": "DanFiles"

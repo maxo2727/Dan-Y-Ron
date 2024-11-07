@@ -282,7 +282,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Attacks",
+			"title": "Attacks&Gadgets",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -292,16 +292,16 @@
 						{
 							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 117927152199436,
+							"sid": 796718684570957,
 							"parameters": {
-								"mouse-button": "left",
+								"mouse-button": "right",
 								"click-type": "clicked"
 							}
 						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 290639645498675,
+							"sid": 281204060808877,
 							"parameters": {
 								"variable": "ArmaActual",
 								"comparison": 0,
@@ -311,136 +311,86 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "Dan",
-							"sid": 940112151824050,
-							"parameters": {
-								"animation": "\"Melee\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Dan",
-							"sid": 484472303715332,
-							"parameters": {
-								"object": "DanCollisionBox",
-								"layer": "\"DanPlayer\"",
-								"image-point": "1",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "DanCollisionBox",
-							"sid": 904973670983397,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 944476440169799,
+							"sid": 688789190931705,
 							"parameters": {
-								"seconds": "0.15"
+								"seconds": "0.01"
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Dan",
-							"sid": 787045550091403,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "DanCollisionBox",
-							"sid": 639529204415199
-						}
-					],
-					"sid": 938867487121380
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 216376266570021,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked"
-							}
-						},
-						{
-							"id": "compare-eventvar",
+							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 527312780435182,
+							"sid": 145099901498532,
 							"parameters": {
 								"variable": "ArmaActual",
-								"comparison": 0,
 								"value": "\"Gun\""
 							}
-						}
-					],
-					"actions": [
+						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 514145238485220,
+							"sid": 272387442804941,
 							"parameters": {
-								"object-to-create": "Bullet",
+								"object-to-create": "GunPH",
 								"layer": "0",
 								"x": "Dan.X",
-								"y": "Dan.Y-20",
+								"y": "Dan.Y+5",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
-						},
+						}
+					],
+					"sid": 667819103292392
+				},
+				{
+					"eventType": "block",
+					"conditions": [
 						{
-							"id": "set-speed",
-							"objectClass": "Bullet",
-							"sid": 254068384401188,
-							"behaviorType": "Bala",
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 127432959171381,
 							"parameters": {
-								"speed": "200"
+								"mouse-button": "right",
+								"click-type": "clicked"
 							}
 						},
 						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Bullet",
-							"sid": 428506273045020,
-							"behaviorType": "Bala",
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 770015181268740,
 							"parameters": {
-								"angle": "angle(Self.X, Self.Y, Mouse.X, Mouse.Y)"
+								"variable": "ArmaActual",
+								"comparison": 0,
+								"value": "\"Gun\""
 							}
-						},
+						}
+					],
+					"actions": [
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 896285531993104,
+							"sid": 111629598953480,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "0.01"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 160058636281985,
+							"parameters": {
+								"variable": "ArmaActual",
+								"value": "\"Hook\""
 							}
 						},
 						{
 							"id": "destroy",
-							"objectClass": "Bullet",
-							"sid": 536390024821900
+							"objectClass": "GunPH",
+							"sid": 860263538031506
 						}
 					],
-					"sid": 785980730756791
+					"sid": 463705840280446
 				},
 				{
 					"eventType": "block",
@@ -448,7 +398,7 @@
 						{
 							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 651659864147556,
+							"sid": 928897592146739,
 							"parameters": {
 								"mouse-button": "right",
 								"click-type": "clicked"
@@ -457,7 +407,77 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 151576102627344,
+							"sid": 816551252923319,
+							"parameters": {
+								"variable": "ArmaActual",
+								"comparison": 0,
+								"value": "\"Hook\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 768735190897035,
+							"parameters": {
+								"seconds": "0.01"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 655500707804760,
+							"parameters": {
+								"variable": "ArmaActual",
+								"value": "\"Melee\""
+							}
+						}
+					],
+					"sid": 951818185888481
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 346733066807176
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "GunPH",
+							"sid": 830339393380410,
+							"parameters": {
+								"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "GunPH",
+							"sid": 910664159067969,
+							"parameters": {
+								"x": "Dan.X",
+								"y": "Dan.Y+5"
+							}
+						}
+					],
+					"sid": 521212575685801
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 524005781742404
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 301035477346533,
 							"parameters": {
 								"variable": "ArmaActual",
 								"comparison": 0,
@@ -467,68 +487,439 @@
 					],
 					"actions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 965672469884667,
-							"parameters": {
-								"seconds": "0.01"
-							}
+							"id": "destroy",
+							"objectClass": "GunPH",
+							"sid": 931113247679198
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 508760120511015,
-							"parameters": {
-								"variable": "ArmaActual",
-								"value": "\"Gun\""
-							}
+							"id": "destroy",
+							"objectClass": "HookPH",
+							"sid": 587771083903667
 						}
 					],
-					"sid": 715545970561571
+					"sid": 153678663813631
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Melee",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 204965571938165,
-							"parameters": {
-								"mouse-button": "right",
-								"click-type": "clicked"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 247265307705705,
-							"parameters": {
-								"variable": "ArmaActual",
-								"comparison": 0,
-								"value": "\"Gun\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 696689505388015,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 209269421412527,
+									"parameters": {
+										"variable": "ArmaActual",
+										"comparison": 0,
+										"value": "\"Melee\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Dan",
+									"sid": 163690342633655,
+									"parameters": {
+										"animation": "\"Melee\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Dan",
+									"sid": 892783549502424,
+									"parameters": {
+										"object": "DanCollisionBox",
+										"layer": "\"DanPlayer\"",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "DanCollisionBox",
+									"sid": 154449631606121,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "DanPlayerBox",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 503304148462825,
+									"parameters": {
+										"seconds": "0.15"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Dan",
+									"sid": 741995363114606,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "DanCollisionBox",
+									"sid": 233636755850186
+								}
+							],
+							"sid": 922242647435082
 						}
 					],
-					"actions": [
+					"sid": 513935038339436
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Gun",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 372861645053585,
-							"parameters": {
-								"seconds": "0.01"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 103142908092983,
-							"parameters": {
-								"variable": "ArmaActual",
-								"value": "\"Melee\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 678076136812868,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 840118633126029,
+									"parameters": {
+										"variable": "ArmaActual",
+										"comparison": 0,
+										"value": "\"Gun\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 565164538774006,
+									"parameters": {
+										"object-to-create": "Bullet",
+										"layer": "0",
+										"x": "Dan.X",
+										"y": "Dan.Y-20",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Bullet",
+									"sid": 492796798453262,
+									"behaviorType": "Bala",
+									"parameters": {
+										"speed": "200"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Bullet",
+									"sid": 729317136283260,
+									"behaviorType": "Bala",
+									"parameters": {
+										"angle": "angle(Self.X, Self.Y, Mouse.X, Mouse.Y)"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 840097073871051,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bullet",
+									"sid": 220388425645524
+								}
+							],
+							"sid": 315562516034277
 						}
 					],
-					"sid": 953114462439002
+					"sid": 689390297087354
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hook",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 581174996694224,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 483759069609166,
+									"parameters": {
+										"variable": "ArmaActual",
+										"comparison": 0,
+										"value": "\"Hook\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HookPH",
+									"sid": 945755213258577
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 384097227583967,
+									"parameters": {
+										"object-to-create": "HookPH",
+										"layer": "0",
+										"x": "Dan.X",
+										"y": "Dan.Y-20",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "HookPH",
+									"sid": 486123518815452,
+									"behaviorType": "Bala",
+									"parameters": {
+										"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "HookPH",
+									"sid": 485641679398642,
+									"behaviorType": "Bala",
+									"parameters": {
+										"speed": "700"
+									}
+								}
+							],
+							"sid": 510758621821585
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "HookPH",
+									"sid": 174309338675301,
+									"parameters": {
+										"object": "TiledBackground"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "HookPH",
+									"sid": 877831230772113,
+									"behaviorType": "Físicas",
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "HookPH",
+									"sid": 965265667864561,
+									"behaviorType": "Plataforma",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "HookPH",
+									"sid": 791759580044100,
+									"behaviorType": "Bala",
+									"parameters": {
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 491858547393713
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 448065495698570
+								},
+								{
+									"id": "compare-speed",
+									"objectClass": "HookPH",
+									"sid": 570039010995191,
+									"behaviorType": "Bala",
+									"parameters": {
+										"comparison": 0,
+										"speed": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "HookPH",
+									"sid": 805443981998285,
+									"parameters": {
+										"angle": "angle(0,0,Self.Físicas.VelocityX,Self.Físicas.VelocityY)"
+									}
+								}
+							],
+							"sid": 248179648702572
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 870360296778429,
+									"parameters": {
+										"key": 67
+									}
+								},
+								{
+									"id": "compare-speed",
+									"objectClass": "HookPH",
+									"sid": 140212345092258,
+									"behaviorType": "Bala",
+									"parameters": {
+										"comparison": 0,
+										"speed": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "DanPlayerBox",
+									"sid": 614389077938268,
+									"behaviorType": "Platform",
+									"parameters": {
+										"gravity": "0"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "DanPlayerBox",
+									"sid": 926108897209295,
+									"behaviorType": "MoverA",
+									"parameters": {
+										"object": "HookPH",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 342768751278832
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 526169388163314,
+									"parameters": {
+										"key": 67
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "DanPlayerBox",
+									"sid": 761834148233688,
+									"behaviorType": "Platform",
+									"parameters": {
+										"gravity": "1500"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "DanPlayerBox",
+									"sid": 322757632425229,
+									"behaviorType": "MoverA"
+								}
+							],
+							"sid": 888165524422120
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 282564474359289,
+									"parameters": {
+										"key": 69
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HookPH",
+									"sid": 419483919869890
+								}
+							],
+							"sid": 980871488995578
+						}
+					],
+					"sid": 545834791215971
 				}
 			],
 			"sid": 339066197705166

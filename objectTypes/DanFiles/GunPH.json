@@ -1,42 +1,43 @@
 {
-	"name": "DanPlayerBox",
+	"name": "GunPH",
 	"plugin-id": "Sprite",
-	"sid": 852029519103018,
+	"sid": 549261688488414,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 934003726164244
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoverA",
-			"sid": 375512983835522
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 15,
-						"height": 60,
-						"originX": 0.5,
+						"width": 24,
+						"height": 6,
+						"originX": -0.08333333333333333,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3760861,
+						"imageSpriteId": 2262240,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9583333333333334,
+								0,
+								0.9583333333333334,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 753481212342520,
+				"sid": 957813820454458,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

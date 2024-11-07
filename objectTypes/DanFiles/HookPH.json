@@ -1,19 +1,24 @@
 {
-	"name": "DanPlayerBox",
+	"name": "HookPH",
 	"plugin-id": "Sprite",
-	"sid": 852029519103018,
+	"sid": 603548724483332,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 934003726164244
+			"behaviorId": "Physics",
+			"name": "Físicas",
+			"sid": 200749315758556
 		},
 		{
-			"behaviorId": "MoveTo",
-			"name": "MoverA",
-			"sid": 375512983835522
+			"behaviorId": "Platform",
+			"name": "Plataforma",
+			"sid": 694272193389914
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 232806626168828
 		}
 	],
 	"effectTypes": [],
@@ -22,21 +27,21 @@
 			{
 				"frames": [
 					{
-						"width": 15,
-						"height": 60,
-						"originX": 0.5,
+						"width": 24,
+						"height": 24,
+						"originX": 0.08333333333333333,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3760861,
+						"imageSpriteId": 298639,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 753481212342520,
+				"sid": 334145896607218,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
