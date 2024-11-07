@@ -179,7 +179,9 @@
 			"FlowchartController",
 			"TerranovaText",
 			"Sprite5",
-			"PresentaText"
+			"PresentaText",
+			"Sprite7",
+			"Text"
 		],
 		"subfolders": [
 			{

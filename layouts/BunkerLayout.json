@@ -80,8 +80,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": -27,
-								"y": 487,
+								"x": 4303,
+								"y": 421,
 								"width": 892,
 								"height": 201,
 								"originX": 0,
@@ -132,8 +132,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": -22.282024036754592,
-								"y": 70.1011740944598,
+								"x": 4308,
+								"y": 4,
 								"width": 892,
 								"height": 201,
 								"originX": 0,
@@ -387,8 +387,8 @@
 	"sid": 700762571658667,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 10000,
+	"height": 10000,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
