@@ -4,7 +4,23 @@
 	"sid": 426938022421937,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 802210989200176
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 235301013591707
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 281600680579764
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -32,14 +48,14 @@
 								0,
 								1,
 								0,
-								1,
-								1,
-								1,
-								1,
+								0.9961124118283498,
+								0.9800313907298354,
+								0.7859527807441543,
+								0.9884228344698075,
+								0.19321117812781013,
+								0.9878574224447566,
 								0,
-								1,
-								0,
-								1,
+								0.9753309715030629,
 								0,
 								0,
 								0,

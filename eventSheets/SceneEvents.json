@@ -1,0 +1,232 @@
+{
+	"name": "SceneEvents",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "StartingCamera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 424563748367726
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Nave",
+							"sid": 104453434587254,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanPlayerBox",
+							"sid": 735795700946802,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 219656144700004,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Dan",
+							"sid": 412911791598841,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Nave",
+							"sid": 335733624127243,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Nave",
+							"sid": 834293516467891,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Nave",
+							"sid": 764349173750982,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "500"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Nave",
+							"sid": 895476586326987,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"acceleration": "-120"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Nave",
+							"sid": 973920650809515,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-magnitude",
+							"objectClass": "Nave",
+							"sid": 289979166910242,
+							"behaviorType": "Sine",
+							"parameters": {
+								"magnitude": "30"
+							}
+						},
+						{
+							"id": "set-period",
+							"objectClass": "Nave",
+							"sid": 965240550356442,
+							"behaviorType": "Sine",
+							"parameters": {
+								"period": "1"
+							}
+						}
+					],
+					"sid": 949731941254817
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Nave",
+							"sid": 351827361091324,
+							"parameters": {
+								"object": "NaveStop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Nave",
+							"sid": 263364669487314,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Nave",
+							"sid": 659702034642307,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Nave",
+							"sid": 383546692457825,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "15",
+								"duration": "1",
+								"mode": "reducing-magnitude"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Nave",
+							"sid": 350992511571682,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "camera",
+							"sid": 960487818706821,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 913373126841309,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Dan",
+							"sid": 958985974160739,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanPlayerBox",
+							"sid": 610338164565173,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 833821058112441,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 321538770173790,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 443159193775618
+				}
+			],
+			"sid": 718412848679369
+		}
+	],
+	"sid": 222275965044310
+}

@@ -1,0 +1,15 @@
+{
+	"name": "PresentaText",
+	"plugin-id": "Text",
+	"sid": 633166150608413,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 547709254372153
+		}
+	],
+	"effectTypes": []
+}

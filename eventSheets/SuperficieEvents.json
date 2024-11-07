@@ -1,5 +1,14 @@
 {
 	"name": "SuperficieEvents",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "MacroEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "SceneEvents"
+		}
+	],
 	"sid": 151494497408070
 }

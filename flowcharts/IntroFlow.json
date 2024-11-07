@@ -1,0 +1,78 @@
+{
+	"sid": 329168596711908,
+	"nodes": [
+		{
+			"sid": 911107302909650,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [
+				329649976203794
+			],
+			"outputs": [
+				{
+					"sid": 996871887831640,
+					"cnSID": 329649976203794,
+					"name": "Intro1",
+					"value": "\"A\""
+				},
+				{
+					"sid": 367512917248832,
+					"cnSID": null,
+					"name": "Intro2",
+					"value": "\"B\""
+				},
+				{
+					"sid": 392232233650944,
+					"cnSID": null,
+					"name": "Intro3",
+					"value": "\"C\""
+				},
+				{
+					"sid": 628377475483961,
+					"cnSID": null,
+					"name": "Intro4",
+					"value": "\"D\""
+				}
+			],
+			"x": 9789,
+			"y": 9902,
+			"w": 420,
+			"h": 232,
+			"t": "",
+			"s": true,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 329649976203794,
+			"pnSIDs": [
+				911107302909650
+			],
+			"poSIDs": [
+				996871887831640
+			],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 497595102447093,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "\"B\""
+				}
+			],
+			"x": 10244,
+			"y": 9901,
+			"w": 420,
+			"h": 132,
+			"t": "",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		}
+	],
+	"name": "IntroFlow",
+	"w": 20000,
+	"h": 20000
+}

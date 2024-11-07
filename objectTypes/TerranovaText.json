@@ -1,0 +1,15 @@
+{
+	"name": "TerranovaText",
+	"plugin-id": "Text",
+	"sid": 203450802272837,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 424339646582982
+		}
+	],
+	"effectTypes": []
+}

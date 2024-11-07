@@ -1,0 +1,152 @@
+{
+	"name": "DialogueEvents",
+	"events": [
+		{
+			"functionName": "dialogue",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "t",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 612713517141094
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "GeneralTextBox",
+					"sid": 360494576895078
+				},
+				{
+					"id": "destroy",
+					"objectClass": "GeneralText",
+					"sid": 576531339483202
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 387642536601500,
+					"parameters": {
+						"object-to-create": "GeneralTextBox",
+						"layer": "\"DanHUD\"",
+						"x": "426",
+						"y": "411",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 826237030868568,
+					"parameters": {
+						"object-to-create": "GeneralText",
+						"layer": "\"DanHUD\"",
+						"x": "476",
+						"y": "410",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "GeneralText",
+					"sid": 456975228372479,
+					"parameters": {
+						"text": "t",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 783704768121500
+		},
+		{
+			"functionName": "destroyDialogue",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "GeneralText",
+					"sid": 222479324448098
+				},
+				{
+					"id": "destroy",
+					"objectClass": "GeneralTextBox",
+					"sid": 458247260372271
+				}
+			],
+			"sid": 278343329610425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 690306139938729
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "GeneralText",
+					"sid": 972966412972549
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "GeneralText",
+					"sid": 579179977859950
+				}
+			],
+			"sid": 640305620276324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 229114311171337
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "GeneralText",
+					"sid": 716002315125820,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "GeneralText",
+					"sid": 814503275997402
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 805432276053631,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 869755013758236
+		}
+	],
+	"sid": 257524915797502
+}

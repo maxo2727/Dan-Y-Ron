@@ -1,0 +1,108 @@
+{
+	"name": "IntroEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "DialogueEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 885271976763898
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "TerranovaText",
+					"sid": 825107396054009,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 484224275839609,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PresentaText",
+					"sid": 456883352445692,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PresentaText",
+					"sid": 964122195293250,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "start-flowchart",
+					"objectClass": "FlowchartController",
+					"sid": 142618362765772,
+					"parameters": {
+						"flowchart-name": "IntroFlow",
+						"start-node-tag": "\"\"",
+						"flowchart-tag": "\"\"",
+						"set-as-current": true
+					}
+				}
+			],
+			"sid": 184470976630540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 281182799625407,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "dialogue",
+					"sid": 316057980015009,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Intro1\")"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 998851977796892,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 992403344409620,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Intro2\")"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 956027825854033,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 764097212739897
+		}
+	],
+	"sid": 230171994117055
+}
