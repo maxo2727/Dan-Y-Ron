@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "IntroBG",
+					"type": "Black",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -19,7 +19,18 @@
 					"sid": 838396226961084,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 838396226961084,
 						"expanded": true

@@ -1,10 +1,16 @@
 {
-	"name": "IntroBG",
+	"name": "Black",
 	"plugin-id": "Sprite",
 	"sid": 405076106594760,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 869620204644763
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

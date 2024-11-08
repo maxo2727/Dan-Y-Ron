@@ -177,7 +177,7 @@
 			"GeneralText",
 			"FlowchartController",
 			"TerranovaText",
-			"IntroBG",
+			"Black",
 			"PresentaText",
 			"Sprite7",
 			"Text",
@@ -185,7 +185,9 @@
 			"ManualCamera",
 			"Sprite6",
 			"Sprite8",
-			"IMG_"
+			"IMG_",
+			"RonTxt",
+			"Sprite9"
 		],
 		"subfolders": [
 			{
@@ -383,7 +385,8 @@
 	"families": {
 		"items": [
 			"Defenses",
-			"DefensesIcons"
+			"DefensesIcons",
+			"CharacterTxt"
 		],
 		"subfolders": []
 	},
@@ -433,7 +436,8 @@
 			"SceneEvents",
 			"IntroEvents",
 			"DialogueEvents",
-			"ManualCameraEvents"
+			"ManualCameraEvents",
+			"GameFlowVariables"
 		],
 		"subfolders": [
 			{
@@ -547,7 +551,8 @@
 	},
 	"flowcharts": {
 		"items": [
-			"IntroFlow"
+			"IntroFlow",
+			"FirstRunFlow"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,11 @@
+{
+	"name": "CharacterTxt",
+	"plugin-id": "Sprite",
+	"sid": 594953868444432,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"RonTxt"
+	]
+}

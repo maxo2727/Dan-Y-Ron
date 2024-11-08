@@ -1,0 +1,16 @@
+{
+	"name": "GameFlowVariables",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CurrentRun",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 831765962947840
+		}
+	],
+	"sid": 874519665143310
+}

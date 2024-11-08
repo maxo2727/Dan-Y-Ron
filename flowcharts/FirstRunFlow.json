@@ -1,0 +1,55 @@
+{
+	"sid": 649503041678386,
+	"nodes": [
+		{
+			"sid": 108780952094477,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 384759108280950,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "Dan... ¿Me escuchas? Aquí Ron..."
+				},
+				{
+					"sid": 323538226033653,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Parece que el aterrizaje estuvo un poco agitado."
+				},
+				{
+					"sid": 151366292749980,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Aún le falta calibración a la cápsula."
+				},
+				{
+					"sid": 129467001267408,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "Si mis cálculos son correctos, estas son las coordenadas de la señal que recibimos."
+				},
+				{
+					"sid": 502392255726932,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Explora las inmediaciones del lugar a ver si encuentras algo."
+				}
+			],
+			"x": 9864,
+			"y": 9897,
+			"w": 420,
+			"h": 265,
+			"t": "",
+			"s": true,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		}
+	],
+	"name": "FirstRunFlow",
+	"w": 20000,
+	"h": 20000
+}

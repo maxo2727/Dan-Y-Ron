@@ -245,54 +245,142 @@
 						}
 					],
 					"sid": 133812671452066
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 130130089646235,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-flowchart-by-name",
+							"objectClass": "FlowchartController",
+							"sid": 723292248034793,
+							"parameters": {
+								"flowchart-name": "\"IntroFlow\"",
+								"start-node-tag": "\"\"",
+								"flowchart-tag": "\"\"",
+								"set-as-current": true
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 505058917248117,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Intro1\")",
+								"\"\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 491921095179379,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 650523809474723,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Intro2\")",
+								"\"\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 799790346807978,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 501399406243430,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Intro3\")",
+								"\"\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 450636775660661,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 747048633666203,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Intro4\")",
+								"\"\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 770718640304729,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 787600146521433,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Intro5\")",
+								"\"\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 441918913876265,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 272560589538629
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 844812374302844,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
+							"id": "end-flowchart",
+							"objectClass": "FlowchartController",
+							"sid": 244175132219381
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 401374813333049,
+							"parameters": {
+								"layout": "SuperficieLayout"
+							}
+						}
+					],
+					"sid": 618790254622488
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 281182799625407,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "dialogue",
-					"sid": 316057980015009,
-					"parameters": [
-						"FlowchartController.OutputValue(\"Intro1\")"
-					]
-				},
-				{
-					"id": "wait-for-signal",
-					"objectClass": "System",
-					"sid": 998851977796892,
-					"parameters": {
-						"tag": "\"next\""
-					}
-				},
-				{
-					"callFunction": "dialogue",
-					"sid": 992403344409620,
-					"parameters": [
-						"FlowchartController.OutputValue(\"Intro2\")"
-					]
-				},
-				{
-					"id": "wait-for-signal",
-					"objectClass": "System",
-					"sid": 956027825854033,
-					"parameters": {
-						"tag": "\"next\""
-					}
-				}
-			],
-			"sid": 764097212739897
 		}
 	],
 	"sid": 230171994117055

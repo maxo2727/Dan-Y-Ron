@@ -15,6 +15,13 @@
 					"initialValue": "",
 					"comment": "",
 					"sid": 612713517141094
+				},
+				{
+					"name": "c",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 568092278507505
 				}
 			],
 			"eventType": "function-block",
@@ -31,12 +38,22 @@
 					"sid": 576531339483202
 				},
 				{
+					"id": "destroy",
+					"objectClass": "CharacterTxt",
+					"sid": 167736540358901
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite9",
+					"sid": 534239203757173
+				},
+				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 387642536601500,
+					"sid": 854582871301672,
 					"parameters": {
 						"object-to-create": "GeneralTextBox",
-						"layer": "\"DanHUD\"",
+						"layer": "\"TextLayer\"",
 						"x": "426",
 						"y": "411",
 						"create-hierarchy": false,
@@ -44,12 +61,25 @@
 					}
 				},
 				{
+					"id": "create-object-by-name",
+					"objectClass": "System",
+					"sid": 255317282226705,
+					"parameters": {
+						"object-name": "c",
+						"layer": "\"TextLayer\"",
+						"x": "65",
+						"y": "410",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 826237030868568,
+					"sid": 749515950544841,
 					"parameters": {
 						"object-to-create": "GeneralText",
-						"layer": "\"DanHUD\"",
+						"layer": "\"TextLayer\"",
 						"x": "476",
 						"y": "410",
 						"create-hierarchy": false,
@@ -59,14 +89,50 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "GeneralText",
-					"sid": 456975228372479,
+					"sid": 878483629175053,
 					"parameters": {
 						"text": "t",
 						"duration": "2"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 694136598707480,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 339188359359626,
+					"parameters": {
+						"object-to-create": "Sprite9",
+						"layer": "\"TextLayer\"",
+						"x": "825",
+						"y": "445",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
-			"sid": 783704768121500
+			"sid": 783704768121500,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "GeneralText",
+							"sid": 107855765018565,
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 893359963693744
+				}
+			]
 		},
 		{
 			"functionName": "destroyDialogue",
@@ -88,9 +154,51 @@
 					"id": "destroy",
 					"objectClass": "GeneralTextBox",
 					"sid": 458247260372271
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CharacterTxt",
+					"sid": 551002773945051
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite9",
+					"sid": 788559838120468
 				}
 			],
 			"sid": 278343329610425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 536767764509981
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "GeneralText",
+					"sid": 409218262136554,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "GeneralText",
+					"sid": 704639018700732
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 658605055453901,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 344706566317746
 		},
 		{
 			"eventType": "block",
@@ -111,41 +219,22 @@
 					"id": "typewriter-finish",
 					"objectClass": "GeneralText",
 					"sid": 579179977859950
-				}
-			],
-			"sid": 640305620276324
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-any-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 229114311171337
 				},
 				{
-					"id": "is-running-typewriter-text",
-					"objectClass": "GeneralText",
-					"sid": 716002315125820,
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "typewriter-finish",
-					"objectClass": "GeneralText",
-					"sid": 814503275997402
-				},
-				{
-					"id": "signal",
+					"id": "create-object",
 					"objectClass": "System",
-					"sid": 805432276053631,
+					"sid": 791365180622084,
 					"parameters": {
-						"tag": "\"next\""
+						"object-to-create": "Sprite9",
+						"layer": "\"TextLayer\"",
+						"x": "825",
+						"y": "445",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				}
 			],
-			"sid": 869755013758236
+			"sid": 640305620276324
 		}
 	],
 	"sid": 257524915797502

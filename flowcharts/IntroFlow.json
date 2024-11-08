@@ -5,50 +5,45 @@
 			"sid": 911107302909650,
 			"pnSIDs": [],
 			"poSIDs": [],
-			"nodeSIDs": [
-				329649976203794
-			],
+			"nodeSIDs": [],
 			"outputs": [
 				{
 					"sid": 996871887831640,
-					"cnSID": 329649976203794,
-					"name": "Credits",
-					"value": "\"TERRANOVA PRODUCCIONES\"\""
+					"cnSID": null,
+					"name": "Intro1",
+					"value": "Triangulando posición..."
+				},
+				{
+					"sid": 436627181940325,
+					"cnSID": null,
+					"name": "Intro2",
+					"value": "Sistema de escaneo activado..."
+				},
+				{
+					"sid": 550648250909849,
+					"cnSID": null,
+					"name": "Intro3",
+					"value": "Lectura de atmósfera completada..."
+				},
+				{
+					"sid": 400963474056109,
+					"cnSID": null,
+					"name": "Intro4",
+					"value": "Activando protocolo de despliegue remoto..."
+				},
+				{
+					"sid": 579812013982366,
+					"cnSID": null,
+					"name": "Intro5",
+					"value": "Iniciando descenso..."
 				}
 			],
 			"x": 9789,
 			"y": 9865.839782714844,
 			"w": 420,
-			"h": 159,
+			"h": 265,
 			"t": "",
 			"s": true,
-			"pi": 0,
-			"c": "Flowchart node",
-			"ty": "dictionary"
-		},
-		{
-			"sid": 329649976203794,
-			"pnSIDs": [
-				911107302909650
-			],
-			"poSIDs": [
-				996871887831640
-			],
-			"nodeSIDs": [],
-			"outputs": [
-				{
-					"sid": 497595102447093,
-					"cnSID": null,
-					"name": "Credits",
-					"value": "\"DANILO GAMES\""
-				}
-			],
-			"x": 10253,
-			"y": 9856,
-			"w": 420,
-			"h": 132,
-			"t": "",
-			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",
 			"ty": "dictionary"

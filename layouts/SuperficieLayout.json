@@ -2277,8 +2277,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1222,
-						"y": 831,
+						"x": 1631,
+						"y": 761,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2338,8 +2338,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1224,
-						"y": 876,
+						"x": 1631,
+						"y": 760,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2383,8 +2383,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1224,
-						"y": 904,
+						"x": 1630,
+						"y": 789,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,
@@ -2503,6 +2503,121 @@
 			"subLayers": [],
 			"instances": [],
 			"sid": 290018516866095,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "TextLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 850042149702589,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": true
+		},
+		{
+			"name": "FadeLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Black",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 422,
+					"sid": 106624658963152,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 106624658963152,
+						"expanded": true
+					},
+					"world": {
+						"x": 5633,
+						"y": 776,
+						"width": 11477,
+						"height": 2860,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 445067274311410,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
