@@ -187,7 +187,8 @@
 			"Sprite8",
 			"IMG_",
 			"RonTxt",
-			"Sprite9"
+			"Sprite9",
+			"Sprite10"
 		],
 		"subfolders": [
 			{
@@ -372,8 +373,9 @@
 			},
 			{
 				"items": [
-					"TiledBackground2",
-					"TiledBackground3"
+					"BunkerTerrainTile",
+					"BunkerTile2",
+					"FromBunkerToLunarBase"
 				],
 				"subfolders": [],
 				"name": "Bunker"

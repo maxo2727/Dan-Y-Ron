@@ -133,6 +133,56 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "DanPlayerBox",
+					"sid": 573591423899974,
+					"parameters": {
+						"object": "FromBunkerToLunarBase"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 708061428154859,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 415377662844976,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 741176417841566,
+							"parameters": {
+								"layout": "LunarBaseLayout"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 952483515605567,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"value": "\"FromBunkerToLunarBase\""
+							}
+						}
+					],
+					"sid": 451479862713388
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "DanPlayerBox",
 					"sid": 352259619479307,
 					"parameters": {
 						"object": "BotonCapsula"
@@ -351,10 +401,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
-							"sid": 150299321498445,
+							"sid": 361700775709676,
 							"parameters": {
-								"x": "4730",
-								"y": "370"
+								"x": "4850",
+								"y": "530"
 							}
 						},
 						{
@@ -368,6 +418,42 @@
 						}
 					],
 					"sid": 399981589271732
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 891831541316836,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromBunkerToLunarBase\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 415818543379636,
+							"parameters": {
+								"x": "2110",
+								"y": "916"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 446816219468603,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 918389033294857
 				}
 			]
 		}

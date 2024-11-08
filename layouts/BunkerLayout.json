@@ -5,7 +5,43 @@
 			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Sprite10",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 529,
+					"sid": 150306565914074,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 150306565914074,
+						"expanded": true
+					},
+					"world": {
+						"x": 4987,
+						"y": 4508,
+						"width": 10005,
+						"height": 9032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 515991761170644,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -23,7 +59,7 @@
 				1,
 				1
 			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -45,7 +81,7 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -83,7 +119,7 @@
 								"x": 4300,
 								"y": 534,
 								"width": 1427,
-								"height": 173,
+								"height": 197,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -97,7 +133,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -149,7 +185,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -201,7 +237,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -253,7 +289,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -305,7 +341,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -357,7 +393,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -409,7 +445,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -461,7 +497,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -513,7 +549,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -565,7 +601,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -617,7 +653,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -669,7 +705,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -721,7 +757,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -773,7 +809,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -825,7 +861,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -877,7 +913,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -929,7 +965,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -981,7 +1017,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1033,7 +1069,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1085,7 +1121,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1137,7 +1173,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1189,7 +1225,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1241,7 +1277,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1293,7 +1329,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1345,7 +1381,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1397,7 +1433,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1449,7 +1485,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1501,7 +1537,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1553,7 +1589,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1605,7 +1641,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1657,7 +1693,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1709,7 +1745,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1761,7 +1797,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1813,7 +1849,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1865,7 +1901,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1917,7 +1953,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -1969,7 +2005,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2021,7 +2057,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2073,7 +2109,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2125,7 +2161,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2177,7 +2213,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2229,7 +2265,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2281,7 +2317,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2333,7 +2369,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2385,7 +2421,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2437,7 +2473,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2489,7 +2525,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2541,7 +2577,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2593,7 +2629,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2645,7 +2681,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2697,7 +2733,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2749,7 +2785,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2801,7 +2837,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2853,7 +2889,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2905,7 +2941,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -2957,7 +2993,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3009,7 +3045,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3061,7 +3097,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3113,7 +3149,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3165,7 +3201,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3217,7 +3253,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3269,7 +3305,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3321,7 +3357,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3373,7 +3409,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3425,7 +3461,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3477,7 +3513,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3529,7 +3565,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3581,7 +3617,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3633,7 +3669,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3685,7 +3721,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3737,7 +3773,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3789,7 +3825,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3841,7 +3877,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3893,7 +3929,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3945,7 +3981,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -3997,7 +4033,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4049,7 +4085,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4101,7 +4137,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4153,7 +4189,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4205,7 +4241,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4257,7 +4293,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4309,7 +4345,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4361,7 +4397,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4413,7 +4449,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4465,7 +4501,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4517,7 +4553,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4569,7 +4605,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4621,7 +4657,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4673,7 +4709,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4725,7 +4761,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4777,7 +4813,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4829,7 +4865,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4881,7 +4917,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4933,7 +4969,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -4985,7 +5021,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5037,7 +5073,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5089,7 +5125,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5141,7 +5177,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5193,7 +5229,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5245,7 +5281,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5297,7 +5333,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5349,7 +5385,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5401,7 +5437,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5453,7 +5489,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5505,7 +5541,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5557,7 +5593,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5609,7 +5645,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground2",
+							"type": "BunkerTerrainTile",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -5678,7 +5714,7 @@
 						1,
 						1
 					],
-					"isTransparent": false,
+					"isTransparent": true,
 					"parallaxX": 1,
 					"parallaxY": 1,
 					"scaleRate": 1,
@@ -5694,7 +5730,43 @@
 					"name": "LevelTransitions",
 					"overriden": 0,
 					"subLayers": [],
-					"instances": [],
+					"instances": [
+						{
+							"type": "FromBunkerToLunarBase",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 530,
+							"sid": 565413922160904,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 565413922160904,
+								"expanded": true
+							},
+							"world": {
+								"x": 4850.606760764749,
+								"y": 469.8202672931327,
+								"width": 60,
+								"height": 128,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
 					"sid": 754821766333145,
 					"effectTypes": [],
 					"isInitiallyVisible": true,
