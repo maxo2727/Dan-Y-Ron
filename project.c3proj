@@ -469,7 +469,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "SilomBol.ttf",
+					"type": "application/font-sfnt",
+					"sid": 305783161878420,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
