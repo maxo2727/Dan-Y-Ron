@@ -375,7 +375,13 @@
 				"items": [
 					"BunkerTerrainTile",
 					"BunkerTile2",
-					"FromBunkerToLunarBase"
+					"FromBunkerToLunarBase",
+					"BunkerLadder",
+					"BunkerPilar",
+					"BunkerBG1",
+					"BunkerBG2",
+					"BunkerDoor1",
+					"BunkerGunTrigger"
 				],
 				"subfolders": [],
 				"name": "Bunker"
@@ -439,7 +445,8 @@
 			"IntroEvents",
 			"DialogueEvents",
 			"ManualCameraEvents",
-			"GameFlowVariables"
+			"GameFlowVariables",
+			"BunkerEvents"
 		],
 		"subfolders": [
 			{

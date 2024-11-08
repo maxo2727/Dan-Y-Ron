@@ -1,0 +1,84 @@
+{
+	"name": "BunkerEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 210321696288734,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "BunkerLadder",
+					"sid": 179264509326059,
+					"behaviorType": "Jumpthru",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 972001724121141
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "BunkerLadder",
+					"sid": 729546193855971,
+					"behaviorType": "Jumpthru",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 763684950622583,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "BunkerLadder",
+					"sid": 793546281252548,
+					"behaviorType": "Jumpthru",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 455156506929264
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 993684577707225,
+					"parameters": {
+						"object": "BunkerGunTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "BunkerDoor1",
+					"sid": 396245376158347
+				}
+			],
+			"sid": 803566203086273
+		}
+	],
+	"sid": 665832316621640
+}

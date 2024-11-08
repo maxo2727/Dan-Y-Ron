@@ -1,0 +1,51 @@
+{
+	"name": "BunkerGunTrigger",
+	"plugin-id": "Sprite",
+	"sid": 420999576727506,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9763384,
+						"collisionPoly": {
+							"points": [
+								0.003968253968253968,
+								0.003968253968253968,
+								0.996031746031746,
+								0.003968253968253968,
+								0.996031746031746,
+								0.996031746031746,
+								0.003968253968253968,
+								0.996031746031746
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 512659113319107,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
