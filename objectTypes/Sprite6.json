@@ -1,14 +1,14 @@
 {
 	"name": "Sprite6",
 	"plugin-id": "Sprite",
-	"sid": 161899606278101,
+	"sid": 818515977662126,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 629137159284967
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 871649980432491
 		}
 	],
 	"effectTypes": [],
@@ -17,21 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 820,
+						"height": 478,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2092239,
+						"imageSpriteId": 8032703,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 209887378691468,
+				"sid": 614921472036507,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,0 +1,69 @@
+{
+	"name": "ManualCameraEvents",
+	"events": [
+		{
+			"functionName": "MoveCamera",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "cameraAngle",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 624277654509945
+				},
+				{
+					"name": "cameraSpeed",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 811639071476472
+				},
+				{
+					"name": "cameraDuration",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 157642886498169
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ManualCamera",
+					"sid": 663783932100054,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "ManualCamera",
+					"sid": 773568664180036,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "cameraAngle"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "ManualCamera",
+					"sid": 682762770285103,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "cameraSpeed"
+					}
+				}
+			],
+			"sid": 188870832021149
+		}
+	],
+	"sid": 203240834033024
+}

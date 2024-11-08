@@ -172,16 +172,20 @@
 	"objectTypes": {
 		"items": [
 			"camera",
-			"Sprite6",
 			"NaveStop",
 			"GeneralTextBox",
 			"GeneralText",
 			"FlowchartController",
 			"TerranovaText",
-			"Sprite5",
+			"IntroBG",
 			"PresentaText",
 			"Sprite7",
-			"Text"
+			"Text",
+			"Sprite5",
+			"ManualCamera",
+			"Sprite6",
+			"Sprite8",
+			"IMG_"
 		],
 		"subfolders": [
 			{
@@ -397,7 +401,17 @@
 			"IntroLayout",
 			"ObjectDatabaseLayout"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"News1Layout",
+					"News2Layout",
+					"News3Layout"
+				],
+				"subfolders": [],
+				"name": "Intro"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
@@ -418,9 +432,20 @@
 			"LevelTransitions",
 			"SceneEvents",
 			"IntroEvents",
-			"DialogueEvents"
+			"DialogueEvents",
+			"ManualCameraEvents"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"News1Events",
+					"News2Events",
+					"News3Events"
+				],
+				"subfolders": [],
+				"name": "Intro"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {

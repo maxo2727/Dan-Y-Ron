@@ -1,0 +1,53 @@
+{
+	"name": "News2Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 455695667453752
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MoveCamera",
+					"sid": 960521000415015,
+					"parameters": [
+						"10",
+						"40",
+						"4"
+					]
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 906623345371337,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 921626650923779,
+					"parameters": {
+						"variable": "IntroTextVariable",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 460622018321790,
+					"parameters": {
+						"layout": "IntroLayout"
+					}
+				}
+			],
+			"sid": 918907793381988
+		}
+	],
+	"sid": 525359337308963
+}

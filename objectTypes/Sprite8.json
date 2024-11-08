@@ -1,37 +1,31 @@
 {
-	"name": "Sprite5",
+	"name": "Sprite8",
 	"plugin-id": "Sprite",
-	"sid": 795599122888011,
+	"sid": 755664591014084,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 573540650432221
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 591,
-						"height": 665,
+						"width": 1170,
+						"height": 964,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4506241,
+						"imageSpriteId": 5501890,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 724449943731264,
+				"sid": 937596080501952,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

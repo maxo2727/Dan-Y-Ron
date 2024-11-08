@@ -2,8 +2,144 @@
 	"name": "IntroEvents",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "IntroTextVariable",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610261459699689
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "DialogueEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 266483612009398
+				}
+			],
+			"actions": [],
+			"sid": 479300253451099,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 673448761410140,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TerranovaText",
+							"sid": 316709122197108,
+							"parameters": {
+								"text": "\"TERRANOVA PRODUCCIONES\""
+							}
+						}
+					],
+					"sid": 344765975978559
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 814721303519556,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TerranovaText",
+							"sid": 925859892522737,
+							"parameters": {
+								"text": "\"DANILO GAMES\""
+							}
+						}
+					],
+					"sid": 772124342654485
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 549934494056762,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TerranovaText",
+							"sid": 238587414194293,
+							"parameters": {
+								"text": "\"Presentan\""
+							}
+						}
+					],
+					"sid": 985072381435195
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 390038680364183,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TerranovaText",
+							"sid": 774493962861097,
+							"parameters": {
+								"text": "\"DAN & RON\""
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "TerranovaText",
+							"sid": 208390276631736,
+							"parameters": {
+								"size-pt": "50"
+							}
+						}
+					],
+					"sid": 265906903424381
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -24,38 +160,93 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 484224275839609,
+					"sid": 614690313729767,
 					"parameters": {
-						"seconds": "10"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PresentaText",
-					"sid": 456883352445692,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "PresentaText",
-					"sid": 964122195293250,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "start-flowchart",
-					"objectClass": "FlowchartController",
-					"sid": 142618362765772,
-					"parameters": {
-						"flowchart-name": "IntroFlow",
-						"start-node-tag": "\"\"",
-						"flowchart-tag": "\"\"",
-						"set-as-current": true
+						"seconds": "6"
 					}
 				}
 			],
-			"sid": 184470976630540
+			"sid": 184470976630540,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 611789183128843,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 835505110086951,
+							"parameters": {
+								"layout": "News1Layout"
+							}
+						}
+					],
+					"sid": 322954533414891
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 398912976513162,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 482143817082210,
+							"parameters": {
+								"layout": "News2Layout"
+							}
+						}
+					],
+					"sid": 300660271538059
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 501186524825161,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 320001336595357,
+							"parameters": {
+								"layout": "News3Layout"
+							}
+						}
+					],
+					"sid": 133812671452066
+				}
+			]
 		},
 		{
 			"eventType": "block",

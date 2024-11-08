@@ -12,32 +12,14 @@
 				{
 					"sid": 996871887831640,
 					"cnSID": 329649976203794,
-					"name": "Intro1",
-					"value": "\"Triangulando posición\""
-				},
-				{
-					"sid": 367512917248832,
-					"cnSID": null,
-					"name": "Intro2",
-					"value": "\"B\""
-				},
-				{
-					"sid": 392232233650944,
-					"cnSID": null,
-					"name": "Intro3",
-					"value": "\"C\""
-				},
-				{
-					"sid": 628377475483961,
-					"cnSID": null,
-					"name": "Intro4",
-					"value": "\"D\""
+					"name": "Credits",
+					"value": "\"TERRANOVA PRODUCCIONES\"\""
 				}
 			],
 			"x": 9789,
-			"y": 9902,
+			"y": 9865.839782714844,
 			"w": 420,
-			"h": 232,
+			"h": 159,
 			"t": "",
 			"s": true,
 			"pi": 0,
@@ -57,12 +39,12 @@
 				{
 					"sid": 497595102447093,
 					"cnSID": null,
-					"name": "Option 1",
-					"value": "\"B\""
+					"name": "Credits",
+					"value": "\"DANILO GAMES\""
 				}
 			],
-			"x": 10298,
-			"y": 9808,
+			"x": 10253,
+			"y": 9856,
 			"w": 420,
 			"h": 132,
 			"t": "",
