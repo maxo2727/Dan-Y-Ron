@@ -197,7 +197,7 @@
 			"Sprite9",
 			"Sprite10",
 			"Tilemap",
-			"TiledBackground3"
+			"Sprite11"
 		],
 		"subfolders": [
 			{
@@ -389,19 +389,13 @@
 					"BunkerPilar",
 					"BunkerBG1",
 					"BunkerBG2",
-					"BunkerDoor1",
+					"BunkerDoor",
 					"BunkerElevatorUp",
-					"BunkerElevatorDown"
+					"BunkerElevatorDown",
+					"BunkerGunTrigger",
+					"Platform"
 				],
-				"subfolders": [
-					{
-						"items": [
-							"BunkerGunTrigger"
-						],
-						"subfolders": [],
-						"name": "BunkerGunTriggers"
-					}
-				],
+				"subfolders": [],
 				"name": "Bunker"
 			},
 			{

@@ -1,9 +1,17 @@
 {
-	"name": "TiledBackground3",
+	"name": "Platform",
 	"plugin-id": "TiledBg",
 	"sid": 633927023379011,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "PlatformNumber",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 639055131750137
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",

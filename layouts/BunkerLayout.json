@@ -83,7 +83,52 @@
 						"x": 1936,
 						"y": 1535.114818149899,
 						"width": 4518,
-						"height": 3386.8851818501007,
+						"height": 3557.8851818501007,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BunkerBG1",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 667,
+					"sid": 927695016974078,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 927695016974078,
+						"expanded": true
+					},
+					"world": {
+						"x": 1660,
+						"y": 5066,
+						"width": 4555,
+						"height": 3373,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1523,9 +1568,9 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 4813,
+								"x": 4634,
 								"y": 3371,
-								"width": 2157,
+								"width": 2336,
 								"height": 342,
 								"originX": 0,
 								"originY": 0,
@@ -3083,9 +3128,9 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 5258,
+								"x": 5492,
 								"y": 5389,
-								"width": 1068,
+								"width": 834,
 								"height": 859,
 								"originX": 0,
 								"originY": 0,
@@ -3139,58 +3184,6 @@
 								"y": 4656,
 								"width": 597,
 								"height": 547,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "BunkerTerrainTile",
-							"properties": {
-								"initially-visible": true,
-								"origin": "top-left",
-								"wrap-horizontal": "repeat",
-								"wrap-vertical": "repeat",
-								"image-offset-x": 0,
-								"image-offset-y": 0,
-								"image-scale-x": 1,
-								"image-scale-y": 1,
-								"image-angle": 0,
-								"enable-tile-randomization": false,
-								"x-random": 1,
-								"y-random": 1,
-								"angle-random": 1,
-								"blend-margin-x": 0.1,
-								"blend-margin-y": 0.1
-							},
-							"uid": 507,
-							"sid": 871752366586646,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {
-								"Solid": {
-									"properties": {
-										"enabled": true,
-										"tags": ""
-									}
-								}
-							},
-							"instanceFolderItem": {
-								"sid": 871752366586646,
-								"expanded": true
-							},
-							"world": {
-								"x": 3604.189500243923,
-								"y": 6246,
-								"width": 2784.810499756077,
-								"height": 101,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -3396,9 +3389,9 @@
 							},
 							"world": {
 								"x": 3604,
-								"y": 6347,
+								"y": 6245,
 								"width": 2814,
-								"height": 1428,
+								"height": 1530,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -4921,7 +4914,7 @@
 							}
 						},
 						{
-							"type": "BunkerDoor1",
+							"type": "BunkerDoor",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -4968,7 +4961,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -4986,8 +4979,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 5623.7715478527725,
-								"y": 1233.8988439191317,
+								"x": 5672,
+								"y": 1064,
 								"width": 67.61736626883955,
 								"height": 114.99001209790679,
 								"originX": 0.5,
@@ -5597,7 +5590,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -5615,8 +5608,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 4729,
-								"y": 2314,
+								"x": 4726,
+								"y": 2303,
 								"width": 67.61736626883955,
 								"height": 114.99001209790679,
 								"originX": 0.5,
@@ -5635,7 +5628,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -5653,8 +5646,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 5666,
-								"y": 2318,
+								"x": 5669,
+								"y": 2306,
 								"width": 67.61736626883955,
 								"height": 114.99001209790679,
 								"originX": 0.5,
@@ -5673,7 +5666,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -5691,8 +5684,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 4869,
-								"y": 3324,
+								"x": 4832,
+								"y": 3335,
 								"width": 48.0273002438501,
 								"height": 81.67516927696664,
 								"originX": 0.5,
@@ -5994,8 +5987,8 @@
 							"world": {
 								"x": 4318,
 								"y": 3664,
-								"width": 500,
-								"height": 140,
+								"width": 317,
+								"height": 144,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -6046,7 +6039,7 @@
 							"world": {
 								"x": 3988,
 								"y": 3374,
-								"width": 826,
+								"width": 647,
 								"height": 290,
 								"originX": 0,
 								"originY": 0,
@@ -6682,7 +6675,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -6703,7 +6696,9 @@
 							"uid": 636,
 							"sid": 793048692867645,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 1
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -6721,7 +6716,7 @@
 										"period-offset-random": 0,
 										"magnitude": 180,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -6731,7 +6726,7 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 3623,
+								"x": 3596,
 								"y": 4416,
 								"width": 181.95880141529062,
 								"height": 26.020887518168358,
@@ -6748,7 +6743,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -6769,7 +6764,9 @@
 							"uid": 637,
 							"sid": 441100811015295,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 1
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -6787,7 +6784,7 @@
 										"period-offset-random": 0,
 										"magnitude": 180,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -7122,9 +7119,9 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 4490,
+								"x": 4486.561874362184,
 								"y": 4421,
-								"width": 118.72377342556183,
+								"width": 122.1618990633774,
 								"height": 64,
 								"originX": 0,
 								"originY": 0,
@@ -8319,7 +8316,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8340,7 +8337,9 @@
 							"uid": 509,
 							"sid": 517656408408535,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8358,7 +8357,7 @@
 										"period-offset-random": 0,
 										"magnitude": 180,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8554,7 +8553,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8575,7 +8574,9 @@
 							"uid": 658,
 							"sid": 312580015660006,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8593,7 +8594,7 @@
 										"period-offset-random": 0,
 										"magnitude": 180,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8620,7 +8621,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8641,7 +8642,9 @@
 							"uid": 660,
 							"sid": 824397723624666,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8659,7 +8662,7 @@
 										"period-offset-random": 0,
 										"magnitude": 180,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8686,7 +8689,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8707,7 +8710,9 @@
 							"uid": 661,
 							"sid": 230397777653750,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8725,7 +8730,7 @@
 										"period-offset-random": 0,
 										"magnitude": 150,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8752,7 +8757,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8773,7 +8778,9 @@
 							"uid": 662,
 							"sid": 770580909748723,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8791,7 +8798,7 @@
 										"period-offset-random": 0,
 										"magnitude": 150,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8818,7 +8825,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -8839,7 +8846,9 @@
 							"uid": 515,
 							"sid": 318334117575141,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 2
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -8857,7 +8866,7 @@
 										"period-offset-random": 0,
 										"magnitude": 140,
 										"magnitude-random": 0,
-										"enabled": true,
+										"enabled": false,
 										"live-preview": false
 									}
 								}
@@ -8991,7 +9000,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -9000,7 +9009,7 @@
 							"sid": 984521135686617,
 							"tags": "",
 							"instanceVariables": {
-								"TriggerNumber": 0,
+								"TriggerNumber": 9,
 								"Activated": false
 							},
 							"behaviors": {},
@@ -9029,7 +9038,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -9038,7 +9047,7 @@
 							"sid": 444349699272064,
 							"tags": "",
 							"instanceVariables": {
-								"TriggerNumber": 0,
+								"TriggerNumber": 10,
 								"Activated": false
 							},
 							"behaviors": {},
@@ -9067,7 +9076,7 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -9076,7 +9085,7 @@
 							"sid": 725473654880136,
 							"tags": "",
 							"instanceVariables": {
-								"TriggerNumber": 0,
+								"TriggerNumber": 11,
 								"Activated": false
 							},
 							"behaviors": {},
@@ -9102,7 +9111,7 @@
 							}
 						},
 						{
-							"type": "TiledBackground3",
+							"type": "Platform",
 							"properties": {
 								"initially-visible": true,
 								"origin": "top-left",
@@ -9123,7 +9132,9 @@
 							"uid": 664,
 							"sid": 605281696285253,
 							"tags": "",
-							"instanceVariables": {},
+							"instanceVariables": {
+								"PlatformNumber": 3
+							},
 							"behaviors": {
 								"Solid": {
 									"properties": {
@@ -9238,7 +9249,7 @@
 							}
 						},
 						{
-							"type": "BunkerDoor1",
+							"type": "BunkerDoor",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -9282,7 +9293,149 @@
 							}
 						},
 						{
-							"type": "BunkerDoor1",
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 669,
+							"sid": 930426418820364,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 930426418820364,
+								"expanded": true
+							},
+							"world": {
+								"x": 4250,
+								"y": 4780,
+								"width": 190.72377342556183,
+								"height": 28,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 670,
+							"sid": 234299836843543,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 234299836843543,
+								"expanded": true
+							},
+							"world": {
+								"x": 4418,
+								"y": 4667,
+								"width": 190.72377342556183,
+								"height": 28,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerGunTrigger",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "deactivated",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 668,
+							"sid": 910391472337993,
+							"tags": "",
+							"instanceVariables": {
+								"TriggerNumber": 5,
+								"Activated": false
+							},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 910391472337993,
+								"expanded": true
+							},
+							"world": {
+								"x": 4548,
+								"y": 4502,
+								"width": 119.7623956437626,
+								"height": 31.90172082823067,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -9290,11 +9443,52 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 667,
-							"sid": 867977719278846,
+							"uid": 671,
+							"sid": 841980092828674,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 841980092828674,
+								"expanded": true
+							},
+							"world": {
+								"x": 5494,
+								"y": 4424,
+								"width": 269.3608320832127,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerDoor",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 672,
+							"sid": 800945715561518,
 							"tags": "",
 							"instanceVariables": {
-								"DoorNumber": 2
+								"DoorNumber": 3
 							},
 							"behaviors": {
 								"Solid": {
@@ -9305,14 +9499,14 @@
 								}
 							},
 							"instanceFolderItem": {
-								"sid": 867977719278846,
+								"sid": 800945715561518,
 								"expanded": true
 							},
 							"world": {
-								"x": 5363.6606242102935,
-								"y": 1369.8542796411882,
+								"x": 4506,
+								"y": 3862,
 								"width": 33,
-								"height": 183.91478275763052,
+								"height": 112.97407720987417,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -9329,28 +9523,274 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "deactivated",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 668,
-							"sid": 771787195353311,
+							"uid": 673,
+							"sid": 504077310114969,
 							"tags": "",
 							"instanceVariables": {
-								"TriggerNumber": 2,
+								"TriggerNumber": 6,
 								"Activated": false
 							},
 							"behaviors": {},
 							"instanceFolderItem": {
-								"sid": 771787195353311,
+								"sid": 504077310114969,
 								"expanded": true
 							},
 							"world": {
-								"x": 5435.675895631031,
-								"y": 1233.6520453237754,
-								"width": 67.61736626883955,
-								"height": 114.99001209790679,
+								"x": 4658.056399238575,
+								"y": 3754.121139401007,
+								"width": 48.0273002438501,
+								"height": 81.67516927696664,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 674,
+							"sid": 455454699808516,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 455454699808516,
+								"expanded": true
+							},
+							"world": {
+								"x": 2415,
+								"y": 641,
+								"width": 286.8314188479062,
+								"height": 26.80116024106451,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 675,
+							"sid": 588152410789185,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 588152410789185,
+								"expanded": true
+							},
+							"world": {
+								"x": 4994,
+								"y": 5902,
+								"width": 265,
+								"height": 16,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 676,
+							"sid": 374973695836793,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 374973695836793,
+								"expanded": true
+							},
+							"world": {
+								"x": 5258,
+								"y": 5389,
+								"width": 235,
+								"height": 528,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 677,
+							"sid": 999006341254921,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 999006341254921,
+								"expanded": true
+							},
+							"world": {
+								"x": 5257,
+								"y": 6058,
+								"width": 236,
+								"height": 194,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerGunTrigger",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "deactivated",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 507,
+							"sid": 139302492954215,
+							"tags": "",
+							"instanceVariables": {
+								"TriggerNumber": 7,
+								"Activated": false
+							},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 139302492954215,
+								"expanded": true
+							},
+							"world": {
+								"x": 5469.212810087476,
+								"y": 6008.226682816777,
+								"width": 45.72232874843917,
+								"height": 100.70661231478827,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -9367,28 +9807,443 @@
 							"type": "BunkerGunTrigger",
 							"properties": {
 								"initially-visible": true,
+								"initial-animation": "deactivated",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 678,
+							"sid": 959139614995814,
+							"tags": "",
+							"instanceVariables": {
+								"TriggerNumber": 8,
+								"Activated": false
+							},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 959139614995814,
+								"expanded": true
+							},
+							"world": {
+								"x": 3695.5,
+								"y": 5233,
+								"width": 176.72232874843917,
+								"height": 62.706612314788266,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerTerrainTile",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 679,
+							"sid": 146344480774750,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 146344480774750,
+								"expanded": true
+							},
+							"world": {
+								"x": 3782,
+								"y": 5201,
+								"width": 62,
+								"height": 74,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerDoor",
+							"properties": {
+								"initially-visible": true,
 								"initial-animation": "Animation 1",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 669,
-							"sid": 222035077449126,
+							"uid": 680,
+							"sid": 249408658897238,
 							"tags": "",
 							"instanceVariables": {
-								"TriggerNumber": 3,
-								"Activated": false
+								"DoorNumber": 4
 							},
-							"behaviors": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
 							"instanceFolderItem": {
-								"sid": 222035077449126,
+								"sid": 249408658897238,
 								"expanded": true
 							},
 							"world": {
-								"x": 5535.0878354719625,
-								"y": 1231.3036544261438,
-								"width": 67.61736626883955,
-								"height": 114.99001209790679,
+								"x": 4074,
+								"y": 6167,
+								"width": 33,
+								"height": 156.97407720987417,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerDoor",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 681,
+							"sid": 288732837656333,
+							"tags": "",
+							"instanceVariables": {
+								"DoorNumber": 5
+							},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 288732837656333,
+								"expanded": true
+							},
+							"world": {
+								"x": 3620,
+								"y": 7839.5,
+								"width": 33,
+								"height": 130.97407720987417,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 682,
+							"sid": 817752938627924,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 817752938627924,
+								"expanded": true
+							},
+							"world": {
+								"x": 4470.5,
+								"y": 7911,
+								"width": 286.3608320832127,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 683,
+							"sid": 184038104904334,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 184038104904334,
+								"expanded": true
+							},
+							"world": {
+								"x": 4472,
+								"y": 8114,
+								"width": 286.3608320832127,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 686,
+							"sid": 898440440029269,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 898440440029269,
+								"expanded": true
+							},
+							"world": {
+								"x": 4472,
+								"y": 8225,
+								"width": 286.3608320832127,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerPilar",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 687,
+							"sid": 120810272110510,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 120810272110510,
+								"expanded": true
+							},
+							"world": {
+								"x": 4324,
+								"y": 8356.944296349997,
+								"width": 8,
+								"height": 152.55439815816965,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerPilar",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 688,
+							"sid": 253338757969853,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 253338757969853,
+								"expanded": true
+							},
+							"world": {
+								"x": 4618.128852992571,
+								"y": 8361.854531775005,
+								"width": 8,
+								"height": 152.55439815816965,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 689,
+							"sid": 991795295174378,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 991795295174378,
+								"expanded": true
+							},
+							"world": {
+								"x": 4471,
+								"y": 8338,
+								"width": 288.41390275366484,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 684,
+							"sid": 957828328927325,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 957828328927325,
+								"expanded": true
+							},
+							"world": {
+								"x": 4472,
+								"y": 8012,
+								"width": 286.3608320832127,
+								"height": 6.2066871184342745,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [

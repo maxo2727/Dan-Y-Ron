@@ -2296,7 +2296,7 @@
 				{
 					"type": "camera",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2318,8 +2318,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 5473.876396914465,
-						"y": 1367.6554271021257,
+						"x": 4469,
+						"y": 8337,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2379,8 +2379,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 5473.876396914465,
-						"y": 1427.6554271021257,
+						"x": 4469,
+						"y": 8397,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2424,8 +2424,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 5473.876396914465,
-						"y": 1456.6554271021257,
+						"x": 4469,
+						"y": 8426,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,
