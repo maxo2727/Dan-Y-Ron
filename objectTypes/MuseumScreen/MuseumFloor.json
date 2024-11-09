@@ -1,0 +1,28 @@
+{
+	"name": "MuseumFloor",
+	"plugin-id": "TiledBg",
+	"sid": 479554259798637,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 714293060671026
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 200,
+		"height": 199,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6514437,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

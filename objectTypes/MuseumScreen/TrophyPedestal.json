@@ -1,0 +1,51 @@
+{
+	"name": "TrophyPedestal",
+	"plugin-id": "Sprite",
+	"sid": 329000657958080,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 69652,
+						"collisionPoly": {
+							"points": [
+								0.075,
+								0.004807692307692308,
+								0.99,
+								0.10096153846153846,
+								0.885,
+								0.9951923076923077,
+								0.105,
+								0.9903846153846154
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 398452600533707,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

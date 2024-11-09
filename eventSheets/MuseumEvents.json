@@ -1,0 +1,72 @@
+{
+	"name": "MuseumEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "MacroEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 214232191097068,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "collisions-enabled",
+					"objectClass": "Dan",
+					"sid": 977063332732605
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EscaleraMuseo",
+					"sid": 940952755300730,
+					"behaviorType": "SaltoATravés",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 469939589113726
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "EscaleraMuseo",
+					"sid": 107096340539258,
+					"behaviorType": "SaltoATravés",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 470273584600156,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EscaleraMuseo",
+					"sid": 751264110095099,
+					"behaviorType": "SaltoATravés",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 757558105459354
+		}
+	],
+	"sid": 864517449144682
+}
