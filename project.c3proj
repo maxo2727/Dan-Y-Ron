@@ -358,7 +358,9 @@
 					"Energy",
 					"EndRunText",
 					"Treasure",
-					"Bullet"
+					"Bullet",
+					"Gear",
+					"Sprite12"
 				],
 				"subfolders": [],
 				"name": "WorldFiles"
