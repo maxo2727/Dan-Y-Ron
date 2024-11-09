@@ -792,6 +792,49 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "HookPH",
+									"sid": 397497281043184,
+									"parameters": {
+										"object": "BunkerTerrainTile"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "HookPH",
+									"sid": 770883492681037,
+									"behaviorType": "Físicas",
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "HookPH",
+									"sid": 607402602156604,
+									"behaviorType": "Plataforma",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "HookPH",
+									"sid": 333197419131935,
+									"behaviorType": "Bala",
+									"parameters": {
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 318193828080969
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "every-tick",
 									"objectClass": "System",
 									"sid": 448065495698570

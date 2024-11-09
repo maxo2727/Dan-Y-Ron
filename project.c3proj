@@ -469,7 +469,8 @@
 			"ManualCameraEvents",
 			"GameFlowVariables",
 			"BunkerEvents",
-			"MuseumEvents"
+			"MuseumEvents",
+			"TestLevelEvents"
 		],
 		"subfolders": [
 			{

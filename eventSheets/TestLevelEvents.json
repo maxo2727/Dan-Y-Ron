@@ -1,0 +1,22 @@
+{
+	"name": "TestLevelEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanWorldEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "HUDEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "TDEvents"
+		}
+	],
+	"sid": 203686409373838
+}
