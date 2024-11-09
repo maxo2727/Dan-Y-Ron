@@ -2,76 +2,21 @@
 	"name": "BunkerEvents",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 210321696288734,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "BunkerLadder",
-					"sid": 179264509326059,
-					"behaviorType": "Jumpthru",
-					"parameters": {
-						"state": "disabled"
-					}
-				}
-			],
-			"sid": 972001724121141
+			"eventType": "variable",
+			"name": "ActivatedBunkerElevator",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 888410989854272
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-enabled",
-					"objectClass": "BunkerLadder",
-					"sid": 729546193855971,
-					"behaviorType": "Jumpthru",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 763684950622583,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "BunkerLadder",
-					"sid": 793546281252548,
-					"behaviorType": "Jumpthru",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 455156506929264
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "DanPlayerBox",
-					"sid": 265321348767735,
-					"parameters": {
-						"object": "BunkerElevatorUp"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 206734959565601,
+			"eventType": "group",
+			"disabled": false,
+			"title": "BunkerTerrain",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -79,255 +24,288 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 982176446080987,
+							"sid": 990787408971988,
 							"parameters": {
-								"key": 70
+								"key": 83
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-position",
-							"objectClass": "DanPlayerBox",
-							"sid": 857340163122576,
+							"id": "set-enabled",
+							"objectClass": "BunkerLadder",
+							"sid": 904341489510441,
+							"behaviorType": "Jumpthru",
 							"parameters": {
-								"x": "BunkerElevatorDown.X - 70",
-								"y": "BunkerElevatorDown.Y"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 494612030274668,
-							"parameters": {
-								"seconds": "0.02"
-							}
-						},
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "camera",
-							"sid": 463466068177589,
-							"parameters": {
-								"object": "DanPlayerBox",
-								"image-point-optional": "0"
+								"state": "disabled"
 							}
 						}
 					],
-					"sid": 668795503935703
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"sid": 523376700491448
+				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "DanPlayerBox",
-					"sid": 952796771915000,
-					"parameters": {
-						"object": "BunkerElevatorDown"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-enabled",
+							"objectClass": "BunkerLadder",
+							"sid": 323822054005639,
+							"behaviorType": "Jumpthru",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 162627215945771,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "BunkerLadder",
+							"sid": 861446970113939,
+							"behaviorType": "Jumpthru",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 748588796182657
 				}
 			],
-			"actions": [],
-			"sid": 575120094693937,
+			"sid": 702461713543498
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BunkerTransitions",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 493106036487237,
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 678035395711736,
 							"parameters": {
-								"key": 70
+								"variable": "ActivatedBunkerElevator"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 606538654223094,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 254387765616311,
+									"parameters": {
+										"key": 70
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "DanPlayerBox",
+									"sid": 273057559622069,
+									"parameters": {
+										"object": "BunkerElevatorUp"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "DanPlayerBox",
+									"sid": 132893832179896,
+									"parameters": {
+										"x": "BunkerElevatorDown.X - 70",
+										"y": "BunkerElevatorDown.Y"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 327875664470892,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "camera",
+									"sid": 787491608137775,
+									"parameters": {
+										"object": "DanPlayerBox",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 161656956349500
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 768985505710918,
+							"parameters": {
+								"variable": "ActivatedBunkerElevator"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 958258530388541,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 191544450934989,
+									"parameters": {
+										"key": 70
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "DanPlayerBox",
+									"sid": 580665716824695,
+									"parameters": {
+										"object": "BunkerElevatorDown"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "DanPlayerBox",
+									"sid": 474022950457309,
+									"parameters": {
+										"x": "BunkerElevatorUp.X - 70",
+										"y": "BunkerElevatorUp.Y"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 599995383001594,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "camera",
+									"sid": 388659563043990,
+									"parameters": {
+										"object": "DanPlayerBox",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 307964453598842
+						}
+					]
+				}
+			],
+			"sid": 735705306731990
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BunkerTriggers",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 297414487233341,
+							"parameters": {
+								"instance-variable": "Activated"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-position",
-							"objectClass": "DanPlayerBox",
-							"sid": 347014552005578,
+							"id": "set-animation",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 119805094153286,
 							"parameters": {
-								"x": "BunkerElevatorUp.X - 70",
-								"y": "BunkerElevatorUp.Y"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 517573311041044,
-							"parameters": {
-								"seconds": "0.02"
-							}
-						},
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "camera",
-							"sid": 523986593490187,
-							"parameters": {
-								"object": "DanPlayerBox",
-								"image-point-optional": "0"
+								"animation": "\"activated\"",
+								"from": "beginning"
 							}
 						}
 					],
-					"sid": 625888221174054
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet",
-					"sid": 323514781224390,
-					"parameters": {
-						"object": "BunkerGunTrigger"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 198010043263740,
-					"parameters": {
-						"instance-variable": "Activated",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 776013744455746
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerDoor",
-					"sid": 926460208225971,
-					"parameters": {
-						"instance-variable": "DoorNumber",
-						"comparison": 0,
-						"value": "1"
-					}
+					"sid": 920535706976666
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 212696869615646,
-					"parameters": {
-						"instance-variable": "TriggerNumber",
-						"comparison": 0,
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Bullet",
+							"sid": 141730633414462,
+							"parameters": {
+								"object": "BunkerGunTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 339781658203797,
+							"parameters": {
+								"instance-variable": "Activated",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 424692082062396
 				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 144326373683766,
-					"parameters": {
-						"instance-variable": "Activated"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "BunkerDoor",
-					"sid": 116292987103937
-				}
-			],
-			"sid": 130040087522373
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerDoor",
-					"sid": 758645587003787,
-					"parameters": {
-						"instance-variable": "DoorNumber",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 870177197698014,
-			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 139622354842626,
+							"objectClass": "BunkerDoor",
+							"sid": 967956921855154,
 							"parameters": {
-								"instance-variable": "TriggerNumber",
+								"instance-variable": "DoorNumber",
 								"comparison": 0,
-								"value": "2"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 920228181277129,
-							"parameters": {
-								"instance-variable": "Activated"
-							}
-						},
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 127728045797238,
-							"parameters": {
-								"object": "BunkerGunTrigger"
+								"value": "1"
 							}
 						},
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 787560995298676,
+							"sid": 735081619771985,
 							"parameters": {
 								"instance-variable": "TriggerNumber",
 								"comparison": 0,
-								"value": "3"
+								"value": "1"
 							}
 						},
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 672578688782197,
-							"parameters": {
-								"instance-variable": "Activated"
-							}
-						},
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 591738544610061,
-							"parameters": {
-								"object": "BunkerGunTrigger"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 186031958054550,
-							"parameters": {
-								"instance-variable": "TriggerNumber",
-								"comparison": 0,
-								"value": "4"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 852733433394293,
+							"sid": 153300226023308,
 							"parameters": {
 								"instance-variable": "Activated"
 							}
@@ -337,168 +315,216 @@
 						{
 							"id": "destroy",
 							"objectClass": "BunkerDoor",
-							"sid": 322949225022677
+							"sid": 172909268881097
 						}
 					],
-					"sid": 485740618283207
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Platform",
-					"sid": 112898762684882,
-					"parameters": {
-						"instance-variable": "PlatformNumber",
-						"comparison": 0,
-						"value": "1"
-					}
+					"sid": 138369992250684
 				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 805691721824393,
-					"parameters": {
-						"instance-variable": "TriggerNumber",
-						"comparison": 0,
-						"value": "5"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 342405157527987,
-					"parameters": {
-						"instance-variable": "Activated"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-active",
-					"objectClass": "Platform",
-					"sid": 281358878522401,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "active"
-					}
-				}
-			],
-			"sid": 931920384896116
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerDoor",
-					"sid": 920114739456796,
-					"parameters": {
-						"instance-variable": "DoorNumber",
-						"comparison": 0,
-						"value": "3"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 502860542278313,
-					"parameters": {
-						"instance-variable": "TriggerNumber",
-						"comparison": 0,
-						"value": "6"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 253037912048455,
-					"parameters": {
-						"instance-variable": "Activated"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "BunkerDoor",
-					"sid": 819134097676325
-				}
-			],
-			"sid": 418056099291147
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Platform",
-					"sid": 169258074367139,
-					"parameters": {
-						"instance-variable": "PlatformNumber",
-						"comparison": 0,
-						"value": "2"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 417069764806510,
-					"parameters": {
-						"instance-variable": "TriggerNumber",
-						"comparison": 0,
-						"value": "7"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 126009528852591,
-					"parameters": {
-						"instance-variable": "Activated"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-active",
-					"objectClass": "Platform",
-					"sid": 598224240286403,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "active"
-					}
-				}
-			],
-			"sid": 767699471790973
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerDoor",
-					"sid": 365452486667873,
-					"parameters": {
-						"instance-variable": "DoorNumber",
-						"comparison": 0,
-						"value": "4"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 674926784726172,
-			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
+							"objectClass": "BunkerDoor",
+							"sid": 535268731092729,
+							"parameters": {
+								"instance-variable": "DoorNumber",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 986696982422569,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 798711681398705,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 503808386822370,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 497681392728486,
+									"parameters": {
+										"object": "BunkerGunTrigger"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 336977382524899,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 134605823825869,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 110319561346741,
+									"parameters": {
+										"object": "BunkerGunTrigger"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 721778625079951,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 877962140174235,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BunkerDoor",
+									"sid": 952142536997377
+								}
+							],
+							"sid": 271835065615946
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Platform",
+							"sid": 539646979318809,
+							"parameters": {
+								"instance-variable": "PlatformNumber",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 114819123959488,
+							"sid": 103528716860220,
+							"parameters": {
+								"instance-variable": "TriggerNumber",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 427548072389426,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Platform",
+							"sid": 564742582786722,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						}
+					],
+					"sid": 113910469852354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BunkerDoor",
+							"sid": 153475482614029,
+							"parameters": {
+								"instance-variable": "DoorNumber",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 290681313644879,
+							"parameters": {
+								"instance-variable": "TriggerNumber",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 434982535812947,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BunkerDoor",
+							"sid": 940761972417721
+						}
+					],
+					"sid": 931902222359817
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Platform",
+							"sid": 122483664247081,
+							"parameters": {
+								"instance-variable": "PlatformNumber",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BunkerGunTrigger",
+							"sid": 245539402750365,
 							"parameters": {
 								"instance-variable": "TriggerNumber",
 								"comparison": 0,
@@ -508,33 +534,7 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 365231989150803,
-							"parameters": {
-								"instance-variable": "Activated"
-							}
-						},
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 632575218375146,
-							"parameters": {
-								"object": "BunkerGunTrigger"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 516563160709101,
-							"parameters": {
-								"instance-variable": "TriggerNumber",
-								"comparison": 0,
-								"value": "8"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 416367256732878,
+							"sid": 683019780661990,
 							"parameters": {
 								"instance-variable": "Activated"
 							}
@@ -542,101 +542,212 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "BunkerDoor",
-							"sid": 541990526611467
+							"id": "set-active",
+							"objectClass": "Platform",
+							"sid": 512044556711863,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
 						}
 					],
-					"sid": 467101495462948
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"sid": 992505842321464
+				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "BunkerDoor",
-					"sid": 867550267756896,
-					"parameters": {
-						"instance-variable": "DoorNumber",
-						"comparison": 0,
-						"value": "5"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 230317551962255,
-			"children": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BunkerDoor",
+							"sid": 559376317202455,
+							"parameters": {
+								"instance-variable": "DoorNumber",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 135421719321263,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 160218300560196,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "7"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 823956081256965,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 679892678923768,
+									"parameters": {
+										"object": "BunkerGunTrigger"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 483664357753484,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "8"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 588665129699943,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BunkerDoor",
+									"sid": 116442963779453
+								}
+							],
+							"sid": 121149397041252
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BunkerDoor",
+							"sid": 430383034339426,
+							"parameters": {
+								"instance-variable": "DoorNumber",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 927562760713200,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 570981520591803,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "9"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 689575686803214,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 923252235425213,
+									"parameters": {
+										"object": "BunkerGunTrigger"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 965310692116716,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "10"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 302213128500336,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 648827342889590,
+									"parameters": {
+										"object": "BunkerGunTrigger"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 520070474881081,
+									"parameters": {
+										"instance-variable": "TriggerNumber",
+										"comparison": 0,
+										"value": "11"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BunkerGunTrigger",
+									"sid": 575659897931004,
+									"parameters": {
+										"instance-variable": "Activated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BunkerDoor",
+									"sid": 317538293246882
+								}
+							],
+							"sid": 867420017564895
+						}
+					]
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 889896951127360,
+							"sid": 476968439207082,
 							"parameters": {
 								"instance-variable": "TriggerNumber",
 								"comparison": 0,
-								"value": "9"
+								"value": "12"
 							}
 						},
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "BunkerGunTrigger",
-							"sid": 272350847180160,
-							"parameters": {
-								"instance-variable": "Activated"
-							}
-						},
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 617268500350892,
-							"parameters": {
-								"object": "BunkerGunTrigger"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 646778430506471,
-							"parameters": {
-								"instance-variable": "TriggerNumber",
-								"comparison": 0,
-								"value": "10"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 964849794644344,
-							"parameters": {
-								"instance-variable": "Activated"
-							}
-						},
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 446950606850129,
-							"parameters": {
-								"object": "BunkerGunTrigger"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 445879492289198,
-							"parameters": {
-								"instance-variable": "TriggerNumber",
-								"comparison": 0,
-								"value": "11"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "BunkerGunTrigger",
-							"sid": 970324417571051,
+							"sid": 143519461341969,
 							"parameters": {
 								"instance-variable": "Activated"
 							}
@@ -644,39 +755,19 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "BunkerDoor",
-							"sid": 201046791710972
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 682496775428333,
+							"parameters": {
+								"variable": "ActivatedBunkerElevator",
+								"value": "true"
+							}
 						}
 					],
-					"sid": 789727493827782
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 580181876030287,
-					"parameters": {
-						"instance-variable": "Activated"
-					}
+					"sid": 852491467686702
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "BunkerGunTrigger",
-					"sid": 255195326569487,
-					"parameters": {
-						"animation": "\"activated\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 909912547068170
+			"sid": 830308322275584
 		}
 	],
 	"sid": 665832316621640

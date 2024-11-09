@@ -80,9 +80,9 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1936,
+						"x": 743,
 						"y": 1535.114818149899,
-						"width": 4518,
+						"width": 6848,
 						"height": 3557.8851818501007,
 						"originX": 0,
 						"originY": 0,
@@ -125,10 +125,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1660,
-						"y": 5066,
-						"width": 4555,
-						"height": 3373,
+						"x": 1743,
+						"y": 5036,
+						"width": 4703,
+						"height": 3555,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -322,7 +322,7 @@
 							"world": {
 								"x": 5727,
 								"y": 0,
-								"width": 1244,
+								"width": 2497,
 								"height": 707,
 								"originX": 0,
 								"originY": 0,
@@ -894,7 +894,7 @@
 							"world": {
 								"x": 6388,
 								"y": 703,
-								"width": 584,
+								"width": 1845,
 								"height": 1935,
 								"originX": 0,
 								"originY": 0,
@@ -1154,7 +1154,7 @@
 							"world": {
 								"x": 5667,
 								"y": 2637,
-								"width": 1304,
+								"width": 1903,
 								"height": 737,
 								"originX": 0,
 								"originY": 0,
@@ -2349,9 +2349,9 @@
 							},
 							"world": {
 								"x": 530,
-								"y": 945,
+								"y": 578,
 								"width": 1235,
-								"height": 2411,
+								"height": 2778,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -2921,9 +2921,9 @@
 							},
 							"world": {
 								"x": 6325,
-								"y": 3692,
+								"y": 3374,
 								"width": 1241,
-								"height": 232,
+								"height": 550,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -3025,9 +3025,9 @@
 							},
 							"world": {
 								"x": 7566,
-								"y": 3682,
+								"y": 2630,
 								"width": 653,
-								"height": 1781,
+								"height": 6155,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -3702,7 +3702,7 @@
 							"world": {
 								"x": 5665,
 								"y": 7680,
-								"width": 1897,
+								"width": 1925,
 								"height": 586,
 								"originX": 0,
 								"originY": 0,
@@ -3754,7 +3754,7 @@
 							"world": {
 								"x": 6167,
 								"y": 8263,
-								"width": 1394,
+								"width": 1418,
 								"height": 546,
 								"originX": 0,
 								"originY": 0,
@@ -10244,6 +10244,44 @@
 								"y": 8012,
 								"width": 286.3608320832127,
 								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerGunTrigger",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "deactivated",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 685,
+							"sid": 687896074969844,
+							"tags": "",
+							"instanceVariables": {
+								"TriggerNumber": 12,
+								"Activated": false
+							},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 687896074969844,
+								"expanded": true
+							},
+							"world": {
+								"x": 5861,
+								"y": 8276,
+								"width": 116.72232874843917,
+								"height": 27.706612314788273,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
