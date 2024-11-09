@@ -2048,6 +2048,47 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "BunkerLadder",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 647,
+							"sid": 870845325967992,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Jumpthru": {
+									"properties": {
+										"enabled": true
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 870845325967992,
+								"expanded": true
+							},
+							"world": {
+								"x": 5494.976549314648,
+								"y": 4425.121533637934,
+								"width": 269.3608320832127,
+								"height": 6.2066871184342745,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 447999468253417,
@@ -2277,8 +2318,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 4541,
-						"y": 425,
+						"x": 4871,
+						"y": 6118,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2338,8 +2379,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 4541,
-						"y": 485,
+						"x": 4871,
+						"y": 6178,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2383,8 +2424,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 4541,
-						"y": 514,
+						"x": 4871,
+						"y": 6207,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,
