@@ -1,45 +1,58 @@
 {
-	"name": "BunkerDoor1",
+	"name": "BunkerGunTrigger",
 	"plugin-id": "Sprite",
-	"sid": 483193887966747,
+	"sid": 420999576727506,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "DoorNumber",
+			"name": "TriggerNumber",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 199767867068337
-		}
-	],
-	"behaviorTypes": [
+			"sid": 165213826851717
+		},
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 515429167887790
+			"name": "Activated",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 913963190810406
 		}
 	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 50,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2652596,
+						"imageSpriteId": 9763384,
+						"collisionPoly": {
+							"points": [
+								0.003968253968253968,
+								0.003968253968253968,
+								0.996031746031746,
+								0.003968253968253968,
+								0.996031746031746,
+								0.996031746031746,
+								0.003968253968253968,
+								0.996031746031746
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 689523322217196,
+				"sid": 512659113319107,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,24 +1,10 @@
 {
-	"name": "BunkerDoor1",
+	"name": "BunkerElevatorDown",
 	"plugin-id": "Sprite",
-	"sid": 483193887966747,
+	"sid": 837698198029056,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "DoorNumber",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 199767867068337
-		}
-	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 515429167887790
-		}
-	],
+	"instanceVariables": [],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -33,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2652596,
+						"imageSpriteId": 9323766,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 689523322217196,
+				"sid": 437184238066371,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

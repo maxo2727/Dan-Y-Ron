@@ -1,7 +1,7 @@
 {
-	"name": "BunkerGunTrigger",
+	"name": "BunkerElevatorUp",
 	"plugin-id": "Sprite",
-	"sid": 420999576727506,
+	"sid": 914609179362649,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,33 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 50,
-						"height": 100,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9763384,
-						"collisionPoly": {
-							"points": [
-								0.003968253968253968,
-								0.003968253968253968,
-								0.996031746031746,
-								0.003968253968253968,
-								0.996031746031746,
-								0.996031746031746,
-								0.003968253968253968,
-								0.996031746031746
-							]
-						},
+						"imageSpriteId": 1814961,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 512659113319107,
+				"sid": 318490402990848,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

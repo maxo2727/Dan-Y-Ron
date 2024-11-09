@@ -390,9 +390,18 @@
 					"BunkerBG1",
 					"BunkerBG2",
 					"BunkerDoor1",
-					"BunkerGunTrigger"
+					"BunkerElevatorUp",
+					"BunkerElevatorDown"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"BunkerGunTrigger"
+						],
+						"subfolders": [],
+						"name": "BunkerGunTriggers"
+					}
+				],
 				"name": "Bunker"
 			},
 			{
