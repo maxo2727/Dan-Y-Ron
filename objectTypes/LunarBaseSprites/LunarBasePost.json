@@ -1,7 +1,7 @@
 {
-	"name": "Bunker",
+	"name": "LunarBasePost",
 	"plugin-id": "Sprite",
-	"sid": 371607501553298,
+	"sid": 245982200825520,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,33 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 28,
+						"height": 187,
+						"originX": 0.586466165413534,
+						"originY": 0.1925133689839572,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7289963,
+						"imageSpriteId": 7068199,
+						"collisionPoly": {
+							"points": [
+								0.21428571428571427,
+								0,
+								0.8571428571428571,
+								0,
+								0.8571428571428571,
+								0.9882862235803411,
+								0.21428571428571427,
+								0.9882862235803411
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 561798356700647,
+				"sid": 602672930860472,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -378,8 +378,16 @@
 				"items": [
 					"Antena",
 					"FromLunarBaseToSuperficieBox",
-					"Bunker",
-					"FromLunarBaseToBunker"
+					"LunarBaseBuilding",
+					"FromLunarBaseToBunker",
+					"LunarBaseTowerMesh",
+					"LunarBasePilar",
+					"LunarBasePlatform1",
+					"LunarBasePlatform2",
+					"LunarBasePlatform3",
+					"LunarBaseBunker",
+					"LunarBasePost",
+					"Sprite12"
 				],
 				"subfolders": [],
 				"name": "LunarBaseSprites"

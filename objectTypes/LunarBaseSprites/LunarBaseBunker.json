@@ -1,0 +1,51 @@
+{
+	"name": "LunarBaseBunker",
+	"plugin-id": "Sprite",
+	"sid": 308707566827134,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 802,
+						"height": 252,
+						"originX": 0.49737695580732616,
+						"originY": 0.42630385487528344,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1993212,
+						"collisionPoly": {
+							"points": [
+								0.44116886596431537,
+								0.0719954648526077,
+								0.5535850456503371,
+								0.0719954648526077,
+								0.5535850456503371,
+								0.7806122448979591,
+								0.44116886596431537,
+								0.7806122448979591
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 829192256051104,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

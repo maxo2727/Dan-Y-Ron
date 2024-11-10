@@ -11,15 +11,15 @@
 		},
 		{
 			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "HUDEvents"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "GameGlobalVariables"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "DanMovementEvents"
 		},
 		{
 			"eventType": "include",

@@ -2,6 +2,16 @@
 	"name": "SceneEvents",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "InitialRunCutscene",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 127974657830174
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "DialogueEvents"
 		},
@@ -19,9 +29,26 @@
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 424563748367726
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 861077888448428,
+							"parameters": {
+								"variable": "InitialRunCutscene"
+							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "camera",
+							"sid": 380212734349922,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
 						{
 							"id": "set-enabled",
 							"objectClass": "Nave",
@@ -350,9 +377,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 471179478736028,
+									"sid": 408664292864410,
 									"parameters": {
-										"seconds": "2"
+										"seconds": "0.02"
 									}
 								},
 								{
