@@ -186,7 +186,7 @@
 									"objectClass": "Enemigo1",
 									"sid": 169996038616685,
 									"parameters": {
-										"object": "Energy",
+										"object": "Star",
 										"layer": "\"DanPlayer\"",
 										"image-point": "1",
 										"create-hierarchy": false,
@@ -272,7 +272,7 @@
 									"objectClass": "Enemigo1",
 									"sid": 406025690888303,
 									"parameters": {
-										"object": "Energy",
+										"object": "Star",
 										"layer": "\"DanPlayer\"",
 										"image-point": "1",
 										"create-hierarchy": false,
@@ -375,14 +375,14 @@
 							"objectClass": "Dan",
 							"sid": 711406846181274,
 							"parameters": {
-								"object": "Energy"
+								"object": "Star"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Energy",
+							"objectClass": "Star",
 							"sid": 164504343312862
 						},
 						{
