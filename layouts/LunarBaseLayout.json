@@ -35,10 +35,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": -4,
-						"y": -1,
-						"width": 7005,
-						"height": 2010,
+						"x": 0,
+						"y": 0,
+						"width": 5500,
+						"height": 2000,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1619,10 +1619,45 @@
 					"world": {
 						"x": 3913,
 						"y": 1295,
-						"width": 3083.894951762233,
+						"width": 1684.8949517622332,
 						"height": 446.0593108537179,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FromLunarBaseToCrater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 730,
+					"sid": 720962571698505,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 720962571698505,
+						"expanded": true
+					},
+					"world": {
+						"x": 5525,
+						"y": 1171,
+						"width": 41,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1894,7 +1929,7 @@
 	"sid": 154664416845279,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 7000,
+	"width": 5500,
 	"height": 2000,
 	"unboundedScrolling": false,
 	"vpX": 0.5,

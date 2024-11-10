@@ -3,13 +3,23 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "InitialRunCutscene",
-			"type": "boolean",
-			"initialValue": "true",
+			"name": "RunStatus",
+			"type": "string",
+			"initialValue": "InitialCutscene",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 127974657830174
+			"sid": 875491703618669
+		},
+		{
+			"eventType": "variable",
+			"name": "Tutorial",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 253598670276226
 		},
 		{
 			"eventType": "include",
@@ -31,11 +41,13 @@
 							"sid": 424563748367726
 						},
 						{
-							"id": "compare-boolean-eventvar",
+							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 861077888448428,
+							"sid": 728404010605631,
 							"parameters": {
-								"variable": "InitialRunCutscene"
+								"variable": "RunStatus",
+								"comparison": 0,
+								"value": "\"InitialCutscene\""
 							}
 						}
 					],
@@ -251,6 +263,15 @@
 							"parameters": {
 								"input": "stop-ignoring"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 522119297546485,
+							"parameters": {
+								"variable": "RunStatus",
+								"value": "\"OnRun\""
+							}
 						}
 					],
 					"sid": 443159193775618,
@@ -266,6 +287,14 @@
 										"variable": "CurrentRun",
 										"comparison": 0,
 										"value": "1"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 121827636482260,
+									"parameters": {
+										"variable": "Tutorial"
 									}
 								}
 							],

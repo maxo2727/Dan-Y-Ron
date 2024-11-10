@@ -299,7 +299,6 @@
 			},
 			{
 				"items": [
-					"FondoEspacio",
 					"DanHub",
 					"MetalSolido",
 					"Marco",
@@ -362,7 +361,8 @@
 					"Treasure",
 					"Bullet",
 					"Gear",
-					"Energy"
+					"Energy",
+					"FondoEspacio"
 				],
 				"subfolders": [],
 				"name": "WorldFiles"
@@ -387,7 +387,8 @@
 					"LunarBasePlatform3",
 					"LunarBaseBunker",
 					"LunarBasePost",
-					"Sprite12"
+					"Sprite12",
+					"FromLunarBaseToCrater"
 				],
 				"subfolders": [],
 				"name": "LunarBaseSprites"
@@ -423,6 +424,13 @@
 				],
 				"subfolders": [],
 				"name": "MuseumScreen"
+			},
+			{
+				"items": [
+					"FromCraterToLunarBase"
+				],
+				"subfolders": [],
+				"name": "CraterSprites"
 			}
 		]
 	},
@@ -452,7 +460,8 @@
 			"ObjectDatabaseLayout",
 			"MuseumLayout",
 			"TrophyDatabaseLayout",
-			"FadeLayout"
+			"FadeLayout",
+			"CraterLayout"
 		],
 		"subfolders": [
 			{
