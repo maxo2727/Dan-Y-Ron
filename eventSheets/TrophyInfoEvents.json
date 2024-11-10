@@ -1,0 +1,170 @@
+{
+	"name": "TrophyInfoEvents",
+	"events": [
+		{
+			"functionName": "TrophyInfo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "t",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 394488966872658
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "TextoTrofeo",
+					"sid": 375302718527645
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HudImagenTrofeo",
+					"sid": 751419030409976
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HudTextoTrofeo",
+					"sid": 825258671799613
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 780603440051513,
+					"parameters": {
+						"object-to-create": "TextoTrofeo",
+						"layer": "\"TrophyHud\"",
+						"x": "20",
+						"y": "341",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 110647771652376,
+					"parameters": {
+						"object-to-create": "HudTextoTrofeo",
+						"layer": "\"TrophyHud\"",
+						"x": "7",
+						"y": "328",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 107649624494523,
+					"parameters": {
+						"object-to-create": "HudImagenTrofeo",
+						"layer": "\"TrophyHud\"",
+						"x": "277",
+						"y": "12",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TextoTrofeo",
+					"sid": 949978828078815,
+					"parameters": {
+						"text": "t",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 520180744472669
+		},
+		{
+			"functionName": "DestroyTrophyInfo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "TextoTrofeo",
+					"sid": 464256486088536
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HudImagenTrofeo",
+					"sid": 244946974167665
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HudTextoTrofeo",
+					"sid": 289489606455025
+				}
+			],
+			"sid": 442455067043586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 591358713704334
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "TextoTrofeo",
+					"sid": 712822215264590
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "TextoTrofeo",
+					"sid": 821204316203976
+				}
+			],
+			"sid": 912373908606059
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 273988842158774
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "TextoTrofeo",
+					"sid": 356492157119422,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 761407033105024,
+					"parameters": {
+						"tag": "\"siguiente\""
+					}
+				}
+			],
+			"sid": 540358590932330
+		}
+	],
+	"sid": 143218512630885
+}

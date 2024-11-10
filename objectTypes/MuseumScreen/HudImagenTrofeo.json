@@ -1,0 +1,22 @@
+{
+	"name": "HudImagenTrofeo",
+	"plugin-id": "NinePatch",
+	"sid": 485114397214058,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 240,
+		"height": 240,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2842886,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -9,21 +9,21 @@
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Button",
+			"name": "Botón",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Flowchart",
-			"name": "Flowchart controller",
+			"name": "Controlador de diagrama de flujo",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -51,126 +51,126 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Sprite font",
+			"name": "Fuente Sprite",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Tilemap",
+			"name": "Mapa de teselas",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bullet",
+			"name": "Bala",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Fade",
+			"name": "Desvanecer",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "MoveTo",
-			"name": "Move To",
+			"name": "Mover a",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Physics",
-			"name": "Physics",
+			"name": "Físicas",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Pin",
+			"name": "Pegado",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Sine",
+			"name": "Seno",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Timer",
-			"name": "Timer",
+			"name": "Temporizador",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Turret",
-			"name": "Turret",
+			"name": "Torreta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Custom",
+			"name": "Personalizado",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "jumpthru",
-			"name": "Jump-thru",
+			"name": "Salto a través",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Desplazar hasta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -197,7 +197,9 @@
 			"Sprite9",
 			"Sprite10",
 			"Tilemap",
-			"Sprite11"
+			"Sprite11",
+			"TextoTrofeo1",
+			"FondoEnMosaico"
 		],
 		"subfolders": [
 			{
@@ -404,7 +406,12 @@
 				"items": [
 					"MuseumFloor",
 					"TrophyPedestal",
-					"EscaleraMuseo"
+					"EscaleraMuseo",
+					"FondoMuseo",
+					"Trofeo1",
+					"HudTextoTrofeo",
+					"TextoTrofeo",
+					"HudImagenTrofeo"
 				],
 				"subfolders": [],
 				"name": "MuseumScreen"
@@ -434,7 +441,8 @@
 			"BunkerLayout",
 			"IntroLayout",
 			"ObjectDatabaseLayout",
-			"MuseumLayout"
+			"MuseumLayout",
+			"TrophyDatabaseLayout"
 		],
 		"subfolders": [
 			{
@@ -472,7 +480,8 @@
 			"GameFlowVariables",
 			"BunkerEvents",
 			"MuseumEvents",
-			"TestLevelEvents"
+			"TestLevelEvents",
+			"TrophyInfoEvents"
 		],
 		"subfolders": [
 			{

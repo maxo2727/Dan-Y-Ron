@@ -2,70 +2,222 @@
 	"name": "MuseumEvents",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Trofeo1",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 970524113276327
+		},
+		{
+			"eventType": "variable",
+			"name": "Trofeo2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 866117412135015
+		},
+		{
+			"eventType": "variable",
+			"name": "Trofeo3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 383102128754003
+		},
+		{
+			"eventType": "variable",
+			"name": "Trofeo4",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 813495192587556
+		},
+		{
+			"eventType": "variable",
+			"name": "Trofeo5",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 266516466279756
+		},
+		{
+			"eventType": "variable",
+			"name": "Trofeo6",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 800752386170903
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "MacroEvents"
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 214232191097068,
-					"parameters": {
-						"key": 83
-					}
-				},
-				{
-					"id": "collisions-enabled",
-					"objectClass": "Dan",
-					"sid": 977063332732605
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "EscaleraMuseo",
-					"sid": 940952755300730,
-					"behaviorType": "SaltoATravés",
-					"parameters": {
-						"state": "disabled"
-					}
-				}
-			],
-			"sid": 469939589113726
+			"eventType": "include",
+			"includeSheet": "TrophyInfoEvents"
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "EscaleraMuseo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-enabled",
-					"objectClass": "EscaleraMuseo",
-					"sid": 107096340539258,
-					"behaviorType": "SaltoATravés",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 470273584600156,
-					"parameters": {
-						"seconds": "0.2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 737078563212822,
+							"parameters": {
+								"key": 83
+							}
+						},
+						{
+							"id": "collisions-enabled",
+							"objectClass": "Dan",
+							"sid": 487600779026774
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "EscaleraMuseo",
+							"sid": 862687388457169,
+							"behaviorType": "SaltoATravés",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 365977746847561
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "EscaleraMuseo",
-					"sid": 751264110095099,
-					"behaviorType": "SaltoATravés",
-					"parameters": {
-						"state": "enabled"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-enabled",
+							"objectClass": "EscaleraMuseo",
+							"sid": 357848772370516,
+							"behaviorType": "SaltoATravés",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 891041649062690,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "EscaleraMuseo",
+							"sid": 920620865326891,
+							"behaviorType": "SaltoATravés",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 639069930244281
 				}
 			],
-			"sid": 757558105459354
+			"sid": 246972554223786
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Logica Trofeos",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 818085696796850,
+							"parameters": {
+								"variable": "Trofeo1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 880709105322112,
+							"parameters": {
+								"layer": "\"Trofeo1\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 262466884905111
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 474174426905765,
+							"parameters": {
+								"key": 70
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Dan",
+							"sid": 926092374093099,
+							"parameters": {
+								"object": "Trofeo1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TrophyInfo",
+							"sid": 437934334445142,
+							"parameters": [
+								"\"El platano es nutritivo\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 673912133555220,
+							"parameters": {
+								"tag": "\"siguiente\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 854332147333380
+						}
+					],
+					"sid": 547365418287277
+				}
+			],
+			"sid": 322943445063550
 		}
 	],
 	"sid": 864517449144682
