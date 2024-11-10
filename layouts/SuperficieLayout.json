@@ -2607,7 +2607,7 @@
 			"global": true
 		},
 		{
-			"name": "FadeLayerG",
+			"name": "FadeLayer",
 			"overriden": 1,
 			"subLayers": [],
 			"instances": [],

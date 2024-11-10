@@ -2,7 +2,7 @@
 	"name": "FadeLayout",
 	"layers": [
 		{
-			"name": "FadeLayerG",
+			"name": "FadeLayer",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
