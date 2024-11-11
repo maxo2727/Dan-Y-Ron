@@ -768,6 +768,59 @@
 				}
 			],
 			"sid": 830308322275584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 963814273841478,
+					"parameters": {
+						"variable": "ActivatedBunkerElevator"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "ElevatorLight",
+					"sid": 855515034865312,
+					"parameters": {
+						"animation": "\"Activated\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ElevatorDoor",
+					"sid": 563886658018326
+				}
+			],
+			"sid": 764816108574621,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ElevatorMeshFront",
+							"sid": 265597700593911,
+							"parameters": {
+								"instance-variable": "DoorMesh"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ElevatorMeshFront",
+							"sid": 519653583543284
+						}
+					],
+					"sid": 235365630609016
+				}
+			]
 		}
 	],
 	"sid": 665832316621640

@@ -1,7 +1,7 @@
 {
-	"name": "Sprite13",
+	"name": "ElevatorDoor",
 	"plugin-id": "Sprite",
-	"sid": 508108267281886,
+	"sid": 320657107926187,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -19,13 +19,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 651580,
+						"imageSpriteId": 3774388,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 544280346398216,
+				"sid": 449442215302506,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

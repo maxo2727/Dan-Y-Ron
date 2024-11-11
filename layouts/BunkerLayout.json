@@ -140,6 +140,41 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Sprite13",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 789,
+					"sid": 217033452243994,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 217033452243994,
+						"expanded": true
+					},
+					"world": {
+						"x": 4847.403196477322,
+						"y": 460.34362861546447,
+						"width": 100,
+						"height": 150,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 515991761170644,
@@ -228,6 +263,344 @@
 										"angle": 0,
 										"zElevation": 0
 									}
+								},
+								{
+									"type": "ElevatorMeshBehind",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 781,
+									"sid": 326130742804713,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 326130742804713,
+										"expanded": true
+									},
+									"world": {
+										"x": 5835.0823188096,
+										"y": 8264.450940368888,
+										"width": 223.8993937198411,
+										"height": 171.68912146529453,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorMeshFront",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 782,
+									"sid": 303485775992305,
+									"tags": "",
+									"instanceVariables": {
+										"DoorMesh": false
+									},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 303485775992305,
+										"expanded": true
+									},
+									"world": {
+										"x": 5836.0823188096,
+										"y": 8264.450940368888,
+										"width": 71.73718929435438,
+										"height": 169.94596124528556,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 6.2785376303962295,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorMeshFront",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 783,
+									"sid": 695118593533445,
+									"tags": "",
+									"instanceVariables": {
+										"DoorMesh": false
+									},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 695118593533445,
+										"expanded": true
+									},
+									"world": {
+										"x": 5988.0823188096,
+										"y": 8255.450940368888,
+										"width": 78.24236451068919,
+										"height": 189.96168366196667,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorMeshFront",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 784,
+									"sid": 858440944234777,
+									"tags": "",
+									"instanceVariables": {
+										"DoorMesh": false
+									},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 858440944234777,
+										"expanded": true
+									},
+									"world": {
+										"x": 5907.0823188096,
+										"y": 8264.450940368888,
+										"width": 81.51770336327081,
+										"height": 67.00595710003495,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorMeshFront",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 785,
+									"sid": 215330059620496,
+									"tags": "",
+									"instanceVariables": {
+										"DoorMesh": true
+									},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 215330059620496,
+										"expanded": true
+									},
+									"world": {
+										"x": 5907.0823188096,
+										"y": 8327.450940368888,
+										"width": 81.51770336327081,
+										"height": 109.70082094920554,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorDoor",
+									"properties": {
+										"initially-visible": true,
+										"initial-animation": "Animation 1",
+										"initial-frame": 0,
+										"enable-collisions": true,
+										"live-preview": false
+									},
+									"uid": 786,
+									"sid": 660716419351962,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 660716419351962,
+										"expanded": true
+									},
+									"world": {
+										"x": 5948.0823188096,
+										"y": 8387.450940368888,
+										"width": 73.11802975340397,
+										"height": 109.67704463010595,
+										"originX": 0.5,
+										"originY": 0.5,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorLight",
+									"properties": {
+										"initially-visible": true,
+										"initial-animation": "Deactivated",
+										"initial-frame": 0,
+										"enable-collisions": true,
+										"live-preview": false
+									},
+									"uid": 787,
+									"sid": 197914433621871,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 197914433621871,
+										"expanded": true
+									},
+									"world": {
+										"x": 5946.0823188096,
+										"y": 8232.450940368888,
+										"width": 50,
+										"height": 50,
+										"originX": 0.5,
+										"originY": 0.5,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorStructure",
+									"properties": {
+										"initially-visible": true,
+										"initial-animation": "Animation 1",
+										"initial-frame": 0,
+										"enable-collisions": true,
+										"live-preview": false
+									},
+									"uid": 788,
+									"sid": 165713051677997,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 165713051677997,
+										"expanded": true
+									},
+									"world": {
+										"x": 5946.0823188096,
+										"y": 8344.450940368888,
+										"width": 240,
+										"height": 180,
+										"originX": 0.5,
+										"originY": 0.5,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
 								}
 							],
 							"sid": 620202063340350,
@@ -286,7 +659,9 @@
 									"uid": 736,
 									"sid": 771640290503122,
 									"tags": "",
-									"instanceVariables": {},
+									"instanceVariables": {
+										"DoorMesh": false
+									},
 									"behaviors": {},
 									"instanceFolderItem": {
 										"sid": 771640290503122,
@@ -331,7 +706,9 @@
 									"uid": 734,
 									"sid": 896854088207323,
 									"tags": "",
-									"instanceVariables": {},
+									"instanceVariables": {
+										"DoorMesh": false
+									},
 									"behaviors": {},
 									"instanceFolderItem": {
 										"sid": 896854088207323,
@@ -376,7 +753,9 @@
 									"uid": 737,
 									"sid": 439177868307664,
 									"tags": "",
-									"instanceVariables": {},
+									"instanceVariables": {
+										"DoorMesh": false
+									},
 									"behaviors": {},
 									"instanceFolderItem": {
 										"sid": 439177868307664,
@@ -387,6 +766,53 @@
 										"y": 364.595992490702,
 										"width": 81.51770336327081,
 										"height": 67.00595710003495,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorMeshFront",
+									"properties": {
+										"initially-visible": true,
+										"origin": "top-left",
+										"wrap-horizontal": "repeat",
+										"wrap-vertical": "repeat",
+										"image-offset-x": 0,
+										"image-offset-y": 0,
+										"image-scale-x": 1,
+										"image-scale-y": 1,
+										"image-angle": 0,
+										"enable-tile-randomization": false,
+										"x-random": 1,
+										"y-random": 1,
+										"angle-random": 1,
+										"blend-margin-x": 0.1,
+										"blend-margin-y": 0.1
+									},
+									"uid": 779,
+									"sid": 863274073349861,
+									"tags": "",
+									"instanceVariables": {
+										"DoorMesh": true
+									},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 863274073349861,
+										"expanded": true
+									},
+									"world": {
+										"x": 5507.106111123608,
+										"y": 428.0251285244056,
+										"width": 81.51770336327081,
+										"height": 109.70082094920554,
 										"originX": 0,
 										"originY": 0,
 										"color": [
@@ -430,12 +856,117 @@
 							"global": false
 						},
 						{
+							"name": "Door",
+							"overriden": 0,
+							"subLayers": [],
+							"instances": [
+								{
+									"type": "ElevatorDoor",
+									"properties": {
+										"initially-visible": true,
+										"initial-animation": "Animation 1",
+										"initial-frame": 0,
+										"enable-collisions": true,
+										"live-preview": false
+									},
+									"uid": 778,
+									"sid": 569980915345628,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 569980915345628,
+										"expanded": true
+									},
+									"world": {
+										"x": 5547.570198002872,
+										"y": 487.67740652692004,
+										"width": 73.11802975340397,
+										"height": 109.67704463010595,
+										"originX": 0.5,
+										"originY": 0.5,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								},
+								{
+									"type": "ElevatorLight",
+									"properties": {
+										"initially-visible": true,
+										"initial-animation": "Deactivated",
+										"initial-frame": 0,
+										"enable-collisions": true,
+										"live-preview": false
+									},
+									"uid": 780,
+									"sid": 382818657781635,
+									"tags": "",
+									"instanceVariables": {},
+									"behaviors": {},
+									"instanceFolderItem": {
+										"sid": 382818657781635,
+										"expanded": true
+									},
+									"world": {
+										"x": 5545.579748284704,
+										"y": 332.3900357643889,
+										"width": 50,
+										"height": 50,
+										"originX": 0.5,
+										"originY": 0.5,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
+								}
+							],
+							"sid": 967363356724594,
+							"effectTypes": [],
+							"isInitiallyVisible": true,
+							"isInitiallyInteractive": true,
+							"isHTMLElementsLayer": false,
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"backgroundColor": [
+								1,
+								1,
+								1,
+								1
+							],
+							"isTransparent": true,
+							"parallaxX": 1,
+							"parallaxY": 1,
+							"scaleRate": 1,
+							"forceOwnTexture": false,
+							"renderingMode": "3d",
+							"drawOrder": "z-order",
+							"useRenderCells": false,
+							"blendMode": "normal",
+							"zElevation": 0,
+							"global": false
+						},
+						{
 							"name": "Front",
 							"overriden": 0,
 							"subLayers": [],
 							"instances": [
 								{
-									"type": "Sprite13",
+									"type": "ElevatorStructure",
 									"properties": {
 										"initially-visible": true,
 										"initial-animation": "Animation 1",
@@ -4058,7 +4589,7 @@
 								"x": 5665,
 								"y": 7680,
 								"width": 1925,
-								"height": 586,
+								"height": 507,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -4108,9 +4639,9 @@
 							},
 							"world": {
 								"x": 6167,
-								"y": 8263,
+								"y": 8177,
 								"width": 1418,
-								"height": 546,
+								"height": 632,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -9534,76 +10065,6 @@
 							}
 						},
 						{
-							"type": "BunkerElevatorUp",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 665,
-							"sid": 319651726361562,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 319651726361562,
-								"expanded": true
-							},
-							"world": {
-								"x": 5984.574799234512,
-								"y": 8384.67933803662,
-								"width": 51.69834509154771,
-								"height": 97,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "BunkerElevatorDown",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 498,
-							"sid": 944981193644227,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 944981193644227,
-								"expanded": true
-							},
-							"world": {
-								"x": 5356.566219330956,
-								"y": 484.86090911095545,
-								"width": 57.89146277441796,
-								"height": 98.08153332370273,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "BunkerDoor",
 							"properties": {
 								"initially-visible": true,
@@ -10633,8 +11094,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 5861,
-								"y": 8276,
+								"x": 5751.222496384931,
+								"y": 8194.093462565805,
 								"width": 116.72232874843917,
 								"height": 27.706612314788277,
 								"originX": 0.5,
@@ -10687,7 +11148,7 @@
 						{
 							"type": "FromBunkerToLunarBase",
 							"properties": {
-								"initially-visible": true,
+								"initially-visible": false,
 								"initial-animation": "Animation 1",
 								"initial-frame": 0,
 								"enable-collisions": true,
@@ -10703,10 +11164,80 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 4850.606760764749,
-								"y": 469.8202672931327,
-								"width": 60,
-								"height": 128,
+								"x": 4847.286110956587,
+								"y": 460.4620582462959,
+								"width": 94.41408247837899,
+								"height": 146.71641809367367,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerElevatorDown",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 498,
+							"sid": 944981193644227,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 944981193644227,
+								"expanded": true
+							},
+							"world": {
+								"x": 5547.54012571456,
+								"y": 482.8997395472918,
+								"width": 77.50287578944062,
+								"height": 103.74704931419359,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BunkerElevatorUp",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 665,
+							"sid": 319651726361562,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 319651726361562,
+								"expanded": true
+							},
+							"world": {
+								"x": 5948.171908173425,
+								"y": 8383.541763964338,
+								"width": 75.5877477748445,
+								"height": 107.23829683755503,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [

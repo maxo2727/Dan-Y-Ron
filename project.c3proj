@@ -200,7 +200,6 @@
 			"Sprite11",
 			"TextoTrofeo1",
 			"FondoEnMosaico",
-			"Sprite13",
 			"BlackBG",
 			"Sputnik2",
 			"EnergySceneTrigger",
@@ -215,7 +214,8 @@
 			"HitHunterSceneTrigger",
 			"TutorialHunterVariable",
 			"EscapeSceneTrigger",
-			"NaveTutorialTriggerScene"
+			"NaveTutorialTriggerScene",
+			"Sprite13"
 		],
 		"subfolders": [
 			{
@@ -424,7 +424,10 @@
 					"BunkerGunTrigger",
 					"Platform",
 					"ElevatorMeshFront",
-					"ElevatorMeshBehind"
+					"ElevatorMeshBehind",
+					"ElevatorDoor",
+					"ElevatorStructure",
+					"ElevatorLight"
 				],
 				"subfolders": [],
 				"name": "Bunker"

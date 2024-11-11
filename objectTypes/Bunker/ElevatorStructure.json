@@ -1,7 +1,7 @@
 {
-	"name": "Sprite13",
+	"name": "ElevatorStructure",
 	"plugin-id": "Sprite",
-	"sid": 508108267281886,
+	"sid": 234856433663260,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 100,
-						"height": 150,
+						"width": 240,
+						"height": 180,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 651580,
+						"imageSpriteId": 7550047,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 544280346398216,
+				"sid": 171962781561088,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
