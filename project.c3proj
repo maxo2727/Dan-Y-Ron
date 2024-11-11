@@ -199,7 +199,8 @@
 			"Tilemap",
 			"Sprite11",
 			"TextoTrofeo1",
-			"FondoEnMosaico"
+			"FondoEnMosaico",
+			"Sprite13"
 		],
 		"subfolders": [
 			{
@@ -406,7 +407,9 @@
 					"BunkerElevatorUp",
 					"BunkerElevatorDown",
 					"BunkerGunTrigger",
-					"Platform"
+					"Platform",
+					"ElevatorMeshFront",
+					"ElevatorMeshBehind"
 				],
 				"subfolders": [],
 				"name": "Bunker"
