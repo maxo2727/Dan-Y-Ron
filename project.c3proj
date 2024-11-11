@@ -216,7 +216,8 @@
 			"EscapeSceneTrigger",
 			"NaveTutorialTriggerScene",
 			"Sprite13",
-			"Sprite14"
+			"Sprite14",
+			"selectedChecker"
 		],
 		"subfolders": [
 			{

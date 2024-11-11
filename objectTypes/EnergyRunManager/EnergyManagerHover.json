@@ -3,7 +3,29 @@
 	"plugin-id": "Sprite",
 	"sid": 942867905723134,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 422728844918057
+		},
+		{
+			"name": "ItemSelected",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 710633965633288
+		},
+		{
+			"name": "ItemEnergyCost",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 934824714800838
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -26,7 +48,32 @@
 					}
 				],
 				"sid": 293894759028871,
-				"name": "Animation 1",
+				"name": "Hover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5166834,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 679339964488381,
+				"name": "Selected",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
