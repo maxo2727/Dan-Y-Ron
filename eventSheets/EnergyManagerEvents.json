@@ -1,0 +1,55 @@
+{
+	"name": "EnergyManagerEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 298464184254073,
+					"parameters": {
+						"object": "EnergyManagerHover"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EnergyManagerHover",
+					"sid": 817310382388879,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 290307207219150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 474391911866542,
+					"parameters": {
+						"object": "EnergyManagerHover"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EnergyManagerHover",
+					"sid": 672791162379078,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 711825695636443
+		}
+	],
+	"sid": 314260412407709
+}

@@ -215,7 +215,8 @@
 			"TutorialHunterVariable",
 			"EscapeSceneTrigger",
 			"NaveTutorialTriggerScene",
-			"Sprite13"
+			"Sprite13",
+			"Sprite14"
 		],
 		"subfolders": [
 			{
@@ -457,6 +458,16 @@
 				"items": [],
 				"subfolders": [],
 				"name": "TutorialScenes"
+			},
+			{
+				"items": [
+					"EnergyManagerBG",
+					"RunStarter",
+					"EnergyManagerTxt",
+					"EnergyManagerHover"
+				],
+				"subfolders": [],
+				"name": "EnergyRunManager"
 			}
 		]
 	},
@@ -488,7 +499,8 @@
 			"TrophyDatabaseLayout",
 			"FadeLayout",
 			"CraterLayout",
-			"TutorialLayout"
+			"TutorialLayout",
+			"EnergyRunManager"
 		],
 		"subfolders": [
 			{
@@ -529,7 +541,8 @@
 			"TestLevelEvents",
 			"TrophyInfoEvents",
 			"TutorialEvents",
-			"SceneGlobalVariables"
+			"SceneGlobalVariables",
+			"EnergyManagerEvents"
 		],
 		"subfolders": [
 			{

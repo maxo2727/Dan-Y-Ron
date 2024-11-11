@@ -32,6 +32,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "BunkerEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EnergyManagerEvents"
 		}
 	],
 	"sid": 489255412336291

@@ -22,6 +22,16 @@
 			"sid": 816284826058562
 		},
 		{
+			"eventType": "variable",
+			"name": "EnergyManagerOpened",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 266287694601430
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "HubSystem",
@@ -428,7 +438,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Capsula",
+			"title": "EnergyManager",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -455,7 +465,128 @@
 							}
 						}
 					],
-					"sid": 419271141695404
+					"sid": 419271141695404,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 500909146920588,
+									"parameters": {
+										"key": 70
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 735894139530926,
+									"parameters": {
+										"variable": "EnergyManagerOpened"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 656581737259763,
+									"parameters": {
+										"layer": "\"EnergyManager\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "DanPlayerBox",
+									"sid": 417757583701570,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 969553626138999,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 174312635342828,
+									"parameters": {
+										"variable": "EnergyManagerOpened",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 536874898591551
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 743099013817343,
+							"parameters": {
+								"key": 70
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 828651519150009,
+							"parameters": {
+								"variable": "EnergyManagerOpened"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 608435447082723,
+							"parameters": {
+								"layer": "\"EnergyManager\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 383124281879333,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 856838245067776,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 431071337633331,
+							"parameters": {
+								"variable": "EnergyManagerOpened",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 781683884974062
 				},
 				{
 					"eventType": "block",
