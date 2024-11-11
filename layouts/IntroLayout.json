@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Black",
+					"type": "BlackBG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -16,30 +16,19 @@
 						"live-preview": false
 					},
 					"uid": 408,
-					"sid": 912006676780760,
+					"sid": 760024826572676,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 912006676780760,
+						"sid": 760024826572676,
 						"expanded": true
 					},
 					"world": {
-						"x": 434,
-						"y": 239.5,
-						"width": 888,
-						"height": 493,
+						"x": 487,
+						"y": 234,
+						"width": 1026,
+						"height": 516,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -57,7 +46,7 @@
 					"properties": {
 						"text": "TERRANOVA PRODUCCIONES",
 						"enable-bbcode": true,
-						"font": "SilomBol",
+						"font": "Silom",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,

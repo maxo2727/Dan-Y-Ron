@@ -184,7 +184,7 @@
 			"GeneralText",
 			"FlowchartController",
 			"TerranovaText",
-			"Black",
+			"FadeBlack",
 			"PresentaText",
 			"Sprite7",
 			"Text",
@@ -200,7 +200,16 @@
 			"Sprite11",
 			"TextoTrofeo1",
 			"FondoEnMosaico",
-			"Sprite13"
+			"Sprite13",
+			"BlackBG",
+			"Sputnik2",
+			"EnergySceneTrigger",
+			"EnergyText",
+			"NoEnergySceneTrigger",
+			"GetEnergySceneTrigger",
+			"EnemySceneTrigger",
+			"Sprite14",
+			"Sprite15"
 		],
 		"subfolders": [
 			{
@@ -434,6 +443,11 @@
 				],
 				"subfolders": [],
 				"name": "CraterSprites"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "TutorialScenes"
 			}
 		]
 	},
@@ -464,7 +478,8 @@
 			"MuseumLayout",
 			"TrophyDatabaseLayout",
 			"FadeLayout",
-			"CraterLayout"
+			"CraterLayout",
+			"TutorialLayout"
 		],
 		"subfolders": [
 			{
@@ -503,7 +518,9 @@
 			"BunkerEvents",
 			"MuseumEvents",
 			"TestLevelEvents",
-			"TrophyInfoEvents"
+			"TrophyInfoEvents",
+			"TutorialEvents",
+			"SceneGlobalVariables"
 		],
 		"subfolders": [
 			{
@@ -540,6 +557,14 @@
 					"name": "SilomBol.ttf",
 					"type": "application/font-sfnt",
 					"sid": 305783161878420,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Silom.ttf",
+					"type": "application/font-sfnt",
+					"sid": 795420571392474,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -627,7 +652,7 @@
 	"flowcharts": {
 		"items": [
 			"IntroFlow",
-			"FirstRunFlow"
+			"TutorialFlow"
 		],
 		"subfolders": []
 	},

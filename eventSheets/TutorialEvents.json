@@ -1,0 +1,1098 @@
+{
+	"name": "TutorialEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "SceneEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanWorldEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DialogueEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "HUDEvents"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TutorialScenes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 763237774263313,
+							"parameters": {
+								"tag": "\"StartPreRun\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 562361890433754,
+							"parameters": {
+								"variable": "Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 431462724731112,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "start-flowchart-by-name",
+							"objectClass": "FlowchartController",
+							"sid": 363969138480101,
+							"parameters": {
+								"flowchart-name": "\"TutorialFlow\"",
+								"start-node-tag": "\"\"",
+								"flowchart-tag": "\"\"",
+								"set-as-current": true
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 191650888441741,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 521675386430154,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 579944193545797,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 259215317305452,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 850428055066699,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 868155318996358,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 644099436107771,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 601765668560639,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 677098162317680,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 425838574202459,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 873518575331899,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 139313934250157,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 845389920088834,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 795948499978129,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 371536878766207,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 475454192853958,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 659135324877466,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 9\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 815839719335764,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 170685515951605
+						},
+						{
+							"id": "goto-next-flowchart-node",
+							"objectClass": "FlowchartController",
+							"sid": 226443133456052,
+							"parameters": {
+								"index-or-name": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 191553605849892,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 439206632810337,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 857730501975371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 240221918317057,
+							"parameters": {
+								"object": "EnergySceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 820539819982448,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 567059705727237,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 705608925161409,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 454963915737369,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 419163383687894,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Energy",
+							"sid": 298206748572403,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EnergyText",
+							"sid": 209056991968670,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 600017421386279,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 442589867217025,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 809396781200291,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 657920169080471,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 454923527545625
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 545810036548533,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 878141870025148,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EnergySceneTrigger",
+							"sid": 544739317043567
+						}
+					],
+					"sid": 554066301201320
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 152180534933470,
+							"parameters": {
+								"object": "GetEnergySceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NoEnergySceneTrigger",
+							"sid": 501671292761307
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 847456937887632,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 924763275240992,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 559165444625595,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 558019783702153,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 775234037272326,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 512674391475887,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 142474519169781,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 635484181668519
+						},
+						{
+							"id": "goto-next-flowchart-node",
+							"objectClass": "FlowchartController",
+							"sid": 590615512733780,
+							"parameters": {
+								"index-or-name": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 518044502941749,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 553025248044087,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "GetEnergySceneTrigger",
+							"sid": 216436520522648
+						}
+					],
+					"sid": 942489804810983
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 227674518562733,
+							"parameters": {
+								"object": "NoEnergySceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 489549879066711,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 228537536131303,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 972475978522257,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 416739364164694
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "DanPlayerBox",
+							"sid": 167399276296439,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-(Self.X + 1000)"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 847951339146638,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 999058161487730
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 837068137491945,
+							"parameters": {
+								"object": "EnemySceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "EnemySceneTrigger",
+							"sid": 552648554962085
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 105638746761493,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 152504846382788,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 605368515030795,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 657145278160158
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Enemigo1",
+							"sid": 235584199165904,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "-200"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 108730463270354,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Enemigo1",
+							"sid": 628558002878862,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-800"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 779392356875734,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 801248792286564,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 290382344674282,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 875802140602159,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 442603152176720,
+							"parameters": {
+								"variable": "IsOnDialogue",
+								"value": "false"
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 788792378606491
+						}
+					],
+					"sid": 283555779818650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Enemigo1",
+							"sid": 272982499805830
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "dialogue",
+							"sid": 960794267953028,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 902752566086474,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 695624934934419,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 437910853591042,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 763576014503908,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 985079864233985,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 363719507139533,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 213120097523342,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 648410325458146
+						},
+						{
+							"id": "goto-next-flowchart-node",
+							"objectClass": "FlowchartController",
+							"sid": 635905634533499,
+							"parameters": {
+								"index-or-name": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 292279423710334,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 326695539349052,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 360550901906172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 972497697244895,
+							"parameters": {
+								"object": "Sprite14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 215680741696790,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 574709291168766,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 259777603651846,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 604240033972652,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 438887958799763,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 687596309691125,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 591221919303237,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 214321528543087
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 363197806122372,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 379772327047978,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 983661516692584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 835174639205974,
+							"parameters": {
+								"object": "Sprite15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 769940445904039,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 294808000464685,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 695591560482220,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 271761375211796
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "DanPlayerBox",
+							"sid": 487768448380558,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-(Self.X + 1000)"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 801412114242850,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 610157199828724
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 503686706111557,
+							"parameters": {
+								"object": "Sputnik2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Sputnik2",
+							"sid": 596904755255002
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 407621128554705,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 617655074611980,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 405981069594903,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 830494231855409,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 859440905666668,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 397851311352917,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 176994178049911,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 809746520356516,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 402636219793907,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 158698787438014,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 9\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 148368362295866,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 345361297404891,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 10\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 397375886347690,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 400239271971916
+						},
+						{
+							"id": "goto-next-flowchart-node",
+							"objectClass": "FlowchartController",
+							"sid": 345656646231891,
+							"parameters": {
+								"index-or-name": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 944561140748843,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 664672508125768,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 867503203641374
+				}
+			],
+			"sid": 381134690070239
+		}
+	],
+	"sid": 198321717306871
+}

@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "IsOnDialogue",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 828657645857773
+		},
+		{
+			"eventType": "variable",
 			"name": "ArmaActual",
 			"type": "string",
 			"initialValue": "Melee",
@@ -527,6 +537,15 @@
 										"comparison": 0,
 										"value": "\"Melee\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 228149814824395,
+									"parameters": {
+										"variable": "IsOnDialogue"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -622,6 +641,15 @@
 										"comparison": 0,
 										"value": "\"Gun\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 270579187407015,
+									"parameters": {
+										"variable": "IsOnDialogue"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -703,6 +731,15 @@
 										"comparison": 0,
 										"value": "\"Hook\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 903412692881310,
+									"parameters": {
+										"variable": "IsOnDialogue"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [

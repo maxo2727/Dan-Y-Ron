@@ -1,14 +1,14 @@
 {
-	"name": "Black",
+	"name": "Sprite15",
 	"plugin-id": "Sprite",
-	"sid": 405076106594760,
+	"sid": 321662767927687,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 869620204644763
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 236540378521888
 		}
 	],
 	"effectTypes": [],
@@ -25,13 +25,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 221152,
+						"imageSpriteId": 9370785,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 998724673921464,
+				"sid": 922706788774694,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

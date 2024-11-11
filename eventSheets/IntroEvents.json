@@ -273,6 +273,14 @@
 							}
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 615140890233264,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
 							"callFunction": "dialogue",
 							"sid": 505058917248117,
 							"parameters": [
@@ -357,24 +365,24 @@
 							"sid": 272560589538629
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 844812374302844,
-							"parameters": {
-								"seconds": "6"
-							}
-						},
-						{
 							"id": "end-flowchart",
 							"objectClass": "FlowchartController",
 							"sid": 244175132219381
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 943872810605323,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 401374813333049,
+							"sid": 653688175465633,
 							"parameters": {
-								"layout": "SuperficieLayout"
+								"layout": "TutorialLayout"
 							}
 						}
 					],

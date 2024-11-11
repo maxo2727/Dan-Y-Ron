@@ -28,6 +28,15 @@
 			"conditions": [],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 794179367815671,
+					"parameters": {
+						"variable": "IsOnDialogue",
+						"value": "true"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "GeneralTextBox",
 					"sid": 360494576895078
@@ -58,6 +67,14 @@
 						"y": "411",
 						"create-hierarchy": false,
 						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 584643382496887,
+					"parameters": {
+						"seconds": "0.1"
 					}
 				},
 				{
@@ -96,17 +113,9 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 694136598707480,
-					"parameters": {
-						"seconds": "2.5"
-					}
-				},
-				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 339188359359626,
+					"sid": 360473839110463,
 					"parameters": {
 						"object-to-create": "Sprite9",
 						"layer": "\"TextLayer\"",
@@ -115,58 +124,25 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
-				}
-			],
-			"sid": 783704768121500,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-running-typewriter-text",
-							"objectClass": "GeneralText",
-							"sid": 107855765018565,
-							"isInverted": true
-						}
-					],
-					"actions": [],
-					"sid": 893359963693744
-				}
-			]
-		},
-		{
-			"functionName": "destroyDialogue",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "GeneralText",
-					"sid": 222479324448098
 				},
 				{
-					"id": "destroy",
-					"objectClass": "GeneralTextBox",
-					"sid": 458247260372271
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 828592476833062,
+					"parameters": {
+						"seconds": "2.5"
+					}
 				},
 				{
-					"id": "destroy",
-					"objectClass": "CharacterTxt",
-					"sid": 551002773945051
-				},
-				{
-					"id": "destroy",
+					"id": "set-visible",
 					"objectClass": "Sprite9",
-					"sid": 788559838120468
+					"sid": 157191434136706,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
-			"sid": 278343329610425
+			"sid": 783704768121500
 		},
 		{
 			"eventType": "block",
@@ -232,9 +208,60 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite9",
+					"sid": 217616922269006,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 640305620276324
+		},
+		{
+			"functionName": "destroyDialogue",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 286192660847196,
+					"parameters": {
+						"variable": "IsOnDialogue",
+						"value": "false"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "GeneralText",
+					"sid": 291005666627919
+				},
+				{
+					"id": "destroy",
+					"objectClass": "GeneralTextBox",
+					"sid": 135089849278732
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CharacterTxt",
+					"sid": 306968269025414
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite9",
+					"sid": 998985463646234
+				}
+			],
+			"sid": 103542689624225
 		}
 	],
 	"sid": 257524915797502

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Black",
+					"type": "FadeBlack",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -36,10 +36,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 427,
-						"y": 240,
-						"width": 864,
-						"height": 490,
+						"x": 1519.5,
+						"y": 562.5,
+						"width": 3199,
+						"height": 1289,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

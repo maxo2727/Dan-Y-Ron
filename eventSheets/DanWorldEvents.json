@@ -372,8 +372,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Dan",
-							"sid": 711406846181274,
+							"objectClass": "DanPlayerBox",
+							"sid": 936534522712446,
 							"parameters": {
 								"object": "Star"
 							}

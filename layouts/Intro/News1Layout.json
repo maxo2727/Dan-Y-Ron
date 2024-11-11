@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Black",
+					"type": "BlackBG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -16,30 +16,19 @@
 						"live-preview": false
 					},
 					"uid": 411,
-					"sid": 838396226961084,
+					"sid": 474910656106190,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 838396226961084,
+						"sid": 474910656106190,
 						"expanded": true
 					},
 					"world": {
-						"x": 575.5,
-						"y": 392.5,
-						"width": 1231,
-						"height": 886,
+						"x": 623.5,
+						"y": 416,
+						"width": 1399,
+						"height": 1000,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -54,41 +54,6 @@
 								"angle": 0,
 								"zElevation": 0
 							}
-						},
-						{
-							"type": "Energy",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 691,
-							"sid": 847555741549165,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {},
-							"instanceFolderItem": {
-								"sid": 847555741549165,
-								"expanded": true
-							},
-							"world": {
-								"x": 2813,
-								"y": 568,
-								"width": 25.332461417088084,
-								"height": 36.82786407694317,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
 						}
 					],
 					"sid": 727725929691671,
@@ -12204,51 +12169,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "EnergyCounter",
-					"properties": {
-						"text": "ENERGY",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 151,
-					"sid": 843595076060259,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 843595076060259,
-						"expanded": true
-					},
-					"world": {
-						"x": 49,
-						"y": 448,
-						"width": 101,
-						"height": 21,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "WaveTimer",
 					"properties": {
 						"initially-visible": true,
@@ -12306,8 +12226,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 26.76047315582008,
-						"y": 453.1752313680405,
+						"x": 19,
+						"y": 25,
 						"width": 25.823172571086882,
 						"height": 37.54125088065571,
 						"originX": 0.5,
@@ -12411,7 +12331,7 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 61,
+						"x": 798,
 						"y": 38,
 						"width": 100,
 						"height": 64,
@@ -12446,8 +12366,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 62.12606807296086,
-						"y": 36.526014203300264,
+						"x": 799,
+						"y": 37,
 						"width": 89.7069498413112,
 						"height": 44.85191888733655,
 						"originX": 0.5,
@@ -12491,8 +12411,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 30.642208287585817,
-						"y": 27.718352933699137,
+						"x": 765,
+						"y": 30,
 						"width": 64.99165425889458,
 						"height": 19.894806575942283,
 						"originX": 0,
@@ -12526,8 +12446,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 795,
-						"y": 38,
+						"x": 55,
+						"y": 437,
 						"width": 100,
 						"height": 64,
 						"originX": 0.5,
@@ -12571,8 +12491,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 763,
-						"y": 28,
+						"x": 20,
+						"y": 429,
 						"width": 64.99165425889458,
 						"height": 19.894806575942283,
 						"originX": 0,
@@ -12584,6 +12504,57 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnergyText",
+					"properties": {
+						"text": "100",
+						"enable-bbcode": true,
+						"font": "SilomBol",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 760,
+					"sid": 780788510968232,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 780788510968232,
+						"expanded": true
+					},
+					"world": {
+						"x": 36,
+						"y": 7,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0046905603619333824,
 						"zElevation": 0
 					}
 				}

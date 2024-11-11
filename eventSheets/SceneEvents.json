@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "Tutorial",
 			"type": "boolean",
-			"initialValue": "false",
+			"initialValue": "true",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -272,158 +272,21 @@
 								"variable": "RunStatus",
 								"value": "\"OnRun\""
 							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 194299024109949,
+							"parameters": {
+								"tag": "\"StartPreRun\""
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Se manda PreRun para activar cualquier diálogo post aterrizaje pero antes de arrancar la run"
 						}
 					],
-					"sid": 443159193775618,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 273120514699870,
-									"parameters": {
-										"variable": "CurrentRun",
-										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 121827636482260,
-									"parameters": {
-										"variable": "Tutorial"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-ignoring-input",
-									"objectClass": "DanPlayerBox",
-									"sid": 445238111044833,
-									"behaviorType": "Platform",
-									"parameters": {
-										"input": "start-ignoring"
-									}
-								},
-								{
-									"id": "start-flowchart-by-name",
-									"objectClass": "FlowchartController",
-									"sid": 353730182427757,
-									"parameters": {
-										"flowchart-name": "\"FirstRunFlow\"",
-										"start-node-tag": "\"\"",
-										"flowchart-tag": "\"\"",
-										"set-as-current": true
-									}
-								},
-								{
-									"callFunction": "dialogue",
-									"sid": 395981032881608,
-									"parameters": [
-										"FlowchartController.OutputValue(\"Option 1\")",
-										"\"RonTxt\""
-									]
-								},
-								{
-									"id": "wait-for-signal",
-									"objectClass": "System",
-									"sid": 300836653675495,
-									"parameters": {
-										"tag": "\"next\""
-									}
-								},
-								{
-									"callFunction": "dialogue",
-									"sid": 290419712882949,
-									"parameters": [
-										"FlowchartController.OutputValue(\"Option 2\")",
-										"\"RonTxt\""
-									]
-								},
-								{
-									"id": "wait-for-signal",
-									"objectClass": "System",
-									"sid": 583768853571404,
-									"parameters": {
-										"tag": "\"next\""
-									}
-								},
-								{
-									"callFunction": "dialogue",
-									"sid": 787704693292120,
-									"parameters": [
-										"FlowchartController.OutputValue(\"Option 3\")",
-										"\"RonTxt\""
-									]
-								},
-								{
-									"id": "wait-for-signal",
-									"objectClass": "System",
-									"sid": 910167583942447,
-									"parameters": {
-										"tag": "\"next\""
-									}
-								},
-								{
-									"callFunction": "dialogue",
-									"sid": 656660856613440,
-									"parameters": [
-										"FlowchartController.OutputValue(\"Option 4\")",
-										"\"RonTxt\""
-									]
-								},
-								{
-									"id": "wait-for-signal",
-									"objectClass": "System",
-									"sid": 368014490562397,
-									"parameters": {
-										"tag": "\"next\""
-									}
-								},
-								{
-									"callFunction": "dialogue",
-									"sid": 802711696006282,
-									"parameters": [
-										"FlowchartController.OutputValue(\"Option 5\")",
-										"\"RonTxt\""
-									]
-								},
-								{
-									"id": "wait-for-signal",
-									"objectClass": "System",
-									"sid": 161995636643192,
-									"parameters": {
-										"tag": "\"next\""
-									}
-								},
-								{
-									"callFunction": "destroyDialogue",
-									"sid": 380054461977842
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 408664292864410,
-									"parameters": {
-										"seconds": "0.02"
-									}
-								},
-								{
-									"id": "set-ignoring-input",
-									"objectClass": "DanPlayerBox",
-									"sid": 700253452362134,
-									"behaviorType": "Platform",
-									"parameters": {
-										"input": "stop-ignoring"
-									}
-								}
-							],
-							"sid": 675148674799212
-						}
-					]
+					"sid": 443159193775618
 				}
 			],
 			"sid": 718412848679369

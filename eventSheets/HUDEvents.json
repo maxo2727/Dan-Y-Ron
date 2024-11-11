@@ -18,6 +18,14 @@
 					"parameters": {
 						"text": "Energy"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "EnergyText",
+					"sid": 216180993459806,
+					"parameters": {
+						"text": "Energy"
+					}
 				}
 			],
 			"sid": 433197074480012

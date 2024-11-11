@@ -1,0 +1,339 @@
+{
+	"sid": 649503041678386,
+	"nodes": [
+		{
+			"sid": 108780952094477,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [
+				485176874237233
+			],
+			"outputs": [
+				{
+					"sid": 384759108280950,
+					"cnSID": 485176874237233,
+					"name": "Option 1",
+					"value": "Dan... ¿Me escuchas? Aquí Ron..."
+				},
+				{
+					"sid": 323538226033653,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Parece que el aterrizaje estuvo un poco agitado."
+				},
+				{
+					"sid": 151366292749980,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Aún le falta calibración a la cápsula."
+				},
+				{
+					"sid": 129467001267408,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "Si mis cálculos son correctos, estas son las coordenadas de la señal que recibimos."
+				},
+				{
+					"sid": 541132108970692,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Según el protocolo espacial, se trata de un llamado de auxilio."
+				},
+				{
+					"sid": 502392255726932,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Explora las inmediaciones del lugar a ver si encuentras algo."
+				},
+				{
+					"sid": 400241012613946,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Yo estaré sobrevolando el planeta en la nave, para monitorear la zona. "
+				},
+				{
+					"sid": 439648076873852,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "¡Recuerda que puedes moverte y saltar con las teclas WASD!"
+				},
+				{
+					"sid": 990256697514433,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Cambio y fuera."
+				}
+			],
+			"x": 9864,
+			"y": 9897,
+			"w": 420,
+			"h": 397,
+			"t": "",
+			"s": true,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 485176874237233,
+			"pnSIDs": [
+				108780952094477
+			],
+			"poSIDs": [
+				384759108280950
+			],
+			"nodeSIDs": [
+				228857941757275
+			],
+			"outputs": [
+				{
+					"sid": 116948912466044,
+					"cnSID": 228857941757275,
+					"name": "Option 1",
+					"value": "¡Ratas! Parece que este planeta materializa una clase de ENERGÍA!"
+				},
+				{
+					"sid": 769485938620351,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Tu traje espacial funciona a base de este recurso, así que esto nos viene muy bien."
+				},
+				{
+					"sid": 440222706815930,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Arriba a la izquierda se muestra la cantidad de ENERGÍA que posees actualmente."
+				},
+				{
+					"sid": 651271451150088,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "Si este valor llega a 0, tendrás que abandonar la misión, ¡así que ten cuidado!"
+				},
+				{
+					"sid": 907401312731076,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Deberías tomar la ENERGÍA, nunca está de más."
+				},
+				{
+					"sid": 615239762045204,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "¡Bien! Parece que tu traje la absorbió sin problemas."
+				},
+				{
+					"sid": 569886798751418,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Por el momento, la ENERGÍA sostiene las funciones básicas del traje."
+				},
+				{
+					"sid": 390208173739070,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Quizás más adelante le podamos dar un nuevo propósito..."
+				}
+			],
+			"x": 10406,
+			"y": 9802,
+			"w": 420,
+			"h": 364,
+			"t": "",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 228857941757275,
+			"pnSIDs": [
+				485176874237233
+			],
+			"poSIDs": [
+				116948912466044
+			],
+			"nodeSIDs": [
+				159267556869876
+			],
+			"outputs": [
+				{
+					"sid": 293128175555285,
+					"cnSID": 159267556869876,
+					"name": "Option 1",
+					"value": "¿Eh? ¿Y eso? No pensé que este planeta fuera apto para el desarrollo de seres orgánicos..."
+				},
+				{
+					"sid": 472423993166572,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "¡Cuidado! ¡Parece que la criatura es hostil!"
+				},
+				{
+					"sid": 548484095613049,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "¡Rápido! ¡Usa el CLICK IZQUIERDO para realizar un ataque!"
+				},
+				{
+					"sid": 839377213349403,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¡Uf! Eso estuvo cerca. Por suerte diseñé esos brazos robóticos para enfrentar amenazas potenciales."
+				},
+				{
+					"sid": 949434478397494,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Si recibes daño, perderas ENERGÍA de tu traje."
+				},
+				{
+					"sid": 786913631914471,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Por suerte, parece que las criaturas de este planeta también generan ENERGÍA."
+				},
+				{
+					"sid": 604259463282532,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "¡Ten cuidado con los enemigos y defiéndete siempre que puedas!"
+				}
+			],
+			"x": 10994,
+			"y": 9791,
+			"w": 420,
+			"h": 331,
+			"t": "",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 159267556869876,
+			"pnSIDs": [
+				228857941757275
+			],
+			"poSIDs": [
+				293128175555285
+			],
+			"nodeSIDs": [
+				300744110199053
+			],
+			"outputs": [
+				{
+					"sid": 131507320217226,
+					"cnSID": 300744110199053,
+					"name": "Option 1",
+					"value": "¡Mira! ¿Qué es eso que brilla? ¡Apuesto a que es un TESORO!"
+				},
+				{
+					"sid": 169116295112635,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Los TESOROS son objetos valiosos repartidos por toda la galaxia."
+				},
+				{
+					"sid": 414961596671570,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Recógelo, seguro que podemos sacarle provecho de algún modo."
+				},
+				{
+					"sid": 664284321518654,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¿A dónde vas? ¿No vas a recoger el TESORO?"
+				},
+				{
+					"sid": 253092140218264,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Interesante... Parece una especie de reliquia espacial..."
+				},
+				{
+					"sid": 111125914321706,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Los TESOROS que vayas recolectando apareceran en la ***completar****"
+				},
+				{
+					"sid": 853560749746966,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Para obtenerlos de manera definitiva deberás volver a la nave y finalizar la misión."
+				},
+				{
+					"sid": 239606654032749,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Si te quedas sin ENERGÍA, perderás los TESOROS que hayas conseguido en la exploración."
+				},
+				{
+					"sid": 768280632066367,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Siempre es bueno investigar los alrededores para encontrar la mayor cantidad de TESOROS."
+				},
+				{
+					"sid": 968464367420989,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "Pero por ahora, concentrémonos en la señal; su origen debería estar un poco más adelante."
+				}
+			],
+			"x": 11526,
+			"y": 9786,
+			"w": 420,
+			"h": 430,
+			"t": "",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 300744110199053,
+			"pnSIDs": [
+				159267556869876
+			],
+			"poSIDs": [
+				131507320217226
+			],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 560500023605246,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "¿Eso es... Un perro? ¿Qué hace un perro en este planeta?"
+				},
+				{
+					"sid": 694439616687242,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Parece que está inconsciente...  Será mejor que lo llevemos a la nave."
+				},
+				{
+					"sid": 553111912256831,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Acércate para recogerlo y regresa a la cápsula."
+				}
+			],
+			"x": 12090,
+			"y": 9672,
+			"w": 420,
+			"h": 199,
+			"t": "",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		}
+	],
+	"name": "TutorialFlow",
+	"w": 20000,
+	"h": 20000
+}
