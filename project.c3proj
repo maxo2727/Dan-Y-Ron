@@ -208,8 +208,14 @@
 			"NoEnergySceneTrigger",
 			"GetEnergySceneTrigger",
 			"EnemySceneTrigger",
-			"Sprite14",
-			"Sprite15"
+			"TesoroSceneTrigger",
+			"NoTesoroSceneTrigger",
+			"LaikaSceneTrigger",
+			"NotLaikaSceneTrigger",
+			"HitHunterSceneTrigger",
+			"TutorialHunterVariable",
+			"EscapeSceneTrigger",
+			"NaveTutorialTriggerScene"
 		],
 		"subfolders": [
 			{

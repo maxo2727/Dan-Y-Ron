@@ -281,12 +281,18 @@
 					"cnSID": null,
 					"name": "Option 10",
 					"value": "Pero por ahora, concentrémonos en la señal; su origen debería estar un poco más adelante."
+				},
+				{
+					"sid": 507736960729588,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "¡Gracias al almacenamiento molecular del traje puedes cargarlo sin problemas!"
 				}
 			],
 			"x": 11526,
 			"y": 9786,
 			"w": 420,
-			"h": 430,
+			"h": 463,
 			"t": "",
 			"s": false,
 			"pi": 0,
@@ -320,12 +326,72 @@
 					"cnSID": null,
 					"name": "Option 3",
 					"value": "Acércate para recogerlo y regresa a la cápsula."
+				},
+				{
+					"sid": 519084529816497,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¡Tenemos que rescatar al perro!"
+				},
+				{
+					"sid": 675290536374953,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "En efecto, este animal es la fuente de las señales radiales que recibimos."
+				},
+				{
+					"sid": 302629329211321,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Pero... ¿Cómo llegó aquí? ¿Y por qué pidió auxilio?"
+				},
+				{
+					"sid": 148983253715086,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Un momento, estoy detectando a una entidad autómata cercana a tu posición."
+				},
+				{
+					"sid": 871777844974372,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Parece una especie de Dron... No me da confianza."
+				},
+				{
+					"sid": 806447145826028,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "¡Intenta destruirlo!"
+				},
+				{
+					"sid": 426383747134234,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "¿Así de fácil? Bueno, será mejor que regreses a la cápsula."
+				},
+				{
+					"sid": 992086667593770,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "Dan, mis sensores indican que otras entidades ingresaron a la atmósfera..."
+				},
+				{
+					"sid": 334258834390349,
+					"cnSID": null,
+					"name": "Option 12",
+					"value": "..."
+				},
+				{
+					"sid": 945831330121759,
+					"cnSID": null,
+					"name": "Option 13",
+					"value": "¡Corre! ¡A la cápsula!"
 				}
 			],
 			"x": 12090,
 			"y": 9672,
 			"w": 420,
-			"h": 199,
+			"h": 529,
 			"t": "",
 			"s": false,
 			"pi": 0,

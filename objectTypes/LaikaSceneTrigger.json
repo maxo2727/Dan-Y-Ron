@@ -1,14 +1,14 @@
 {
-	"name": "Sprite15",
+	"name": "LaikaSceneTrigger",
 	"plugin-id": "Sprite",
-	"sid": 321662767927687,
+	"sid": 184563154125012,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 236540378521888
+			"sid": 125135499292235
 		}
 	],
 	"effectTypes": [],
@@ -25,13 +25,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9370785,
+						"imageSpriteId": 7701775,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 922706788774694,
+				"sid": 288628060753962,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

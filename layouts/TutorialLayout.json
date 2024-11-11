@@ -544,7 +544,7 @@
 							"world": {
 								"x": 2503,
 								"y": 967,
-								"width": 708.136513600731,
+								"width": 717.136513600731,
 								"height": 741.0592893831026,
 								"originX": 0,
 								"originY": 0,
@@ -595,9 +595,9 @@
 							},
 							"world": {
 								"x": 3212,
-								"y": 934,
+								"y": 916,
 								"width": 360.13651360073095,
-								"height": 759.0592893831026,
+								"height": 777.0592893831026,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -683,7 +683,7 @@
 						{
 							"type": "EnergySceneTrigger",
 							"properties": {
-								"initially-visible": true,
+								"initially-visible": false,
 								"initial-animation": "Animation 1",
 								"initial-frame": 0,
 								"enable-collisions": true,
@@ -938,7 +938,7 @@
 				{
 					"type": "NoEnergySceneTrigger",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1015,7 +1015,7 @@
 				{
 					"type": "EnemySceneTrigger",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1376,9 +1376,9 @@
 					}
 				},
 				{
-					"type": "Sprite14",
+					"type": "TesoroSceneTrigger",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1411,9 +1411,9 @@
 					}
 				},
 				{
-					"type": "Sprite15",
+					"type": "NoTesoroSceneTrigger",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1490,7 +1490,7 @@
 					"world": {
 						"x": 5099,
 						"y": 1020,
-						"width": 432.13651360073095,
+						"width": 358.13651360073095,
 						"height": 666.0592893831026,
 						"originX": 0,
 						"originY": 0,
@@ -1540,9 +1540,9 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 5531,
+						"x": 5451,
 						"y": 1073,
-						"width": 511.13651360073095,
+						"width": 591.136513600731,
 						"height": 611.0592893831026,
 						"originX": 0,
 						"originY": 0,
@@ -1592,9 +1592,9 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 6043,
+						"x": 6040,
 						"y": 1033,
-						"width": 163.13651360073095,
+						"width": 166.13651360073095,
 						"height": 674.0592893831026,
 						"originX": 0,
 						"originY": 0,
@@ -1735,6 +1735,232 @@
 						"y": 1053,
 						"width": 63.628049162352134,
 						"height": 63.628049162352134,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LaikaSceneTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 768,
+					"sid": 653796053860571,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 653796053860571,
+						"expanded": true
+					},
+					"world": {
+						"x": 5626,
+						"y": 687,
+						"width": 24,
+						"height": 1451,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotLaikaSceneTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 769,
+					"sid": 802736763584688,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 802736763584688,
+						"expanded": true
+					},
+					"world": {
+						"x": 5538,
+						"y": 627,
+						"width": 26,
+						"height": 1800,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitHunterSceneTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 774,
+					"sid": 923837257594758,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 923837257594758,
+						"expanded": true
+					},
+					"world": {
+						"x": 6123,
+						"y": -77,
+						"width": 53,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TutorialHunterVariable",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 775,
+					"sid": 830099526124807,
+					"tags": "",
+					"instanceVariables": {
+						"ActiveTutorialHunter": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 830099526124807,
+						"expanded": true
+					},
+					"world": {
+						"x": 6011,
+						"y": -103,
+						"width": 73,
+						"height": 81,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EscapeSceneTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 776,
+					"sid": 230792374655911,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 230792374655911,
+						"expanded": true
+					},
+					"world": {
+						"x": 4776.5,
+						"y": 381,
+						"width": 25,
+						"height": 1506,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NaveTutorialTriggerScene",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 777,
+					"sid": 485181545193956,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 485181545193956,
+						"expanded": true
+					},
+					"world": {
+						"x": 793,
+						"y": 772.5,
+						"width": 21,
+						"height": 176,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

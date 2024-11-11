@@ -786,11 +786,16 @@
 							"objectClass": "DanPlayerBox",
 							"sid": 972497697244895,
 							"parameters": {
-								"object": "Sprite14"
+								"object": "TesoroSceneTrigger"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TesoroSceneTrigger",
+							"sid": 471549146599333
+						},
 						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
@@ -880,7 +885,7 @@
 							"objectClass": "DanPlayerBox",
 							"sid": 835174639205974,
 							"parameters": {
-								"object": "Sprite15"
+								"object": "NoTesoroSceneTrigger"
 							}
 						}
 					],
@@ -954,6 +959,11 @@
 							"sid": 596904755255002
 						},
 						{
+							"id": "destroy",
+							"objectClass": "NoTesoroSceneTrigger",
+							"sid": 719301245018781
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
 							"sid": 407621128554705,
@@ -967,6 +977,22 @@
 							"sid": 617655074611980,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 208146576501822,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 488022749317290,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 11\")",
 								"\"RonTxt\""
 							]
 						},
@@ -1089,9 +1115,994 @@
 						}
 					],
 					"sid": 867503203641374
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 836912158360415,
+							"parameters": {
+								"object": "LaikaSceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LaikaSceneTrigger",
+							"sid": 913401114579989
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 384023934991601,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 975371263608685,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 764336861510056,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 891966204473446,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 147005892793863,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 268112334356030,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 127662407625841,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 147280899772984
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 987611467838566,
+							"parameters": {
+								"seconds": "0.02"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 555073780056010,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "NotLaikaSceneTrigger",
+							"sid": 273258243618469,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NotLaikaSceneTrigger",
+							"sid": 393272279519295,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 910291102431746
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 953184872735943,
+							"parameters": {
+								"object": "NotLaikaSceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 513145259506802,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 512962246688535,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 376889571046117,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 823511742357213
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "DanPlayerBox",
+							"sid": 979446413185391,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "1000"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 995278022282258,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 185193982270075
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 886417036575410,
+							"parameters": {
+								"object": "Laika"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "NotLaikaSceneTrigger",
+							"sid": 334844499118462
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 619860441156652,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 940262969578665,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Laika",
+							"sid": 662380476846567
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 137128996899393,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 496769190873678,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 211452604152916,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 455906310634045,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 104596927380668,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 256323497645375
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 761648425725761,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 188989050388147,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 838631060261485,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 547835228961723
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 784327954312411,
+							"parameters": {
+								"object-to-create": "DanHunter",
+								"layer": "\"DanPlayer\"",
+								"x": "Dan.X",
+								"y": "Dan.Y - 350",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DanHunter",
+							"sid": 159077582734941,
+							"parameters": {
+								"width": "55",
+								"height": "55"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "DanHunter",
+							"sid": 825340171171521,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "100"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "DanHunter",
+							"sid": 556200217575172,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 800316723838520,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 868995546582440,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 241944953467533,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "DanHunter",
+							"sid": 979969648640995,
+							"parameters": {
+								"object": "HitHunterSceneTrigger",
+								"layer": "\"DanPlayer\"",
+								"image-point": "0",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 133351837779753,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 504539355407868,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 412177740452431,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 647188059718847,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 9\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 178677772324505,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 952467071945718
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 917445581107482,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 369693445116609
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "HitHunterSceneTrigger",
+							"sid": 674666819498725,
+							"parameters": {
+								"object": "DanCollisionBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "HitHunterSceneTrigger",
+							"sid": 699799367903725
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 949369767024972,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 745239079569516,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DanHunter",
+							"sid": 392857209947961
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 107488137626098,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 10\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 824529190784920,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 676166451008364
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 974414075458666,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "EscapeSceneTrigger",
+							"sid": 768646116271532,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 215778132967101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanHunter",
+							"sid": 804698446369882,
+							"parameters": {
+								"object": "DanCollisionBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 637553700917500,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 296179960883759,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "DanHunter",
+							"sid": 915844697898185,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "-600"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "DanHunter",
+							"sid": 695266676242046,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"acceleration": "200"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 472460244715604,
+							"parameters": {
+								"seconds": "0.6"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 832498174748507,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 349380550423286,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "DanHunter",
+							"sid": 880328781327162,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "Self.Angle"
+							}
+						}
+					],
+					"sid": 810957475258414
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 585282257576134,
+							"parameters": {
+								"object": "EscapeSceneTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "EscapeSceneTrigger",
+							"sid": 222476551330518
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 843592388522491,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 298598169059307,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 11\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 491356854944728,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 173877988742712,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 12\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 753205036451347,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 489159016080218,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 13\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 163087125301873,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 390278904047653
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "TutorialHunterVariable",
+							"sid": 358534129692208,
+							"parameters": {
+								"instance-variable": "ActiveTutorialHunter",
+								"value": "true"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 958122608731679,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 958122608731679,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 958122608731679,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 958122608731679,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 958122608731679,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 925919216664617,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NaveTutorialTriggerScene",
+							"sid": 323042683162633,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 409799437978513
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 137515657933578,
+							"parameters": {
+								"object": "NaveTutorialTriggerScene"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "NaveDespegue",
+							"sid": 237562553145900
+						}
+					],
+					"sid": 983418575064788
 				}
 			],
 			"sid": 381134690070239
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "LandHunters2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 536861538135116
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "TutorialHunterVariable",
+							"sid": 391724525368246,
+							"parameters": {
+								"instance-variable": "ActiveTutorialHunter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "DanHunter",
+							"sid": 944568470443626,
+							"parameters": {
+								"x": "Dan.X",
+								"y": "Dan.Y"
+							}
+						},
+						{
+							"id": "move-forward",
+							"objectClass": "DanHunter",
+							"sid": 336686455268766,
+							"parameters": {
+								"distance": "5"
+							}
+						}
+					],
+					"sid": 169917383560851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "DanHunter",
+							"sid": 573118786721307,
+							"parameters": {
+								"object": "DanPlayerBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TakeHunterDamage",
+							"sid": 576771601319538
+						}
+					],
+					"sid": 162555696496374
+				},
+				{
+					"functionName": "TakeHunterDamage2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Dan",
+							"sid": 226776501435194,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Dan",
+							"sid": 430295187176929,
+							"parameters": {
+								"opacity": "20"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "DanPlayerBox",
+							"sid": 855852165854515,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-(Self.X + 1000)"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "DanPlayerBox",
+							"sid": 115023990370128,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "Self.Y - 1000"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 459803360919423,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Dan",
+							"sid": 714011326609717,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Dan",
+							"sid": 110176109731117,
+							"parameters": {
+								"instance-variable": "TakingDamage",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 851232166173157
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 836770842073933,
+							"parameters": {
+								"tag": "\"TutorialCreateHunter\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 774873262012163,
+							"parameters": {
+								"object-to-create": "DanHunter",
+								"layer": "\"DanPlayer\"",
+								"x": "Dan.X + random(-300,300)",
+								"y": "Dan.Y - 350",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DanHunter",
+							"sid": 182532083866847,
+							"parameters": {
+								"width": "55",
+								"height": "55"
+							}
+						},
+						{
+							"id": "set-movement",
+							"objectClass": "DanHunter",
+							"sid": 385522967043180,
+							"behaviorType": "Sine",
+							"parameters": {
+								"movement": "vertical"
+							}
+						},
+						{
+							"id": "set-wave",
+							"objectClass": "DanHunter",
+							"sid": 636164434846819,
+							"behaviorType": "Sine",
+							"parameters": {
+								"wave": "sine"
+							}
+						},
+						{
+							"id": "set-period",
+							"objectClass": "DanHunter",
+							"sid": 415995554305885,
+							"behaviorType": "Sine",
+							"parameters": {
+								"period": "random(2,5)"
+							}
+						},
+						{
+							"id": "set-magnitude",
+							"objectClass": "DanHunter",
+							"sid": 233044275742711,
+							"behaviorType": "Sine",
+							"parameters": {
+								"magnitude": "random(150, 250)"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 304356710094089,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						}
+					],
+					"sid": 296320237829778
+				}
+			],
+			"sid": 344638597558236
 		}
 	],
 	"sid": 198321717306871

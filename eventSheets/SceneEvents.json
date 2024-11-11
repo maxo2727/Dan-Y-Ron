@@ -292,7 +292,7 @@
 			"sid": 718412848679369
 		},
 		{
-			"functionName": "FirstRunDialogue",
+			"functionName": "NaveDespegue",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -301,8 +301,157 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
-			"sid": 582352527054664
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Nave",
+					"sid": 456507874445494,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "camera",
+					"sid": 577000292250404,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DanPlayerBox",
+					"sid": 380996164370601
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Dan",
+					"sid": 320483924407982
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Nave",
+					"sid": 981895930310390,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Nave",
+					"sid": 703722666253638,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "-90"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Nave",
+					"sid": 287681987208366,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "150"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Nave",
+					"sid": 944268911310296,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "-90"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Nave",
+					"sid": 386244613707775,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "set-magnitude",
+					"objectClass": "Nave",
+					"sid": 975524044843066,
+					"behaviorType": "Sine",
+					"parameters": {
+						"magnitude": "30"
+					}
+				},
+				{
+					"id": "set-period",
+					"objectClass": "Nave",
+					"sid": 901756462351801,
+					"behaviorType": "Sine",
+					"parameters": {
+						"period": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 697564057843027,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Nave",
+					"sid": 168754339801401,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "-90"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Nave",
+					"sid": 143606743497975,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "600"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Nave",
+					"sid": 912611663523470,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "-90"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 817198319974824,
+					"parameters": {
+						"seconds": "4.5"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "FadeBlack",
+					"sid": 326512807509870,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 512440687540544,
+					"parameters": {
+						"layout": "EndRunScreen"
+					}
+				}
+			],
+			"sid": 650293257338910
 		}
 	],
 	"sid": 222275965044310

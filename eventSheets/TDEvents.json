@@ -1138,27 +1138,13 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "Hunter",
-							"sid": 611260689207144
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 847314033806860,
-							"parameters": {
-								"variable": "HuntersKilled",
-								"value": "1"
-							}
-						},
-						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 954478572947221,
+							"sid": 937609735022877,
 							"parameters": {
 								"object-to-create": "DanHunter",
-								"layer": "\"DanLayout\"",
-								"x": "Dan.X - random(-500,500)",
+								"layer": "\"DanPlayer\"",
+								"x": "Dan.X+random(-200,200)",
 								"y": "Dan.Y - 500",
 								"create-hierarchy": false,
 								"template-name": "\"\""
