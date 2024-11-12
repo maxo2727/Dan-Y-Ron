@@ -429,26 +429,21 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 817198319974824,
-					"parameters": {
-						"seconds": "4.5"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "FadeBlack",
-					"sid": 326512807509870,
-					"behaviorType": "Fade"
-				},
-				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 801399169324219,
+					"sid": 638216722020020,
 					"parameters": {
 						"layer": "\"EndRunScreen\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Nave",
+					"sid": 736587962773086,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
 					}
 				}
 			],

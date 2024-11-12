@@ -193,7 +193,6 @@
 			"Sprite6",
 			"Sprite8",
 			"IMG_",
-			"RonTxt",
 			"Sprite9",
 			"Sprite10",
 			"Tilemap",
@@ -217,7 +216,8 @@
 			"NaveTutorialTriggerScene",
 			"Sprite13",
 			"Sprite14",
-			"WeaponText"
+			"WeaponText",
+			"SpaceGif"
 		],
 		"subfolders": [
 			{
@@ -469,6 +469,14 @@
 				],
 				"subfolders": [],
 				"name": "EnergyRunManager"
+			},
+			{
+				"items": [
+					"RonTxt",
+					"LaikaTxt"
+				],
+				"subfolders": [],
+				"name": "TextIcon"
 			}
 		]
 	},
@@ -544,7 +552,8 @@
 			"TutorialEvents",
 			"SceneGlobalVariables",
 			"EnergyManagerEvents",
-			"GadgetEvents"
+			"GadgetEvents",
+			"HubScenesEvents"
 		],
 		"subfolders": [
 			{
@@ -685,7 +694,9 @@
 	"flowcharts": {
 		"items": [
 			"IntroFlow",
-			"TutorialFlow"
+			"TutorialFlow",
+			"HubFlow",
+			"HubSceneFlow"
 		],
 		"subfolders": []
 	},

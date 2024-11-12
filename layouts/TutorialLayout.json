@@ -1725,7 +1725,22 @@
 					"sid": 292894670709688,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 292894670709688,
 						"expanded": true
@@ -1957,8 +1972,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 793,
-						"y": 772.5,
+						"x": 795,
+						"y": 767,
 						"width": 21,
 						"height": 176,
 						"originX": 0.5,
@@ -2144,6 +2159,40 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "EndRunScreen",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 918514258831125,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,

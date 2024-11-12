@@ -2,6 +2,10 @@
 	"name": "HubEvents",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "HubScenesEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",
@@ -737,9 +741,9 @@
 								{
 									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 325495601608246,
+									"sid": 103094318854879,
 									"parameters": {
-										"layout": "TestLevelLayout"
+										"layout": "MuseumLayout"
 									}
 								}
 							],

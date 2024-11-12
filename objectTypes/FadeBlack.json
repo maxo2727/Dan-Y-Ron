@@ -7,8 +7,13 @@
 	"behaviorTypes": [
 		{
 			"behaviorId": "Fade",
-			"name": "Fade",
+			"name": "FadeIn",
 			"sid": 869620204644763
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "FadeOut",
+			"sid": 681253967045047
 		}
 	],
 	"effectTypes": [],

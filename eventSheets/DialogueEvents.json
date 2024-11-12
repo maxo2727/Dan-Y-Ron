@@ -90,11 +90,11 @@
 				{
 					"id": "create-object-by-name",
 					"objectClass": "System",
-					"sid": 255317282226705,
+					"sid": 765689590308788,
 					"parameters": {
 						"object-name": "c",
 						"layer": "\"TextLayer\"",
-						"x": "65",
+						"x": "66",
 						"y": "410",
 						"create-hierarchy": false,
 						"template-name": "\"\""

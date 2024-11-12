@@ -6,6 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"RonTxt"
+		"RonTxt",
+		"LaikaTxt"
 	]
 }

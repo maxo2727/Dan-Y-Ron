@@ -22,6 +22,10 @@
 			"includeSheet": "HUDEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EndRunEvents"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TutorialScenes",
@@ -1870,6 +1874,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 682621846138664,
+							"parameters": {
+								"variable": "RunFinishedStatus",
+								"value": "\"safeReturn\""
+							}
+						},
+						{
 							"callFunction": "NaveDespegue",
 							"sid": 237562553145900
 						}
@@ -2103,6 +2116,36 @@
 				}
 			],
 			"sid": 344638597558236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 992480765022540
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "NaveTutorialTriggerScene",
+					"sid": 907909162929208,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 140866844229918,
+					"parameters": {
+						"variable": "IsLaikaHubScene",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 611379808526037
 		}
 	],
 	"sid": 198321717306871

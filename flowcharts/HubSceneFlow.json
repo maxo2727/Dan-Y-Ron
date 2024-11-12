@@ -1,0 +1,144 @@
+{
+	"sid": 767970890063204,
+	"nodes": [
+		{
+			"sid": 958384877702144,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [
+				549650522250456
+			],
+			"outputs": [
+				{
+					"sid": 928616737508967,
+					"cnSID": 549650522250456,
+					"name": "Option 1",
+					"value": "¡Dan! Trae al perro al ala médica por favor."
+				},
+				{
+					"sid": 658740190241499,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Sus signos vitales están inestables... Quizás... Sea demasiado tarde..."
+				},
+				{
+					"sid": 527306749915240,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "..."
+				},
+				{
+					"sid": 742144980909212,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¡лаять! ¿Dónde estoy? ¿Quiénes son ustedes?"
+				},
+				{
+					"sid": 545573550907414,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "¡Calma! Todo está bien. Me llamo Ron, y este de aquí es mi amigo Dan."
+				},
+				{
+					"sid": 923101382471483,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Nuestros telecomunicadores captaron tu llamado de auxilio."
+				},
+				{
+					"sid": 591391443417758,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Llamada de auxilio... Creo que empiezo a recordar..."
+				},
+				{
+					"sid": 198861281109572,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Un momento... ¿Dónde están los otros?"
+				},
+				{
+					"sid": 903049937955259,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "¿Los otros? ¿De quiénes estás hablando?"
+				},
+				{
+					"sid": 287944911879431,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "¡Остальные! ¡Los otros!"
+				},
+				{
+					"sid": 476049252574525,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "¡Santo Saturno! ¡No te alteres! Cuéntanos todo, desde el comienzo."
+				},
+				{
+					"sid": 100648791151357,
+					"cnSID": null,
+					"name": "Option 12",
+					"value": "¿Desde... El comienzo?"
+				}
+			],
+			"x": 9810,
+			"y": 9896,
+			"w": 420,
+			"h": 496,
+			"t": "\"LaikaRescue\"",
+			"s": true,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 549650522250456,
+			"pnSIDs": [
+				958384877702144
+			],
+			"poSIDs": [
+				928616737508967
+			],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 305773180346441,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "Mi nombre es Laika."
+				},
+				{
+					"sid": 532766452109149,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Durante mucho tiempo, viajé sola por el espacio."
+				},
+				{
+					"sid": 425582362519679,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Pensé que sería así para siempre... Pero un día descubrí algo maravilloso."
+				},
+				{
+					"sid": 533756405597517,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¡Habían otros como yo! Más animales repartidos por la galaxia."
+				}
+			],
+			"x": 10295,
+			"y": 9751,
+			"w": 420,
+			"h": 232,
+			"t": "\"LaikaStory\"",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		}
+	],
+	"name": "HubSceneFlow",
+	"w": 20000,
+	"h": 20000
+}

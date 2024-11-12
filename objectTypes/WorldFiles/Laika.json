@@ -4,7 +4,13 @@
 	"sid": 864097075159100,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 157889067392905
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

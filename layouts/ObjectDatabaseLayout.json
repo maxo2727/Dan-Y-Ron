@@ -115,10 +115,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 65,
+						"x": 66,
 						"y": 410,
-						"width": 89.7609561752988,
-						"height": 90.45019920318724,
+						"width": 92.34518212550469,
+						"height": 76.68108344462041,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -154,6 +154,41 @@
 						"y": 445,
 						"width": 34.412717990877596,
 						"height": 34.412717990877596,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LaikaTxt",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 293,
+					"sid": 878347612387782,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 878347612387782,
+						"expanded": true
+					},
+					"world": {
+						"x": 66,
+						"y": 251,
+						"width": 91.89271318280994,
+						"height": 88.79084944668135,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
