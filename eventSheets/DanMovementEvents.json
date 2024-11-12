@@ -22,6 +22,26 @@
 			"sid": 277831428323544
 		},
 		{
+			"eventType": "variable",
+			"name": "SelectedWeapon",
+			"type": "string",
+			"initialValue": "Melee",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 216324310380615
+		},
+		{
+			"eventType": "variable",
+			"name": "CheckingWeapon",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 835994921270311
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Movement",
@@ -297,217 +317,467 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "WeaponSelector",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 796718684570957,
-							"parameters": {
-								"mouse-button": "right",
-								"click-type": "clicked"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 919429898042093,
+									"parameters": {
+										"mouse-button": "right",
+										"click-type": "clicked"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "SetNextWeapon",
+									"sid": 928488031593884
+								}
+							],
+							"sid": 854583872706981
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 281204060808877,
-							"parameters": {
-								"variable": "ArmaActual",
-								"comparison": 0,
-								"value": "\"Melee\""
-							}
+							"functionName": "SetNextWeapon",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 426279028414135,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 938842212431526,
+											"parameters": {
+												"variable": "CheckingWeapon",
+												"comparison": 0,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 604036529693222,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 363877672988045,
+													"parameters": {
+														"variable": "SelectedWeapon",
+														"comparison": 0,
+														"value": "\"Melee\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 936575049858006,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"Gun\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 434421442480610,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"callFunction": "SetNextWeapon",
+													"sid": 722800574605973
+												}
+											],
+											"sid": 744732135581688
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 399956596061955,
+													"parameters": {
+														"variable": "SelectedWeapon",
+														"comparison": 0,
+														"value": "\"Gun\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 400511238632978,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"Hook\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 784412245673947,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "GunPH",
+													"sid": 821248218678372
+												},
+												{
+													"callFunction": "SetNextWeapon",
+													"sid": 656578155272899
+												}
+											],
+											"sid": 404796761635006
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 136012068163778,
+													"parameters": {
+														"variable": "SelectedWeapon",
+														"comparison": 0,
+														"value": "\"Hook\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 573277776587255,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"Melee\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 315107075780132,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"callFunction": "SetNextWeapon",
+													"sid": 830373653916438
+												}
+											],
+											"sid": 454886688188385
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 371929448367755,
+											"parameters": {
+												"variable": "CheckingWeapon",
+												"comparison": 0,
+												"value": "\"Melee\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 844134253312271,
+											"parameters": {
+												"variable": "SelectedWeapon",
+												"value": "\"Melee\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 405976794327201,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 278060512409764,
+											"parameters": {
+												"variable": "CheckingWeapon",
+												"value": "\"\""
+											}
+										}
+									],
+									"sid": 684445278569391
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 808121952825811,
+											"parameters": {
+												"variable": "CheckingWeapon",
+												"comparison": 0,
+												"value": "\"Gun\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 742616053130395,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 841628205646458,
+													"parameters": {
+														"variable": "GunSelectedForRun"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 617135170821929,
+													"parameters": {
+														"variable": "SelectedWeapon",
+														"value": "\"Gun\""
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 695891662807031,
+													"parameters": {
+														"object-to-create": "GunPH",
+														"layer": "0",
+														"x": "Dan.X",
+														"y": "Dan.Y+5",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 883947785440523,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 959446690013234,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"\""
+													}
+												}
+											],
+											"sid": 871926684992676
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 382662967608431,
+													"parameters": {
+														"variable": "GunSelectedForRun"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 532359020398245,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"Hook\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 747517451501627,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"callFunction": "SetNextWeapon",
+													"sid": 642433471118489
+												}
+											],
+											"sid": 803694542684510
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 164982969549397,
+											"parameters": {
+												"variable": "CheckingWeapon",
+												"comparison": 0,
+												"value": "\"Hook\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 398815578658614,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 833452213943782,
+													"parameters": {
+														"variable": "HookSelectedForRun"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 887810680682956,
+													"parameters": {
+														"variable": "SelectedWeapon",
+														"value": "\"Hook\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 964025417404846,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 527937329141017,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"\""
+													}
+												}
+											],
+											"sid": 774926056716304
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 232299554357040,
+													"parameters": {
+														"variable": "HookSelectedForRun"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 947899061220854,
+													"parameters": {
+														"variable": "CheckingWeapon",
+														"value": "\"Melee\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 471025956986487,
+													"parameters": {
+														"seconds": "0.02"
+													}
+												},
+												{
+													"callFunction": "SetNextWeapon",
+													"sid": 254635891430945
+												}
+											],
+											"sid": 760269893052262
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 397206796325092
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "WeaponText",
+									"sid": 799746323597005,
+									"parameters": {
+										"text": "SelectedWeapon"
+									}
+								}
+							],
+							"sid": 320868325637132
 						}
 					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 688789190931705,
-							"parameters": {
-								"seconds": "0.01"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 145099901498532,
-							"parameters": {
-								"variable": "ArmaActual",
-								"value": "\"Gun\""
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 272387442804941,
-							"parameters": {
-								"object-to-create": "GunPH",
-								"layer": "0",
-								"x": "Dan.X",
-								"y": "Dan.Y+5",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 667819103292392
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 127432959171381,
-							"parameters": {
-								"mouse-button": "right",
-								"click-type": "clicked"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 770015181268740,
-							"parameters": {
-								"variable": "ArmaActual",
-								"comparison": 0,
-								"value": "\"Gun\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 111629598953480,
-							"parameters": {
-								"seconds": "0.01"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 160058636281985,
-							"parameters": {
-								"variable": "ArmaActual",
-								"value": "\"Hook\""
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "GunPH",
-							"sid": 860263538031506
-						}
-					],
-					"sid": 463705840280446
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-click",
-							"objectClass": "Mouse",
-							"sid": 928897592146739,
-							"parameters": {
-								"mouse-button": "right",
-								"click-type": "clicked"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 816551252923319,
-							"parameters": {
-								"variable": "ArmaActual",
-								"comparison": 0,
-								"value": "\"Hook\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 768735190897035,
-							"parameters": {
-								"seconds": "0.01"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 655500707804760,
-							"parameters": {
-								"variable": "ArmaActual",
-								"value": "\"Melee\""
-							}
-						}
-					],
-					"sid": 951818185888481
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 346733066807176
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle",
-							"objectClass": "GunPH",
-							"sid": 830339393380410,
-							"parameters": {
-								"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "GunPH",
-							"sid": 910664159067969,
-							"parameters": {
-								"x": "Dan.X",
-								"y": "Dan.Y+5"
-							}
-						}
-					],
-					"sid": 521212575685801
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 524005781742404
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 301035477346533,
-							"parameters": {
-								"variable": "ArmaActual",
-								"comparison": 0,
-								"value": "\"Melee\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "GunPH",
-							"sid": 931113247679198
-						},
-						{
-							"id": "destroy",
-							"objectClass": "HookPH",
-							"sid": 587771083903667
-						}
-					],
-					"sid": 153678663813631
+					"sid": 151649002774046
 				},
 				{
 					"eventType": "group",
@@ -531,9 +801,9 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 209269421412527,
+									"sid": 831376037929868,
 									"parameters": {
-										"variable": "ArmaActual",
+										"variable": "SelectedWeapon",
 										"comparison": 0,
 										"value": "\"Melee\""
 									}
@@ -635,9 +905,9 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 840118633126029,
+									"sid": 719350442878524,
 									"parameters": {
-										"variable": "ArmaActual",
+										"variable": "SelectedWeapon",
 										"comparison": 0,
 										"value": "\"Gun\""
 									}
@@ -699,6 +969,36 @@
 								}
 							],
 							"sid": 315562516034277
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 619276788284742
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "GunPH",
+									"sid": 588630733577006,
+									"parameters": {
+										"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GunPH",
+									"sid": 298471014656386,
+									"parameters": {
+										"x": "Dan.X",
+										"y": "Dan.Y+5"
+									}
+								}
+							],
+							"sid": 137637136719013
 						}
 					],
 					"sid": 689390297087354
@@ -725,9 +1025,9 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 483759069609166,
+									"sid": 129491315365332,
 									"parameters": {
-										"variable": "ArmaActual",
+										"variable": "SelectedWeapon",
 										"comparison": 0,
 										"value": "\"Hook\""
 									}

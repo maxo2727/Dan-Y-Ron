@@ -217,7 +217,8 @@
 			"NaveTutorialTriggerScene",
 			"Sprite13",
 			"Sprite14",
-			"selectedChecker"
+			"selectedChecker",
+			"WeaponText"
 		],
 		"subfolders": [
 			{
