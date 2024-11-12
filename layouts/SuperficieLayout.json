@@ -2370,8 +2370,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1648,
-						"y": 698,
+						"x": 1628,
+						"y": 757,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2431,8 +2431,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1648,
-						"y": 758,
+						"x": 1628,
+						"y": 817,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2476,8 +2476,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1648,
-						"y": 787,
+						"x": 1628,
+						"y": 846,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,
@@ -2666,6 +2666,40 @@
 			"sid": 339697323048070,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "EndRunScreen",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 855879222101122,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"isHTMLElementsLayer": false,
 			"color": [

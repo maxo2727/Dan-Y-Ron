@@ -2,6 +2,16 @@
 	"name": "DialogueEvents",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "IsOnDialogue",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 794801058839137
+		},
+		{
 			"functionName": "dialogue",
 			"functionDescription": "",
 			"functionCategory": "",

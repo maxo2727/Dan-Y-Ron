@@ -1,0 +1,990 @@
+{
+	"name": "GadgetEvents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SelectedGadget",
+			"type": "string",
+			"initialValue": "Melee",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 882770041169253
+		},
+		{
+			"eventType": "variable",
+			"name": "CheckingGadget",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610824600152689
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GadgetSelector",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 960839946940822,
+							"parameters": {
+								"mouse-button": "right",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SetNextGadget",
+							"sid": 663674361991993
+						}
+					],
+					"sid": 704242475677789
+				},
+				{
+					"functionName": "SetNextGadget",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 717134125766831,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 467651882542199,
+									"parameters": {
+										"variable": "CheckingGadget",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 957183970509128,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 294982223336027,
+											"parameters": {
+												"variable": "SelectedGadget",
+												"comparison": 0,
+												"value": "\"Melee\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 266751531149900,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"Gun\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 927840883601436,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"callFunction": "SetNextGadget",
+											"sid": 425517052509637
+										}
+									],
+									"sid": 114398492049880
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 623830676890208,
+											"parameters": {
+												"variable": "SelectedGadget",
+												"comparison": 0,
+												"value": "\"Gun\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 360742545022858,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"Hook\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 448605246499176,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "GunPH",
+											"sid": 231211711380357
+										},
+										{
+											"callFunction": "SetNextGadget",
+											"sid": 780552898942498
+										}
+									],
+									"sid": 359838554348826
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 794005950633668,
+											"parameters": {
+												"variable": "SelectedGadget",
+												"comparison": 0,
+												"value": "\"Hook\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 553796563177322,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"Melee\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 782947350201040,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"callFunction": "SetNextGadget",
+											"sid": 208507503232748
+										}
+									],
+									"sid": 978459798482237
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 512182535791742,
+									"parameters": {
+										"variable": "CheckingGadget",
+										"comparison": 0,
+										"value": "\"Melee\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 282470085301104,
+									"parameters": {
+										"variable": "SelectedGadget",
+										"value": "\"Melee\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 667777077380648,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 253628603173343,
+									"parameters": {
+										"variable": "CheckingGadget",
+										"value": "\"\""
+									}
+								}
+							],
+							"sid": 837694373513326
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 340142911874987,
+									"parameters": {
+										"variable": "CheckingGadget",
+										"comparison": 0,
+										"value": "\"Gun\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 379000680488889,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 380473966405799,
+											"parameters": {
+												"variable": "GunSelectedForRun"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 659357801475176,
+											"parameters": {
+												"variable": "SelectedGadget",
+												"value": "\"Gun\""
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 420371637688709,
+											"parameters": {
+												"object-to-create": "GunPH",
+												"layer": "0",
+												"x": "Dan.X",
+												"y": "Dan.Y+5",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 196233003003730,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 606812909158853,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"\""
+											}
+										}
+									],
+									"sid": 801811789846141
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 111018543269128,
+											"parameters": {
+												"variable": "GunSelectedForRun"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 281996985864742,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"Hook\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 404807821894861,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"callFunction": "SetNextGadget",
+											"sid": 288804141098213
+										}
+									],
+									"sid": 641345842064475
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 513895379554323,
+									"parameters": {
+										"variable": "CheckingGadget",
+										"comparison": 0,
+										"value": "\"Hook\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 628149130650676,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 844298971238641,
+											"parameters": {
+												"variable": "HookSelectedForRun"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 918836931399322,
+											"parameters": {
+												"variable": "SelectedGadget",
+												"value": "\"Hook\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 811486366862351,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 468238217291744,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"\""
+											}
+										}
+									],
+									"sid": 467794909642660
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 103227826945910,
+											"parameters": {
+												"variable": "HookSelectedForRun"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 511892967804370,
+											"parameters": {
+												"variable": "CheckingGadget",
+												"value": "\"Melee\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 199248008478080,
+											"parameters": {
+												"seconds": "0.02"
+											}
+										},
+										{
+											"callFunction": "SetNextGadget",
+											"sid": 989129773320839
+										}
+									],
+									"sid": 270964137684921
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 536250549432785
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Melee",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 457012854309748,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 913288714247241,
+							"parameters": {
+								"variable": "SelectedGadget",
+								"comparison": 0,
+								"value": "\"Melee\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 814462737554811,
+							"parameters": {
+								"variable": "IsOnDialogue"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 519814898286878,
+							"parameters": {
+								"animation": "\"Melee\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Dan",
+							"sid": 610488371200072,
+							"parameters": {
+								"object": "DanCollisionBox",
+								"layer": "\"DanLayer\"",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "DanCollisionBox",
+							"sid": 505999018709766,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "DanPlayerBox",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 347265228319290,
+							"parameters": {
+								"seconds": "0.15"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Dan",
+							"sid": 393565611028912,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DanCollisionBox",
+							"sid": 581353061924304
+						}
+					],
+					"sid": 439270660283664
+				}
+			],
+			"sid": 271417281277684
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Gun",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 398424101875818,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 102711140287407,
+							"parameters": {
+								"variable": "SelectedGadget",
+								"comparison": 0,
+								"value": "\"Gun\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 827335294349606,
+							"parameters": {
+								"variable": "IsOnDialogue"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 417180026465607,
+							"parameters": {
+								"object-to-create": "Bullet",
+								"layer": "0",
+								"x": "Dan.X",
+								"y": "Dan.Y-20",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Bullet",
+							"sid": 869447112533247,
+							"behaviorType": "Bala",
+							"parameters": {
+								"speed": "200"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Bullet",
+							"sid": 772715288286636,
+							"behaviorType": "Bala",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, Mouse.X, Mouse.Y)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 385674394478322,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Bullet",
+							"sid": 941715043606698
+						}
+					],
+					"sid": 838440274163790
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 528491066454360
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "GunPH",
+							"sid": 795999551613110,
+							"parameters": {
+								"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "GunPH",
+							"sid": 983551264233472,
+							"parameters": {
+								"x": "Dan.X",
+								"y": "Dan.Y+5"
+							}
+						}
+					],
+					"sid": 687678397005432
+				}
+			],
+			"sid": 238109769304320
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hook",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 886594831348144,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 994597151564435,
+							"parameters": {
+								"variable": "SelectedGadget",
+								"comparison": 0,
+								"value": "\"Hook\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 204469217040898,
+							"parameters": {
+								"variable": "IsOnDialogue"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "HookPH",
+							"sid": 897727277428836
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 359277439853796,
+							"parameters": {
+								"object-to-create": "HookPH",
+								"layer": "0",
+								"x": "Dan.X",
+								"y": "Dan.Y-20",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "HookPH",
+							"sid": 282105690667054,
+							"behaviorType": "Bala",
+							"parameters": {
+								"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "HookPH",
+							"sid": 414197163492753,
+							"behaviorType": "Bala",
+							"parameters": {
+								"speed": "700"
+							}
+						}
+					],
+					"sid": 934255686691121
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "HookPH",
+							"sid": 758619318603648,
+							"parameters": {
+								"object": "TiledBackground"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "HookPH",
+							"sid": 914879042210782,
+							"behaviorType": "Físicas",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "HookPH",
+							"sid": 121407299636755,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "HookPH",
+							"sid": 423909710243580,
+							"behaviorType": "Bala",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 565517009766851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "HookPH",
+							"sid": 856707146249447,
+							"parameters": {
+								"object": "BunkerTerrainTile"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "HookPH",
+							"sid": 562196615089818,
+							"behaviorType": "Físicas",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "HookPH",
+							"sid": 628477250273567,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "HookPH",
+							"sid": 348228200621363,
+							"behaviorType": "Bala",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 508522880823203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 779009246514265
+						},
+						{
+							"id": "compare-speed",
+							"objectClass": "HookPH",
+							"sid": 973458766259108,
+							"behaviorType": "Bala",
+							"parameters": {
+								"comparison": 0,
+								"speed": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "HookPH",
+							"sid": 572516971903584,
+							"parameters": {
+								"angle": "angle(0,0,Self.Físicas.VelocityX,Self.Físicas.VelocityY)"
+							}
+						}
+					],
+					"sid": 703470879190405
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 851413299218228,
+							"parameters": {
+								"key": 67
+							}
+						},
+						{
+							"id": "compare-speed",
+							"objectClass": "HookPH",
+							"sid": 217177400463778,
+							"behaviorType": "Bala",
+							"parameters": {
+								"comparison": 0,
+								"speed": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-gravity",
+							"objectClass": "DanPlayerBox",
+							"sid": 624832630778260,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "0"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "DanPlayerBox",
+							"sid": 194880009304023,
+							"behaviorType": "MoverA",
+							"parameters": {
+								"object": "HookPH",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 559310354498833
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 573624915034906,
+							"parameters": {
+								"key": 67
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-gravity",
+							"objectClass": "DanPlayerBox",
+							"sid": 741117996165734,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "1500"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "DanPlayerBox",
+							"sid": 577804393060842,
+							"behaviorType": "MoverA"
+						}
+					],
+					"sid": 948703593235939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 614799610674095,
+							"parameters": {
+								"key": 69
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "HookPH",
+							"sid": 728905541186283
+						}
+					],
+					"sid": 186699560839020
+				}
+			],
+			"sid": 153351697187385
+		}
+	],
+	"sid": 874400889465194
+}

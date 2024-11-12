@@ -18,6 +18,14 @@
 					"parameters": {
 						"text": "EnergyPool"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "WeaponText",
+					"sid": 689459867852047,
+					"parameters": {
+						"text": "SelectedGadget"
+					}
 				}
 			],
 			"sid": 433197074480012

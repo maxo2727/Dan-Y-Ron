@@ -3,7 +3,11 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "TDEvents"
+			"includeSheet": "GameGlobalVariables"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "HUDEvents"
 		},
 		{
 			"eventType": "include",
@@ -15,11 +19,11 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "HUDEvents"
+			"includeSheet": "GadgetEvents"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "GameGlobalVariables"
+			"includeSheet": "TDEvents"
 		},
 		{
 			"eventType": "include",
@@ -36,6 +40,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "EnergyManagerEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EndRunEvents"
 		}
 	],
 	"sid": 489255412336291

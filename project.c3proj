@@ -217,7 +217,6 @@
 			"NaveTutorialTriggerScene",
 			"Sprite13",
 			"Sprite14",
-			"selectedChecker",
 			"WeaponText"
 		],
 		"subfolders": [
@@ -297,7 +296,7 @@
 					"TiledBackground6",
 					"txt_how_to_play",
 					"Sprite3",
-					"Weapon"
+					"TextFont"
 				],
 				"subfolders": [],
 				"name": "HomeScreen"
@@ -305,12 +304,13 @@
 			{
 				"items": [
 					"EndScreenText",
-					"Txt_EndScreen",
+					"EndScreenTxt",
 					"HubBtn",
 					"GameOverText",
 					"MoneyCountText",
 					"TextTreasureCount",
-					"TotalMoneyText"
+					"TotalMoneyText",
+					"Sprite15"
 				],
 				"subfolders": [],
 				"name": "EndScreen"
@@ -543,7 +543,8 @@
 			"TrophyInfoEvents",
 			"TutorialEvents",
 			"SceneGlobalVariables",
-			"EnergyManagerEvents"
+			"EnergyManagerEvents",
+			"GadgetEvents"
 		],
 		"subfolders": [
 			{

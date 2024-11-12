@@ -669,16 +669,7 @@
 					"sid": 305033400418360
 				}
 			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "selectedChecker",
-					"sid": 482059075117622,
-					"parameters": {
-						"text": "GunSelectedForRun"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 287728895215258
 		}
 	],

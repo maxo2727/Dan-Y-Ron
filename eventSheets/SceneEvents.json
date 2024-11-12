@@ -250,9 +250,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 833821058112441,
+							"sid": 300856568064804,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "0.01"
 							}
 						},
 						{
@@ -443,11 +443,12 @@
 					"behaviorType": "Fade"
 				},
 				{
-					"id": "go-to-layout",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 512440687540544,
+					"sid": 801399169324219,
 					"parameters": {
-						"layout": "EndRunScreen"
+						"layer": "\"EndRunScreen\"",
+						"visibility": "visible"
 					}
 				}
 			],

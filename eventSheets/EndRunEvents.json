@@ -12,6 +12,33 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 862837923292091,
+					"parameters": {
+						"layer": "\"DefeatLayer\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 753314443001962,
+					"parameters": {
+						"layer": "\"SafeReturnLayer\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 771801709303656,
+					"parameters": {
+						"layer": "\"EndRunScreen\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 939681792561241,
@@ -33,7 +60,7 @@
 					"objectClass": "System",
 					"sid": 283254219035367,
 					"parameters": {
-						"variable": "GameOver"
+						"variable": "RunOver"
 					}
 				}
 			],
@@ -43,74 +70,73 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-boolean-eventvar",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 977860394474814,
+					"sid": 302538756373555,
 					"parameters": {
-						"variable": "GameOver"
+						"variable": "RunFinishedStatus",
+						"comparison": 0,
+						"value": "\"defeat\""
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "GameOverText",
-					"sid": 453114751905969,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 229387810681016,
 					"parameters": {
-						"text": "\"Fuiste derrotado, pierdes los tesoros encontrados\""
+						"layer": "\"DefeatLayer\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 270505598664196,
+					"parameters": {
+						"layer": "\"SafeReturnLayer\"",
+						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 582746708398382
+			"sid": 488699402721212
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-boolean-eventvar",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 729076338589587,
+					"sid": 149981668314358,
 					"parameters": {
-						"variable": "GameOver"
-					},
-					"isInverted": true
+						"variable": "RunFinishedStatus",
+						"comparison": 0,
+						"value": "\"safeReturn\""
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "TextTreasureCount",
-					"sid": 392688357984659,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 703537747954454,
 					"parameters": {
-						"text": "\"Tesoros conseguidos: \" & RunTreasure"
+						"layer": "\"DefeatLayer\"",
+						"visibility": "invisible"
 					}
 				},
 				{
-					"id": "set-text",
-					"objectClass": "MoneyCountText",
-					"sid": 882965688130310,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 943430250451497,
 					"parameters": {
-						"text": "\"Has recaudado $\" & RunMoney"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TotalMoneyText",
-					"sid": 882208151798159,
-					"parameters": {
-						"text": "\"Tu dinero total es $\" & Money"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Treasure",
-					"sid": 514086118724383,
-					"parameters": {
+						"layer": "\"SafeReturnLayer\"",
 						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 437520888887705
+			"sid": 250059827899534
 		}
 	],
 	"sid": 292518316600395

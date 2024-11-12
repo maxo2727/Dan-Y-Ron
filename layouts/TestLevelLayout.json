@@ -12292,57 +12292,6 @@
 						"angle": 0.0046905603619333824,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "WeaponText",
-					"properties": {
-						"text": "Text",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 834,
-					"sid": 583740869375184,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 583740869375184,
-						"expanded": true
-					},
-					"world": {
-						"x": 96,
-						"y": 12,
-						"width": 114,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 761905427652288,
@@ -12565,38 +12514,44 @@
 					}
 				},
 				{
-					"type": "Weapon",
+					"type": "WeaponText",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
+						"font": "Silom",
+						"size": 12,
 						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
 						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
+						"vertical-alignment": "top",
 						"wrapping": "word",
-						"initially-visible": false,
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 246,
-					"sid": 966165052103345,
+					"uid": 834,
+					"sid": 583740869375184,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 966165052103345,
+						"sid": 583740869375184,
 						"expanded": true
 					},
 					"world": {
-						"x": 20,
-						"y": 429,
-						"width": 64.99165425889458,
-						"height": 19.894806575942283,
+						"x": 14,
+						"y": 426,
+						"width": 77,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [

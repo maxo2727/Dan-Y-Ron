@@ -3,7 +3,17 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "GameOver",
+			"name": "RunFinishedStatus",
+			"type": "string",
+			"initialValue": "defeat",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 262053227471935
+		},
+		{
+			"eventType": "variable",
+			"name": "RunOver",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
@@ -683,17 +693,18 @@
 							"objectClass": "System",
 							"sid": 647961384553082,
 							"parameters": {
-								"variable": "GameOver"
+								"variable": "RunOver"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "go-to-layout",
+							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 464747295301020,
+							"sid": 864588587059567,
 							"parameters": {
-								"layout": "EndRunScreen"
+								"layer": "\"EndRunScreen\"",
+								"visibility": "visible"
 							}
 						}
 					],
@@ -736,6 +747,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 469216144341221,
+									"parameters": {
+										"variable": "RunFinishedStatus",
+										"value": "\"safeReturn\""
+									}
+								},
 								{
 									"callFunction": "NaveDespegue",
 									"sid": 202899215442901
@@ -874,7 +894,7 @@
 							"objectClass": "System",
 							"sid": 651695016330910,
 							"parameters": {
-								"variable": "GameOver",
+								"variable": "RunOver",
 								"value": "true"
 							}
 						}

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Txt_EndScreen",
+					"type": "EndScreenTxt",
 					"properties": {
 						"text": "¡Victoria!",
 						"enable-bbcode": true,
@@ -58,7 +58,7 @@
 					}
 				},
 				{
-					"type": "Txt_EndScreen",
+					"type": "EndScreenTxt",
 					"properties": {
 						"text": "¡Has rescatado a todos los animales!",
 						"enable-bbcode": true,
