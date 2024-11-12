@@ -831,10 +831,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Dan",
-									"sid": 892783549502424,
+									"sid": 107185958125209,
 									"parameters": {
 										"object": "DanCollisionBox",
-										"layer": "\"DanPlayer\"",
+										"layer": "\"DanLayer\"",
 										"image-point": "1",
 										"create-hierarchy": false,
 										"template-name": "\"\""

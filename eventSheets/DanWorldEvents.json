@@ -39,6 +39,15 @@
 							}
 						},
 						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 921617785929483,
+							"parameters": {
+								"variable": "EnergyPool",
+								"value": "5"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "Dan",
 							"sid": 916530128122830,
@@ -184,10 +193,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Enemigo1",
-									"sid": 169996038616685,
+									"sid": 520490251430563,
 									"parameters": {
-										"object": "Star",
-										"layer": "\"DanPlayer\"",
+										"object": "Energy",
+										"layer": "\"DanLayer\"",
 										"image-point": "1",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -270,10 +279,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Enemigo1",
-									"sid": 406025690888303,
+									"sid": 795837176887143,
 									"parameters": {
-										"object": "Star",
-										"layer": "\"DanPlayer\"",
+										"object": "Energy",
+										"layer": "\"DanLayer\"",
 										"image-point": "1",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -373,24 +382,24 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "DanPlayerBox",
-							"sid": 936534522712446,
+							"sid": 835948171463719,
 							"parameters": {
-								"object": "Star"
+								"object": "Energy"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Star",
-							"sid": 164504343312862
+							"objectClass": "Energy",
+							"sid": 745427611528277
 						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 913642068612199,
+							"sid": 882306670225543,
 							"parameters": {
-								"variable": "Energy",
+								"variable": "EnergyPool",
 								"value": "10"
 							}
 						}
@@ -682,7 +691,7 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 717989875626314,
+							"sid": 464747295301020,
 							"parameters": {
 								"layout": "EndRunScreen"
 							}
@@ -728,12 +737,8 @@
 							],
 							"actions": [
 								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 839760451552297,
-									"parameters": {
-										"layout": "EndRunScreen"
-									}
+									"callFunction": "NaveDespegue",
+									"sid": 202899215442901
 								},
 								{
 									"id": "add-to-eventvar",
@@ -848,6 +853,33 @@
 						}
 					],
 					"sid": 405436887545822
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 201652443447390,
+							"parameters": {
+								"variable": "EnergyPool",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 651695016330910,
+							"parameters": {
+								"variable": "GameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 574942061797023
 				}
 			],
 			"sid": 768822687025217
