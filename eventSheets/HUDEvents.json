@@ -13,18 +13,10 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "EnergyCounter",
-					"sid": 842571084495680,
-					"parameters": {
-						"text": "Energy"
-					}
-				},
-				{
-					"id": "set-text",
 					"objectClass": "EnergyText",
-					"sid": 216180993459806,
+					"sid": 579126224678824,
 					"parameters": {
-						"text": "Energy"
+						"text": "EnergyPool"
 					}
 				}
 			],

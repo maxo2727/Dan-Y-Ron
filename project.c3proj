@@ -274,7 +274,6 @@
 			{
 				"items": [
 					"StarIcon",
-					"EnergyCounter",
 					"CoinHUD",
 					"MoneyCounter"
 				],
@@ -657,7 +656,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "Weapons.json",
+					"type": "application/json",
+					"sid": 978512384312873,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},

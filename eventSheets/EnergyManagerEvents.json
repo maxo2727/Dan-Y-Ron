@@ -3,6 +3,36 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "EnergyPool",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 846496876782103
+		},
+		{
+			"eventType": "variable",
+			"name": "GunEnergyCost",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 930414008361810
+		},
+		{
+			"eventType": "variable",
+			"name": "HookEnergyCost",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 734040200288209
+		},
+		{
+			"eventType": "variable",
 			"name": "GunSelectedForRun",
 			"type": "boolean",
 			"initialValue": "false",
@@ -20,36 +50,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 845150644535536
-		},
-		{
-			"eventType": "variable",
-			"name": "EnergyPool",
-			"type": "number",
-			"initialValue": "100",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 178363462857215
-		},
-		{
-			"eventType": "variable",
-			"name": "GunEnergyCost",
-			"type": "number",
-			"initialValue": "20",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 512668750013390
-		},
-		{
-			"eventType": "variable",
-			"name": "HookEnergyCost",
-			"type": "number",
-			"initialValue": "10",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 671338145151338
 		},
 		{
 			"eventType": "group",
@@ -129,124 +129,40 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 787116703000240,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "EnergyManagerHover"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnergyManagerHover",
-							"sid": 674708520410023,
-							"parameters": {
-								"instance-variable": "Selected"
-							},
-							"isInverted": true
+							"id": "on-clicked",
+							"objectClass": "RunStarter",
+							"sid": 296374601561962
 						}
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "EnergyManagerHover",
-							"sid": 262054200328654,
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 984541462983999,
 							"parameters": {
-								"animation": "\"Selected\"",
-								"from": "beginning"
+								"layer": "\"EnergyManager\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 827043221066542,
+							"parameters": {
+								"layout": "SuperficieLayout"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 768479512736807,
+							"sid": 888057752635885,
 							"parameters": {
-								"variable": "EnergyPool",
-								"value": "EnergyPool - EnergyManagerHover.ItemEnergyCost"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 320282522381973,
-							"parameters": {
-								"seconds": "0.02"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "EnergyManagerHover",
-							"sid": 818740530568441,
-							"parameters": {
-								"instance-variable": "Selected",
-								"value": "true"
+								"variable": "TransitionVariable",
+								"value": "\"FromHubToSuperficie\""
 							}
 						}
 					],
-					"sid": 452898417228327
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 568314317978077,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "EnergyManagerHover"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnergyManagerHover",
-							"sid": 601351608807980,
-							"parameters": {
-								"instance-variable": "Selected"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "EnergyManagerHover",
-							"sid": 956036692765685,
-							"parameters": {
-								"animation": "\"Hover\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 525067725750437,
-							"parameters": {
-								"variable": "EnergyPool",
-								"value": "EnergyPool + EnergyManagerHover.ItemEnergyCost"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 236658712611613,
-							"parameters": {
-								"seconds": "0.02"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "EnergyManagerHover",
-							"sid": 880088415133261,
-							"parameters": {
-								"instance-variable": "Selected",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 487679412101528
+					"sid": 181152208534160
 				}
 			],
 			"sid": 287475198582086
@@ -400,110 +316,346 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Selectors",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "EnergyManagerHover",
-							"sid": 370880787747604,
-							"parameters": {
-								"instance-variable": "ItemSelected",
-								"comparison": 0,
-								"value": "\"Gun\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 418357453722593,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "EnergyManagerHover"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "EnergyManagerHover",
+									"sid": 920334586370210,
+									"parameters": {
+										"instance-variable": "Selected"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "EnergyManagerHover",
+									"sid": 981422885383318,
+									"parameters": {
+										"instance-variable": "ItemSelected",
+										"comparison": 0,
+										"value": "\"Gun\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "EnergyManagerHover",
+									"sid": 119265946720233,
+									"parameters": {
+										"animation": "\"Selected\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 412286825141303,
+									"parameters": {
+										"variable": "EnergyPool",
+										"value": "EnergyPool - EnergyManagerHover.ItemEnergyCost"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 353898821005623,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "EnergyManagerHover",
+									"sid": 632156985622108,
+									"parameters": {
+										"instance-variable": "Selected",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 478816093648076,
+									"parameters": {
+										"variable": "GunSelectedForRun",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 631819627331647
 						},
 						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnergyManagerHover",
-							"sid": 956117121229811,
-							"parameters": {
-								"instance-variable": "Selected"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 629555409423550,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "EnergyManagerHover"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "EnergyManagerHover",
+									"sid": 219449763575641,
+									"parameters": {
+										"instance-variable": "Selected"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "EnergyManagerHover",
+									"sid": 244413084902725,
+									"parameters": {
+										"instance-variable": "ItemSelected",
+										"comparison": 0,
+										"value": "\"Hook\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "EnergyManagerHover",
+									"sid": 315334056320166,
+									"parameters": {
+										"animation": "\"Selected\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 829212136405413,
+									"parameters": {
+										"variable": "EnergyPool",
+										"value": "EnergyPool - EnergyManagerHover.ItemEnergyCost"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 546545259132199,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "EnergyManagerHover",
+									"sid": 830270458309117,
+									"parameters": {
+										"instance-variable": "Selected",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 366829458961520,
+									"parameters": {
+										"variable": "HookSelectedForRun",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 662931656383531
 						}
 					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 113683173658822,
-							"parameters": {
-								"variable": "GunSelectedForRun",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 613705930379807
+					"sid": 606461887134545
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Deselectors",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "EnergyManagerHover",
-							"sid": 306383507478140,
-							"parameters": {
-								"instance-variable": "ItemSelected",
-								"comparison": 0,
-								"value": "\"Gun\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 803416201481340,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "EnergyManagerHover"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "EnergyManagerHover",
+									"sid": 412578283178675,
+									"parameters": {
+										"instance-variable": "Selected"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "EnergyManagerHover",
+									"sid": 597692774480626,
+									"parameters": {
+										"instance-variable": "ItemSelected",
+										"comparison": 0,
+										"value": "\"Gun\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "EnergyManagerHover",
+									"sid": 521853821838878,
+									"parameters": {
+										"animation": "\"Hover\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 672743268183922,
+									"parameters": {
+										"variable": "EnergyPool",
+										"value": "EnergyPool + EnergyManagerHover.ItemEnergyCost"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 123491866201524,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "EnergyManagerHover",
+									"sid": 435252713579732,
+									"parameters": {
+										"instance-variable": "Selected",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 606827857504261,
+									"parameters": {
+										"variable": "GunSelectedForRun",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 446654188628772
 						},
 						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnergyManagerHover",
-							"sid": 489779331776751,
-							"parameters": {
-								"instance-variable": "Selected"
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 982761575856977,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "EnergyManagerHover"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "EnergyManagerHover",
+									"sid": 726581952761384,
+									"parameters": {
+										"instance-variable": "Selected"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "EnergyManagerHover",
+									"sid": 773950116441595,
+									"parameters": {
+										"instance-variable": "ItemSelected",
+										"comparison": 0,
+										"value": "\"Hook\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "EnergyManagerHover",
+									"sid": 358237145097853,
+									"parameters": {
+										"animation": "\"Hover\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 753823126831685,
+									"parameters": {
+										"variable": "EnergyPool",
+										"value": "EnergyPool + EnergyManagerHover.ItemEnergyCost"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 425090036161735,
+									"parameters": {
+										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "EnergyManagerHover",
+									"sid": 232014288211555,
+									"parameters": {
+										"instance-variable": "Selected",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 778015617748469,
+									"parameters": {
+										"variable": "HookSelectedForRun",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 612714971618288
 						}
 					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 197963305392148,
-							"parameters": {
-								"variable": "GunSelectedForRun",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 183376246289001
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "EnergyManagerHover",
-							"sid": 919279368786475,
-							"parameters": {
-								"instance-variable": "ItemSelected",
-								"comparison": 0,
-								"value": "\"Hook\""
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnergyManagerHover",
-							"sid": 340262755672325,
-							"parameters": {
-								"instance-variable": "Selected"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 322456106366823,
-							"parameters": {
-								"variable": "HookSelectedForRun",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 392720429725557
+					"sid": 339348798397209
 				}
 			],
 			"sid": 762335976011820
