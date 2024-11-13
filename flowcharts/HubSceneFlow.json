@@ -19,7 +19,7 @@
 					"sid": 658740190241499,
 					"cnSID": null,
 					"name": "Option 2",
-					"value": "Sus signos vitales están inestables... Quizás... Sea demasiado tarde..."
+					"value": "Sus signos vitales están inestables... Quizás... Quizás sea demasiado tarde..."
 				},
 				{
 					"sid": 527306749915240,
@@ -37,7 +37,19 @@
 					"sid": 545573550907414,
 					"cnSID": null,
 					"name": "Option 5",
-					"value": "¡Calma! Todo está bien. Me llamo Ron, y este de aquí es mi amigo Dan."
+					"value": "¡Calma! Todo está bien. Ya no corres peligro."
+				},
+				{
+					"sid": 516871909028670,
+					"cnSID": null,
+					"name": "Option 13",
+					"value": "¡Estás a bordo de la R.A.T.! ¡Nuestra inigualable \"Residencia Aeroespacial Transplanetaria\"!"
+				},
+				{
+					"sid": 800709379731399,
+					"cnSID": null,
+					"name": "Option 14",
+					"value": "Me llamo Ron, y este de aquí es mi amigo Dan. ¡Somos exploradores espaciales!"
 				},
 				{
 					"sid": 923101382471483,
@@ -49,7 +61,7 @@
 					"sid": 591391443417758,
 					"cnSID": null,
 					"name": "Option 7",
-					"value": "Llamada de auxilio... Creo que empiezo a recordar..."
+					"value": "Llamado de auxilio... Creo que empiezo a recordar..."
 				},
 				{
 					"sid": 198861281109572,
@@ -85,7 +97,7 @@
 			"x": 9810,
 			"y": 9896,
 			"w": 420,
-			"h": 496,
+			"h": 562,
 			"t": "\"LaikaRescue\"",
 			"s": true,
 			"pi": 0,
@@ -100,11 +112,13 @@
 			"poSIDs": [
 				928616737508967
 			],
-			"nodeSIDs": [],
+			"nodeSIDs": [
+				718761049776091
+			],
 			"outputs": [
 				{
 					"sid": 305773180346441,
-					"cnSID": null,
+					"cnSID": 718761049776091,
 					"name": "Option 1",
 					"value": "Mi nombre es Laika."
 				},
@@ -125,13 +139,136 @@
 					"cnSID": null,
 					"name": "Option 4",
 					"value": "¡Habían otros como yo! Más animales repartidos por la galaxia."
+				},
+				{
+					"sid": 329215528290235,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Apenas me enteré de esto, mandé un mensaje interestelar en frecuencias radiales."
+				},
+				{
+					"sid": 257996013095793,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "¡Una invitación a la reunión animal más grande en la historia de la astronáutica!"
+				},
+				{
+					"sid": 759020774215421,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Establecí las coordenadas de encuentro en la órbita interior del planeta Zoorion.  "
+				},
+				{
+					"sid": 204889640112540,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Poco a poco, muchas naves empezaron a llegar. ¡No podía contenerme de la emoción!"
+				},
+				{
+					"sid": 948461930121875,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Pero de pronto..."
+				},
+				{
+					"sid": 637086003203361,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "Empezaron a llegar unas extrañas máquinas voladoras... CAZADORES."
+				},
+				{
+					"sid": 937697316432002,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "Las máquinas no tardaron en atacarnos. Derribaron nuestras naves una a una."
+				},
+				{
+					"sid": 870072764156679,
+					"cnSID": null,
+					"name": "Option 12",
+					"value": "Todo pasó muy rápido..."
+				},
+				{
+					"sid": 735993799136256,
+					"cnSID": null,
+					"name": "Option 13",
+					"value": "Lo último que hice fue activar la señal de S.O.S, antes de entrar en caída libre."
 				}
 			],
 			"x": 10295,
 			"y": 9751,
 			"w": 420,
-			"h": 232,
+			"h": 529,
 			"t": "\"LaikaStory\"",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 718761049776091,
+			"pnSIDs": [
+				549650522250456
+			],
+			"poSIDs": [
+				305773180346441
+			],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 421620219069146,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "Ratas... No sé qué decir..."
+				},
+				{
+					"sid": 928431504691142,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Los otros animales están varados en el planeta. ¡Tenemos que rescatarlos!"
+				},
+				{
+					"sid": 589509421129483,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "¡De eso no hay duda! Dan y yo somos expertos en la exploración espacial."
+				},
+				{
+					"sid": 607275272654703,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "¡Nosotros podemos ayudarte!"
+				},
+				{
+					"sid": 846178441717916,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "¡Спасибо! ¡Muchas gracias!"
+				},
+				{
+					"sid": 856906083151792,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Creo que cerca de la zona donde me encontraron podría haber otro animal."
+				},
+				{
+					"sid": 396660206556401,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "¡Entendido! En breve iniciaremos una nueva expedición, tú quédate a descansar."
+				},
+				{
+					"sid": 823145819911133,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Dan, debemos prepararnos. Cuando tengas un momento, ven a hablar conmigo."
+				}
+			],
+			"x": 10828,
+			"y": 9595,
+			"w": 420,
+			"h": 364,
+			"t": "\"LaikaRescue2\"",
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",

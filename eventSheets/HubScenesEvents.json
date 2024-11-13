@@ -111,9 +111,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 264686352324218,
+							"sid": 649011099117004,
 							"parameters": {
-								"seconds": "1"
+								"seconds": "2"
 							}
 						},
 						{
@@ -146,9 +146,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 693529132553086,
+							"sid": 802234862413558,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "1"
 							}
 						},
 						{
@@ -292,6 +292,38 @@
 							"id": "wait-for-signal",
 							"objectClass": "System",
 							"sid": 388824153121180,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 573448339118312,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 13\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 724441961908945,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 530444672409726,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 14\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 298720620026325,
 							"parameters": {
 								"tag": "\"next\""
 							}
@@ -556,11 +588,557 @@
 							]
 						},
 						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 237339147590670,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 689705752316409,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 231331573647654,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 442500929408972,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 605765171549777,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 416183807116457,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 653837796677821,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 391232662599899,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 711255794245944,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 796314463088127,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 9\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 335279137509645,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 297549454016537
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 286881408567873,
+							"sid": 249293534685637,
 							"parameters": {
-								"seconds": "5"
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 613281173699146,
+							"behaviorType": "FadeOut"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 185568153185411,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 234752983999118,
+							"parameters": {
+								"object-to-create": "DanHunter",
+								"layer": "\"FadeLayer\"",
+								"x": "411",
+								"y": "245",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DanHunter",
+							"sid": 635180024597122,
+							"parameters": {
+								"width": "55",
+								"height": "55"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DanHunter",
+							"sid": 356019490030183,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 128016742309898,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-movement",
+							"objectClass": "DanHunter",
+							"sid": 568473003679413,
+							"behaviorType": "Sine",
+							"parameters": {
+								"movement": "vertical"
+							}
+						},
+						{
+							"id": "set-wave",
+							"objectClass": "DanHunter",
+							"sid": 267543557698689,
+							"behaviorType": "Sine",
+							"parameters": {
+								"wave": "sine"
+							}
+						},
+						{
+							"id": "set-period",
+							"objectClass": "DanHunter",
+							"sid": 984772832497596,
+							"behaviorType": "Sine",
+							"parameters": {
+								"period": "1"
+							}
+						},
+						{
+							"id": "set-magnitude",
+							"objectClass": "DanHunter",
+							"sid": 593375340000252,
+							"behaviorType": "Sine",
+							"parameters": {
+								"magnitude": "50"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "DanHunter",
+							"sid": 198988784286257,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-movement",
+							"objectClass": "DanHunter",
+							"sid": 273614565864592,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"movement": "horizontal"
+							}
+						},
+						{
+							"id": "set-wave",
+							"objectClass": "DanHunter",
+							"sid": 759451701528151,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"wave": "sine"
+							}
+						},
+						{
+							"id": "set-period",
+							"objectClass": "DanHunter",
+							"sid": 866269148969030,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"period": "2"
+							}
+						},
+						{
+							"id": "set-magnitude",
+							"objectClass": "DanHunter",
+							"sid": 460163811187766,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"magnitude": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 169040213126682,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SpaceGif",
+							"sid": 305846314008019
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 336721926706858,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 10\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 188786114090529,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 661363991403457,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 11\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 530299770775879,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 693519228822122,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 12\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 620460879856831,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 961676176999293,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 13\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 676423057199987,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DanHunter",
+							"sid": 257785986405975
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 968441575163282
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 759007105838022,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "goto-next-flowchart-node",
+							"objectClass": "FlowchartController",
+							"sid": 555645985383190,
+							"parameters": {
+								"index-or-name": "0"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 361131048416867,
+							"behaviorType": "FadeIn"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 824098611745525,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 798359795214087,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 1\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 415859778366131,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 250499369450119,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 2\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 755375936233684,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 670885644637159,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 3\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 867295567961487,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 873707218467672,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 7\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 878417368402812,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 777958779268184,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 4\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 941708087512636,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 249116839239427,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 8\")",
+								"\"LaikaTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 716439284354392,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 626545530062146,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 5\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 143216023271699,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialogue",
+							"sid": 976679425566387,
+							"parameters": [
+								"FlowchartController.OutputValue(\"Option 6\")",
+								"\"RonTxt\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 122309677976124,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroyDialogue",
+							"sid": 245479602808856
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 783514298711112,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 855628440037894,
+							"behaviorType": "FadeOut"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 320200983535067,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "RonHub",
+							"sid": 293666092119556,
+							"parameters": {
+								"x": "Self.HubX",
+								"y": "Self.HubY"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 153708053128345,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 456503233852726,
+							"behaviorType": "FadeIn"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 765843391468241,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 315427385957219,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 254615696239605,
+							"parameters": {
+								"variable": "IsLaikaHubScene",
+								"value": "false"
 							}
 						}
 					],

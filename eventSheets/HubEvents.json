@@ -6,6 +6,22 @@
 			"includeSheet": "HubScenesEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "LevelTransitions"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EnergyManagerEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "DanWorldEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",

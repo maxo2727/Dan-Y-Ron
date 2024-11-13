@@ -1883,6 +1883,15 @@
 							}
 						},
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 139636025810199,
+							"parameters": {
+								"variable": "IsLaikaHubScene",
+								"value": "true"
+							}
+						},
+						{
 							"callFunction": "NaveDespegue",
 							"sid": 237562553145900
 						}
@@ -2127,14 +2136,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "NaveTutorialTriggerScene",
-					"sid": 907909162929208,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",

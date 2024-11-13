@@ -31,10 +31,6 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "HubEvents"
-		},
-		{
-			"eventType": "include",
 			"includeSheet": "BunkerEvents"
 		},
 		{
