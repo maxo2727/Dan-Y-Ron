@@ -3,8 +3,29 @@
 	"plugin-id": "Sprite",
 	"sid": 668237816680386,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "HubX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 311861132032127
+		},
+		{
+			"name": "HubY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 284923159440871
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 601904756926916
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

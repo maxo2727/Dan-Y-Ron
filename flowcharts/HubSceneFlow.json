@@ -126,7 +126,7 @@
 					"sid": 532766452109149,
 					"cnSID": null,
 					"name": "Option 2",
-					"value": "Durante mucho tiempo, viajé sola por el espacio."
+					"value": "Durante mucho tiempo, viajé sola por el espacio infinito."
 				},
 				{
 					"sid": 425582362519679,
@@ -162,7 +162,7 @@
 					"sid": 204889640112540,
 					"cnSID": null,
 					"name": "Option 8",
-					"value": "Poco a poco, muchas naves empezaron a llegar. ¡No podía contenerme de la emoción!"
+					"value": "Poco a poco, diversas naves empezaron a llegar. ¡No podía contenerme de la emoción!"
 				},
 				{
 					"sid": 948461930121875,
@@ -262,13 +262,233 @@
 					"cnSID": null,
 					"name": "Option 6",
 					"value": "Dan, debemos prepararnos. Cuando tengas un momento, ven a hablar conmigo."
+				},
+				{
+					"sid": 876383991128781,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Presiona la tecla F para iniciar conversaciones e interactuar con los elementos de la nave."
 				}
 			],
 			"x": 10828,
 			"y": 9595,
 			"w": 420,
-			"h": 364,
+			"h": 397,
 			"t": "\"LaikaRescue2\"",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 718590669835480,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 435056790867555,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "Dan, mi emplumado amigo. ¿Cómo va todo?"
+				},
+				{
+					"sid": 990992702991890,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "¡Vaya embrollo en el que nos metimos! Siempre nos pasan estas cosas..."
+				},
+				{
+					"sid": 267299308887718,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Bueno, ahora tenemos que concentrarnos en la misión."
+				},
+				{
+					"sid": 748690171174121,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "Me quedé pensando en eso de los CAZADORES..."
+				},
+				{
+					"sid": 761749707084040,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Creo que Laika se refería a los mismos drones que encontraste en la superficie del planeta."
+				},
+				{
+					"sid": 149399502340166,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "Al parecer, son invulnerables a tus ataques. Si siguen llegando, podrían suponer un problema."
+				},
+				{
+					"sid": 616981705963774,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "Es por eso que decidí retomar un proyecto mecánico que tenía pendiente..."
+				},
+				{
+					"sid": 717508455115867,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Implementé en el código fuente los datos biométricos de Laika para terminar el diseño."
+				},
+				{
+					"sid": 491242170442911,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Y así nació mi más reciente obra... Lo llamo: \"Dron de Ofensiva Galáctica\". ¡El D.O.G.!"
+				},
+				{
+					"sid": 668071907274711,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "En tu próxima expedición, presiona SHIFT para acceder a la vista orbital."
+				},
+				{
+					"sid": 128400522978596,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "Desde ahí podrás seleccionar los drones que quieras poner en órbita para defenderte."
+				},
+				{
+					"sid": 217476544330381,
+					"cnSID": null,
+					"name": "Option 12",
+					"value": "Pero ojo; cada dron cuesta ENERGÍA, el mismo recurso que sustenta tu traje."
+				},
+				{
+					"sid": 173916847376315,
+					"cnSID": null,
+					"name": "Option 15",
+					"value": "Así que piensa bien antes de colocar alguno."
+				},
+				{
+					"sid": 312563582759433,
+					"cnSID": null,
+					"name": "Option 13",
+					"value": "Eso es todo, ahora dirígete al botón rojo y presiona F para iniciar la expedición."
+				},
+				{
+					"sid": 210803340357588,
+					"cnSID": null,
+					"name": "Option 14",
+					"value": "¡Mucho éxito!"
+				}
+			],
+			"x": 9820,
+			"y": 10509,
+			"w": 454,
+			"h": 595,
+			"t": "RonFirstExplanation",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		},
+		{
+			"sid": 310178961531227,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 989122335657616,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "¡Dan! Ven al ala médica."
+				},
+				{
+					"sid": 188153521728996,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "¡Un chimpancé! Nunca había visto uno en persona..."
+				},
+				{
+					"sid": 268590677068319,
+					"cnSID": null,
+					"name": "Option 3",
+					"value": "Parece que está despertando..."
+				},
+				{
+					"sid": 360832799301779,
+					"cnSID": null,
+					"name": "Option 4",
+					"value": "Uy... ¿Qué pasó? ¿Enos?"
+				},
+				{
+					"sid": 350517655853148,
+					"cnSID": null,
+					"name": "Option 5",
+					"value": "Parece que también tiene pérdida de memoria."
+				},
+				{
+					"sid": 216158291239505,
+					"cnSID": null,
+					"name": "Option 6",
+					"value": "¿Recuerdas tu nombre?"
+				},
+				{
+					"sid": 291323612222209,
+					"cnSID": null,
+					"name": "Option 7",
+					"value": "¿Mi nombre? ¡Claro que recuerdo mi nombre! Soy Ham."
+				},
+				{
+					"sid": 456391286815971,
+					"cnSID": null,
+					"name": "Option 8",
+					"value": "Ham... ¿Qué es lo último que recuerdas?"
+				},
+				{
+					"sid": 299225479950711,
+					"cnSID": null,
+					"name": "Option 9",
+					"value": "Yo... Caí en el planeta con mi amigo Enos. Los drones sobrevolaban la superficie."
+				},
+				{
+					"sid": 302152917386171,
+					"cnSID": null,
+					"name": "Option 10",
+					"value": "Nos escondimos en un búnker abandonado que encontramos por la zona."
+				},
+				{
+					"sid": 512578342957465,
+					"cnSID": null,
+					"name": "Option 11",
+					"value": "Pero las máquinas nos encontraron... Mi pistola de rayos no les afectaba."
+				},
+				{
+					"sid": 313240354590640,
+					"cnSID": null,
+					"name": "Option 12",
+					"value": "Enos debe seguir en alguna parte del búnker. ¡Debo buscarlo!"
+				},
+				{
+					"sid": 262488877433963,
+					"cnSID": null,
+					"name": "Option 13",
+					"value": "Con calma, Ham. Ahora mismo necesitas recuperarte. Dan y yo nos encargaremos."
+				},
+				{
+					"sid": 948138506788873,
+					"cnSID": null,
+					"name": "Option 14",
+					"value": "¿En serio? ¡No se cómo agradecérselos! Ten, mi pistola de rayos. Quizás te sirva de algo."
+				},
+				{
+					"sid": 726615688695881,
+					"cnSID": null,
+					"name": "Option 15",
+					"value": "Te la puedes equipar en tu siguiente expedición. Ten en cuenta que gasta ENERGÍA."
+				}
+			],
+			"x": 9807,
+			"y": 11184.5,
+			"w": 420,
+			"h": 595,
+			"t": "HamRescue",
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",

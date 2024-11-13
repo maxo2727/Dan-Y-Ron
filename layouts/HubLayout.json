@@ -1521,7 +1521,7 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1445,
+						"x": 1408,
 						"y": 444,
 						"width": 36.92375512356172,
 						"height": 33.49278672712456,
@@ -1540,7 +1540,7 @@
 				{
 					"type": "MonoHub",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1549,17 +1549,24 @@
 					"uid": 255,
 					"sid": 736101781973116,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"HubX": 1576,
+						"HubY": 631
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 736101781973116,
 						"expanded": true
 					},
 					"world": {
-						"x": 1575.202204795001,
-						"y": 621.0036542761098,
-						"width": 50.19080188211403,
-						"height": 83.81863914313044,
+						"x": 1576,
+						"y": 631,
+						"width": 37.300833054107954,
+						"height": 62.99638180558217,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2526,6 +2533,76 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": -1,
+			"global": false
+		},
+		{
+			"name": "InteractZoneLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "RonInteractArea",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 294,
+					"sid": 900135663546670,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 900135663546670,
+						"expanded": true
+					},
+					"world": {
+						"x": 1519,
+						"y": 473,
+						"width": 124,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 269521720148978,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{

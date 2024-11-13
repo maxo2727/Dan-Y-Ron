@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
@@ -217,7 +224,8 @@
 			"Sprite13",
 			"Sprite14",
 			"WeaponText",
-			"SpaceGif"
+			"SpaceGif",
+			"RonInteractArea"
 		],
 		"subfolders": [
 			{
@@ -473,7 +481,8 @@
 			{
 				"items": [
 					"RonTxt",
-					"LaikaTxt"
+					"LaikaTxt",
+					"HamTxt"
 				],
 				"subfolders": [],
 				"name": "TextIcon"

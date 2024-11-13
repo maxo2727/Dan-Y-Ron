@@ -26,6 +26,10 @@
 			"includeSheet": "EndRunEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "GadgetEvents"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TutorialScenes",
@@ -1894,6 +1898,11 @@
 						{
 							"callFunction": "NaveDespegue",
 							"sid": 237562553145900
+						},
+						{
+							"id": "end-flowchart",
+							"objectClass": "FlowchartController",
+							"sid": 352663817840828
 						}
 					],
 					"sid": 983418575064788

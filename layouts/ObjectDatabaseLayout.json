@@ -117,7 +117,7 @@
 					"world": {
 						"x": 66,
 						"y": 410,
-						"width": 92.34518212550469,
+						"width": 92.3451821255047,
 						"height": 76.68108344462041,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -189,6 +189,41 @@
 						"y": 251,
 						"width": 91.89271318280994,
 						"height": 88.79084944668135,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HamTxt",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 754,
+					"sid": 461077075673221,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 461077075673221,
+						"expanded": true
+					},
+					"world": {
+						"x": 184,
+						"y": 252,
+						"width": 88.22681656266114,
+						"height": 88.22681656266114,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

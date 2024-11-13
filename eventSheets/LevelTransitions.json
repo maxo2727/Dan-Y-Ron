@@ -15,6 +15,39 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-signal",
+					"objectClass": "System",
+					"sid": 173610430818987,
+					"parameters": {
+						"tag": "\"FromIntroToTutorial\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 426093195613849,
+					"parameters": {
+						"layout": "TutorialLayout"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 252397795197683,
+					"parameters": {
+						"variable": "TransitionVariable",
+						"value": "\"FromIntroToTutorial\""
+					}
+				}
+			],
+			"sid": 809258126547543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "DanPlayerBox",
 					"sid": 469841187658214,
@@ -322,11 +355,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 550273912200651,
+							"sid": 502345525158258,
 							"parameters": {
 								"variable": "TransitionVariable",
 								"comparison": 0,
-								"value": "\"FromHubToSuperficie\""
+								"value": "\"FromIntroToTutorial\""
 							}
 						}
 					],
@@ -334,10 +367,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
-							"sid": 488400179187173,
+							"sid": 474443779096506,
 							"parameters": {
-								"x": "1635",
-								"y": "745"
+								"x": "792",
+								"y": "769"
 							}
 						},
 						{
@@ -351,6 +384,42 @@
 						}
 					],
 					"sid": 371102605701819
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 850560386852750,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromHubToSuperficie\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 853251638461068,
+							"parameters": {
+								"x": "1635",
+								"y": "745"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 506365439991253,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 516113615589618
 				},
 				{
 					"eventType": "block",

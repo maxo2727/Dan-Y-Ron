@@ -16,6 +16,10 @@
 			"includeSheet": "DialogueEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LevelTransitions"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -378,11 +382,11 @@
 							}
 						},
 						{
-							"id": "go-to-layout",
+							"id": "signal",
 							"objectClass": "System",
-							"sid": 653688175465633,
+							"sid": 594191994147701,
 							"parameters": {
-								"layout": "TutorialLayout"
+								"tag": "\"FromIntroToTutorial\""
 							}
 						}
 					],
