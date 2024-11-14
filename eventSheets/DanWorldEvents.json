@@ -420,119 +420,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Dan",
-							"sid": 191299578865395,
-							"parameters": {
-								"object": "DoorTrigger"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 534157427482806,
-							"parameters": {
-								"variable": "DoorOpened"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "TxtButton",
-							"sid": 763127788007920,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 582931343387795,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 229365969410390,
-									"parameters": {
-										"key": 69
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 837988636880692,
-									"parameters": {
-										"variable": "DoorOpened",
-										"value": "true"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Door",
-									"sid": 892972989729050
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "TxtButton",
-									"sid": 938092900759423,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 790362769800184
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Dan",
-							"sid": 470936224946631,
-							"parameters": {
-								"object": "DoorTrigger"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "TxtButton",
-							"sid": 371890364479435,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 130176344967729
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Dan",
-							"sid": 721737920614876,
-							"parameters": {
-								"object": "Lava"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 292352517953184
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Dan",
 							"sid": 468686473645706,
@@ -674,6 +561,15 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
+									"sid": 909945969191838,
+									"parameters": {
+										"variable": "RunStatus",
+										"value": "\"Ended\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
 									"sid": 469216144341221,
 									"parameters": {
 										"variable": "RunFinishedStatus",
@@ -722,108 +618,6 @@
 						}
 					],
 					"sid": 111027406138160
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Dan",
-							"sid": 186327240462280,
-							"parameters": {
-								"object": "LaikaTrigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "TxtLaika",
-							"sid": 472875238171672,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 620892534222033,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 451732281730366,
-									"parameters": {
-										"key": 69
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 133981146825354,
-									"parameters": {
-										"layout": "VictoryLayout"
-									}
-								}
-							],
-							"sid": 419024954019559
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Dan",
-							"sid": 530566252265620,
-							"parameters": {
-								"object": "LaikaTrigger"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "TxtLaika",
-							"sid": 353189569279055,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 405436887545822
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 514471349384478,
-							"parameters": {
-								"variable": "Energy",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 651695016330910,
-							"parameters": {
-								"variable": "RunOver",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 574942061797023
 				},
 				{
 					"eventType": "block",

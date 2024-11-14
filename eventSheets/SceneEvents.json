@@ -166,6 +166,33 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 112659829579934,
+							"parameters": {
+								"variable": "RunStatus",
+								"comparison": 0,
+								"value": "\"OnRun\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Nave",
+							"sid": 124955893146869,
+							"parameters": {
+								"x": "1636",
+								"y": "726"
+							}
+						}
+					],
+					"sid": 494544260900320
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Nave",
 							"sid": 351827361091324,

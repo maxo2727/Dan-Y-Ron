@@ -13,6 +13,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "GunUnlocked",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 391230084414225
+		},
+		{
+			"eventType": "variable",
+			"name": "HookUnlocked",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 589865080112641
+		},
+		{
+			"eventType": "variable",
 			"name": "GunEnergyCost",
 			"type": "number",
 			"initialValue": "20",
@@ -172,6 +192,125 @@
 						}
 					],
 					"sid": 181152208534160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 693816341629372,
+							"parameters": {
+								"layer": "\"EnergyManager\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 784429835054160,
+							"parameters": {
+								"layer": "\"EnergyManager\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 239352337465397
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 566371626167361,
+							"parameters": {
+								"layer": "\"EnergyManager\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 566910031383571,
+							"parameters": {
+								"layer": "\"EnergyManager\"",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 592877254230969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 998640731209476,
+							"parameters": {
+								"variable": "GunUnlocked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 675220130369257,
+							"parameters": {
+								"layer": "\"EnergyManagerGun\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 752445134461840,
+							"parameters": {
+								"layer": "\"EnergyManagerGun\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 916532008284181
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 113944007650537,
+							"parameters": {
+								"variable": "HookUnlocked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 868908167695148,
+							"parameters": {
+								"layer": "\"EnergyManagerHook\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 415318812363024,
+							"parameters": {
+								"layer": "\"EnergyManagerHook\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 130218458849314
 				}
 			],
 			"sid": 287475198582086

@@ -16,6 +16,221 @@
 		{
 			"eventType": "include",
 			"includeSheet": "TDEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 435913860851045,
+					"parameters": {
+						"object": "DoorTrigger"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 955106465171179,
+					"parameters": {
+						"variable": "DoorOpened"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TxtButton",
+					"sid": 947317468549559,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 262791774787950,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 160602747236953,
+							"parameters": {
+								"key": 69
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 552390185480875,
+							"parameters": {
+								"variable": "DoorOpened",
+								"value": "true"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Door",
+							"sid": 995681718279276
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TxtButton",
+							"sid": 185916686696890,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 576125688350109
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 280556738394939,
+					"parameters": {
+						"object": "DoorTrigger"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TxtButton",
+					"sid": 873488644119011,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 942122567216212
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Dan",
+					"sid": 249588817665537,
+					"parameters": {
+						"object": "Lava"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 928813658620857
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 990998264302292,
+					"parameters": {
+						"object": "LaikaTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TxtLaika",
+					"sid": 964398799650679,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 845198323457984,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 254495667738593,
+							"parameters": {
+								"key": 69
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 486628301429909,
+							"parameters": {
+								"layout": "VictoryLayout"
+							}
+						}
+					],
+					"sid": 102431707478470
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 864889928704510,
+					"parameters": {
+						"object": "LaikaTrigger"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TxtLaika",
+					"sid": 956206607625788,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 133507581506121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 793466703666827,
+					"parameters": {
+						"variable": "Energy",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 286046456575125,
+					"parameters": {
+						"variable": "RunOver",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 338581680646064
 		}
 	],
 	"sid": 203686409373838
