@@ -1911,7 +1911,7 @@
 					}
 				},
 				{
-					"type": "EnergyText",
+					"type": "EnergyHUDText",
 					"properties": {
 						"text": "100",
 						"enable-bbcode": true,

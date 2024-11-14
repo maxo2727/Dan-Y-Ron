@@ -7,15 +7,15 @@
 		},
 		{
 			"eventType": "include",
+			"includeSheet": "DanMovementEvents"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "HUDEvents"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "DanWorldEvents"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "DanMovementEvents"
 		},
 		{
 			"eventType": "include",
@@ -40,6 +40,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "EndRunEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "BunkerSceneEvents"
 		}
 	],
 	"sid": 489255412336291

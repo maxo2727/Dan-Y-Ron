@@ -12258,7 +12258,7 @@
 					}
 				},
 				{
-					"type": "EnergyText",
+					"type": "EnergyHUDText",
 					"properties": {
 						"text": "0",
 						"enable-bbcode": true,
@@ -12378,6 +12378,57 @@
 				}
 			],
 			"instances": [
+				{
+					"type": "TreasureHUDText",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "SilomBol",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 841,
+					"sid": 699421681459414,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 699421681459414,
+						"expanded": true
+					},
+					"world": {
+						"x": 141,
+						"y": 7,
+						"width": 110,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "MonitorFrame",
 					"properties": {
@@ -12569,6 +12620,184 @@
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Treasure",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 840,
+					"sid": 297925158630575,
+					"tags": "",
+					"instanceVariables": {
+						"IsAvailable": true
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 297925158630575,
+						"expanded": true
+					},
+					"world": {
+						"x": 138,
+						"y": 21,
+						"width": 30.36071835148298,
+						"height": 23.900991042656813,
+						"originX": 1.1607669616519174,
+						"originY": 0.3838951310861423,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemigo1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 850,
+					"sid": 221688153717936,
+					"tags": "",
+					"instanceVariables": {
+						"TakingDamage": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 300,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 221688153717936,
+						"expanded": true
+					},
+					"world": {
+						"x": 4651,
+						"y": 497,
+						"width": 34.790803382503256,
+						"height": 35.18171128567745,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Treasure",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 855,
+					"sid": 313045022446443,
+					"tags": "",
+					"instanceVariables": {
+						"IsAvailable": true
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 313045022446443,
+						"expanded": true
+					},
+					"world": {
+						"x": 3722,
+						"y": 8379,
+						"width": 47.00000000000001,
+						"height": 37,
+						"originX": 1.1607669616519174,
+						"originY": 0.3838951310861423,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemigo1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 856,
+					"sid": 198507626892284,
+					"tags": "",
+					"instanceVariables": {
+						"TakingDamage": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 300,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 198507626892284,
+						"expanded": true
+					},
+					"world": {
+						"x": 4502,
+						"y": 7886,
+						"width": 34.790803382503256,
+						"height": 35.18171128567745,
+						"originX": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,

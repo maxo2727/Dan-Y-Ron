@@ -51,9 +51,9 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 921617785929483,
+							"sid": 574804004693256,
 							"parameters": {
-								"variable": "EnergyPool",
+								"variable": "Energy",
 								"value": "5"
 							}
 						},
@@ -407,9 +407,9 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 882306670225543,
+							"sid": 350644036178932,
 							"parameters": {
-								"variable": "EnergyPool",
+								"variable": "Energy",
 								"value": "10"
 							}
 						}
@@ -880,9 +880,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 201652443447390,
+							"sid": 514471349384478,
 							"parameters": {
-								"variable": "EnergyPool",
+								"variable": "Energy",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -900,6 +900,28 @@
 						}
 					],
 					"sid": 574942061797023
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 110498371259539
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 590182959646843,
+							"parameters": {
+								"variable": "Energy",
+								"value": "EnergyPool"
+							}
+						}
+					],
+					"sid": 317658381873481
 				}
 			],
 			"sid": 768822687025217

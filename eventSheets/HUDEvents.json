@@ -13,10 +13,10 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "EnergyText",
-					"sid": 579126224678824,
+					"objectClass": "EnergyHUDText",
+					"sid": 877030195802447,
 					"parameters": {
-						"text": "EnergyPool"
+						"text": "Energy"
 					}
 				},
 				{
@@ -25,6 +25,14 @@
 					"sid": 689459867852047,
 					"parameters": {
 						"text": "SelectedGadget"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TreasureHUDText",
+					"sid": 962343882095722,
+					"parameters": {
+						"text": "RunTreasure"
 					}
 				}
 			],

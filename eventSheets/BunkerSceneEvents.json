@@ -1,0 +1,113 @@
+{
+	"name": "BunkerSceneEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "DialogueEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 965949783676642,
+					"parameters": {
+						"object": "MonoHub"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "MonoHub",
+					"sid": 200032846886095
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 108372047857524,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 892770969417445,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "start-flowchart",
+					"objectClass": "FlowchartController",
+					"sid": 756669657223721,
+					"parameters": {
+						"flowchart-name": "BunkerFlow",
+						"start-node-tag": "\"RescueHam\"",
+						"flowchart-tag": "\"\"",
+						"set-as-current": true
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 894829157818606,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Option 1\")",
+						"\"RonTxt\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 649491051513834,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 380746723608336,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Option 2\")",
+						"\"RonTxt\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 726467269852384,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "destroyDialogue",
+					"sid": 128442263207479
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 870195688954574,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 621643131084936,
+					"parameters": {
+						"variable": "IsHamHubScene",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 919638087120721
+		}
+	],
+	"sid": 529067258504335
+}

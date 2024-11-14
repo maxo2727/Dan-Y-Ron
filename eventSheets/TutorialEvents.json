@@ -317,7 +317,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EnergyText",
+							"objectClass": "EnergyHUDText",
 							"sid": 209056991968670,
 							"parameters": {
 								"visibility": "visible"
@@ -397,6 +397,11 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "GetEnergySceneTrigger",
+							"sid": 152935453931397
+						},
 						{
 							"id": "destroy",
 							"objectClass": "NoEnergySceneTrigger",
@@ -487,11 +492,6 @@
 							"parameters": {
 								"input": "stop-ignoring"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "GetEnergySceneTrigger",
-							"sid": 216436520522648
 						}
 					],
 					"sid": 942489804810983

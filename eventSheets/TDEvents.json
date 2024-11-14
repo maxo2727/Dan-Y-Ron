@@ -129,25 +129,9 @@
 						{
 							"id": "reset-eventvar",
 							"objectClass": "System",
-							"sid": 734634089770861,
-							"parameters": {
-								"variable": "Energy"
-							}
-						},
-						{
-							"id": "reset-eventvar",
-							"objectClass": "System",
 							"sid": 777130557751898,
 							"parameters": {
 								"variable": "RunMoney"
-							}
-						},
-						{
-							"id": "reset-eventvar",
-							"objectClass": "System",
-							"sid": 239502336331267,
-							"parameters": {
-								"variable": "RunTreasure"
 							}
 						}
 					],
@@ -1140,10 +1124,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 937609735022877,
+							"sid": 373874329233464,
 							"parameters": {
 								"object-to-create": "DanHunter",
-								"layer": "\"DanPlayer\"",
+								"layer": "\"DanLayer\"",
 								"x": "Dan.X+random(-200,200)",
 								"y": "Dan.Y - 500",
 								"create-hierarchy": false,
@@ -1330,9 +1314,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "DanHunter",
-							"sid": 276058926814251,
+							"sid": 856936783925095,
 							"parameters": {
-								"object": "Dan"
+								"object": "DanPlayerBox"
 							}
 						}
 					],
@@ -1413,6 +1397,15 @@
 							"parameters": {
 								"instance-variable": "TakingDamage",
 								"value": "false"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 216587408025570,
+							"parameters": {
+								"variable": "Energy",
+								"value": "5"
 							}
 						}
 					],

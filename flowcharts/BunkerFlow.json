@@ -1,0 +1,37 @@
+{
+	"sid": 953173001686406,
+	"nodes": [
+		{
+			"sid": 854556192126151,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 678337184448662,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "¡Dan! ¿Encontraste a otro animal?"
+				},
+				{
+					"sid": 837722140816040,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "Ahora sería un buen momento para regresar a la nave."
+				}
+			],
+			"x": 9839,
+			"y": 9912,
+			"w": 420,
+			"h": 166,
+			"t": "RescueHam",
+			"s": true,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary"
+		}
+	],
+	"name": "BunkerFlow",
+	"w": 20000,
+	"h": 20000
+}

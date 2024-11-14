@@ -48,19 +48,43 @@
 					}
 				},
 				{
-					"id": "go-to-layout",
+					"id": "reset-eventvar",
 					"objectClass": "System",
-					"sid": 309772995150651,
+					"sid": 218209380034265,
 					"parameters": {
-						"layout": "HubLayout"
+						"variable": "RunOver"
 					}
 				},
 				{
 					"id": "reset-eventvar",
 					"objectClass": "System",
-					"sid": 283254219035367,
+					"sid": 239502336331267,
 					"parameters": {
-						"variable": "RunOver"
+						"variable": "RunTreasure"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 933334487472868,
+					"parameters": {
+						"variable": "Energy"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 193564659172322,
+					"parameters": {
+						"variable": "EnergyPool"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 309772995150651,
+					"parameters": {
+						"layout": "HubLayout"
 					}
 				}
 			],

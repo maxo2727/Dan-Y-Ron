@@ -145,20 +145,29 @@
 							}
 						},
 						{
-							"id": "go-to-layout",
+							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 827043221066542,
+							"sid": 337090650524265,
 							"parameters": {
-								"layout": "SuperficieLayout"
+								"variable": "TransitionVariable",
+								"value": "\"FromHubToSuperficie\""
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 888057752635885,
+							"sid": 381965504614745,
 							"parameters": {
-								"variable": "TransitionVariable",
-								"value": "\"FromHubToSuperficie\""
+								"variable": "RunStatus",
+								"value": "\"InitialCutscene\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 827043221066542,
+							"parameters": {
+								"layout": "SuperficieLayout"
 							}
 						}
 					],
@@ -383,6 +392,15 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 779812564442994,
+									"parameters": {
+										"variable": "Energy",
+										"value": "EnergyPool"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "EnergyManagerHover",
 									"sid": 632156985622108,
@@ -461,6 +479,15 @@
 									"sid": 546545259132199,
 									"parameters": {
 										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 842757775713224,
+									"parameters": {
+										"variable": "Energy",
+										"value": "EnergyPool"
 									}
 								},
 								{
@@ -554,6 +581,15 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 706480246176977,
+									"parameters": {
+										"variable": "Energy",
+										"value": "EnergyPool"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "EnergyManagerHover",
 									"sid": 435252713579732,
@@ -631,6 +667,15 @@
 									"sid": 425090036161735,
 									"parameters": {
 										"seconds": "0.02"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 164947179078605,
+									"parameters": {
+										"variable": "Energy",
+										"value": "EnergyPool"
 									}
 								},
 								{

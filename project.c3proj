@@ -209,7 +209,7 @@
 			"BlackBG",
 			"Sputnik2",
 			"EnergySceneTrigger",
-			"EnergyText",
+			"EnergyHUDText",
 			"NoEnergySceneTrigger",
 			"GetEnergySceneTrigger",
 			"EnemySceneTrigger",
@@ -225,7 +225,9 @@
 			"Sprite14",
 			"WeaponText",
 			"SpaceGif",
-			"RonInteractArea"
+			"RonInteractArea",
+			"TreasureHUDText",
+			"Sprite16"
 		],
 		"subfolders": [
 			{
@@ -562,7 +564,8 @@
 			"SceneGlobalVariables",
 			"EnergyManagerEvents",
 			"GadgetEvents",
-			"HubScenesEvents"
+			"HubScenesEvents",
+			"BunkerSceneEvents"
 		],
 		"subfolders": [
 			{
@@ -705,7 +708,8 @@
 			"IntroFlow",
 			"TutorialFlow",
 			"HubFlow",
-			"HubSceneFlow"
+			"HubSceneFlow",
+			"BunkerFlow"
 		],
 		"subfolders": []
 	},
