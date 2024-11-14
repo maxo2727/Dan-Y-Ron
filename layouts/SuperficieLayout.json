@@ -2806,8 +2806,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 803,
-						"y": 562,
+						"x": 760,
+						"y": 565,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2825,7 +2825,7 @@
 				{
 					"type": "DanPlayerBox",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2867,8 +2867,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 803,
-						"y": 624,
+						"x": 760,
+						"y": 627,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2912,8 +2912,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 802,
-						"y": 653,
+						"x": 759,
+						"y": 656,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,

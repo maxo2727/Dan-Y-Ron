@@ -280,67 +280,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "DanPlayerBox",
-					"sid": 959356916382255,
-					"parameters": {
-						"object": "BotonCapsula"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 929589434570081,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 755538375579796,
-							"parameters": {
-								"key": 70
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 787831053808425,
-							"parameters": {
-								"variable": "RunStatus",
-								"value": "\"InitialCutscene\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 949120781260631,
-							"parameters": {
-								"variable": "TransitionVariable",
-								"value": "\"FromHubToSuperficie\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 510544834842742,
-							"parameters": {
-								"layout": "SuperficieLayout"
-							}
-						}
-					],
-					"sid": 210159746578110,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 481915243040139
@@ -364,21 +303,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 383089270476461,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
@@ -416,21 +340,6 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 682892157194711,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
 							"sid": 853251638461068,
@@ -466,21 +375,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 701388723323597,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
@@ -518,21 +412,6 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 365435026718537,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
 							"sid": 987132943866640,
@@ -568,21 +447,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 390362167506752,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
@@ -620,21 +484,6 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 655077250522417,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
 							"sid": 361700775709676,
@@ -670,21 +519,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 774534940692457,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
@@ -722,21 +556,6 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 914111654647654,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
 							"sid": 209338711711685,
@@ -772,21 +591,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Dan",
-							"sid": 173541341175782,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "DanPlayerBox",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",

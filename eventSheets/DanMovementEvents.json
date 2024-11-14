@@ -121,10 +121,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "Dan",
-							"sid": 989001985399824,
+							"sid": 384368917572540,
 							"parameters": {
 								"x": "DanPlayerBox.X",
-								"y": "DanPlayerBox.Y"
+								"y": "DanPlayerBox.Y + 30"
 							}
 						}
 					],
