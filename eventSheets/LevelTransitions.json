@@ -535,10 +535,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
-							"sid": 121426359254323,
+							"sid": 987132943866640,
 							"parameters": {
 								"x": "10",
-								"y": "850"
+								"y": "1300"
 							}
 						},
 						{

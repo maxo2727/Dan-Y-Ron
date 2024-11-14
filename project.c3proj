@@ -439,7 +439,9 @@
 					"ElevatorMeshBehind",
 					"ElevatorDoor",
 					"ElevatorStructure",
-					"ElevatorLight"
+					"ElevatorLight",
+					"BunkerNextSign",
+					"BunkerSign"
 				],
 				"subfolders": [],
 				"name": "Bunker"

@@ -2710,6 +2710,41 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BunkerNextSign",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 849,
+					"sid": 388526957433346,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 388526957433346,
+						"expanded": true
+					},
+					"world": {
+						"x": 9928,
+						"y": 716,
+						"width": 69,
+						"height": 116,
+						"originX": 0.37681159420289856,
+						"originY": 0.4224137931034483,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 361307977941431,
@@ -2771,8 +2806,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 765,
-						"y": 577,
+						"x": 803,
+						"y": 562,
 						"width": 20,
 						"height": 20,
 						"originX": 0.5,
@@ -2832,8 +2867,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 765,
-						"y": 639,
+						"x": 803,
+						"y": 624,
 						"width": 13.391098623879234,
 						"height": 53.564394495516936,
 						"originX": 0.5,
@@ -2877,8 +2912,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 764.363338558955,
-						"y": 667.6442662469127,
+						"x": 802,
+						"y": 653,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
 						"originX": 0.4670138888888889,
