@@ -1543,6 +1543,11 @@
 									"parameters": {
 										"collisions": "enabled"
 									}
+								},
+								{
+									"id": "end-flowchart",
+									"objectClass": "FlowchartController",
+									"sid": 212388307557158
 								}
 							],
 							"sid": 102695647591453

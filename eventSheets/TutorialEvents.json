@@ -30,6 +30,10 @@
 			"includeSheet": "GadgetEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LevelTransitions"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TutorialScenes",
