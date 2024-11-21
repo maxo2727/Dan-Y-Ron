@@ -22,6 +22,10 @@
 			"includeSheet": "DanWorldEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "InteractivePopUpEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",

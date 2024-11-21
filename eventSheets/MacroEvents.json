@@ -44,6 +44,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "BunkerSceneEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "InteractivePopUpEvents"
 		}
 	],
 	"sid": 489255412336291

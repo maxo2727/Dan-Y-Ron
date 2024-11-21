@@ -1,0 +1,95 @@
+{
+	"name": "InteractivePopUpEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 928347670671675
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Dan",
+					"sid": 627795636344502,
+					"parameters": {
+						"object": "Sprite5",
+						"layer": "\"DanLayer\"",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite5",
+					"sid": 596174957337201,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Dan",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 628308567345418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 631062590888500,
+					"parameters": {
+						"object": "Interactive"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 305980753570115,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 747372523671145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 614001729137762,
+					"parameters": {
+						"object": "Interactive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 975421390327462,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 305544183147143
+		}
+	],
+	"sid": 336451187337951
+}

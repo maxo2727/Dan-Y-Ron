@@ -1,14 +1,14 @@
 {
-	"name": "IMG_",
+	"name": "LaikaIntroPage",
 	"plugin-id": "Sprite",
-	"sid": 104685885485923,
+	"sid": 795599122888011,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Fade",
 			"name": "Fade",
-			"sid": 152122404500052
+			"sid": 573540650432221
 		}
 	],
 	"effectTypes": [],
@@ -17,22 +17,22 @@
 			{
 				"frames": [
 					{
-						"width": 1170,
-						"height": 965,
+						"width": 591,
+						"height": 665,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/jpeg",
-						"imageSpriteId": 7131782,
+						"fileType": "image/png",
+						"imageSpriteId": 4506241,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 321742773628094,
-				"name": "Default",
+				"sid": 724449943731264,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

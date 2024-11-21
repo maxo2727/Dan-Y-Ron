@@ -185,49 +185,7 @@
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
-			"camera",
-			"NaveStop",
-			"GeneralTextBox",
-			"GeneralText",
-			"FlowchartController",
-			"TerranovaText",
-			"FadeBlack",
-			"PresentaText",
-			"Sprite7",
-			"Text",
-			"Sprite5",
-			"ManualCamera",
-			"Sprite6",
-			"Sprite8",
-			"IMG_",
-			"Sprite9",
-			"Sprite10",
-			"Tilemap",
-			"Sprite11",
-			"TextoTrofeo1",
-			"FondoEnMosaico",
-			"BlackBG",
-			"Sputnik2",
-			"EnergySceneTrigger",
-			"EnergyHUDText",
-			"NoEnergySceneTrigger",
-			"GetEnergySceneTrigger",
-			"EnemySceneTrigger",
-			"TesoroSceneTrigger",
-			"NoTesoroSceneTrigger",
-			"LaikaSceneTrigger",
-			"NotLaikaSceneTrigger",
-			"HitHunterSceneTrigger",
-			"TutorialHunterVariable",
-			"EscapeSceneTrigger",
-			"NaveTutorialTriggerScene",
-			"Sprite13",
-			"Sprite14",
-			"WeaponText",
-			"SpaceGif",
-			"RonInteractArea",
-			"TreasureHUDText",
-			"Sprite16"
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -269,7 +227,8 @@
 					"Dan",
 					"DanPlayerBox",
 					"GunPH",
-					"HookPH"
+					"HookPH",
+					"camera"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
@@ -285,7 +244,10 @@
 				"items": [
 					"StarIcon",
 					"CoinHUD",
-					"MoneyCounter"
+					"MoneyCounter",
+					"EnergyHUDText",
+					"TreasureHUDText",
+					"WeaponText"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -357,7 +319,8 @@
 					"MoneyText",
 					"NavePrimeraVersion",
 					"Escalera",
-					"PCMuseo"
+					"PCMuseo",
+					"RonInteractArea"
 				],
 				"subfolders": [],
 				"name": "HubScreen"
@@ -441,7 +404,8 @@
 					"ElevatorStructure",
 					"ElevatorLight",
 					"BunkerNextSign",
-					"BunkerSign"
+					"BunkerSign",
+					"Sprite13"
 				],
 				"subfolders": [],
 				"name": "Bunker"
@@ -455,7 +419,8 @@
 					"Trofeo1",
 					"HudTextoTrofeo",
 					"TextoTrofeo",
-					"HudImagenTrofeo"
+					"HudImagenTrofeo",
+					"TextoTrofeo1"
 				],
 				"subfolders": [],
 				"name": "MuseumScreen"
@@ -468,7 +433,25 @@
 				"name": "CraterSprites"
 			},
 			{
-				"items": [],
+				"items": [
+					"EnemySceneTrigger",
+					"DanIntroPage",
+					"EnergySceneTrigger",
+					"EscapeSceneTrigger",
+					"TerranovaText",
+					"NotLaikaSceneTrigger",
+					"NaveTutorialTriggerScene",
+					"NoEnergySceneTrigger",
+					"GetEnergySceneTrigger",
+					"LaikaSceneTrigger",
+					"LaikaIntroPage",
+					"HamIntroPage",
+					"PresentaText",
+					"TutorialHunterVariable",
+					"NoTesoroSceneTrigger",
+					"TesoroSceneTrigger",
+					"HitHunterSceneTrigger"
+				],
 				"subfolders": [],
 				"name": "TutorialScenes"
 			},
@@ -490,6 +473,43 @@
 				],
 				"subfolders": [],
 				"name": "TextIcon"
+			},
+			{
+				"items": [
+					"GeneralText",
+					"GeneralTextBox",
+					"TextNextArrow"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [
+					"BlackBG",
+					"FadeBlack",
+					"SpaceGif",
+					"FondoEnMosaico",
+					"Tilemap",
+					"Sprite14"
+				],
+				"subfolders": [],
+				"name": "Misc"
+			},
+			{
+				"items": [
+					"Sputnik2"
+				],
+				"subfolders": [],
+				"name": "Treasures"
+			},
+			{
+				"items": [
+					"NaveStop",
+					"FlowchartController",
+					"ManualCamera"
+				],
+				"subfolders": [],
+				"name": "Scenes"
 			}
 		]
 	},
@@ -499,7 +519,8 @@
 		"items": [
 			"Defenses",
 			"DefensesIcons",
-			"CharacterTxt"
+			"CharacterTxt",
+			"Interactive"
 		],
 		"subfolders": []
 	},
@@ -567,7 +588,8 @@
 			"EnergyManagerEvents",
 			"GadgetEvents",
 			"HubScenesEvents",
-			"BunkerSceneEvents"
+			"BunkerSceneEvents",
+			"InteractivePopUpEvents"
 		],
 		"subfolders": [
 			{

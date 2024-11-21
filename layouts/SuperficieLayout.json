@@ -2242,8 +2242,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 1619,
-						"y": -273,
+						"x": 1631,
+						"y": 726,
 						"width": 123.59606743120032,
 						"height": 190.50688810888246,
 						"originX": 0.4235212814969698,
@@ -2916,8 +2916,8 @@
 						"y": 839,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
-						"originX": 0.4670138888888889,
-						"originY": 1.001628664495114,
+						"originX": 0.46862847222222226,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -2956,7 +2956,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": true
+			"global": false
 		},
 		{
 			"name": "TD",

@@ -382,6 +382,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 432078704293594,
+							"parameters": {
+								"variable": "RunStatus",
+								"value": "\"InitialCutscene\""
+							}
+						},
+						{
 							"id": "signal",
 							"objectClass": "System",
 							"sid": 594191994147701,
@@ -393,6 +402,39 @@
 					"sid": 618790254622488
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 794617079645693,
+					"parameters": {
+						"key": 8
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 757246232621773,
+					"parameters": {
+						"variable": "RunStatus",
+						"value": "\"InitialCutscene\""
+					}
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 851148433319174,
+					"parameters": {
+						"tag": "\"FromIntroToTutorial\""
+					}
+				}
+			],
+			"sid": 560694382491077
 		}
 	],
 	"sid": 230171994117055

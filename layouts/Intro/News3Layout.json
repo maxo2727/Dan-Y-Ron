@@ -94,7 +94,7 @@
 					}
 				},
 				{
-					"type": "IMG_",
+					"type": "DanIntroPage",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

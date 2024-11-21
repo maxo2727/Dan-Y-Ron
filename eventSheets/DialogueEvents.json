@@ -63,7 +63,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Sprite9",
+					"objectClass": "TextNextArrow",
 					"sid": 534239203757173
 				},
 				{
@@ -127,7 +127,7 @@
 					"objectClass": "System",
 					"sid": 360473839110463,
 					"parameters": {
-						"object-to-create": "Sprite9",
+						"object-to-create": "TextNextArrow",
 						"layer": "\"TextLayer\"",
 						"x": "825",
 						"y": "445",
@@ -145,7 +145,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite9",
+					"objectClass": "TextNextArrow",
 					"sid": 157191434136706,
 					"parameters": {
 						"visibility": "visible"
@@ -211,7 +211,7 @@
 					"objectClass": "System",
 					"sid": 791365180622084,
 					"parameters": {
-						"object-to-create": "Sprite9",
+						"object-to-create": "TextNextArrow",
 						"layer": "\"TextLayer\"",
 						"x": "825",
 						"y": "445",
@@ -221,7 +221,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite9",
+					"objectClass": "TextNextArrow",
 					"sid": 217616922269006,
 					"parameters": {
 						"visibility": "visible"
@@ -267,7 +267,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Sprite9",
+					"objectClass": "TextNextArrow",
 					"sid": 998985463646234
 				}
 			],

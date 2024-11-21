@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "RunStatus",
 			"type": "string",
-			"initialValue": "InitialCutscene",
+			"initialValue": "OnRun",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -38,7 +38,7 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 424563748367726
+							"sid": 685270787934546
 						},
 						{
 							"id": "compare-eventvar",
@@ -59,6 +59,15 @@
 							"behaviorType": "ScrollTo",
 							"parameters": {
 								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Nave",
+							"sid": 738755235774602,
+							"parameters": {
+								"x": "Self.X",
+								"y": "Self.Y - 1000"
 							}
 						},
 						{
@@ -161,33 +170,6 @@
 						}
 					],
 					"sid": 949731941254817
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 112659829579934,
-							"parameters": {
-								"variable": "RunStatus",
-								"comparison": 0,
-								"value": "\"OnRun\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Nave",
-							"sid": 124955893146869,
-							"parameters": {
-								"x": "1636",
-								"y": "726"
-							}
-						}
-					],
-					"sid": 494544260900320
 				},
 				{
 					"eventType": "block",
@@ -301,16 +283,20 @@
 							}
 						},
 						{
-							"id": "signal",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 194299024109949,
+							"sid": 494757055059189,
 							"parameters": {
-								"tag": "\"StartPreRun\""
+								"seconds": "0.01"
 							}
 						},
 						{
-							"type": "comment",
-							"text": "Se manda PreRun para activar cualquier diálogo post aterrizaje pero antes de arrancar la run"
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 509723777840458,
+							"parameters": {
+								"tag": "\"LandingScene\""
+							}
 						}
 					],
 					"sid": 443159193775618

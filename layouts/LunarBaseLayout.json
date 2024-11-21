@@ -1945,9 +1945,111 @@
 		},
 		{
 			"name": "DanLayer",
-			"overriden": 1,
+			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "camera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 866,
+					"sid": 615734403844456,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 615734403844456,
+						"expanded": true
+					},
+					"world": {
+						"x": 1301,
+						"y": 1235,
+						"width": 20,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DanPlayerBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 867,
+					"sid": 801019274283597,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"MoverA": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 801019274283597,
+						"expanded": true
+					},
+					"world": {
+						"x": 1301,
+						"y": 1297,
+						"width": 13.391098623879234,
+						"height": 53.564394495516936,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "Dan",
 					"properties": {
@@ -1957,8 +2059,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 402,
-					"sid": 163868942989215,
+					"uid": 868,
+					"sid": 172283231395049,
 					"tags": "",
 					"instanceVariables": {
 						"TakingDamage": false,
@@ -1973,57 +2075,16 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 163868942989215,
+						"sid": 172283231395049,
 						"expanded": true
 					},
 					"world": {
-						"x": 201,
-						"y": 854,
+						"x": 1300,
+						"y": 1326,
 						"width": 53.32245102620813,
 						"height": 56.8402516147427,
-						"originX": 0.4670138888888889,
-						"originY": 1.001628664495114,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "camera",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 403,
-					"sid": 912206702553172,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 912206702553172,
-						"expanded": true
-					},
-					"world": {
-						"x": 205.36363636363612,
-						"y": 756.8181818181819,
-						"width": 20,
-						"height": 20,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.46862847222222226,
+						"originY": 1,
 						"color": [
 							1,
 							1,

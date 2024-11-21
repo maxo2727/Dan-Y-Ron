@@ -1,0 +1,14 @@
+{
+	"name": "Interactive",
+	"plugin-id": "Sprite",
+	"sid": 564049614674910,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"RonInteractArea",
+		"BotonCapsula",
+		"DoorTrigger",
+		"FromLunarBaseToBunker"
+	]
+}

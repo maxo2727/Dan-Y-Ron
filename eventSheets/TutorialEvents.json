@@ -46,9 +46,9 @@
 						{
 							"id": "on-signal",
 							"objectClass": "System",
-							"sid": 763237774263313,
+							"sid": 614687227538516,
 							"parameters": {
-								"tag": "\"StartPreRun\""
+								"tag": "\"LandingScene\""
 							}
 						},
 						{
@@ -271,6 +271,11 @@
 					],
 					"actions": [
 						{
+							"id": "destroy",
+							"objectClass": "EnergySceneTrigger",
+							"sid": 412195283608696
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
 							"sid": 820539819982448,
@@ -379,11 +384,6 @@
 							"parameters": {
 								"input": "stop-ignoring"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "EnergySceneTrigger",
-							"sid": 544739317043567
 						}
 					],
 					"sid": 554066301201320

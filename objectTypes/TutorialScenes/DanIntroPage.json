@@ -1,14 +1,14 @@
 {
-	"name": "Sprite6",
+	"name": "DanIntroPage",
 	"plugin-id": "Sprite",
-	"sid": 818515977662126,
+	"sid": 104685885485923,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Fade",
 			"name": "Fade",
-			"sid": 871649980432491
+			"sid": 152122404500052
 		}
 	],
 	"effectTypes": [],
@@ -17,22 +17,22 @@
 			{
 				"frames": [
 					{
-						"width": 820,
-						"height": 478,
+						"width": 1170,
+						"height": 965,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 8032703,
+						"fileType": "image/jpeg",
+						"imageSpriteId": 7131782,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 614921472036507,
-				"name": "Animation 1",
+				"sid": 321742773628094,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
