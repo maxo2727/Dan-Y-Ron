@@ -1,7 +1,7 @@
 {
-	"name": "Gun",
+	"name": "EnergyManagerGun",
 	"plugin-id": "Sprite",
-	"sid": 559754027750835,
+	"sid": 160331420655115,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,15 +11,15 @@
 			{
 				"frames": [
 					{
-						"width": 40,
-						"height": 23,
-						"originX": 0,
-						"originY": 0,
+						"width": 492,
+						"height": 286,
+						"originX": 0.4186991869918699,
+						"originY": 0.5034965034965035,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9091673,
+						"imageSpriteId": 7792722,
 						"collisionPoly": {
 							"points": [
 								0.3252032520325203,
@@ -45,7 +45,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 974603067944094,
+				"sid": 360378807552942,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

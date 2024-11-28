@@ -34,7 +34,7 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 427,
+								"x": 431.73996257750946,
 								"y": 240,
 								"width": 854,
 								"height": 480,
@@ -2099,7 +2099,7 @@
 							}
 						},
 						{
-							"type": "HookPH",
+							"type": "EnergyManagerHook",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -2107,53 +2107,13 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 816,
-							"sid": 914814420013147,
+							"uid": 815,
+							"sid": 114235358966008,
 							"tags": "",
 							"instanceVariables": {},
-							"behaviors": {
-								"Físicas": {
-									"properties": {
-										"immovable": false,
-										"collision-mask": "use-collision-polygon",
-										"prevent-rotation": false,
-										"density": 1,
-										"friction": 0.5,
-										"elasticity": 0.2,
-										"linear-damping": 0,
-										"angular-damping": 0.01,
-										"bullet": false,
-										"enabled": false
-									}
-								},
-								"Plataforma": {
-									"properties": {
-										"max-speed": 330,
-										"acceleration": 1500,
-										"deceleration": 1500,
-										"jump-strength": 650,
-										"gravity": 500,
-										"max-fall-speed": 1000,
-										"double-jump": false,
-										"jump-sustain": 0,
-										"default-controls": false,
-										"enabled": false
-									}
-								},
-								"Bala": {
-									"properties": {
-										"speed": 400,
-										"acceleration": -10,
-										"gravity": 0,
-										"bounce-off-solids": false,
-										"set-angle": false,
-										"step": false,
-										"enabled": false
-									}
-								}
-							},
+							"behaviors": {},
 							"instanceFolderItem": {
-								"sid": 914814420013147,
+								"sid": 114235358966008,
 								"expanded": true,
 								"folderName": "",
 								"indexInFolder": -1,
@@ -2162,11 +2122,11 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 81.65022505372617,
-								"y": 213.92781398917558,
-								"width": 19.860479017406643,
-								"height": 19.860479017406643,
-								"originX": 0.08333333333333333,
+								"x": 90.21659739256474,
+								"y": 212.9554011412618,
+								"width": 19.818615435259517,
+								"height": 19.818615435259517,
+								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
 									1,
@@ -2414,7 +2374,7 @@
 							}
 						},
 						{
-							"type": "GunPH",
+							"type": "EnergyManagerGun",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -2422,13 +2382,13 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 815,
-							"sid": 789062333049934,
+							"uid": 874,
+							"sid": 459414809183074,
 							"tags": "",
 							"instanceVariables": {},
 							"behaviors": {},
 							"instanceFolderItem": {
-								"sid": 789062333049934,
+								"sid": 459414809183074,
 								"expanded": true,
 								"folderName": "",
 								"indexInFolder": -1,
@@ -2437,12 +2397,12 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 76.76820896562546,
-								"y": 171.3242305473117,
-								"width": 24,
-								"height": 6,
-								"originX": -0.08333333333333333,
-								"originY": 0.5,
+								"x": 90.10274411679423,
+								"y": 172.63631024435296,
+								"width": 26.386199694973207,
+								"height": 15.338319334882794,
+								"originX": 0.4186991869918699,
+								"originY": 0.5034965034965035,
 								"color": [
 									1,
 									1,

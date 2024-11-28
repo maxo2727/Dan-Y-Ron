@@ -1,0 +1,63 @@
+{
+	"name": "EnergyManagerHook",
+	"plugin-id": "Sprite",
+	"sid": 945420383133161,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6563088,
+						"collisionPoly": {
+							"points": [
+								0.7916666666666666,
+								0.08333333333333333,
+								0.875,
+								0.08333333333333333,
+								0.9166666666666666,
+								0.125,
+								0.9583333333333334,
+								0.20833333333333334,
+								0.9583333333333334,
+								0.7916666666666666,
+								0.9166666666666666,
+								0.875,
+								0.875,
+								0.9166666666666666,
+								0.7916666666666666,
+								0.9166666666666666,
+								0.041666666666666664,
+								0.5416666666666666,
+								0.041666666666666664,
+								0.4583333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 793219101282995,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

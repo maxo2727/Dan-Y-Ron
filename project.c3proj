@@ -463,7 +463,9 @@
 					"RunStarter",
 					"EnergyManagerTxt",
 					"EnergyManagerHover",
-					"EnergyManagerBGBlur"
+					"EnergyManagerBGBlur",
+					"EnergyManagerGun",
+					"EnergyManagerHook"
 				],
 				"subfolders": [],
 				"name": "EnergyRunManager"

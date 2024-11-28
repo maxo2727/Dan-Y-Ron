@@ -152,7 +152,7 @@
 										},
 										{
 											"id": "destroy",
-											"objectClass": "GunPH",
+											"objectClass": "Gun",
 											"sid": 231211711380357
 										},
 										{
@@ -289,12 +289,12 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 420371637688709,
+											"sid": 167737080556449,
 											"parameters": {
-												"object-to-create": "GunPH",
+												"object-to-create": "Gun",
 												"layer": "0",
 												"x": "Dan.X",
-												"y": "Dan.Y+5",
+												"y": "Dan.Y-30",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
@@ -675,7 +675,7 @@
 					"actions": [
 						{
 							"id": "set-angle",
-							"objectClass": "GunPH",
+							"objectClass": "Gun",
 							"sid": 795999551613110,
 							"parameters": {
 								"angle": "angle(Dan.X, Dan.Y, Mouse.X, Mouse.Y)"
@@ -683,11 +683,11 @@
 						},
 						{
 							"id": "set-position",
-							"objectClass": "GunPH",
-							"sid": 983551264233472,
+							"objectClass": "Gun",
+							"sid": 620814717276490,
 							"parameters": {
 								"x": "Dan.X",
-								"y": "Dan.Y+5"
+								"y": "Dan.Y-30"
 							}
 						}
 					],
