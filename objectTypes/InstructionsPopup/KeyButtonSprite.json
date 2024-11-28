@@ -1,7 +1,7 @@
 {
-	"name": "Sprite14",
+	"name": "KeyButtonSprite",
 	"plugin-id": "Sprite",
-	"sid": 795125987495156,
+	"sid": 498023591417152,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 40,
+						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6641791,
+						"imageSpriteId": 8313657,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 851888011692076,
+				"sid": 684702795242119,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

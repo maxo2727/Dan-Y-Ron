@@ -26,8 +26,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 554522369527015,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 426,
 						"y": 411,
@@ -77,8 +82,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 995024805591356,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 484,
 						"y": 410,
@@ -112,8 +122,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 242676892539347,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 66,
 						"y": 410,
@@ -147,8 +162,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 934183778999561,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 825,
 						"y": 445,
@@ -182,8 +202,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 878347612387782,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 66,
 						"y": 251,
@@ -217,8 +242,13 @@
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 461077075673221,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 184,
 						"y": 252,
@@ -293,8 +323,13 @@
 					},
 					"instanceFolderItem": {
 						"sid": 977783524548641,
-						"expanded": true
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 515.7152669924668,
 						"y": 168.21292716368782,

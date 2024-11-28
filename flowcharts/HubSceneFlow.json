@@ -102,7 +102,10 @@
 			"s": true,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		},
 		{
 			"sid": 549650522250456,
@@ -203,7 +206,10 @@
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		},
 		{
 			"sid": 718761049776091,
@@ -278,7 +284,10 @@
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		},
 		{
 			"sid": 718590669835480,
@@ -385,7 +394,10 @@
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		},
 		{
 			"sid": 310178961531227,
@@ -492,9 +504,16 @@
 			"s": false,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		}
 	],
+	"preset-nodes": {
+		"items": [],
+		"subfolders": []
+	},
 	"name": "HubSceneFlow",
 	"w": 20000,
 	"h": 20000

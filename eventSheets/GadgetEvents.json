@@ -500,6 +500,15 @@
 								"variable": "IsOnDialogue"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 346985527040454,
+							"parameters": {
+								"variable": "IsInstructionsPopupEnabled"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [

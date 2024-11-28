@@ -48,6 +48,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "InteractivePopUpEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
 		}
 	],
 	"sid": 489255412336291

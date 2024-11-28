@@ -1,6 +1,10 @@
 {
 	"sid": 612602102315707,
 	"nodes": [],
+	"preset-nodes": {
+		"items": [],
+		"subfolders": []
+	},
 	"name": "HubFlow",
 	"w": 20000,
 	"h": 20000

@@ -11,7 +11,7 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "Sprite14",
+							"type": "EnergyManagerBGBlur",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -26,8 +26,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 204595210598276,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 427,
 								"y": 240,
@@ -61,8 +66,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 550668649557289,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 422,
 								"y": 234,
@@ -169,8 +179,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 579194376583021,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 643,
 								"y": 50,
@@ -220,8 +235,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 536669331001646,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 74.32602695263188,
 								"y": 50.21549075562278,
@@ -273,8 +293,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 260373638591052,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 240.31553087036394,
 								"y": 50.98893408774204,
@@ -308,8 +333,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 276651179572416,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 219.24738243541643,
 								"y": 65.34547916714351,
@@ -361,8 +391,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 440451881177909,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 70.50491348324113,
 								"y": 120.03677935422624,
@@ -414,8 +449,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 551539078479565,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 421.3907697531163,
 								"y": 117.67717032867378,
@@ -488,8 +528,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 880196388725305,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 544.0651725720929,
 								"y": 170.76231123815313,
@@ -541,8 +586,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 453530977348476,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 471.8749639717171,
 								"y": 157.46866060719276,
@@ -576,8 +626,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 216756659441363,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 611.0517587339185,
 								"y": 172.79932334861238,
@@ -629,8 +684,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 905400007288113,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 617.6294419670853,
 								"y": 164.6889314403463,
@@ -673,8 +733,13 @@
 							},
 							"instanceFolderItem": {
 								"sid": 839301566489687,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 453.04507623771656,
 								"y": 171.45840741962465,
@@ -747,8 +812,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 446476463085303,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 209.5642748999929,
 								"y": 385.8359852860415,
@@ -800,8 +870,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 534598614331010,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 109.96752004301484,
 								"y": 370.5787091644376,
@@ -835,8 +910,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 247821767802328,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 298.08523721104405,
 								"y": 384.21050102414006,
@@ -888,8 +968,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 636261995500981,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 305.8446828801986,
 								"y": 375.54875241189006,
@@ -925,8 +1010,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 948551762089168,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 105.88912151775442,
 								"y": 383.13744848477904,
@@ -999,8 +1089,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 535585173201512,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 209.92411455380076,
 								"y": 343.37475238211834,
@@ -1052,8 +1147,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 570065252059240,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 111.7420148975404,
 								"y": 328.480038201827,
@@ -1087,8 +1187,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 457612912285776,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 297.7254028320312,
 								"y": 341.74927327719195,
@@ -1140,8 +1245,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 116113257841164,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 309.01619778914664,
 								"y": 333.4682237150291,
@@ -1177,8 +1287,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 748411585750129,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 104.81991538589946,
 								"y": 340.23231965961577,
@@ -1251,8 +1366,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 974426258007301,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 209.56426557591075,
 								"y": 299.8340286837848,
@@ -1304,8 +1424,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 331796207329660,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 112.18835979295989,
 								"y": 283.9367987213131,
@@ -1339,8 +1464,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 581783483247008,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 299.52461911569253,
 								"y": 298.5688477850047,
@@ -1392,8 +1522,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 465568371385389,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 309.4157543833713,
 								"y": 290.28070696551794,
@@ -1427,8 +1562,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 877963937568095,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 97.07657718790269,
 								"y": 297.1963823431424,
@@ -1501,8 +1641,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 655890303751000,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 209.92409045957882,
 								"y": 256.6533488847812,
@@ -1554,8 +1699,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 694055347908256,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 112.44929382337529,
 								"y": 244.12080960390966,
@@ -1589,8 +1739,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 572296841406329,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 299.8844690190731,
 								"y": 256.82732363302637,
@@ -1642,8 +1797,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 387431415315201,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 310.7880227016126,
 								"y": 249.29195453050946,
@@ -1679,8 +1839,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 338164619771841,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 104.886770153805,
 								"y": 254.52344729064072,
@@ -1753,8 +1918,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 156727056875263,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 210.21403093294393,
 								"y": 213.2634016799672,
@@ -1806,8 +1976,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 529230714024652,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 110.8534825321475,
 								"y": 199.38066200611544,
@@ -1841,8 +2016,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 147496173592207,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 299.6379853976117,
 								"y": 212.47001849994803,
@@ -1894,8 +2074,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 956473250110364,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 307.53416678953613,
 								"y": 205.349018796938,
@@ -1969,8 +2154,13 @@
 							},
 							"instanceFolderItem": {
 								"sid": 914814420013147,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 81.65022505372617,
 								"y": 213.92781398917558,
@@ -2043,8 +2233,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 475721702346941,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 209.89696510412983,
 								"y": 171.89029460194774,
@@ -2096,8 +2291,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 212067401923477,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 111.10642261132371,
 								"y": 157.758530949775,
@@ -2131,8 +2331,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 313272432166706,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 299.6625898570409,
 								"y": 171.2922851646152,
@@ -2184,8 +2389,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 109953884036973,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 307.67961350341625,
 								"y": 162.8220444262177,
@@ -2219,8 +2429,13 @@
 							"behaviors": {},
 							"instanceFolderItem": {
 								"sid": 789062333049934,
-								"expanded": true
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
 							},
+							"showing": true,
+							"locked": false,
 							"world": {
 								"x": 76.76820896562546,
 								"y": 171.3242305473117,

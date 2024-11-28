@@ -46,9 +46,16 @@
 			"s": true,
 			"pi": 0,
 			"c": "Flowchart node",
-			"ty": "dictionary"
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		}
 	],
+	"preset-nodes": {
+		"items": [],
+		"subfolders": []
+	},
 	"name": "IntroFlow",
 	"w": 20000,
 	"h": 20000

@@ -20,6 +20,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 438.5,
 						"y": 245.5,
@@ -61,6 +63,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 36,
 						"y": 30,
@@ -96,6 +100,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 341,
 						"y": 395,
@@ -141,6 +147,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 263,
 						"y": 31,
@@ -188,6 +196,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 70,
 						"y": 123,
@@ -235,6 +245,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 67,
 						"y": 183,
@@ -282,6 +294,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 68,
 						"y": 296,
@@ -329,6 +343,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 68,
 						"y": 239,
@@ -376,6 +392,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 68,
 						"y": 268,
@@ -423,6 +441,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 481,
 						"y": 124,
@@ -470,6 +490,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 475,
 						"y": 190,
@@ -517,6 +539,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 517,
 						"y": 245,
@@ -564,6 +588,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 475,
 						"y": 217,
@@ -611,6 +637,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 243,
 						"y": 339,
@@ -658,6 +686,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 67,
 						"y": 211,
@@ -705,6 +735,8 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 509,
 						"y": 292,

@@ -34,6 +34,10 @@
 			"includeSheet": "LevelTransitions"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TutorialScenes",
@@ -246,13 +250,8 @@
 							}
 						},
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "DanPlayerBox",
-							"sid": 439206632810337,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "stop-ignoring"
-							}
+							"callFunction": "CallInstructionsPopupMoving",
+							"sid": 414659486033644
 						}
 					],
 					"sid": 857730501975371
@@ -680,6 +679,10 @@
 						{
 							"callFunction": "destroyDialogue",
 							"sid": 788792378606491
+						},
+						{
+							"callFunction": "CallInstructionsPopupAttack",
+							"sid": 246350242896251
 						}
 					],
 					"sid": 283555779818650
@@ -694,6 +697,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 285754599493591,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
 						{
 							"callFunction": "dialogue",
 							"sid": 960794267953028,

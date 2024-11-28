@@ -1,0 +1,283 @@
+{
+	"name": "InstructionsPopupEvents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "IsInstructionsPopupEnabled",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 363191118044443
+		},
+		{
+			"eventType": "variable",
+			"name": "CanSkipInstructionsPopup",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 478134879578508
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 731064580644262,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 904677774412443,
+					"parameters": {
+						"variable": "CanSkipInstructionsPopup"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 711666850918164,
+					"parameters": {
+						"layer": "\"InstructionsPopupLayer\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 289452943488394,
+					"parameters": {
+						"layer": "\"InstructionsPopupMoving\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 760812798730207,
+					"parameters": {
+						"layer": "\"InstructionsPopupAttack\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 360127653757118,
+					"parameters": {
+						"layer": "\"InstructionsPopupEnergy\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 586699728506998,
+					"parameters": {
+						"layer": "\"InstructionsPopupInteraction\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 918349951116577,
+					"parameters": {
+						"layer": "\"Texto continuar\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 646940042527930,
+					"parameters": {
+						"variable": "CanSkipInstructionsPopup",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 432026749596394,
+					"parameters": {
+						"variable": "IsInstructionsPopupEnabled",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 206086250080847,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				}
+			],
+			"sid": 229931761955290
+		},
+		{
+			"functionName": "CallInstructionsPopupMoving",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 596297316926955,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 329153225331211,
+					"parameters": {
+						"variable": "IsInstructionsPopupEnabled",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 358816707696623,
+					"parameters": {
+						"layer": "\"InstructionsPopupLayer\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 415487590391718,
+					"parameters": {
+						"layer": "\"InstructionsPopupMoving\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 247877251224153,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 222137775433626,
+					"parameters": {
+						"layer": "\"Texto continuar\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 486867746811369,
+					"parameters": {
+						"variable": "CanSkipInstructionsPopup",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 665441710458426
+		},
+		{
+			"functionName": "CallInstructionsPopupAttack",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 381974974533105,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 195864177098775,
+					"parameters": {
+						"variable": "IsInstructionsPopupEnabled",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 652873384776088,
+					"parameters": {
+						"layer": "\"InstructionsPopupLayer\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 893901992497552,
+					"parameters": {
+						"layer": "\"InstructionsPopupAttack\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 939972115952678,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 107870637091695,
+					"parameters": {
+						"layer": "\"Texto continuar\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 387981623381791,
+					"parameters": {
+						"variable": "CanSkipInstructionsPopup",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 402977241823956
+		}
+	],
+	"sid": 620759651943800
+}

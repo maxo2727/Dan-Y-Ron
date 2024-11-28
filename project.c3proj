@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 40702,
+	"savedWithRelease": 41600,
 	"name": "Dan&Ron",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -185,7 +185,8 @@
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
-			"Sprite5"
+			"Sprite5",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -228,7 +229,8 @@
 					"DanPlayerBox",
 					"GunPH",
 					"HookPH",
-					"camera"
+					"camera",
+					"Gun"
 				],
 				"subfolders": [],
 				"name": "DanFiles"
@@ -460,7 +462,8 @@
 					"EnergyManagerBG",
 					"RunStarter",
 					"EnergyManagerTxt",
-					"EnergyManagerHover"
+					"EnergyManagerHover",
+					"EnergyManagerBGBlur"
 				],
 				"subfolders": [],
 				"name": "EnergyRunManager"
@@ -489,8 +492,7 @@
 					"FadeBlack",
 					"SpaceGif",
 					"FondoEnMosaico",
-					"Tilemap",
-					"Sprite14"
+					"Tilemap"
 				],
 				"subfolders": [],
 				"name": "Misc"
@@ -510,6 +512,21 @@
 				],
 				"subfolders": [],
 				"name": "Scenes"
+			},
+			{
+				"items": [
+					"InstructionsPopupBG",
+					"InstructionsPopup",
+					"InstructionsPopupText",
+					"InstructionsPopupDan",
+					"InstructionsPopupDanAttack",
+					"InstructionsPopupEnemy",
+					"LeftClickSprite",
+					"EnergySprite",
+					"KeyButtonSprite"
+				],
+				"subfolders": [],
+				"name": "InstructionsPopup"
 			}
 		]
 	},
@@ -526,6 +543,7 @@
 	},
 	"layouts": {
 		"items": [
+			"InstructionsPopupScreen",
 			"TestLevelLayout",
 			"HUDLayout",
 			"InstructionScreen",
@@ -589,7 +607,8 @@
 			"GadgetEvents",
 			"HubScenesEvents",
 			"BunkerSceneEvents",
-			"InteractivePopUpEvents"
+			"InteractivePopUpEvents",
+			"InstructionsPopupEvents"
 		],
 		"subfolders": [
 			{
@@ -786,7 +805,6 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
