@@ -80,6 +80,17 @@
 					}
 				},
 				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 175789226014460,
+					"parameters": {
+						"tag": "\"worldMusic\"",
+						"db": "-100",
+						"duration": "2",
+						"ending": "stop"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 309772995150651,

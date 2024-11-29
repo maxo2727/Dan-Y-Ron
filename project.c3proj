@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -99,6 +106,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
 			"author": "Scirra",
@@ -180,13 +194,39 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "highlightshadow",
+			"name": "Highlight shadow",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulse",
+			"author": "Danguafer/Silexars",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpobject",
+			"name": "Warp object",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "y1wshio26zm",
 	"objectTypes": {
 		"items": [
 			"Sprite5",
-			"Text"
+			"Text",
+			"TitleText",
+			"TitleScreenBg",
+			"PlayButtonText",
+			"Audio",
+			"PlayButton"
 		],
 		"subfolders": [
 			{
@@ -563,7 +603,8 @@
 			"FadeLayout",
 			"CraterLayout",
 			"TutorialLayout",
-			"EnergyRunManager"
+			"EnergyRunManager",
+			"TitleScreen"
 		],
 		"subfolders": [
 			{
@@ -610,7 +651,8 @@
 			"HubScenesEvents",
 			"BunkerSceneEvents",
 			"InteractivePopUpEvents",
-			"InstructionsPopupEvents"
+			"InstructionsPopupEvents",
+			"TitleScreenEvents"
 		],
 		"subfolders": [
 			{
@@ -630,11 +672,77 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "medium-text-blip-14855.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 396898954789837,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cartoon-phone-voice-88637.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 899286620122918,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "space-ambience-56265.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 597040647712651,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "spaceship-ambience-with-effects-21420.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 485257820364213,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "friend-ship-1-68541.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 674871246375857,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 350324314329469,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Hub.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 507557741196360,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Overworld Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 967170263813536,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

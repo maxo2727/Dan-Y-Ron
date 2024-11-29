@@ -75,6 +75,30 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 386596203513637,
+							"parameters": {
+								"audio-file": "space-ambience-56265",
+								"loop": "looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"worldMusic\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 690923151194615,
+							"parameters": {
+								"audio-file": "spaceship-ambience-with-effects-21420",
+								"loop": "looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"worldMusic\""
+							}
+						},
+						{
 							"id": "start-flowchart-by-name",
 							"objectClass": "FlowchartController",
 							"sid": 363969138480101,
@@ -113,22 +137,6 @@
 							"id": "wait-for-signal",
 							"objectClass": "System",
 							"sid": 259215317305452,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 850428055066699,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 3\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 868155318996358,
 							"parameters": {
 								"tag": "\"next\""
 							}
@@ -177,38 +185,6 @@
 							"id": "wait-for-signal",
 							"objectClass": "System",
 							"sid": 139313934250157,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 845389920088834,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 7\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 795948499978129,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 371536878766207,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 8\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 475454192853958,
 							"parameters": {
 								"tag": "\"next\""
 							}
@@ -329,22 +305,6 @@
 							"sid": 209056991968670,
 							"parameters": {
 								"visibility": "visible"
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 600017421386279,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 3\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 442589867217025,
-							"parameters": {
-								"tag": "\"next\""
 							}
 						},
 						{
@@ -486,6 +446,10 @@
 							"parameters": {
 								"seconds": "0.02"
 							}
+						},
+						{
+							"callFunction": "CallInstructionsPopupEnergy",
+							"sid": 751118795660765
 						},
 						{
 							"id": "set-ignoring-input",
@@ -652,22 +616,6 @@
 							}
 						},
 						{
-							"callFunction": "dialogue",
-							"sid": 290382344674282,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 3\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 875802140602159,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 442603152176720,
@@ -683,6 +631,15 @@
 						{
 							"callFunction": "CallInstructionsPopupAttack",
 							"sid": 246350242896251
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 862011856699342,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
 						}
 					],
 					"sid": 283555779818650
@@ -841,38 +798,6 @@
 							"id": "wait-for-signal",
 							"objectClass": "System",
 							"sid": 259777603651846,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 604240033972652,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 2\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 438887958799763,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 687596309691125,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 3\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 591221919303237,
 							"parameters": {
 								"tag": "\"next\""
 							}
@@ -1056,38 +981,6 @@
 							"id": "wait-for-signal",
 							"objectClass": "System",
 							"sid": 176994178049911,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 809746520356516,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 8\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 402636219793907,
-							"parameters": {
-								"tag": "\"next\""
-							}
-						},
-						{
-							"callFunction": "dialogue",
-							"sid": 158698787438014,
-							"parameters": [
-								"FlowchartController.OutputValue(\"Option 9\")",
-								"\"RonTxt\""
-							]
-						},
-						{
-							"id": "wait-for-signal",
-							"objectClass": "System",
-							"sid": 148368362295866,
 							"parameters": {
 								"tag": "\"next\""
 							}

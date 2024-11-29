@@ -79,6 +79,18 @@
 							"parameters": {
 								"text": "Money"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 679735342615127,
+							"parameters": {
+								"audio-file": "Hub",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"hubMusic\""
+							}
 						}
 					],
 					"sid": 811515516752437

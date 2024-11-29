@@ -47,6 +47,18 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 732626730191743,
+					"parameters": {
+						"audio-file": "cartoon-phone-voice-88637",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"dialogue\""
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "GeneralTextBox",
 					"sid": 360494576895078
@@ -176,6 +188,14 @@
 					"sid": 704639018700732
 				},
 				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 387619137289011,
+					"parameters": {
+						"tag": "\"dialogue\""
+					}
+				},
+				{
 					"id": "signal",
 					"objectClass": "System",
 					"sid": 658605055453901,
@@ -205,6 +225,14 @@
 					"id": "typewriter-finish",
 					"objectClass": "GeneralText",
 					"sid": 579179977859950
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 450642198693617,
+					"parameters": {
+						"tag": "\"dialogue\""
+					}
 				},
 				{
 					"id": "create-object",

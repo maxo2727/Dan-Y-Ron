@@ -53,6 +53,18 @@
 							"parameters": {
 								"text": "\"TERRANOVA PRODUCCIONES\""
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 978542485511419,
+							"parameters": {
+								"audio-file": "Intro",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 344765975978559
@@ -142,6 +154,29 @@
 						}
 					],
 					"sid": 265906903424381
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 934734706244089,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TerranovaText",
+							"sid": 419631739575555
+						}
+					],
+					"sid": 908386781621457
 				}
 			]
 		},
@@ -160,14 +195,6 @@
 					"objectClass": "TerranovaText",
 					"sid": 825107396054009,
 					"behaviorType": "Fade"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 614690313729767,
-					"parameters": {
-						"seconds": "6"
-					}
 				}
 			],
 			"sid": 184470976630540,
@@ -187,6 +214,14 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 614690313729767,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -214,6 +249,14 @@
 					],
 					"actions": [
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 614690313729767,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 482143817082210,
@@ -240,6 +283,14 @@
 					],
 					"actions": [
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 614690313729767,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 320001336595357,
@@ -256,11 +307,54 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 130130089646235,
+							"sid": 428853170663135,
 							"parameters": {
 								"variable": "IntroTextVariable",
 								"comparison": 0,
 								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-wait-time",
+							"objectClass": "TerranovaText",
+							"sid": 257941448606839,
+							"behaviorType": "Fade",
+							"parameters": {
+								"wait-time": "10"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 513975890304824,
+							"parameters": {
+								"seconds": "8"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 115360668376489,
+							"parameters": {
+								"layout": "TitleScreen"
+							}
+						}
+					],
+					"sid": 982712663002269
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 426996315713508,
+							"parameters": {
+								"variable": "IntroTextVariable",
+								"comparison": 0,
+								"value": "5"
 							}
 						}
 					],
@@ -419,18 +513,18 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 757246232621773,
+					"sid": 192290325230895,
 					"parameters": {
-						"variable": "RunStatus",
-						"value": "\"InitialCutscene\""
+						"variable": "IntroTextVariable",
+						"value": "5"
 					}
 				},
 				{
-					"id": "signal",
+					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 851148433319174,
+					"sid": 670222302000590,
 					"parameters": {
-						"tag": "\"FromIntroToTutorial\""
+						"layout": "TitleScreen"
 					}
 				}
 			],

@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "GunUnlocked",
 			"type": "boolean",
-			"initialValue": "true",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -25,7 +25,7 @@
 			"eventType": "variable",
 			"name": "HookUnlocked",
 			"type": "boolean",
-			"initialValue": "true",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -188,6 +188,29 @@
 							"sid": 827043221066542,
 							"parameters": {
 								"layout": "SuperficieLayout"
+							}
+						},
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 195375425106908,
+							"parameters": {
+								"tag": "\"hubMusic\"",
+								"db": "-100",
+								"duration": "2",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 892655989982202,
+							"parameters": {
+								"audio-file": "Overworld Loop",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"worldMusic\""
 							}
 						}
 					],

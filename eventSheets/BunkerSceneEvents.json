@@ -104,6 +104,11 @@
 						"variable": "IsHamHubScene",
 						"value": "true"
 					}
+				},
+				{
+					"id": "end-flowchart",
+					"objectClass": "FlowchartController",
+					"sid": 111398139371225
 				}
 			],
 			"sid": 919638087120721

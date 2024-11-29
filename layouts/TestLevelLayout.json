@@ -12978,7 +12978,7 @@
 						{
 							"type": "DogPrice",
 							"properties": {
-								"text": "50",
+								"text": "30",
 								"enable-bbcode": true,
 								"character-width": 16,
 								"character-height": 16,
@@ -13258,7 +13258,7 @@
 							"sid": 437416105383581,
 							"tags": "",
 							"instanceVariables": {
-								"Price": 50
+								"Price": 30
 							},
 							"behaviors": {
 								"DragDrop": {

@@ -1,0 +1,24 @@
+{
+	"name": "TitleText",
+	"plugin-id": "Text",
+	"sid": 121581267765169,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 523149963900289
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		},
+		{
+			"effectId": "highlightshadow",
+			"name": "HighlightShadow"
+		}
+	]
+}

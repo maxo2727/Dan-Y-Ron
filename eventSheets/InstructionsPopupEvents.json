@@ -277,6 +277,82 @@
 				}
 			],
 			"sid": 402977241823956
+		},
+		{
+			"functionName": "CallInstructionsPopupEnergy",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 261251753590449,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 665556059350437,
+					"parameters": {
+						"variable": "IsInstructionsPopupEnabled",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 722722926918855,
+					"parameters": {
+						"layer": "\"InstructionsPopupLayer\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 104875599421082,
+					"parameters": {
+						"layer": "\"InstructionsPopupEnergy\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 302334058608528,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 812840875154323,
+					"parameters": {
+						"layer": "\"Texto continuar\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 686202317622914,
+					"parameters": {
+						"variable": "CanSkipInstructionsPopup",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 993253958609582
 		}
 	],
 	"sid": 620759651943800

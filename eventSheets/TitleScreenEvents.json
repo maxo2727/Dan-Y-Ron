@@ -1,0 +1,91 @@
+{
+	"name": "TitleScreenEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 216398324657993,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "PlayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "PlayButton",
+					"sid": 661228324767521,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.06",
+						"off-time": "0.06",
+						"duration": "0.6"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 866719622980929,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "FadeBlack",
+					"sid": 682981683073539,
+					"behaviorType": "FadeOut"
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "TitleText",
+					"sid": 271503936119744,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 197615119048975,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 202999018376471,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 655156396312115,
+					"parameters": {
+						"variable": "IntroTextVariable",
+						"value": "5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 129860016991034,
+					"parameters": {
+						"layout": "IntroLayout"
+					}
+				}
+			],
+			"sid": 898094360020121
+		}
+	],
+	"sid": 112861643429067
+}

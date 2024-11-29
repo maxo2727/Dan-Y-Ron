@@ -219,7 +219,7 @@
 						{
 							"type": "InstructionsPopupText",
 							"properties": {
-								"text": "Instrucciones: como mover a Dan",
+								"text": "Controles de movimiento",
 								"enable-bbcode": true,
 								"font": "Silom",
 								"size": 16,
@@ -659,7 +659,7 @@
 						{
 							"type": "InstructionsPopupText",
 							"properties": {
-								"text": "Utiliza las teclas WASD para mover DAN por el mundo. Para saltar puedes presionar la tecla S.",
+								"text": "Utiliza las teclas WASD para mover DAN por el mundo. Para saltar puedes presionar la tecla W.",
 								"enable-bbcode": true,
 								"font": "Silom",
 								"size": 10,
@@ -1057,7 +1057,7 @@
 						{
 							"type": "InstructionsPopupText",
 							"properties": {
-								"text": "Instrucciones: medidor de energía",
+								"text": "Medidor de energía",
 								"enable-bbcode": true,
 								"font": "Silom",
 								"size": 16,

@@ -238,18 +238,6 @@
 					"value": "¡Mira! ¿Qué es eso que brilla? ¡Apuesto a que es un TESORO!"
 				},
 				{
-					"sid": 169116295112635,
-					"cnSID": null,
-					"name": "Option 2",
-					"value": "Los TESOROS son objetos valiosos repartidos por toda la galaxia."
-				},
-				{
-					"sid": 414961596671570,
-					"cnSID": null,
-					"name": "Option 3",
-					"value": "Recógelo, seguro que podemos sacarle provecho de algún modo."
-				},
-				{
 					"sid": 664284321518654,
 					"cnSID": null,
 					"name": "Option 4",
@@ -265,25 +253,13 @@
 					"sid": 111125914321706,
 					"cnSID": null,
 					"name": "Option 6",
-					"value": "Los TESOROS que vayas recolectando apareceran en la ***completar****"
+					"value": "Los TESOROS que vayas recolectando apareceran arriba."
 				},
 				{
 					"sid": 853560749746966,
 					"cnSID": null,
 					"name": "Option 7",
 					"value": "Para obtenerlos de manera definitiva deberás volver a la nave y finalizar la misión."
-				},
-				{
-					"sid": 239606654032749,
-					"cnSID": null,
-					"name": "Option 8",
-					"value": "Si te quedas sin ENERGÍA, perderás los TESOROS que hayas conseguido en la exploración."
-				},
-				{
-					"sid": 768280632066367,
-					"cnSID": null,
-					"name": "Option 9",
-					"value": "Siempre es bueno investigar los alrededores para encontrar la mayor cantidad de TESOROS."
 				},
 				{
 					"sid": 968464367420989,

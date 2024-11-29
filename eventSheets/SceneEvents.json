@@ -167,6 +167,18 @@
 							"parameters": {
 								"period": "1"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 850751815639104,
+							"parameters": {
+								"audio-file": "friend-ship-1-68541",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 949731941254817

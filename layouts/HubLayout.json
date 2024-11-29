@@ -1369,8 +1369,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 116,
-						"y": 269,
+						"x": 534,
+						"y": 276,
 						"width": 68.3692445355388,
 						"height": 68.3692445355388,
 						"originX": 0.5,
@@ -1700,8 +1700,8 @@
 					"sid": 736101781973116,
 					"tags": "",
 					"instanceVariables": {
-						"HubX": 1576,
-						"HubY": 631
+						"HubX": 692,
+						"HubY": 446
 					},
 					"behaviors": {
 						"Persist": {
@@ -1718,12 +1718,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1576,
-						"y": 631,
-						"width": 37.300833054107954,
-						"height": 62.99638180558217,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 692,
+						"y": 446,
+						"width": 69.80420078714758,
+						"height": 71.86142256160166,
+						"originX": 1.421497584541063,
+						"originY": 0.27253218884120173,
 						"color": [
 							1,
 							1,
@@ -2515,8 +2515,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1395,
-						"y": 410,
+						"x": 246,
+						"y": 38,
 						"width": 392.7173703990841,
 						"height": 381,
 						"originX": 0,
@@ -2571,8 +2571,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1483,
-						"y": 427,
+						"x": 334,
+						"y": 55,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -2615,8 +2615,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1696,
-						"y": 515,
+						"x": 547,
+						"y": 143,
 						"width": 70,
 						"height": 24,
 						"originX": 0,
@@ -2657,8 +2657,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1558,
-						"y": 749,
+						"x": 409,
+						"y": 377,
 						"width": 72,
 						"height": 24,
 						"originX": 0,
@@ -2711,8 +2711,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1721,
-						"y": 747,
+						"x": 572,
+						"y": 375,
 						"width": 60.95793358215852,
 						"height": 30,
 						"originX": 0,
@@ -2751,8 +2751,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1694,
-						"y": 756,
+						"x": 545,
+						"y": 384,
 						"width": 33.623395933088695,
 						"height": 30.699622373689678,
 						"originX": 0.5,
@@ -2801,8 +2801,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1414,
-						"y": 502,
+						"x": 265,
+						"y": 130,
 						"width": 274.57974546689496,
 						"height": 51.29510041819418,
 						"originX": 0,
@@ -2857,8 +2857,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1595,
-						"y": 517,
+						"x": 446,
+						"y": 145,
 						"width": 89.78624417056012,
 						"height": 23.337044137091,
 						"originX": 0,
@@ -2897,8 +2897,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1444,
-						"y": 528,
+						"x": 295,
+						"y": 156,
 						"width": 43.32519735501901,
 						"height": 43.32519735501901,
 						"originX": 0.5,
@@ -2932,8 +2932,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
@@ -3022,104 +3022,7 @@
 			"name": "InstruccionesMuseo",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Pensamiento",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 238,
-					"sid": 941841048985891,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 941841048985891,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 189,
-						"y": 203,
-						"width": 102.5133351326628,
-						"height": 101.03477741440331,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "InstruccionesCapsula",
-					"properties": {
-						"text": "Apretar \"F\" para ir al museo",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 239,
-					"sid": 426364060434233,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 426364060434233,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 149,
-						"y": 176,
-						"width": 71.39504595510175,
-						"height": 57.46527263096189,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				}
-			],
+			"instances": [],
 			"sid": 216253253922174,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
@@ -3153,104 +3056,7 @@
 			"name": "InstruccionesCapsula",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Pensamiento",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 240,
-					"sid": 348219121882045,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 348219121882045,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 752,
-						"y": 576,
-						"width": 102.5133351326628,
-						"height": 101.03477741440331,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "InstruccionesCapsula",
-					"properties": {
-						"text": "Apretar \"F\" para volver al planeta",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 242,
-					"sid": 865625499475551,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 865625499475551,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 715,
-						"y": 546,
-						"width": 71.39504595510175,
-						"height": 57.46527263096189,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				}
-			],
+			"instances": [],
 			"sid": 902302915581532,
 			"effectTypes": [],
 			"isInitiallyVisible": false,

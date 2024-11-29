@@ -1,0 +1,57 @@
+{
+	"name": "PlayButton",
+	"plugin-id": "Sprite",
+	"sid": 694500867965523,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 704569469760240
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 752,
+						"height": 377,
+						"originX": 0.5332446808510638,
+						"originY": 0.46684350132625996,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9715446,
+						"collisionPoly": {
+							"points": [
+								0.07845744680851063,
+								0.002652519893899204,
+								0.9800531914893617,
+								0.06896551724137931,
+								0.9215425531914894,
+								0.9973474801061007,
+								0.0199468085106383,
+								0.9310344827586207
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 198354020544471,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1655,10 +1655,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "MonoHub",
-							"sid": 484416210637370,
+							"sid": 916967127184416,
 							"parameters": {
-								"x": "1285",
-								"y": "280"
+								"x": "1340",
+								"y": "261"
 							}
 						},
 						{
@@ -1682,9 +1682,9 @@
 						{
 							"id": "set-position",
 							"objectClass": "DanPlayerBox",
-							"sid": 447611296884285,
+							"sid": 593114541157207,
 							"parameters": {
-								"x": "1285",
+								"x": "1200",
 								"y": "275"
 							}
 						},
@@ -2016,6 +2016,15 @@
 							"parameters": {
 								"variable": "IsHamHubScene",
 								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 223823564124736,
+							"parameters": {
+								"variable": "GunUnlocked",
+								"value": "true"
 							}
 						},
 						{
