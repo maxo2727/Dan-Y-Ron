@@ -226,7 +226,8 @@
 			"TitleScreenBg",
 			"PlayButtonText",
 			"Audio",
-			"PlayButton"
+			"PlayButton",
+			"Sprite6"
 		],
 		"subfolders": [
 			{
