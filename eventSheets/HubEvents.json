@@ -777,6 +777,15 @@
 									"parameters": {
 										"layout": "MuseumLayout"
 									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 279854243117525,
+									"parameters": {
+										"variable": "TransitionVariable",
+										"value": "\"FromHubToMuseum\""
+									}
 								}
 							],
 							"sid": 310897907511268

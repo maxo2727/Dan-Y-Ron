@@ -421,9 +421,9 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 0,
+								"x": -6,
 								"y": 442,
-								"width": 552.8362974210424,
+								"width": 558.8362974210424,
 								"height": 1309.0592893831026,
 								"originX": 0,
 								"originY": 0,
@@ -2280,6 +2280,63 @@
 								"height": 6.2066871184342745,
 								"originX": 0.5,
 								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "TiledBackground",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0,
+								"enable-tile-randomization": false,
+								"x-random": 1,
+								"y-random": 1,
+								"angle-random": 1,
+								"blend-margin-x": 0.1,
+								"blend-margin-y": 0.1
+							},
+							"uid": 185,
+							"sid": 135680708448238,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 135680708448238,
+								"expanded": true,
+								"folderName": "",
+								"indexInFolder": -1,
+								"folderNestingLevel": -1
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": -57.7691333181422,
+								"y": -0.06291757271938536,
+								"width": 57.71508529983089,
+								"height": 966.9683802921936,
+								"originX": 0,
+								"originY": 0,
 								"color": [
 									1,
 									1,

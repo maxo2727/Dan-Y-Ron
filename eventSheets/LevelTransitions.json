@@ -611,6 +611,78 @@
 						}
 					],
 					"sid": 252541132236299
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 644260604663824,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromHubToMuseum\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 968602734896351,
+							"parameters": {
+								"x": "1700",
+								"y": "1630"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 563869888437680,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 538661872654250
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 328744909479279,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"comparison": 0,
+								"value": "\"FromMuseumToHub\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DanPlayerBox",
+							"sid": 384122450430138,
+							"parameters": {
+								"x": "600",
+								"y": "280"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 463306153810029,
+							"parameters": {
+								"x": "DanPlayerBox.X",
+								"y": "DanPlayerBox.Y"
+							}
+						}
+					],
+					"sid": 723523071399542
 				}
 			]
 		}

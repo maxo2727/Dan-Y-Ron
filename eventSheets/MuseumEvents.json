@@ -218,6 +218,56 @@
 				}
 			],
 			"sid": 322943445063550
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Dan",
+					"sid": 800738318965869,
+					"parameters": {
+						"object": "PCMuseo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 461714157773982,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 601495345857914,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 132859459450442,
+							"parameters": {
+								"layout": "HubLayout"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 537302228932722,
+							"parameters": {
+								"variable": "TransitionVariable",
+								"value": "\"FromMuseumToHub\""
+							}
+						}
+					],
+					"sid": 796957531781632
+				}
+			]
 		}
 	],
 	"sid": 864517449144682
