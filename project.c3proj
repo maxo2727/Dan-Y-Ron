@@ -226,8 +226,7 @@
 			"TitleScreenBg",
 			"PlayButtonText",
 			"Audio",
-			"PlayButton",
-			"Sprite6"
+			"PlayButton"
 		],
 		"subfolders": [
 			{
@@ -289,8 +288,7 @@
 					"CoinHUD",
 					"MoneyCounter",
 					"EnergyHUDText",
-					"TreasureHUDText",
-					"WeaponText"
+					"TreasureHUDText"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -570,6 +568,17 @@
 				],
 				"subfolders": [],
 				"name": "InstructionsPopup"
+			},
+			{
+				"items": [
+					"MeleeHUD",
+					"GadgetOutlineHUD",
+					"GadgetBGHUD",
+					"GunHUD",
+					"Sprite6"
+				],
+				"subfolders": [],
+				"name": "Gadgets"
 			}
 		]
 	},

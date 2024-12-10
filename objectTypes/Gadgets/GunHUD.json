@@ -1,0 +1,59 @@
+{
+	"name": "GunHUD",
+	"plugin-id": "Sprite",
+	"sid": 959144520991902,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 492,
+						"height": 286,
+						"originX": 0.4186991869918699,
+						"originY": 0.5034965034965035,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4763993,
+						"collisionPoly": {
+							"points": [
+								0.3252032520325203,
+								0.006993006993006993,
+								0.3861788617886179,
+								0.006993006993006993,
+								0.959349593495935,
+								0.3986013986013986,
+								0.30691056910569103,
+								0.9895104895104895,
+								0.07113821138211382,
+								0.9895104895104895,
+								0.016260162601626018,
+								0.9230769230769231,
+								0.046747967479674794,
+								0.17132867132867133,
+								0.21341463414634151,
+								0.01048951048951049
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 566530242198423,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

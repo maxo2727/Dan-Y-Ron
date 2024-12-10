@@ -1,47 +1,31 @@
 {
-	"name": "HookPH",
+	"name": "GadgetBGHUD",
 	"plugin-id": "Sprite",
-	"sid": 603548724483332,
+	"sid": 476743111037077,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Physics",
-			"name": "Físicas",
-			"sid": 200749315758556
-		},
-		{
-			"behaviorId": "Platform",
-			"name": "Plataforma",
-			"sid": 694272193389914
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Bala",
-			"sid": 232806626168828
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 24,
-						"height": 24,
-						"originX": 0.08333333333333333,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
-						"exportQuality": 1,
+						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 298639,
+						"imageSpriteId": 8849519,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 334145896607218,
+				"sid": 976402511364141,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

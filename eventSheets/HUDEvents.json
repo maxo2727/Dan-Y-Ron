@@ -21,14 +21,6 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "WeaponText",
-					"sid": 689459867852047,
-					"parameters": {
-						"text": "SelectedGadget"
-					}
-				},
-				{
-					"id": "set-text",
 					"objectClass": "TreasureHUDText",
 					"sid": 962343882095722,
 					"parameters": {
@@ -37,6 +29,141 @@
 				}
 			],
 			"sid": 433197074480012
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 720789157002821,
+					"parameters": {
+						"variable": "SelectedGadget",
+						"comparison": 0,
+						"value": "\"Melee\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 289002749041958,
+					"parameters": {
+						"layer": "\"Melee\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 189009411250100,
+					"parameters": {
+						"layer": "\"Gun\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 808265744901619,
+					"parameters": {
+						"layer": "\"Hook\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 591090109134181
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 302282798443729,
+					"parameters": {
+						"variable": "SelectedGadget",
+						"comparison": 0,
+						"value": "\"Gun\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 952028226048471,
+					"parameters": {
+						"layer": "\"Melee\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 485198014661933,
+					"parameters": {
+						"layer": "\"Gun\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 417261188671593,
+					"parameters": {
+						"layer": "\"Hook\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 305831769163608
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 497938990969944,
+					"parameters": {
+						"variable": "SelectedGadget",
+						"comparison": 0,
+						"value": "\"Hook\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 867592771416859,
+					"parameters": {
+						"layer": "\"Melee\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 175065817614068,
+					"parameters": {
+						"layer": "\"Gun\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 703040737627167,
+					"parameters": {
+						"layer": "\"Hook\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 315889400501509
 		}
 	],
 	"sid": 817721388332534

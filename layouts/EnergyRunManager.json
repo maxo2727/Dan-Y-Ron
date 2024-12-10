@@ -163,7 +163,7 @@
 							"type": "RunStarter",
 							"properties": {
 								"type": "button",
-								"text": "Start Run!",
+								"text": "Comenzar Expedición!",
 								"tooltip": "",
 								"initially-visible": true,
 								"enabled": true,
@@ -187,10 +187,10 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 643,
-								"y": 50,
-								"width": 131.22499761859402,
-								"height": 43.741665872864665,
+								"x": 610,
+								"y": 44,
+								"width": 167.22499761859402,
+								"height": 44.741665872864665,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -204,7 +204,7 @@
 						{
 							"type": "EnergyManagerTxt",
 							"properties": {
-								"text": "Energy Pool:",
+								"text": "Contador de Energía:",
 								"enable-bbcode": true,
 								"font": "Silom",
 								"size": 12,
@@ -243,9 +243,9 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 74.32602695263188,
-								"y": 50.21549075562278,
-								"width": 123.13547080797193,
+								"x": 69.58287795704109,
+								"y": 47.8439162578274,
+								"width": 203.13547080797193,
 								"height": 30,
 								"originX": 0,
 								"originY": 0,
@@ -301,8 +301,8 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 240.31553087036394,
-								"y": 50.98893408774204,
+								"x": 307.61734927104186,
+								"y": 47.95955901644176,
 								"width": 70.70392361773621,
 								"height": 28.31107536773756,
 								"originX": 0,
@@ -341,8 +341,8 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 219.24738243541643,
-								"y": 65.34547916714351,
+								"x": 286.5492008360943,
+								"y": 62.31610409584323,
 								"width": 22.18944957726781,
 								"height": 32.2586115703137,
 								"originX": 0.5,

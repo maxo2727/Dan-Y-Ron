@@ -1,5 +1,5 @@
 {
-	"name": "Sprite6",
+	"name": "GadgetOutlineHUD",
 	"plugin-id": "Sprite",
 	"sid": 134977344008422,
 	"isGlobal": false,
@@ -19,7 +19,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1807789,
+						"imageSpriteId": 4319208,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

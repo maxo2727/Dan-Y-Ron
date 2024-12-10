@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "GunSelectedForRun",
 			"type": "boolean",
-			"initialValue": "true",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
