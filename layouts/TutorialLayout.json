@@ -1181,6 +1181,25 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"MoverA": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": false
+							}
+						},
+						"Girar": {
+							"properties": {
+								"speed": -360,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1746,7 +1765,7 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
@@ -1793,7 +1812,7 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": false,
+								"enabled": true,
 								"tags": ""
 							}
 						}

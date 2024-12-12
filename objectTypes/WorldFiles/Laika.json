@@ -9,6 +9,16 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 157889067392905
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoverA",
+			"sid": 895416292512817
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Girar",
+			"sid": 875813628314087
 		}
 	],
 	"effectTypes": [],

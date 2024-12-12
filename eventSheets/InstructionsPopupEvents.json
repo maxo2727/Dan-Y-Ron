@@ -138,15 +138,6 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 596297316926955,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
-				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 329153225331211,
@@ -214,15 +205,6 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 381974974533105,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
-				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 195864177098775,
@@ -289,15 +271,6 @@
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "DanPlayerBox",
-					"sid": 261251753590449,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",

@@ -38,6 +38,16 @@
 			"includeSheet": "InstructionsPopupEvents"
 		},
 		{
+			"eventType": "variable",
+			"name": "LaikaAbduct",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 916206635650709
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TutorialScenes",
@@ -450,15 +460,6 @@
 						{
 							"callFunction": "CallInstructionsPopupEnergy",
 							"sid": 751118795660765
-						},
-						{
-							"id": "set-ignoring-input",
-							"objectClass": "DanPlayerBox",
-							"sid": 553025248044087,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "stop-ignoring"
-							}
 						}
 					],
 					"sid": 942489804810983
@@ -1039,17 +1040,17 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "DanPlayerBox",
-							"sid": 836912158360415,
+							"sid": 735237470543397,
 							"parameters": {
-								"object": "LaikaSceneTrigger"
+								"object": "NotLaikaSceneTrigger"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "LaikaSceneTrigger",
-							"sid": 913401114579989
+							"objectClass": "NotLaikaSceneTrigger",
+							"sid": 330956572245750
 						},
 						{
 							"id": "set-ignoring-input",
@@ -1131,8 +1132,8 @@
 						},
 						{
 							"id": "set-enabled",
-							"objectClass": "NotLaikaSceneTrigger",
-							"sid": 273258243618469,
+							"objectClass": "LaikaSceneTrigger",
+							"sid": 882881343082094,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "enabled"
@@ -1140,8 +1141,8 @@
 						},
 						{
 							"id": "set-collisions-enabled",
-							"objectClass": "NotLaikaSceneTrigger",
-							"sid": 393272279519295,
+							"objectClass": "LaikaSceneTrigger",
+							"sid": 392982197422763,
 							"parameters": {
 								"collisions": "enabled"
 							}
@@ -1155,13 +1156,18 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "DanPlayerBox",
-							"sid": 953184872735943,
+							"sid": 436597746622606,
 							"parameters": {
-								"object": "NotLaikaSceneTrigger"
+								"object": "LaikaSceneTrigger"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LaikaSceneTrigger",
+							"sid": 425408747503434
+						},
 						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
@@ -1201,68 +1207,101 @@
 							}
 						},
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "DanPlayerBox",
-							"sid": 995278022282258,
-							"behaviorType": "Platform",
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 967886940434800,
 							"parameters": {
-								"input": "stop-ignoring"
+								"seconds": "2"
 							}
-						}
-					],
-					"sid": 185193982270075
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "DanPlayerBox",
-							"sid": 886417036575410,
-							"parameters": {
-								"object": "Laika"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "NotLaikaSceneTrigger",
-							"sid": 334844499118462
 						},
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "DanPlayerBox",
-							"sid": 619860441156652,
+							"id": "set-enabled",
+							"objectClass": "Laika",
+							"sid": 795901089814055,
+							"behaviorType": "Girar",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Laika",
+							"sid": 999970541979386,
+							"behaviorType": "MoverA",
+							"parameters": {
+								"enabled": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 752292680953036,
+							"parameters": {
+								"variable": "LaikaAbduct",
+								"value": "1"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 431966679907355,
+							"parameters": {
+								"tag": "\"beginShrink\""
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "Laika",
+							"sid": 238340061187627,
+							"behaviorType": "MoverA",
+							"parameters": {
+								"x": "Dan.X",
+								"y": "Dan.Y-30",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Laika",
+							"sid": 958171242182851,
+							"behaviorType": "MoverA",
+							"parameters": {
+								"speed": "30"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Laika",
+							"sid": 127130508473658,
 							"behaviorType": "Platform",
 							"parameters": {
-								"input": "start-ignoring"
+								"gravity": "0"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 940262969578665,
+							"sid": 285251106303073,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "1.5"
 							}
 						},
 						{
 							"id": "destroy",
 							"objectClass": "Laika",
-							"sid": 662380476846567
+							"sid": 975861906489546
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 137128996899393,
+							"sid": 795911981360408,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "1.5"
 							}
 						},
 						{
 							"callFunction": "dialogue",
-							"sid": 496769190873678,
+							"sid": 735130604199202,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 5\")",
 								"\"RonTxt\""
@@ -1271,14 +1310,14 @@
 						{
 							"id": "wait-for-signal",
 							"objectClass": "System",
-							"sid": 211452604152916,
+							"sid": 161271849648432,
 							"parameters": {
 								"tag": "\"next\""
 							}
 						},
 						{
 							"callFunction": "dialogue",
-							"sid": 455906310634045,
+							"sid": 539839670440809,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 6\")",
 								"\"RonTxt\""
@@ -1287,26 +1326,26 @@
 						{
 							"id": "wait-for-signal",
 							"objectClass": "System",
-							"sid": 104596927380668,
+							"sid": 250960590088945,
 							"parameters": {
 								"tag": "\"next\""
 							}
 						},
 						{
 							"callFunction": "destroyDialogue",
-							"sid": 256323497645375
+							"sid": 834021594784936
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 761648425725761,
+							"sid": 751419299147104,
 							"parameters": {
 								"seconds": "2"
 							}
 						},
 						{
 							"callFunction": "dialogue",
-							"sid": 188989050388147,
+							"sid": 380078492310986,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 7\")",
 								"\"RonTxt\""
@@ -1315,19 +1354,19 @@
 						{
 							"id": "wait-for-signal",
 							"objectClass": "System",
-							"sid": 838631060261485,
+							"sid": 424514734870709,
 							"parameters": {
 								"tag": "\"next\""
 							}
 						},
 						{
 							"callFunction": "destroyDialogue",
-							"sid": 547835228961723
+							"sid": 962416692377795
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 784327954312411,
+							"sid": 807759811342317,
 							"parameters": {
 								"object-to-create": "DanHunter",
 								"layer": "\"DanPlayer\"",
@@ -1340,7 +1379,7 @@
 						{
 							"id": "set-size",
 							"objectClass": "DanHunter",
-							"sid": 159077582734941,
+							"sid": 647295904967907,
 							"parameters": {
 								"width": "55",
 								"height": "55"
@@ -1349,7 +1388,7 @@
 						{
 							"id": "set-speed",
 							"objectClass": "DanHunter",
-							"sid": 825340171171521,
+							"sid": 552869499631168,
 							"behaviorType": "Bullet",
 							"parameters": {
 								"speed": "100"
@@ -1358,7 +1397,7 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "DanHunter",
-							"sid": 556200217575172,
+							"sid": 362491649486253,
 							"behaviorType": "Bullet",
 							"parameters": {
 								"angle": "90"
@@ -1367,7 +1406,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "DanHunter",
-							"sid": 800316723838520,
+							"sid": 794347925193958,
 							"behaviorType": "Bullet",
 							"parameters": {
 								"state": "enabled"
@@ -1376,7 +1415,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 868995546582440,
+							"sid": 757206052510235,
 							"parameters": {
 								"seconds": "2"
 							}
@@ -1384,7 +1423,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "DanHunter",
-							"sid": 241944953467533,
+							"sid": 136019215871924,
 							"behaviorType": "Bullet",
 							"parameters": {
 								"state": "disabled"
@@ -1393,7 +1432,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "DanHunter",
-							"sid": 979969648640995,
+							"sid": 650768824586678,
 							"parameters": {
 								"object": "HitHunterSceneTrigger",
 								"layer": "\"DanPlayer\"",
@@ -1405,14 +1444,14 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 133351837779753,
+							"sid": 351540693889223,
 							"parameters": {
 								"seconds": "2"
 							}
 						},
 						{
 							"callFunction": "dialogue",
-							"sid": 504539355407868,
+							"sid": 752642485955930,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 8\")",
 								"\"RonTxt\""
@@ -1421,14 +1460,14 @@
 						{
 							"id": "wait-for-signal",
 							"objectClass": "System",
-							"sid": 412177740452431,
+							"sid": 582392691306222,
 							"parameters": {
 								"tag": "\"next\""
 							}
 						},
 						{
 							"callFunction": "dialogue",
-							"sid": 647188059718847,
+							"sid": 873362863881863,
 							"parameters": [
 								"FlowchartController.OutputValue(\"Option 9\")",
 								"\"RonTxt\""
@@ -1437,26 +1476,35 @@
 						{
 							"id": "wait-for-signal",
 							"objectClass": "System",
-							"sid": 178677772324505,
+							"sid": 100712249132861,
 							"parameters": {
 								"tag": "\"next\""
 							}
 						},
 						{
 							"callFunction": "destroyDialogue",
-							"sid": 952467071945718
+							"sid": 850431767241703
 						},
 						{
 							"id": "set-ignoring-input",
 							"objectClass": "DanPlayerBox",
-							"sid": 917445581107482,
+							"sid": 789908281053164,
 							"behaviorType": "Platform",
 							"parameters": {
 								"input": "stop-ignoring"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 180609236492331,
+							"parameters": {
+								"variable": "LaikaAbduct",
+								"value": "0"
+							}
 						}
 					],
-					"sid": 369693445116609
+					"sid": 185193982270075
 				},
 				{
 					"eventType": "block",
@@ -1815,6 +1863,41 @@
 						}
 					],
 					"sid": 983418575064788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 257370890689470,
+							"parameters": {
+								"interval-seconds": "0.05"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 634240802901508,
+							"parameters": {
+								"variable": "LaikaAbduct",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Laika",
+							"sid": 769551608563745,
+							"parameters": {
+								"width": "0.9*Laika.Width",
+								"height": "0.9*Laika.Height"
+							}
+						}
+					],
+					"sid": 647260929340939
 				}
 			],
 			"sid": 381134690070239
@@ -2065,6 +2148,31 @@
 				}
 			],
 			"sid": 611379808526037
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 765538839977665,
+					"parameters": {
+						"key": 80
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "DanPlayerBox",
+					"sid": 486875327650361,
+					"parameters": {
+						"x": "Sprite7.X",
+						"y": "Sprite7.Y"
+					}
+				}
+			],
+			"sid": 858411693828571
 		}
 	],
 	"sid": 198321717306871
