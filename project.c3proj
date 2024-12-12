@@ -234,7 +234,8 @@
 			"PlayButtonText",
 			"Audio",
 			"PlayButton",
-			"TLPT"
+			"TLPT",
+			"Sprite7"
 		],
 		"subfolders": [
 			{
@@ -572,7 +573,13 @@
 					"InstructionsPopupEnemy",
 					"LeftClickSprite",
 					"EnergySprite",
-					"KeyButtonSprite"
+					"KeyButtonSprite",
+					"CheckSprite",
+					"SeeInstructions",
+					"InstructionsButton",
+					"InstructionsMovement",
+					"InstructionsEnergy",
+					"InstructionsAttack"
 				],
 				"subfolders": [],
 				"name": "InstructionsPopup"

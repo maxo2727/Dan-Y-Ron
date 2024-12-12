@@ -22,6 +22,26 @@
 			"sid": 478134879578508
 		},
 		{
+			"eventType": "variable",
+			"name": "IsPauseMenu",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 783102783775718
+		},
+		{
+			"eventType": "variable",
+			"name": "IsSilenced",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 629420478256367
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -90,10 +110,37 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
+					"sid": 844184031597763,
+					"parameters": {
+						"layer": "\"PauseMenuPopup\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 591400898487215,
+					"parameters": {
+						"layer": "\"InstructionsSelection\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
 					"sid": 918349951116577,
 					"parameters": {
 						"layer": "\"Texto continuar\"",
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 130757948471444,
+					"parameters": {
+						"variable": "IsPauseMenu",
+						"value": "false"
 					}
 				},
 				{
@@ -112,6 +159,14 @@
 					"parameters": {
 						"variable": "IsInstructionsPopupEnabled",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 539283301326139,
+					"parameters": {
+						"time-scale": "1"
 					}
 				},
 				{
@@ -165,29 +220,11 @@
 					}
 				},
 				{
-					"id": "wait",
+					"id": "signal",
 					"objectClass": "System",
-					"sid": 247877251224153,
+					"sid": 277976515224870,
 					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 222137775433626,
-					"parameters": {
-						"layer": "\"Texto continuar\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 486867746811369,
-					"parameters": {
-						"variable": "CanSkipInstructionsPopup",
-						"value": "true"
+						"tag": "\"Continue\""
 					}
 				}
 			],
@@ -232,29 +269,11 @@
 					}
 				},
 				{
-					"id": "wait",
+					"id": "signal",
 					"objectClass": "System",
-					"sid": 939972115952678,
+					"sid": 689116084870187,
 					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 107870637091695,
-					"parameters": {
-						"layer": "\"Texto continuar\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 387981623381791,
-					"parameters": {
-						"variable": "CanSkipInstructionsPopup",
-						"value": "true"
+						"tag": "\"Continue\""
 					}
 				}
 			],
@@ -299,33 +318,457 @@
 					}
 				},
 				{
-					"id": "wait",
+					"id": "signal",
 					"objectClass": "System",
-					"sid": 302334058608528,
+					"sid": 949088563879370,
 					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 812840875154323,
-					"parameters": {
-						"layer": "\"Texto continuar\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 686202317622914,
-					"parameters": {
-						"variable": "CanSkipInstructionsPopup",
-						"value": "true"
+						"tag": "\"Continue\""
 					}
 				}
 			],
 			"sid": 993253958609582
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pausa",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 878899478447809,
+							"parameters": {
+								"key": 80
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 153547967420696,
+							"parameters": {
+								"variable": "IsPauseMenu"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "CallPauseMenu",
+							"sid": 854132851065130
+						}
+					],
+					"sid": 681230472621436
+				},
+				{
+					"functionName": "CallPauseMenu",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 319282788087611,
+							"parameters": {
+								"variable": "IsInstructionsPopupEnabled",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 367880113267460,
+							"parameters": {
+								"variable": "IsPauseMenu",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 822477359318781,
+							"parameters": {
+								"layer": "\"InstructionsPopupLayer\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 592223490678192,
+							"parameters": {
+								"layer": "\"PauseMenuPopup\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 566964150584903,
+							"parameters": {
+								"layer": "\"PauseMenuPopup\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 900038057419721,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 640336297472853,
+							"parameters": {
+								"tag": "\"Continue\""
+							}
+						}
+					],
+					"sid": 825438525712685
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 177650813833802,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "InstructionsButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 303574846177623,
+							"parameters": {
+								"layer": "\"PauseMenuPopup\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 537775893814416,
+							"parameters": {
+								"layer": "\"InstructionsPopupMoving\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 896431197698984,
+							"parameters": {
+								"layer": "\"InstructionsPopupAttack\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 168806552725469,
+							"parameters": {
+								"layer": "\"InstructionsPopupEnergy\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 200725748112817,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 332883720602598,
+							"parameters": {
+								"layer": "\"PauseMenuPopup\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 587441718166850,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 144103805394329
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 965637406536167,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "InstructionsMovement"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 250164815652483,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 937151772839121,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"interactive": false
+							}
+						},
+						{
+							"callFunction": "CallInstructionsPopupMoving",
+							"sid": 513592276569307
+						}
+					],
+					"sid": 502374297245385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 539484140131643,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "InstructionsAttack"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 622357597838451,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 308003350627591,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"interactive": false
+							}
+						},
+						{
+							"callFunction": "CallInstructionsPopupAttack",
+							"sid": 449350036201281
+						}
+					],
+					"sid": 613789865500977
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 396725464725950,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "InstructionsEnergy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 157856952784296,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 158150069629621,
+							"parameters": {
+								"layer": "\"InstructionsSelection\"",
+								"interactive": false
+							}
+						},
+						{
+							"callFunction": "CallInstructionsPopupEnergy",
+							"sid": 720049956525228
+						}
+					],
+					"sid": 879699516370559
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 779394221723178,
+							"parameters": {
+								"tag": "\"Continue\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 373026901130196,
+							"parameters": {
+								"variable": "IsPauseMenu"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 338514799488424,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 808557302299708,
+							"parameters": {
+								"layer": "\"Texto continuar\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 367161184866268,
+							"parameters": {
+								"variable": "CanSkipInstructionsPopup",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 411351103168079
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 721010122479286,
+							"parameters": {
+								"tag": "\"Continue\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 708210451446841,
+							"parameters": {
+								"variable": "IsPauseMenu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 614886822542690,
+							"parameters": {
+								"layer": "\"Texto continuar\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 521218971962451,
+							"parameters": {
+								"variable": "CanSkipInstructionsPopup",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 706074320672202
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 776810123307900,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "CheckSprite"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 870525534384768,
+							"parameters": {
+								"mode": "toggle-silent"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CheckSprite",
+							"sid": 165382260431669,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 773764944414853
+				}
+			],
+			"sid": 664578560281441
 		}
 	],
 	"sid": 620759651943800

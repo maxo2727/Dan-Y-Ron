@@ -70,6 +70,10 @@
 			"includeSheet": "TrophyInfoEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "EscaleraMuseo",

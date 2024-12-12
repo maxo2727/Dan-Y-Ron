@@ -122,7 +122,7 @@
 					"type": "Button",
 					"properties": {
 						"type": "button",
-						"text": "Back to Menu",
+						"text": "Volver al Menu",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,

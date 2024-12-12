@@ -2,6 +2,10 @@
 	"name": "BunkerEvents",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "ActivatedBunkerElevator",
 			"type": "boolean",

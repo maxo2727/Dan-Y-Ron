@@ -142,7 +142,7 @@
 					"type": "btn_play",
 					"properties": {
 						"type": "button",
-						"text": "Play!",
+						"text": "Jugar!",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -177,7 +177,7 @@
 					"type": "btn_instructions",
 					"properties": {
 						"type": "button",
-						"text": "Instructions",
+						"text": "Instrucciones",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,

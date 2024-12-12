@@ -86,7 +86,7 @@
 					"type": "btn_back",
 					"properties": {
 						"type": "button",
-						"text": "Back",
+						"text": "Volver",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -120,7 +120,7 @@
 				{
 					"type": "txt_how_to_play",
 					"properties": {
-						"text": "How to play",
+						"text": "Cómo jugar:",
 						"enable-bbcode": true,
 						"font": "corbel",
 						"size": 40,
@@ -169,7 +169,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Use your keyboard to control DAN",
+						"text": "Para controlar a DAN:",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 15,
@@ -199,7 +199,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 70,
+						"x": 66,
 						"y": 123,
 						"width": 313,
 						"height": 24,
@@ -218,7 +218,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Move and jump with WASD keys",
+						"text": "WASD para moverte y saltar",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -267,7 +267,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Use your energy wisely!",
+						"text": "Usa tu energía sabiamente!",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -316,7 +316,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Explore the map and collect treasures",
+						"text": "Explora el mapa y colecciona tesoros",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -365,7 +365,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Return to your ship to end the run",
+						"text": "Vuelve a la nave para terminar la ronda",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -414,7 +414,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Use your mouse to control RON",
+						"text": "Para controlar a RON:",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 15,
@@ -444,7 +444,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 481,
+						"x": 473,
 						"y": 124,
 						"width": 313,
 						"height": 24,
@@ -463,7 +463,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Drag and drop DOGES to build your defenses",
+						"text": "Arrastra y suelta DOGES para construir defensas",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -493,9 +493,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 475,
+						"x": 465,
 						"y": 190,
-						"width": 313,
+						"width": 323,
 						"height": 24,
 						"originX": 0,
 						"originY": 0,
@@ -512,7 +512,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Every enemy who dodges your attacks will go after Dan!",
+						"text": "Todos los enemigos que esquiven tus ataques irán por Dan!",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -561,7 +561,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Placing DOGES consumes energy",
+						"text": "Colocar DOGES consume energía",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -610,7 +610,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Press SHIFT to switch between characters",
+						"text": "Presta atención a tus alrededores",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 15,
@@ -659,7 +659,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Press SPACE to attack",
+						"text": "CLICK IZQUIERDO para atacar",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,
@@ -708,7 +708,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Use your energy wisely!",
+						"text": "Usa tu energía sabiamente!",
 						"enable-bbcode": true,
 						"font": "Corbel",
 						"size": 12,

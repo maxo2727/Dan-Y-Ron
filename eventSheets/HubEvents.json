@@ -26,6 +26,10 @@
 			"includeSheet": "InteractivePopUpEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
 			"eventType": "variable",
 			"name": "PrecioBotas",
 			"type": "number",

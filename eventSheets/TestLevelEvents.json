@@ -18,6 +18,10 @@
 			"includeSheet": "TDEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

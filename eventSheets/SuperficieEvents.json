@@ -8,6 +8,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "SceneEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "InstructionsPopupEvents"
 		}
 	],
 	"sid": 151494497408070
