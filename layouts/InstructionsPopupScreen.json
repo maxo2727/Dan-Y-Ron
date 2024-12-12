@@ -1271,48 +1271,7 @@
 					"global": false
 				}
 			],
-			"instances": [
-				{
-					"type": "Sprite7",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 834,
-					"sid": 590130815026929,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 590130815026929,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 5338,
-						"y": 915,
-						"width": 11,
-						"height": 14,
-						"originX": 0.5454545454545454,
-						"originY": 0.14285714285714285,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 447276398283976,
 			"effectTypes": [],
 			"isInitiallyVisible": false,

@@ -1428,7 +1428,7 @@
 							"properties": {
 								"speed": 180,
 								"acceleration": 0,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}

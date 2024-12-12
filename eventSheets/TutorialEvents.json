@@ -1281,9 +1281,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 285251106303073,
+							"sid": 214479481535364,
 							"parameters": {
-								"seconds": "1.5"
+								"seconds": "1"
 							}
 						},
 						{
@@ -2148,31 +2148,6 @@
 				}
 			],
 			"sid": 611379808526037
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 765538839977665,
-					"parameters": {
-						"key": 80
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "DanPlayerBox",
-					"sid": 486875327650361,
-					"parameters": {
-						"x": "Sprite7.X",
-						"y": "Sprite7.Y"
-					}
-				}
-			],
-			"sid": 858411693828571
 		}
 	],
 	"sid": 198321717306871
