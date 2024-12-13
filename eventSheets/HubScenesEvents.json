@@ -40,6 +40,16 @@
 			"sid": 102908940997103
 		},
 		{
+			"eventType": "variable",
+			"name": "IsEnosHubScene",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 542379456912512
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "LaikaRescueScene",
@@ -2037,6 +2047,99 @@
 				}
 			],
 			"sid": 365830210087377
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "EnosRescueScene",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 854603685063300
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 439153818164665,
+							"parameters": {
+								"variable": "IsEnosHubScene"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 956365282547064,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 643276307130211,
+							"parameters": {
+								"layer": "\"InstructionsPopupLayer\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 477711132402383,
+							"parameters": {
+								"layer": "\"Ending\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 678871221400978,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 710712854330378,
+							"parameters": {
+								"layer": "\"InstructionsPopupLayer\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 948108363201584,
+							"parameters": {
+								"layer": "\"Ending\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "DanPlayerBox",
+							"sid": 560456912878253,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 493804609160137
+				}
+			],
+			"sid": 173030272633250
 		}
 	],
 	"sid": 394107172538820

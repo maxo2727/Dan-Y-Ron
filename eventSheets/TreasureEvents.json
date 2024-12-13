@@ -1,0 +1,47 @@
+{
+	"name": "TreasureEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Treasures",
+					"sid": 756487387235801,
+					"parameters": {
+						"object": "Dan"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Treasures",
+					"sid": 314224359338006,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Treasures",
+					"sid": 891277471779860,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Treasures",
+					"sid": 366018506118728,
+					"parameters": {
+						"instance-variable": "OnInventory",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 182191475676001
+		}
+	],
+	"sid": 192279772618087
+}

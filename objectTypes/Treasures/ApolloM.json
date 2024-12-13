@@ -1,0 +1,65 @@
+{
+	"name": "ApolloM",
+	"plugin-id": "Sprite",
+	"sid": 435504910652471,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 600,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 578264,
+						"collisionPoly": {
+							"points": [
+								0.51,
+								0.055,
+								0.6133333333333333,
+								0.08,
+								0.9333333333333333,
+								0.5316666666666666,
+								0.9133333333333333,
+								0.7683333333333333,
+								0.88,
+								0.8016666666666666,
+								0.5183333333333333,
+								0.9316666666666666,
+								0.12666666666666668,
+								0.8133333333333334,
+								0.085,
+								0.7683333333333333,
+								0.041666666666666664,
+								0.62,
+								0.25166666666666665,
+								0.23666666666666666,
+								0.4,
+								0.07166666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 793127035239272,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

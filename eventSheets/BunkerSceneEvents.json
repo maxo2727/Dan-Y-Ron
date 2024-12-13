@@ -112,6 +112,114 @@
 				}
 			],
 			"sid": 919638087120721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DanPlayerBox",
+					"sid": 532043002313664,
+					"parameters": {
+						"object": "Enos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enos",
+					"sid": 846443825185750
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 258772299818159,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 747446792131602,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "start-flowchart",
+					"objectClass": "FlowchartController",
+					"sid": 446607026391801,
+					"parameters": {
+						"flowchart-name": "BunkerFlow",
+						"start-node-tag": "\"RescueEnos\"",
+						"flowchart-tag": "\"\"",
+						"set-as-current": true
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 609344684599485,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Option 1\")",
+						"\"RonTxt\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 980683633956710,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "dialogue",
+					"sid": 452142791393261,
+					"parameters": [
+						"FlowchartController.OutputValue(\"Option 2\")",
+						"\"RonTxt\""
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 316072924478700,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				},
+				{
+					"callFunction": "destroyDialogue",
+					"sid": 772323782819149
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "DanPlayerBox",
+					"sid": 933741215391828,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 623171979014093,
+					"parameters": {
+						"variable": "IsEnosHubScene",
+						"value": "true"
+					}
+				},
+				{
+					"id": "end-flowchart",
+					"objectClass": "FlowchartController",
+					"sid": 553461004242516
+				}
+			],
+			"sid": 532291123927761
 		}
 	],
 	"sid": 529067258504335

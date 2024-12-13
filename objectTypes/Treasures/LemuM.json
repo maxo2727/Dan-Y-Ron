@@ -1,0 +1,57 @@
+{
+	"name": "LemuM",
+	"plugin-id": "Sprite",
+	"sid": 611770073547426,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 529,
+						"height": 344,
+						"originX": 0.505671077504726,
+						"originY": 0.4796511627906977,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 608276,
+						"collisionPoly": {
+							"points": [
+								0.7674858223062382,
+								0.005813953488372093,
+								0.996219281663516,
+								0.4796511627906977,
+								0.7126654064272212,
+								0.8808139534883721,
+								0.41776937618147447,
+								0.9651162790697675,
+								0.1153119092627599,
+								0.9883720930232558,
+								0.007561436672967864,
+								0.35174418604651164,
+								0.2627599243856333,
+								0.21220930232558144
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 533480864968757,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

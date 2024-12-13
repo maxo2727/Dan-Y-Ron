@@ -9,6 +9,7 @@
 		"RonInteractArea",
 		"BotonCapsula",
 		"DoorTrigger",
-		"FromLunarBaseToBunker"
+		"FromLunarBaseToBunker",
+		"BunkerElevatorUp"
 	]
 }

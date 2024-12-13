@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "Trofeo1",
+			"name": "HasSputnik1",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
@@ -13,53 +13,63 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Trofeo2",
+			"name": "HasApollo",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 866117412135015
+			"sid": 200591182012781
 		},
 		{
 			"eventType": "variable",
-			"name": "Trofeo3",
+			"name": "HasRover",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 383102128754003
+			"sid": 605974321040134
 		},
 		{
 			"eventType": "variable",
-			"name": "Trofeo4",
+			"name": "HasNasa",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 813495192587556
+			"sid": 823649405654246
 		},
 		{
 			"eventType": "variable",
-			"name": "Trofeo5",
+			"name": "HasVoyager",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 266516466279756
+			"sid": 273199328234468
 		},
 		{
 			"eventType": "variable",
-			"name": "Trofeo6",
+			"name": "HasLemu",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 800752386170903
+			"sid": 760924511878589
+		},
+		{
+			"eventType": "variable",
+			"name": "HasBowie",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 336412027826658
 		},
 		{
 			"eventType": "include",
@@ -160,7 +170,7 @@
 							"objectClass": "System",
 							"sid": 818085696796850,
 							"parameters": {
-								"variable": "Trofeo1"
+								"variable": "HasSputnik1"
 							}
 						}
 					],
@@ -270,6 +280,188 @@
 						}
 					],
 					"sid": 796957531781632
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 685139992022045
+				}
+			],
+			"actions": [],
+			"sid": 457539127462924,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 426388408747198,
+							"parameters": {
+								"variable": "HasSputnik1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sputnik1M",
+							"sid": 493648871544895,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 800254312652801
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 394396879835631,
+							"parameters": {
+								"variable": "HasApollo"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ApolloM",
+							"sid": 421676586334969,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 785223520349759
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 252603495801226,
+							"parameters": {
+								"variable": "HasRover"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "RoverM",
+							"sid": 364360230663675,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 288622635368511
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 921544174091373,
+							"parameters": {
+								"variable": "HasNasa"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "NasaM",
+							"sid": 668377649178474,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 313094354062545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 970682197033673,
+							"parameters": {
+								"variable": "HasVoyager"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "VoyagerM",
+							"sid": 822659334535708,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 260603374893569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 548741042293068,
+							"parameters": {
+								"variable": "HasLemu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LemuM",
+							"sid": 795046838201031,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 219224863669329
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 511724233438866,
+							"parameters": {
+								"variable": "HasBowie"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BowieM",
+							"sid": 817526745859936,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 946747235151240
 				}
 			]
 		}

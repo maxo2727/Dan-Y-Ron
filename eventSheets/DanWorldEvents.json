@@ -454,6 +454,40 @@
 						}
 					],
 					"sid": 776066886643465
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Dan",
+							"sid": 311879653708263,
+							"parameters": {
+								"object": "Treasures"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 938469006012135,
+							"parameters": {
+								"variable": "RunMoney",
+								"value": "100"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 857152496191909,
+							"parameters": {
+								"variable": "RunTreasure",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 184605970112574
 				}
 			],
 			"sid": 331103236209554
@@ -646,6 +680,84 @@
 				}
 			],
 			"sid": 768822687025217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 105174057564450
+				}
+			],
+			"actions": [],
+			"sid": 312561136613845,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 475261330871613,
+							"parameters": {
+								"variable": "Tutorial"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 145239155031139,
+							"parameters": {
+								"variable": "Energy",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Dan",
+							"sid": 969656537239149
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DanPlayerBox",
+							"sid": 913255684476625
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 576694045303692,
+							"parameters": {
+								"layer": "\"EndRunScreen\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 388808003272067,
+							"parameters": {
+								"variable": "RunFinishedStatus",
+								"value": "\"defeat\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 737045510778693,
+							"parameters": {
+								"variable": "RunStatus",
+								"value": "\"Ended\""
+							}
+						}
+					],
+					"sid": 485799764136046
+				}
+			]
 		}
 	],
 	"sid": 555647105562140

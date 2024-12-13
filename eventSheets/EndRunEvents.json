@@ -169,9 +169,238 @@
 						"layer": "\"SafeReturnLayer\"",
 						"visibility": "visible"
 					}
+				},
+				{
+					"callFunction": "AddTreasureOnInventory",
+					"sid": 273445946401576
 				}
 			],
 			"sid": 250059827899534
+		},
+		{
+			"functionName": "AddTreasureOnInventory",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 286121444692911,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Sputnik1",
+							"sid": 666445560297982,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Sputnik1",
+							"sid": 173971839398166
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 269719353458191,
+							"parameters": {
+								"variable": "HasSputnik1",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 569812659812628
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Apollo",
+							"sid": 768989388249822,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Apollo",
+							"sid": 393020434055015
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 954500770316156,
+							"parameters": {
+								"variable": "HasApollo",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 572029024211148
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Rover",
+							"sid": 240132016651797,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Rover",
+							"sid": 393759801973550
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 844770505168234,
+							"parameters": {
+								"variable": "HasRover",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 848549985816151
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Nasa",
+							"sid": 765730717803406,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Nasa",
+							"sid": 173921562033269
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 573049487575607,
+							"parameters": {
+								"variable": "HasNasa",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 411384271279919
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Voyager",
+							"sid": 614222474414651,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Voyager",
+							"sid": 594663842719966
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 943881369072072,
+							"parameters": {
+								"variable": "HasVoyager",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 279296578571064
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Lemu",
+							"sid": 608299849217700,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Lemu",
+							"sid": 954552693498085
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 255681077504847,
+							"parameters": {
+								"variable": "HasLemu",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 204569710853318
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Bowie",
+							"sid": 836899441895823,
+							"parameters": {
+								"instance-variable": "OnInventory"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Bowie",
+							"sid": 985392266869142
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 366063757311499,
+							"parameters": {
+								"variable": "HasBowie",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 680258006011382
+				}
+			]
 		}
 	],
 	"sid": 292518316600395

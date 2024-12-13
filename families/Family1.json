@@ -1,0 +1,17 @@
+{
+	"name": "Family1",
+	"plugin-id": "Sprite",
+	"sid": 514363303888626,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ApolloM",
+		"RoverM",
+		"Sputnik1M",
+		"NasaM",
+		"BowieM",
+		"Sputnik2M",
+		"VoyagerM"
+	]
+}

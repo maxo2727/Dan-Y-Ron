@@ -32,6 +32,38 @@
 			"pr": false,
 			"prfsid": null,
 			"prfnsid": null
+		},
+		{
+			"sid": 280742740456698,
+			"pnSIDs": [],
+			"poSIDs": [],
+			"nodeSIDs": [],
+			"outputs": [
+				{
+					"sid": 113346917786681,
+					"cnSID": null,
+					"name": "Option 1",
+					"value": "¡Vaya! Este debe ser Enos, el mono que estabamos buscando."
+				},
+				{
+					"sid": 795560872234722,
+					"cnSID": null,
+					"name": "Option 2",
+					"value": "¡Regresa a la nave con él!"
+				}
+			],
+			"x": 9857,
+			"y": 10147,
+			"w": 420,
+			"h": 166,
+			"t": "RescueEnos",
+			"s": false,
+			"pi": 0,
+			"c": "Flowchart node",
+			"ty": "dictionary",
+			"pr": false,
+			"prfsid": null,
+			"prfnsid": null
 		}
 	],
 	"preset-nodes": {

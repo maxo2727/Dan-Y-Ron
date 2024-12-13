@@ -1,0 +1,53 @@
+{
+	"name": "Enos",
+	"plugin-id": "Sprite",
+	"sid": 210048776746574,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 614,
+						"height": 638,
+						"originX": 0.5130293159609121,
+						"originY": -0.0768025078369906,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8346847,
+						"collisionPoly": {
+							"points": [
+								0.6091205211726385,
+								0,
+								0.9136807817589576,
+								0.9921630094043887,
+								0,
+								0.9200626959247649,
+								0,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 772533066260325,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

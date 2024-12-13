@@ -1,0 +1,61 @@
+{
+	"name": "Bowie",
+	"plugin-id": "Sprite",
+	"sid": 858584457499754,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 618603322900818
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.7486111111111111,
+						"originY": 0.4083333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6093716,
+						"collisionPoly": {
+							"points": [
+								0.47,
+								0.014,
+								0.86,
+								0.178,
+								0.98,
+								0.462,
+								0.98,
+								0.536,
+								0.538,
+								0.982,
+								0.446,
+								0.982
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 857046141912786,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

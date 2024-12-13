@@ -16,21 +16,21 @@
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Botón",
+			"name": "Button",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Flowchart",
-			"name": "Controlador de diagrama de flujo",
+			"name": "Flowchart controller",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -58,168 +58,168 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Fuente Sprite",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Fondo en mosaico",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Mapa de teselas",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bala",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Arrastrar y soltar",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Desvanecer",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Flash",
-			"name": "Parpadeo",
+			"name": "Flash",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "MoveTo",
-			"name": "Mover a",
+			"name": "Move To",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Persist",
-			"name": "Persistencia",
+			"name": "Persist",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Physics",
-			"name": "Físicas",
+			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Pegado",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plataforma",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Rotate",
-			"name": "Girar",
+			"name": "Rotate",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Seno",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Timer",
-			"name": "Temporizador",
+			"name": "Timer",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Turret",
-			"name": "Torreta",
+			"name": "Turret",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Personalizado",
+			"name": "Custom",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "jumpthru",
-			"name": "Salto a través",
+			"name": "Jump-thru",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Desplazar hasta",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "highlightshadow",
-			"name": "Brillo sombra",
+			"name": "Highlight shadow",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "pulse",
-			"name": "Pulso",
+			"name": "Pulse",
 			"author": "Danguafer/Silexars",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "warpobject",
-			"name": "Distorsionar objeto",
+			"name": "Warp object",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -235,7 +235,11 @@
 			"Audio",
 			"PlayButton",
 			"TLPT",
-			"Sprite7"
+			"Enos",
+			"Sprite8",
+			"Felicidades",
+			"endingText",
+			"Text3"
 		],
 		"subfolders": [
 			{
@@ -549,7 +553,22 @@
 			},
 			{
 				"items": [
-					"Sputnik2"
+					"Sputnik2",
+					"Sputnik1",
+					"Sputnik1M",
+					"Apollo",
+					"ApolloM",
+					"Sputnik2M",
+					"NasaM",
+					"RoverM",
+					"LemuM",
+					"VoyagerM",
+					"BowieM",
+					"Rover",
+					"Nasa",
+					"Voyager",
+					"Lemu",
+					"Bowie"
 				],
 				"subfolders": [],
 				"name": "Treasures"
@@ -604,7 +623,9 @@
 			"Defenses",
 			"DefensesIcons",
 			"CharacterTxt",
-			"Interactive"
+			"Interactive",
+			"Treasures",
+			"Family1"
 		],
 		"subfolders": []
 	},
@@ -684,7 +705,8 @@
 			"BunkerSceneEvents",
 			"InteractivePopUpEvents",
 			"InstructionsPopupEvents",
-			"TitleScreenEvents"
+			"TitleScreenEvents",
+			"TreasureEvents"
 		],
 		"subfolders": [
 			{

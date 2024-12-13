@@ -1,0 +1,51 @@
+{
+	"name": "VoyagerM",
+	"plugin-id": "Sprite",
+	"sid": 636848954824613,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 457,
+						"height": 332,
+						"originX": 0.5032822757111597,
+						"originY": 0.5286144578313253,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2790990,
+						"collisionPoly": {
+							"points": [
+								0.19474835886214442,
+								0.015060240963855416,
+								0.3741794310722101,
+								0.13855421686746988,
+								0.9912472647702407,
+								0.9427710843373494,
+								0.002188183807439825,
+								0.9909638554216867
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 716885567052835,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

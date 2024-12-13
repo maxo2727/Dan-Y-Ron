@@ -1,0 +1,77 @@
+{
+	"name": "Sputnik1",
+	"plugin-id": "Sprite",
+	"sid": 623293649536530,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "OnShip",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 879768963735996
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 409310676361177
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 600,
+						"height": 521,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5295361,
+						"collisionPoly": {
+							"points": [
+								0.05333333333333334,
+								0.01727447216890595,
+								0.9083333333333333,
+								0.12092130518234165,
+								0.965,
+								0.2092130518234165,
+								0.9816666666666667,
+								0.31094049904030713,
+								0.97,
+								0.3666026871401152,
+								0.65,
+								0.9424184261036468,
+								0.49,
+								0.9117082533589251,
+								0.06333333333333334,
+								0.44337811900191937,
+								0.05,
+								0.4049904030710173,
+								0.03,
+								0.0690978886756238
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 743157878840739,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

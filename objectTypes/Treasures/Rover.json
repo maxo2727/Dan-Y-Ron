@@ -1,0 +1,65 @@
+{
+	"name": "Rover",
+	"plugin-id": "Sprite",
+	"sid": 871516502387002,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 340633652750933
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 310,
+						"height": 256,
+						"originX": 0.49032258064516127,
+						"originY": 0.5234375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5633250,
+						"collisionPoly": {
+							"points": [
+								0.5064516129032257,
+								0.00390625,
+								0.6903225806451614,
+								0.03125,
+								0.9258064516129032,
+								0.8828125,
+								0.4806451612903226,
+								0.9921875,
+								0.42258064516129035,
+								0.9921875,
+								0.0064516129032258064,
+								0.77734375,
+								0.0064516129032258064,
+								0.70703125,
+								0.15161290322580645,
+								0.1875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 861577212212105,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

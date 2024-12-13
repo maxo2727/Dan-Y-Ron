@@ -52,6 +52,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "InstructionsPopupEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "TreasureEvents"
 		}
 	],
 	"sid": 489255412336291

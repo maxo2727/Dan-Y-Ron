@@ -1,0 +1,25 @@
+{
+	"name": "Treasures",
+	"plugin-id": "Sprite",
+	"sid": 742865752261584,
+	"instanceVariables": [
+		{
+			"name": "OnInventory",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 456667442208821
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Apollo",
+		"Sputnik1",
+		"Rover",
+		"Nasa",
+		"Voyager",
+		"Lemu",
+		"Bowie"
+	]
+}

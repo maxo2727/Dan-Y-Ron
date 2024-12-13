@@ -1,0 +1,71 @@
+{
+	"name": "Nasa",
+	"plugin-id": "Sprite",
+	"sid": 804017606160194,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 751063984803542
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 241,
+						"height": 244,
+						"originX": 0.5477178423236515,
+						"originY": 0.5102459016393442,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4271547,
+						"collisionPoly": {
+							"points": [
+								0.5643153526970954,
+								0,
+								0.7358229598893499,
+								0,
+								1,
+								0.551646174863388,
+								1,
+								0.8610587431693989,
+								1,
+								0.9046379781420765,
+								0.578146611341632,
+								1,
+								0,
+								0.9198907103825136,
+								0,
+								0.8610587431693989,
+								0,
+								0.6671311475409836,
+								0.13554633471645916,
+								0.16596994535519127,
+								0.3817427385892116,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 195669635770247,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
